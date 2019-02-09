@@ -1,0 +1,60 @@
+.headerContainer {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: transparent;
+
+  * {
+    padding: 0;
+    margin: 10px 0;
+  }
+
+  &-social {
+    display: flex;
+
+    &-iconContainer {
+      border-radius: 50%;
+      border: 1px solid white;
+      margin-right: 5px;
+      background-color: transparent;
+      height: 30px;
+      width: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition-duration: 0.15s;
+      cursor: pointer;
+
+      &-icon {
+        height: 15px;
+        width: 15px;
+      }
+    }
+
+    .facebook {
+      &:hover {
+        background-color: #3a5997;
+      }
+    }
+
+    .twitter {
+      &:hover {
+        background-color: #1aa1f1;
+      }
+    }
+
+    .imdb {
+      &:hover {
+        background-color: #dba505;
+      }
+    }
+
+    .instagram {
+      &:hover {
+        background-color: #ee1d23;
+      }
+    }
+  }
+}
