@@ -70,8 +70,11 @@ class LetterFromTheDirector extends Component {
             come.
           </h4>
           {/* TODO: Add signature */}
-          <h4 className="letterFromTheDirector-text">Toby Wosskow</h4>
-          <h4 className="letterFromTheDirector-text">Writer and Director</h4>
+          <h4 className="letterFromTheDirector-text">
+            Toby Wosskow
+            <br />
+            Writer and Director
+          </h4>
         </div>
       </div>
     )

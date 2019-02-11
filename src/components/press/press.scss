@@ -1,0 +1,28 @@
+.press {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+
+  &-headerImage {
+    width: 100%;
+  }
+
+  &-infoSection {
+    display: flex;
+    align-items: center;
+    width: 84%;
+
+    &-box {
+      margin: 20px 10px;
+      background-color: #a31f2b;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      flex-grow: 1;
+      flex-basis: 0;
+      color: white;
+    }
+  }
+}
