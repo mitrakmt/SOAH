@@ -1,0 +1,14 @@
+.landingPage-view {
+  background: center no-repeat url('../../images/landingPageBackground.png');
+  height: 100%;
+
+  .credits {
+    &-container {
+      bottom: 15vh;
+      color: #fff;
+      position: absolute;
+      right: 10vw;
+      text-transform: uppercase;
+    }
+  }
+}

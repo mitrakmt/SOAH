@@ -1,11 +1,15 @@
 import React, { Component } from 'react'
+import './landingPageView.scss'
 
 class LandingPageView extends Component {
   render() {
     const { sectionName } = this.props
     return (
       <div className={`${sectionName}-view`}>
-        <h2>test view</h2>
+        <div className="credits-container">
+          <p>from executive producer sir richard branson</p>
+          <p>a film by toby wosskow</p>
+        </div>
       </div>
     )
   }
