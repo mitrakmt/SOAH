@@ -9,7 +9,6 @@ class App extends Component {
   render() {
     return (
       <Fragment>
-        <Home />
         {homeSections.map(({ Container, props }) => <HomeSection {...props} />)}
       </Fragment>
     )

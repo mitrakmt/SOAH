@@ -8,7 +8,7 @@ class HomeSection extends Component {
     return (
       <div className={`${sectionName} homeSectionContainer`} id={sectionName}>
         <h1>Home section {sectionName}</h1>
-        <Component />
+        <Component {...this.props} />
       </div>
     )
   }
