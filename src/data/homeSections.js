@@ -1,6 +1,12 @@
+import LandingPage from '../containers/landingPage'
+import LandingPageView from '../components/landingPage'
+
 export default [
   {
-    component: '',
-    props: {}
+    Container: LandingPage,
+    props: {
+      Component: LandingPageView,
+      sectionName: 'landingPage'
+    }
   }
 ]
