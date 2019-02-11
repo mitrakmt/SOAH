@@ -9,7 +9,7 @@ class App extends Component {
   render() {
     return (
       <Fragment>
-        {homeSections.map(({ Container, props }) => <HomeSection {...props} />)}
+        {homeSections.map(({ Container, props }) => <HomeSection key={props.sectionName} {...props} />)}
       </Fragment>
     )
   }
