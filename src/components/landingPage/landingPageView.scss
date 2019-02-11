@@ -4,11 +4,20 @@
 
   .credits {
     &-container {
+      
       bottom: 15vh;
       color: #fff;
       position: absolute;
       right: 10vw;
+      text-align: right;
       text-transform: uppercase;
+
+      p {
+        &:last-of-type {
+          border-bottom: 2px solid red;
+          padding-bottom: 25px;
+        }
+      }
     }
   }
 }
