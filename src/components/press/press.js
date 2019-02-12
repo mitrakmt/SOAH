@@ -30,24 +30,26 @@ class Press extends Component {
             <h4 className="press-infoSection-box-header">
               TAG US @SIDESOFAHORN
             </h4>
-            <Instagram
-              href="https://www.instagram.com/sidesofahorn"
-              width="15px"
-              height="15px"
-              fill="white"
-            />
-            <Twitter
-              href="https://twitter.com/sidesofahorn"
-              width="15px"
-              height="15px"
-              fill="white"
-            />
-            <Facebook
-              href="https://www.facebook.com/sidesofahorn/"
-              width="15px"
-              height="15px"
-              fill="white"
-            />
+            <div className="press-infoSection-box-row">
+              <Instagram
+                href="https://www.instagram.com/sidesofahorn"
+                width="15px"
+                height="15px"
+                fill="white"
+              />
+              <Twitter
+                href="https://twitter.com/sidesofahorn"
+                width="15px"
+                height="15px"
+                fill="white"
+              />
+              <Facebook
+                href="https://www.facebook.com/sidesofahorn/"
+                width="15px"
+                height="15px"
+                fill="white"
+              />
+            </div>
           </div>
         </div>
         <div className="press-infoSection">

@@ -25,6 +25,11 @@
     justify-content: space-between;
     width: 85%;
     max-width: 1500px;
+    flex-wrap: wrap;
+
+    @media screen and (max-width: 1000px) {
+      width: 90%;
+    }
 
     .column {
       flex-direction: column;
@@ -35,10 +40,23 @@
       justify-content: center;
       align-items: center;
       padding: 10px 25px;
-      min-width: 43%;
+      width: 43%;
+      min-width: 230px;
       display: flex;
       color: #ffffff;
       margin: 10px;
+
+      @media screen and (max-width: 1200px) {
+        width: 100%;
+      }
+
+      @media screen and (max-width: 600px) {
+        flex-direction: column;
+      }
+
+      &-row {
+        display: flex;
+      }
 
       &-header {
         text-transform: uppercase;
