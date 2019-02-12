@@ -3,7 +3,17 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 15px;
+  position: relative;
+
+  &-pageTitle {
+    position: absolute;
+    top: 25px;
+    left: 45px;
+    color: white;
+    text-transform: uppercase;
+    padding-top: 15px;
+    border-top: 3px solid white;
+  }
 
   &-headerImage {
     width: 100%;
@@ -12,17 +22,42 @@
   &-infoSection {
     display: flex;
     align-items: center;
-    width: 84%;
+    justify-content: space-between;
+    width: 85%;
+    max-width: 1500px;
+
+    .column {
+      flex-direction: column;
+    }
 
     &-box {
-      margin: 20px 10px;
       background-color: #a31f2b;
       justify-content: center;
       align-items: center;
+      padding: 10px 25px;
+      min-width: 43%;
       display: flex;
-      flex-grow: 1;
-      flex-basis: 0;
-      color: white;
+      color: #ffffff;
+      margin: 10px;
+
+      &-header {
+        text-transform: uppercase;
+        margin-right: 10px;
+        font-family: BebasNeue;
+        line-height: 34px;
+      }
+
+      &-subtext {
+        margin: 10px;
+        text-transform: uppercase;
+        font-family: BebasNeue;
+      }
+
+      &-divider {
+        border-bottom: 5px solid #ffffff;
+        width: 80px;
+        margin-bottom: 10px;
+      }
     }
   }
 }

@@ -7,7 +7,7 @@ class LetterFromTheDirector extends Component {
     return (
       <div className="letterFromTheDirector">
         <div className="letterFromTheDirector-header">
-          <h3 className="letterFromTheDirector-header-text">
+          <h3 className="letterFromTheDirector-header-title">
             A Letter from the Director
           </h3>
           <span className="letterFromTheDirector-header-line" />
