@@ -1,0 +1,92 @@
+.navigation {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: transparent;
+
+  &-menu {
+    width: 30px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    z-index: 11;
+    &-line {
+      border: 2px solid white;
+      margin-bottom: 6px;
+      font-size: 36px;
+      color: rgba(255, 255, 255, 0.83);
+    }
+  }
+
+  &-backdrop {
+    z-index: -1;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    &-visible {
+      z-index: 10;
+      background-color: rgba(black, 0.9);
+    }
+  }
+
+  &-social {
+    display: flex;
+
+    &-iconContainer {
+      border-radius: 50%;
+      border: 1px solid white;
+      margin-right: 5px;
+      background-color: transparent;
+      height: 30px;
+      width: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition-duration: 0.15s;
+      cursor: pointer;
+
+      &-icon {
+        height: 15px;
+        width: 15px;
+      }
+    }
+
+    .facebook {
+      &:hover {
+        background-color: #3a5997;
+      }
+    }
+
+    .twitter {
+      &:hover {
+        background-color: #1aa1f1;
+      }
+    }
+
+    .imdb {
+      &:hover {
+        background-color: #dba505;
+      }
+    }
+
+    .instagram {
+      &:hover {
+        background-color: #ee1d23;
+      }
+    }
+  }
+}
