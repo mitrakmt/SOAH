@@ -1,7 +1,6 @@
 import React, { Component, Fragment } from 'react'
 import Home from '../home'
 import { homeSections } from '../../data'
-
 import './app.scss'
 import '../../styles/fonts.scss'
 
@@ -10,8 +9,8 @@ class App extends Component {
     return (
       <Fragment>
         <Home />
-        {homeSections.map(({ Component, props }, index) => (
-          <Component {...props} key={index} />
+        {homeSections.map(({ Component, props }) => (
+          <Component {...props} />
         ))}
       </Fragment>
     )
