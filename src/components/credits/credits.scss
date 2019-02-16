@@ -25,7 +25,13 @@
       color: #a31f2b;
       text-align: center;
       line-height: 30px;
-      margin: 0;
+      margin: 0 0 10px 0;
+    }
+
+    &-social {
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
   }
 
@@ -37,6 +43,7 @@
     max-width: 800px;
     text-transform: uppercase;
     margin: 40px 0;
+    padding: 30px;
 
     &-large {
       font-size: 22px;
@@ -46,6 +53,7 @@
   &-partners {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 
     &-logo {
       margin: 10px;
@@ -62,6 +70,8 @@
       text-decoration: none;
       cursor: pointer;
       transition-duration: 0.2s;
+      color: white;
+
       &:hover {
         color: #f49ac3;
       }
@@ -71,6 +81,8 @@
       text-decoration: none;
       cursor: pointer;
       transition-duration: 0.2s;
+      color: white;
+
       &:hover {
         color: #6880e7;
       }

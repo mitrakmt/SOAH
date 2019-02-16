@@ -1,6 +1,6 @@
 export default [
   {
-    component: '',
+    Component: '',
     props: {},
   },
 ]

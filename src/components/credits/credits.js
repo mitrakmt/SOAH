@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
-// import Social from 'components/social';
+import Instagram from 'components/social/instagram'
+import Twitter from 'components/social/twitter'
+import Facebook from 'components/social/facebook'
 
 // Logos
 import AfricanWildlife from './components/africanWildlife'
@@ -19,7 +21,26 @@ class Credits extends Component {
         <div className="credits-header">
           <h2 className="credits-header-getInTouch">Get in touch</h2>
           <h4 className="credits-header-email">INFO@WHIRLOWPARKPICTURES.COM</h4>
-          {/* <Social /> */}
+          <div className="credits-header-social">
+            <Instagram
+              href="https://www.instagram.com/sidesofahorn"
+              width="15px"
+              height="15px"
+              fill="white"
+            />
+            <Twitter
+              href="https://twitter.com/sidesofahorn"
+              width="15px"
+              height="15px"
+              fill="white"
+            />
+            <Facebook
+              href="https://www.facebook.com/sidesofahorn/"
+              width="15px"
+              height="15px"
+              fill="white"
+            />
+          </div>
         </div>
         <div className="credits-names">
           <h4>
@@ -76,16 +97,18 @@ class Credits extends Component {
             <a
               href="https://somethingdesignedinc.com/"
               target="_blank"
-              className="credits-footer-link"
+              className="credits-footer-SDLink"
             >
+              {' '}
               SOMETHING DESIGNED INC.
             </a>{' '}
             | WEB DEVELOPMENT BY:
             <a
               href="https://doubletap.consulting"
               target="_blank"
-              className="credits-footer-link"
+              className="credits-footer-DTLink"
             >
+              {' '}
               DOUBLETAP CONSULTING
             </a>
           </h3>
