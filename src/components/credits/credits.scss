@@ -14,7 +14,6 @@
     text-transform: uppercase;
 
     &-getInTouch {
-      font-family: BebasNeue;
       font-size: 48px;
       color: rgba(255, 255, 255, 0.83);
       text-align: center;
@@ -22,7 +21,6 @@
     }
 
     &-email {
-      font-family: BebasNeue;
       font-size: 20px;
       color: #a31f2b;
       text-align: center;
@@ -32,7 +30,6 @@
   }
 
   &-names {
-    font-family: BebasNeue;
     font-size: 14px;
     color: rgba(255, 255, 255, 0.83);
     text-align: center;
@@ -56,10 +53,27 @@
   }
 
   &-footer {
-    font-family: BebasNeue;
     font-size: 14px;
     color: rgba(255, 255, 255, 0.83);
     text-align: center;
     line-height: 30px;
+
+    &-SDLink {
+      text-decoration: none;
+      cursor: pointer;
+      transition-duration: 0.2s;
+      &:hover {
+        color: #f49ac3;
+      }
+    }
+
+    &-DTLink {
+      text-decoration: none;
+      cursor: pointer;
+      transition-duration: 0.2s;
+      &:hover {
+        color: #6880e7;
+      }
+    }
   }
 }

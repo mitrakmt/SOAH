@@ -72,8 +72,22 @@ class Credits extends Component {
         </div>
         <div>
           <h3 className="credits-footer">
-            WEB DESIGN BY: SOMETHING DESIGNED INC. | WEB DEVELOPMENT BY:
-            DOUBLETAP CONSULTING
+            WEB DESIGN BY:{' '}
+            <a
+              href="https://somethingdesignedinc.com/"
+              target="_blank"
+              className="credits-footer-link"
+            >
+              SOMETHING DESIGNED INC.
+            </a>{' '}
+            | WEB DEVELOPMENT BY:
+            <a
+              href="https://doubletap.consulting"
+              target="_blank"
+              className="credits-footer-link"
+            >
+              DOUBLETAP CONSULTING
+            </a>
           </h3>
         </div>
       </div>
