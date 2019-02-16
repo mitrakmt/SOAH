@@ -1,0 +1,41 @@
+.social {
+  display: flex;
+
+  &-iconContainer {
+    border-radius: 50%;
+    border: 1px solid white;
+    margin-right: 5px;
+    background-color: transparent;
+    height: 25px;
+    width: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition-duration: 0.15s;
+    cursor: pointer;
+  }
+
+  .facebook {
+    &:hover {
+      background-color: #3a5997;
+    }
+  }
+
+  .twitter {
+    &:hover {
+      background-color: #1aa1f1;
+    }
+  }
+
+  .imdb {
+    &:hover {
+      background-color: #dba505;
+    }
+  }
+
+  .instagram {
+    &:hover {
+      background-color: #ee1d23;
+    }
+  }
+}

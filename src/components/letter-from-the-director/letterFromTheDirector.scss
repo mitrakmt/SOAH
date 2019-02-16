@@ -1,0 +1,60 @@
+.letterFromTheDirector {
+  padding: 25px;
+  background-color: #ededed;
+  width: 80%;
+  margin: 15px;
+  margin-top: -200px;
+  max-width: 1500px;
+
+  &-header {
+    display: flex;
+    align-items: center;
+    font-size: 21px;
+
+    &-text {
+      text-transform: uppercase;
+      font-weight: 700;
+      color: #be1e2d;
+      margin: 0;
+      font-family: BebasNeue;
+      font-size: 28px;
+      color: #000000;
+      line-height: 34px;
+    }
+    &-title {
+      font-family: BebasNeue;
+      font-size: 28px;
+      width: 925px;
+      color: #be1e2d;
+      margin: 0;
+      text-transform: uppercase;
+    }
+    &-line {
+      height: 1px;
+      width: 100%;
+      border-bottom: 3px solid #be1e2d;
+    }
+  }
+  &-body {
+    color: black;
+    border-left: 3px solid #be1e2d;
+    margin-top: -5px;
+  }
+  &-text {
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 10px;
+    padding-left: 20px;
+    font-size: 19px;
+
+    &:first-child {
+      margin-top: 0;
+      padding-top: 20px;
+    }
+  }
+  &-quote {
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 20px 50px;
+  }
+}
