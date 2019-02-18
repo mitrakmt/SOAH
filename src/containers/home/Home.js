@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 
+import Screenings from 'components/screenings/screenings'
+
 import './home.scss'
 
 class Home extends Component {
@@ -7,6 +9,7 @@ class Home extends Component {
     return (
       <div className="homeContainer" id="home">
         <h1>Home</h1>
+        <Screenings />
       </div>
     )
   }
