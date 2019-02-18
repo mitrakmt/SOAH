@@ -1,9 +1,9 @@
-import LandingPage from '../containers/home'
+import { HomeSection } from '../containers/home'
 import LandingPageView from '../components/landingPage'
 
 export default [
   {
-    Container: LandingPage,
+    Container: HomeSection,
     props: {
       Component: LandingPageView,
       sectionName: 'landingPage'
