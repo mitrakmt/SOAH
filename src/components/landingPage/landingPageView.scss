@@ -1,10 +1,19 @@
 .landingPage-view {
-  background: center no-repeat url('../../images/landingPageBackground.png');
+  background: center no-repeat url('../../images/landingPageBackground2.png');
   height: 100%;
 
+  .association {
+    &-container {
+      font-size: 18px;
+      text-transform: uppercase;
+      // Layout properties
+      position: absolute;
+      right: 10vw;
+      top: 5vh;
+    }
+  }
   .credits {
     &-container {
-      
       bottom: 15vh;
       color: #fff;
       position: absolute;
@@ -12,12 +21,28 @@
       text-align: right;
       text-transform: uppercase;
 
-      p {
-        &:last-of-type {
-          border-bottom: 2px solid red;
-          padding-bottom: 25px;
-        }
+      // Overriding user agent stylesheet sizes for these
+      // Prefer semantic markup for SEO implications
+      h1, h2, h3 {
+        font-size: 28px;
       }
+    }
+    &-text--bottom {
+      border-bottom: 3px solid red;
+      padding-bottom: 25px;
+      // These next two are hacky shiz for the partial border unerline
+      width: 52%;
+      float: right;
+    }
+  }
+  .movieTitle {
+    &-container {
+      color: grey;
+      font-size: 120px;
+      // Layour properties
+      position: absolute;
+      bottom: -10vh;
+      right: 10vw;
     }
   }
 }

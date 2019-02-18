@@ -1,4 +1,4 @@
-import LandingPage from '../containers/landingPage'
+import LandingPage from '../containers/home'
 import LandingPageView from '../components/landingPage'
 
 export default [
