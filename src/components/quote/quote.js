@@ -15,9 +15,9 @@ class Quote extends Component {
         <g
           id="Welcome"
           stroke="none"
-          stroke-width="1"
+          strokeWidth="1"
           fill="none"
-          fill-rule="evenodd"
+          fillRule="evenodd"
           opacity="0.800334821"
         >
           <g id="Screenings-1" transform="translate(-178.000000, -728.000000)">
