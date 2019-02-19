@@ -15,7 +15,11 @@ class Header extends Component {
         <h3 className="headerContainer-line">Press</h3>
         <h3 className="headerContainer-line">Contact</h3>
         <div className="headerContainer-social">
-          <a href="https://www.instagram.com/sidesofahorn" target="_blank">
+          <a
+            href="https://www.instagram.com/sidesofahorn"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <div className="headerContainer-social-iconContainer instagram">
               <svg
                 role="img"
@@ -29,7 +33,11 @@ class Header extends Component {
               </svg>
             </div>
           </a>
-          <a href="https://twitter.com/sidesofahorn" target="_blank">
+          <a
+            href="https://twitter.com/sidesofahorn"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <div className="headerContainer-social-iconContainer twitter">
               <svg
                 role="img"
@@ -43,7 +51,11 @@ class Header extends Component {
               </svg>
             </div>
           </a>
-          <a href="https://www.facebook.com/sidesofahorn/" target="_blank">
+          <a
+            href="https://www.facebook.com/sidesofahorn/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <div className="headerContainer-social-iconContainer facebook">
               <svg
                 className="headerContainer-social-iconContainer-icon"
@@ -58,7 +70,11 @@ class Header extends Component {
               </svg>
             </div>
           </a>
-          <a href="https://www.imdb.com/title/tt7434998/" target="_blank">
+          <a
+            href="https://www.imdb.com/title/tt7434998/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <div className="headerContainer-social-iconContainer imdb">
               <svg
                 role="img"
