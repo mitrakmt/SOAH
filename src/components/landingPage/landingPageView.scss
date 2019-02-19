@@ -1,6 +1,8 @@
 .landingPage-view {
-  background: center no-repeat url('../../images/landingPageBackground2.png');
+  background: center no-repeat;
+  background-image: url('../../images/landingPageBackground2.png');
   height: 100%;
+  filter: opacity(80%);
 
   .association {
     &-container {
