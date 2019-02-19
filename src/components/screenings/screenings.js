@@ -2,6 +2,15 @@ import React, { Component } from 'react'
 
 import HeaderImage from 'images/screenings_background.jpg'
 import Quote from 'components/quote/quote'
+import ImageCarousel from 'components/image-carousel/imageCarousel'
+
+import Image1 from 'images/world-rhino-day/img_9498.jpg'
+import Image2 from 'images/world-rhino-day/img_9657.jpg'
+import Image3 from 'images/world-rhino-day/img_9711.jpg'
+import Image4 from 'images/world-rhino-day/img_9740.jpg'
+import Image5 from 'images/world-rhino-day/img_9747.jpg'
+import Image6 from 'images/world-rhino-day/img_9770.jpg'
+import Image7 from 'images/world-rhino-day/img_9789.jpg'
 
 import './screenings.scss'
 
@@ -39,6 +48,36 @@ class Screenings extends Component {
         line1: 'WORLD RHINO DAY',
         line2: 'PRIVATE SCREENING',
         line3: 'SEPTEMBER 22, 2018',
+      },
+    ]
+    this.images = [
+      {
+        src: Image1,
+        alt: 'Viewing',
+      },
+      {
+        src: Image2,
+        alt: 'OnStage',
+      },
+      {
+        src: Image3,
+        alt: 'Panel',
+      },
+      {
+        src: Image4,
+        alt: 'Panel2',
+      },
+      {
+        src: Image5,
+        alt: 'Panel3',
+      },
+      {
+        src: Image6,
+        alt: 'Panel4',
+      },
+      {
+        src: Image7,
+        alt: 'Cast',
       },
     ]
   }
@@ -162,6 +201,11 @@ class Screenings extends Component {
             </div>
           </div>
         </div>
+        <ImageCarousel
+          images={this.images}
+          keyName="screeningsImageCarousel"
+          title="LOS ANGELES PRIVATE SCREENING - WORLD RHINO DAY 2018"
+        />
       </div>
     )
   }
