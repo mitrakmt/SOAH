@@ -1,5 +1,4 @@
 import React, { Component, Fragment } from 'react'
-import HomeSection from '../home/HomeSection'
 import { homeSections } from '../../data'
 import './app.scss'
 import '../../styles/fonts.scss'
