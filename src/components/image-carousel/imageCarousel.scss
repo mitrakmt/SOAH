@@ -12,14 +12,16 @@
     height: auto;
   }
 
+  &-download {
+    position: absolute;
+    right: 50px;
+    top: 50px;
+  }
+
   &-mainImage {
     width: 100%;
     max-height: 75%;
     object-fit: contain;
-
-    @media screen and (max-width: 600px) {
-      margin-top: 30px;
-    }
   }
 
   &-scroller {
