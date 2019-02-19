@@ -74,7 +74,9 @@ class ImageCarousel extends Component {
             onClick={this.nextImage}
           >{`>`}</h5>
         </div>
-        <h5 className="imageCarousel-title">{this.props.title}</h5>
+        {this.props.title && (
+          <h5 className="imageCarousel-title">{this.props.title}</h5>
+        )}
         <div className="imageCarousel-scroller">
           {images.map((image, index) => (
             <img
