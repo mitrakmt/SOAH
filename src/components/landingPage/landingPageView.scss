@@ -35,6 +35,11 @@
       float: right;
     }
   }
+  .header {
+    &-container {
+      padding: 10vh 0 0 5vw;
+    }
+  }
   .movieTitle {
     &-container {
       color: grey;

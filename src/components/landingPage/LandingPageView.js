@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import Header from '../header'
 import './landingPageView.scss'
 
 class LandingPageView extends Component {
@@ -6,6 +7,9 @@ class LandingPageView extends Component {
     const { sectionName } = this.props
     return (
       <div className={`${sectionName}-view`}>
+        <div className="header-container">
+          <Header />
+        </div>
         <div className="association-container">
           <p className="association-text">in association with</p>
         </div>
