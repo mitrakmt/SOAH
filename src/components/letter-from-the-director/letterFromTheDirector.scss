@@ -3,8 +3,9 @@
   background-color: #ededed;
   width: 80%;
   margin: 15px;
-  margin-top: -200px;
+  margin-top: 400px;
   max-width: 1500px;
+  z-index: 1;
 
   &-header {
     display: flex;
