@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 
 import BackgroundImage from 'images/SOAH_Still99.jpg'
+import Quote from 'components/quote/quote'
 
 import './theStory.scss'
 
@@ -8,13 +9,17 @@ class TheStory extends Component {
   render() {
     return (
       <div className="theStory">
-        <img src={BackgroundImage} className="theStory-background" />
+        <img
+          src={BackgroundImage}
+          alt="background"
+          className="theStory-background"
+        />
         <div className="theStory-header">
           <span className="theStory-header-line" />
           <h3 className="theStory-header-text">The Story</h3>
         </div>
         <div className="theStory-description">
-          {/* <Quote /> */}
+          <Quote />
           <p className="theStory-description-text">
             Sides of a Horn is the first film to tell the story of Africa's
             poaching war from both sides of the fence. Based on actual events,
