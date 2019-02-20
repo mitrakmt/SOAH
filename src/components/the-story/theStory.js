@@ -21,7 +21,7 @@ class TheStory extends Component {
         <div className="theStory-description">
           <Quote />
           <p className="theStory-description-text">
-            Sides of a Horn is the first film to tell the story of Africa's
+            Sides of a Horn is the first film to tell the story of Africa&#39;s
             poaching war from both sides of the fence. Based on actual events,
             and filmed in the townships and game reserves most directly impacted
             by wildlife crime, this dramatic short film paints an unbiased
