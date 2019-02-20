@@ -1,10 +1,13 @@
 import React, { Component } from 'react'
+import trailerThumbnail from '../../images/trailerThumbnail.jpeg'
+import './trailerView.scss'
 
 class TrailerView extends Component {
   render() {
+    const { sectionName } = this.props
     return (
-      <div>
-        <h1>Trailer</h1>
+      <div className={`${sectionName}-view`}>
+        <img className="thumbnail" alt="Sides of a Horn trailer thumbnail" src={trailerThumbnail} />
       </div>
     )
   }
