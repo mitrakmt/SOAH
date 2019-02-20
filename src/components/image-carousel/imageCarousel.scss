@@ -1,0 +1,90 @@
+.imageCarousel {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: black;
+  position: relative;
+  padding-top: 10px;
+
+  @media screen and (max-width: 600px) {
+    max-height: 100vh;
+    height: auto;
+  }
+
+  &-download {
+    position: absolute;
+    right: 50px;
+    top: 50px;
+  }
+
+  &-mainImage {
+    width: 100%;
+    max-height: 75%;
+    object-fit: contain;
+  }
+
+  &-scroller {
+    display: flex;
+    position: absolute;
+    bottom: 115px;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    &-image {
+      height: 80px;
+      width: 130px;
+      margin: 10px;
+      transition-duration: 0.25s;
+      cursor: pointer;
+    }
+
+    @media screen and (max-width: 600px) {
+      display: none;
+    }
+  }
+
+  &-title {
+    font-family: BebasNeue;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.83);
+    text-align: center;
+    line-height: 22px;
+    position: absolute;
+    bottom: 45px;
+    text-transform: uppercase;
+
+    @media screen and (max-width: 600px) {
+      position: initial;
+      padding: 15px;
+    }
+  }
+
+  &-arrows {
+    display: flex;
+    width: 90px;
+    justify-content: space-between;
+    height: 50px;
+    position: absolute;
+    bottom: 25px;
+
+    @media screen and (max-width: 600px) {
+      position: initial;
+    }
+
+    &-arrow {
+      cursor: pointer;
+      font-family: NanumPen;
+      font-size: 24px;
+      color: rgba(255, 255, 255, 0.83);
+      letter-spacing: -2.56px;
+      margin: 0;
+      padding: 10px;
+      transition-duration: 0.15s;
+
+      &:hover {
+        color: #a31f2b;
+      }
+    }
+  }
+}
