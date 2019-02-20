@@ -1,0 +1,91 @@
+.credits {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  height: 100%;
+
+  &-header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-transform: uppercase;
+
+    &-getInTouch {
+      font-size: 48px;
+      color: rgba(255, 255, 255, 0.83);
+      text-align: center;
+      margin: 0;
+    }
+
+    &-email {
+      font-size: 20px;
+      color: #a31f2b;
+      text-align: center;
+      line-height: 30px;
+      margin: 0 0 10px 0;
+    }
+
+    &-social {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  &-names {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.83);
+    text-align: center;
+    line-height: 30px;
+    max-width: 800px;
+    text-transform: uppercase;
+    margin: 40px 0;
+    padding: 30px;
+
+    &-large {
+      font-size: 22px;
+    }
+  }
+
+  &-partners {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    &-logo {
+      margin: 10px;
+    }
+  }
+
+  &-footer {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.83);
+    text-align: center;
+    line-height: 30px;
+
+    &-SDLink {
+      text-decoration: none;
+      cursor: pointer;
+      transition-duration: 0.2s;
+      color: white;
+
+      &:hover {
+        color: #f49ac3;
+      }
+    }
+
+    &-DTLink {
+      text-decoration: none;
+      cursor: pointer;
+      transition-duration: 0.2s;
+      color: white;
+
+      &:hover {
+        color: #6880e7;
+      }
+    }
+  }
+}
