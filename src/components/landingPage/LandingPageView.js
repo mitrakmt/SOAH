@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import awfLogo from '../../images/awf.svg'
 import Header from '../header'
 import './landingPageView.scss'
 
@@ -7,11 +8,13 @@ class LandingPageView extends Component {
     const { sectionName } = this.props
     return (
       <div className={`${sectionName}-view`}>
+        <div className="test"></div>
         <div className="header-container">
           <Header />
         </div>
         <div className="association-container">
           <p className="association-text">in association with</p>
+          <img alt="Africa Wildlife Foundation logo" src={awfLogo} />
         </div>
         <div className="credits-container">
           <h1 className="credits-text">from executive producer sir richard branson</h1>

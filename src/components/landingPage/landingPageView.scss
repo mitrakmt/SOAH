@@ -1,8 +1,14 @@
 .landingPage-view {
-  background: center no-repeat;
-  background-image: url('../../images/landingPageBackground2.png');
   height: 100%;
-  filter: opacity(80%);
+
+  .test {
+    background: center no-repeat;
+    background-image: url('../../images/landingPageBackground2.png');
+    height: 100%;
+    filter: opacity(80%);
+    position: relative;
+    z-index: 1;
+  }
 
   .association {
     &-container {
@@ -12,6 +18,7 @@
       position: absolute;
       right: 10vw;
       top: 5vh;
+      z-index: 2;
     }
   }
   .credits {
@@ -22,6 +29,7 @@
       right: 10vw;
       text-align: right;
       text-transform: uppercase;
+      z-index: 2;
 
       // Overriding user agent stylesheet sizes for these
       // Prefer semantic markup for SEO implications
@@ -40,12 +48,16 @@
   .header {
     &-container {
       padding: 10vh 0 0 5vw;
+      position: absolute;
+      top: 0;
+      z-index: 2;
     }
   }
   .movieTitle {
     &-container {
       color: grey;
       font-size: 120px;
+      z-index: 2;
       // Layout properties
       position: absolute;
       bottom: -10vh;
