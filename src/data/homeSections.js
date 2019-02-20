@@ -1,6 +1,6 @@
 export default [
   {
-    Component: '',
+    Component: 'Home',
     props: {},
   },
 ]
