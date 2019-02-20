@@ -62,7 +62,21 @@ class ImageCarousel extends Component {
         <img
           src={images[this.state.selectedImageId].src}
           className="imageCarousel-mainImage"
+          alt="Carousel"
         />
+        <div className="imageCarousel-arrows">
+          <h5
+            className="imageCarousel-arrows-arrow"
+            onClick={this.previousImage}
+          >{`<`}</h5>
+          <h5
+            className="imageCarousel-arrows-arrow"
+            onClick={this.nextImage}
+          >{`>`}</h5>
+        </div>
+        {this.props.title && (
+          <h5 className="imageCarousel-title">{this.props.title}</h5>
+        )}
         <div className="imageCarousel-scroller">
           {images.map((image, index) => (
             <img
@@ -79,16 +93,6 @@ class ImageCarousel extends Component {
               }
             />
           ))}
-        </div>
-        <div className="imageCarousel-arrows">
-          <h5
-            className="imageCarousel-arrows-arrow"
-            onClick={this.previousImage}
-          >{`<`}</h5>
-          <h5
-            className="imageCarousel-arrows-arrow"
-            onClick={this.nextImage}
-          >{`>`}</h5>
         </div>
       </div>
     )
