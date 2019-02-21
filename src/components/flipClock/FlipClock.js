@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import FlipUnitContainer from './FlipUnitContainer'
+import './flipClock.scss'
 
 class FlipClock extends Component {
 	

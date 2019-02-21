@@ -4,6 +4,7 @@ import Facebook from 'components/social/facebook'
 import Twitter from 'components/social/twitter'
 import Instagram from 'components/social/instagram'
 import Imdb from 'components/social/imdb'
+import FlipClock from '../../components/flipClock'
 import './trailerView.scss'
 
 class TrailerView extends Component {
@@ -52,6 +53,9 @@ class TrailerView extends Component {
           <div className="footer-section">
             <h3>the short film will be released ON world ENVIRONMENT</h3>
             <h3>DAY on JUNE 5, 2019, let the countdown begin:</h3>
+            <div className="flipClock-container">
+              <FlipClock />
+            </div>
           </div>
           <div className="footer-section">
             <h3>get the</h3>
