@@ -29,6 +29,40 @@
       }
     }
   }
+  .latest {
+    &-form {
+      float: right;
+      line-height: 66px;
+    }
+    &-inputEmail {
+      display: inline-block;
+      font-family: 'BebasNeue';
+      // This height needs to add in total up to the inputSubmit height. This elemenet has border etc so explicit height is lower.
+      height: 45px;
+      width: 50%;
+      opacity: 0.95;
+      background: #FFFFFF;
+      box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50);
+      margin-right: 15px;
+      line-height: 51px;
+      vertical-align: bottom;
+    }
+    &-inputSubmit {
+      border: none;
+      display: inline-block;
+      font-family: 'BebasNeue';
+      height: 51px;
+      opacity: 0.95;
+      background: #FFFFFF;
+      box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50);
+      vertical-align: bottom;
+      width: 37px;
+    }
+    &-text {
+      float: left;
+    }
+  }
+
   .socialGroup {
     &-container {
       float: right;

@@ -71,8 +71,14 @@ class TrailerView extends Component {
             </div>
           </div>
           <div className="footer-section">
-            <h3>get the</h3>
-            <h3>latest:</h3>
+            <div className="latest-text">
+              <h3>get the</h3>
+              <h3>latest:</h3>
+            </div>
+            <div className="latest-form">
+              <input className="latest-inputEmail" placeholder="Email address" />
+              <button className="latest-inputSubmit">Count me in!</button>
+            </div>
           </div>
         </div>
       </div>
