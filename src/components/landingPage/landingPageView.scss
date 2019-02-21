@@ -35,7 +35,9 @@
 
       // Overriding user agent stylesheet sizes for these
       // Prefer semantic markup for SEO implications
-      h1, h2, h3 {
+      h1,
+      h2,
+      h3 {
         font-size: 28px;
       }
     }

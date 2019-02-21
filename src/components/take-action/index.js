@@ -1,3 +1,3 @@
-import TakeActionView from './takeActionView'
+import TakeActionView from './takeAction'
 
 export default TakeActionView
