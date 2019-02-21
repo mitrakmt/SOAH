@@ -1,5 +1,7 @@
 .landingPage-view {
   height: 100%;
+  // Provide context for absolutely positioned elements
+  position: relative;
 
   .test {
     background: center no-repeat;
