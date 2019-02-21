@@ -13,29 +13,47 @@
     align-items: center;
     transition-duration: 0.15s;
     cursor: pointer;
-  }
 
-  .facebook {
-    &:hover {
-      background-color: #3a5997;
+    &-linkedin {
+      &:hover {
+        background-color: #0073b2;
+      }
     }
-  }
 
-  .twitter {
-    &:hover {
-      background-color: #1aa1f1;
+    &-facebook {
+      &:hover {
+        background-color: #3a5997;
+      }
     }
-  }
 
-  .imdb {
-    &:hover {
-      background-color: #dba505;
+    &-twitter {
+      &:hover {
+        background-color: #1aa1f1;
+      }
     }
-  }
 
-  .instagram {
-    &:hover {
-      background-color: #ee1d23;
+    &-imdb {
+      &:hover {
+        background-color: #dba505;
+      }
+    }
+
+    &-instagram {
+      &:hover {
+        background-color: #ee1d23;
+      }
+    }
+
+    &-tumblr {
+      &:hover {
+        background-color: #001935;
+      }
+    }
+
+    &-email {
+      &:hover {
+        background-color: #1bd760;
+      }
     }
   }
 }
