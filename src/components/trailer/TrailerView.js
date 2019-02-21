@@ -41,8 +41,21 @@ class TrailerView extends Component {
                 />
               </div>
               <div className="socialGroup-line">
+
+                <Facebook
+                  href="https://www.facebook.com/sidesofahorn/"
+                  width="15px"
+                  height="15px"
+                  fill="white"
+                />
                 <Imdb
                   href="https://www.imdb.com/title/tt7434998/"
+                  width="15px"
+                  height="15px"
+                  fill="white"
+                />
+                <Instagram
+                  href="https://www.instagram.com/sidesofahorn"
                   width="15px"
                   height="15px"
                   fill="white"
