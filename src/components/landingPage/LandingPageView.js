@@ -8,7 +8,7 @@ class LandingPageView extends Component {
     const { sectionName } = this.props
     return (
       <div className={`${sectionName}-view`}>
-        <div className="test"></div>
+        <div className="backgroundImage"></div>
         <div className="header-container">
           <Header />
         </div>
