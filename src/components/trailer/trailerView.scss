@@ -10,7 +10,11 @@
     font-size: 16px;
     font-family: BebasNeue;
     line-height: 15px;
-    font-family: BebasNeue;
+    max-height: 91px;
+
+    & div {
+      max-height: 91px;
+    }
 
     // Layout styles
     display: grid;
@@ -29,7 +33,7 @@
     &-container {
       float: right;
       position: relative;
-      top: 30%;
+      top: 15%;
     }
     &-line {
       // Layout styles
