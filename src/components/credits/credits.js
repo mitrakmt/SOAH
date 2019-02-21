@@ -12,12 +12,20 @@ import TheTelevisionaries from './components/theTelevisionaries'
 import Whirlow from './components/whirlow'
 import YouKickedMyDog from './components/youKickedMyDog'
 
+// Images
+import Mountains from 'images/mountains.png'
+
 import './credits.scss'
 
 class Credits extends Component {
   render() {
     return (
       <div className="credits" id="credits">
+        <img
+          src={Mountains}
+          className="credits-background"
+          alt="background mountains"
+        />
         <div className="credits-header">
           <h2 className="credits-header-getInTouch">Get in touch</h2>
           <h4 className="credits-header-email">INFO@WHIRLOWPARKPICTURES.COM</h4>
