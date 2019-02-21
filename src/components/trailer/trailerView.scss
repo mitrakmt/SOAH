@@ -1,4 +1,47 @@
 .trailer-view {
+  .cta {
+    &-container {
+      display: inline-block;
+    }
+  }
+  .footer {
+    color: rgba(255,255,255,0.83);
+    font-family: 'BebasNeue';
+    font-size: 16px;
+    font-family: BebasNeue;
+    line-height: 15px;
+    font-family: BebasNeue;
+
+    // Layout styles
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+
+    &-section {
+      border-right: 3px solid red;
+      padding-left: 25px;
+
+      &:last-of-type {
+        border-right: none;
+      }
+    }
+  }
+  .socialGroup {
+    &-container {
+      float: right;
+      position: relative;
+      top: 30%;
+    }
+    &-line {
+      // Layout styles
+      align-items: center;
+      display: flex;
+      justify-content: center;
+
+      & a {
+        display: inline;
+      }
+    }
+  }
   .thumbnail {
     height: 90vh;
     width: 100vw;
