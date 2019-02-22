@@ -12,7 +12,7 @@ class TrailerView extends Component {
     const { sectionName } = this.props
     return (
       <div className={`${sectionName}-view`}>
-        <img className="thumbnail" alt="Sides of a Horn trailer thumbnail" src={trailerThumbnail} />
+        <iframe className="thumbnail"  src="https://www.youtube.com/embed/0el9UwGt_Vk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen />
         <div className="footer">
           <div className="footer-section">
             <div className="cta-container">
