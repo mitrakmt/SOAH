@@ -6,7 +6,10 @@ class LinkedIn extends Component {
   render() {
     return (
       <a href={this.props.href} target="_blank" rel="noopener noreferrer">
-        <div className="social-iconContainer social-iconContainer-email">
+        <div
+          className="social-iconContainer social-iconContainer-email"
+          style={this.props.margin ? { margin: this.props.margin } : {}}
+        >
           <svg
             width={this.props.width}
             height={this.props.height}

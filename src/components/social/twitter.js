@@ -6,7 +6,10 @@ class Twitter extends Component {
   render() {
     return (
       <a href={this.props.href} target="_blank" rel="noopener noreferrer">
-        <div className="social-iconContainer social-iconContainer-twitter">
+        <div
+          className="social-iconContainer social-iconContainer-twitter"
+          style={this.props.margin ? { margin: this.props.margin } : {}}
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width={this.props.width}

@@ -1,0 +1,65 @@
+.posterArt {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+
+  &-image {
+    height: 100%;
+  }
+
+  &-filler {
+    height: 100%;
+    background-color: purple;
+    width: 500px;
+  }
+
+  &-left {
+    height: 100%;
+    width: 80px;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    justify-content: flex-end;
+
+    &-line {
+      border-right: 3px solid red;
+      width: 1px;
+      height: 35%;
+      margin-top: 30px;
+    }
+    &-text {
+      color: #fff;
+      writing-mode: vertical-rl;
+      text-orientation: mixed;
+      white-space: nowrap;
+      transform: rotate(180deg);
+      font-family: BebasNeue;
+      font-size: 34px;
+      color: rgba(255, 255, 255, 0.83);
+      margin: 0;
+    }
+  }
+
+  &-right {
+    height: 100%;
+    width: 80px;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    justify-content: flex-start;
+
+    &-line {
+      border-right: 3px solid red;
+      width: 1px;
+      height: 35%;
+      margin-bottom: 30px;
+    }
+
+    &-social {
+      height: 100px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+  }
+}

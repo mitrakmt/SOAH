@@ -6,7 +6,10 @@ class Tumblr extends Component {
   render() {
     return (
       <a href={this.props.href} target="_blank" rel="noopener noreferrer">
-        <div className="social-iconContainer social-iconContainer-tumblr">
+        <div
+          className="social-iconContainer social-iconContainer-tumblr"
+          style={this.props.margin ? { margin: this.props.margin } : {}}
+        >
           <svg
             width={this.props.width}
             height={this.props.height}
