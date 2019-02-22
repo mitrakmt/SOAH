@@ -22,6 +22,7 @@
 
     &-text {
       color: #fff;
+      font-family: 'BebasNeue';
       font-size: 12px;
     }
   }
@@ -76,6 +77,11 @@
       bottom: 5vh;
       right: 8vw;
       margin: 0;
+    }
+    &-image {
+      height: 184px;
+      filter: opacity(30%);
+      width: 925px;
     }
   }
 }
