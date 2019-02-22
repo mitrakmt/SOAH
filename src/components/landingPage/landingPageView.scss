@@ -27,7 +27,7 @@
   }
   .credits {
     &-container {
-      bottom: 24vh;
+      bottom: 22vh;
       color: #fff;
       position: absolute;
       right: 8vw;
@@ -52,6 +52,9 @@
       width: 52%;
       float: right;
     }
+    &-text {
+      margin: 0;
+    }
   }
   .header {
     &-container {
@@ -68,7 +71,7 @@
       z-index: 2;
       // Layout properties
       position: absolute;
-      bottom: -10vh;
+      bottom: 5vh;
       right: 8vw;
       margin: 0;
     }
