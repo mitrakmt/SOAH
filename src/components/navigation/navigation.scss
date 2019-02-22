@@ -34,17 +34,26 @@
     position: absolute;
     display: flex;
     flex-direction: column;
+    color: transparent;
     align-items: center;
+    cursor: none;
     justify-content: center;
 
     &-visible {
       z-index: 10;
+      color: white;
+      display: flex;
+      cursor: pointer;
       background-color: rgba(black, 0.9);
     }
   }
 
   &-social {
-    display: flex;
+    display: none;
+
+    &-visible {
+      display: flex;
+    }
 
     &-iconContainer {
       border-radius: 50%;

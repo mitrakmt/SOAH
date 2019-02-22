@@ -4,19 +4,19 @@ class Quote extends Component {
   render() {
     return (
       <svg
-        width="24px"
-        height="41px"
+        width="192px"
+        height="70px"
         viewBox="0 0 24 41"
         version="1.1"
         xmlns="http://www.w3.org/2000/svg"
         xmlnsXlink="http://www.w3.org/1999/xlink"
-        style={{ margin: '30px' }}
+        style={{ margin: '0px 20px' }}
       >
         <g
           id="Welcome"
           stroke="none"
           strokeWidth="1"
-          fill="none"
+          fill="#fff"
           fillRule="evenodd"
           opacity="0.800334821"
         >

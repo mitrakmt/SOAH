@@ -42,7 +42,11 @@ class Navigation extends Component {
           <h3 className="navigation-line">Screenings</h3>
           <h3 className="navigation-line">Press</h3>
           <h3 className="navigation-line">Contact</h3>
-          <div className="navigation-social">
+          <div
+            className={`navigation-social ${
+              this.state.navigationOpen ? 'navigation-social-visible' : ''
+            }`}
+          >
             <Instagram
               href="https://www.instagram.com/sidesofahorn"
               width="15px"

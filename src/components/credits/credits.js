@@ -56,15 +56,18 @@ class Credits extends Component {
             executive producer{' '}
             <span className="credits-names-large">sir richard branson</span>{' '}
             presents a film by{' '}
-            <span className="credits-names-large">toby wosskow</span> a{' '}
+            <span className="credits-names-large">toby wosskow</span>
+            <br /> a{' '}
             <span className="credits-names-large">
               whirlow park pictures broad river productions ykmD productions the
-              televisionaries
+              televisionaries{' '}
             </span>
-            production in association with{' '}
+            production
+            <br /> in association with{' '}
             <span className="credits-names-large">
               frame 48 “sides of a horn” welile nzuza sherldon marema ayanda
               seoka dimpho motloung
+              <br />
             </span>
             music by <span className="credits-names-large">joshua mosley</span>
             costume designer{' '}
@@ -72,20 +75,23 @@ class Credits extends Component {
               gaserongoe ramatapa
             </span>{' '}
             production designer{' '}
-            <span className="credits-names-large">vivienne mahloko</span>{' '}
-            director of photograpy{' '}
+            <span className="credits-names-large">vivienne mahloko</span>
+            <br /> director of photograpy{' '}
             <span className="credits-names-large">nico aguilar</span> sound
             design <span className="credits-names-large">gerry vazquez</span>{' '}
-            edited by <span className="credits-names-large">anjoum agrama</span>{' '}
-            associate producer{' '}
-            <span className="credits-names-large">sparkly kagiso mokgosi</span>
+            edited by <span className="credits-names-large">anjoum agrama</span>
+            <br /> associate producer{' '}
+            <span className="credits-names-large">
+              sparkly kagiso mokgosi
+            </span>{' '}
             creative producer{' '}
             <span className="credits-names-large">allison triegaardt</span>{' '}
             co-producer{' '}
-            <span className="credits-names-large">aurelie stratton</span>{' '}
-            produced by{' '}
+            <span className="credits-names-large">aurelie stratton</span>
+            <br /> produced by{' '}
             <span className="credits-names-large">
               toby wosskow charlie hicks emmanuel castis erika klopper
+              <br />
             </span>
             written and directed by{' '}
             <span className="credits-names-large">toby wosskow</span>

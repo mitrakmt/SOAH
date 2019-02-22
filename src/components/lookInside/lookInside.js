@@ -137,7 +137,15 @@ class LookInside extends Component {
     return (
       <div className={`${sectionName}`}>
         <div className="lookInside-topSection">
-          <div className="lookInside-topSection-left" />
+          <div className="lookInside-topSection-left">
+            <iframe
+              className="lookInside-topSection-left-video"
+              src="https://www.youtube.com/embed/0el9UwGt_Vk"
+              frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            />
+          </div>
           <div className="lookInside-topSection-right">
             <span className="lookInside-topSection-line" />
             <h3 className="lookInside-topSection-header">Behind the Scenes</h3>

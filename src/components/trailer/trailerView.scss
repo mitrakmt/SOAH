@@ -21,17 +21,23 @@
       position: relative;
       top: -10%;
       width: 30%;
-    }    
+    }
   }
   .footer {
-    color: rgba(255,255,255,0.83);
+    color: rgba(255, 255, 255, 0.83);
     font-family: 'BebasNeue';
     font-size: 16px;
     line-height: 15px;
     max-height: 91px;
 
     // Override all user agent stylesheet settings for this
-    h1, h2, h3, h4, h5, h6, p {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p {
       font-size: 18px;
     }
 
@@ -55,18 +61,17 @@
   .latest {
     &-form {
       // float: right;
-      
+
       line-height: 66px;
     }
     &-inputEmail {
       display: inline-block;
-      font-family: 'BebasNeue';
       // This height needs to add in total up to the inputSubmit height. This elemenet has border etc so explicit height is lower.
       height: 45px;
       width: 50%;
       opacity: 0.95;
-      background: #FFFFFF;
-      box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50);
+      background: #ffffff;
+      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
       font-size: 20px;
       margin: 0 5px 0 15px;
       line-height: 51px;
@@ -75,11 +80,10 @@
     &-inputSubmit {
       border: none;
       display: inline-block;
-      font-family: 'BebasNeue';
       height: 51px;
       opacity: 0.95;
-      background: #FFFFFF;
-      box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50);
+      background: #ffffff;
+      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
       vertical-align: bottom;
       width: 37px;
     }
