@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 
+import GrayQuote from 'components/quote/grayQuote'
+
 import './letterFromTheDirector.scss'
 
 class LetterFromTheDirector extends Component {
@@ -26,6 +28,7 @@ class LetterFromTheDirector extends Component {
             brink of extinction.
           </h4>
           <div className="letterFromTheDirector-quote">
+            <GrayQuote />
             <h4 className="letterFromTheDirector-text">
               I felt a responsibility to expose the social impact of the illegal
               wildlife trade and humanize the men and women who are so
@@ -71,7 +74,9 @@ class LetterFromTheDirector extends Component {
           </h4>
           {/* TODO: Add signature */}
           <h4 className="letterFromTheDirector-text">
-            Toby Wosskow
+            <span className="letterFromTheDirector-text-signature">
+              Toby Wosskow
+            </span>
             <br />
             Writer and Director
           </h4>

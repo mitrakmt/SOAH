@@ -5,6 +5,8 @@ import Facebook from 'components/social/facebook'
 import Twitter from 'components/social/twitter'
 import Instagram from 'components/social/instagram'
 
+import SOAH_PressKit from './SOAH_PressKit.pdf'
+
 import HeaderImage from 'images/SOAH_Still39.png'
 
 import './press.scss'
@@ -23,9 +25,15 @@ class Press extends Component {
         <LetterFromTheDirector />
         <div className="press-infoSection">
           <div className="press-infoSection-box">
-            <h4 className="press-infoSection-box-header">
-              DOWNLOAD THE ELECTRONC PRESS KIT HERE
-            </h4>
+            <a
+              href={SOAH_PressKit}
+              className="press-infoSection-box-link"
+              download
+            >
+              <h4 className="press-infoSection-box-header">
+                DOWNLOAD THE ELECTRONC PRESS KIT HERE
+              </h4>
+            </a>
           </div>
           <div className="press-infoSection-box">
             <h4 className="press-infoSection-box-header">

@@ -49,10 +49,12 @@
   }
 
   &-social {
-    display: none;
+    display: flex;
+    opacity: 0;
+    // cursor: none;
 
     &-visible {
-      display: flex;
+      opacity: 1;
     }
 
     &-iconContainer {

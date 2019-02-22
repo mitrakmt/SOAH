@@ -1,14 +1,21 @@
-import React, { Component, Fragment } from 'react'
-import { homeSections } from '../../data'
+import React, { Component } from 'react'
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import Home from 'containers/home/Home'
+import Press from 'containers/press/Press'
+
 import './app.scss'
 import '../../styles/fonts.scss'
 
 class App extends Component {
   render() {
     return (
-      <Fragment>
-        {homeSections.map(({ Container, props }) => <Container key={props.sectionName} {...props} />)}
-      </Fragment>
+      <Router>
+        <Switch>
+          <Route path="/" exact component={Home} />
+          <Route path="/press" exact component={Press} />
+          <Route component={<Home />} />
+        </Switch>
+      </Router>
     )
   }
 }

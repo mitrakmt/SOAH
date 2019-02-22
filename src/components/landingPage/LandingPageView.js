@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import awfLogo from '../../images/awf.svg'
 import Header from '../header'
-import Navigation from 'components/navigation/navigation'
 import SoahLogo from '../../images/SOAH_logo.png'
 
 import Background from 'images/landingPageBackground2.png'
@@ -13,7 +12,6 @@ class LandingPageView extends Component {
     const { sectionName } = this.props
     return (
       <div className={`${sectionName}-view`}>
-        <Navigation />
         <img
           src={Background}
           className="background"
@@ -33,8 +31,7 @@ class LandingPageView extends Component {
           <h2 className="credits-text--bottom">a film by toby wosskow</h2>
         </div>
         <div className="movieTitle-container">
-          {/* <h3 className="credits-text">Sides of a Horn</h3> */}
-          <img className="movieTitle-image" src={SoahLogo} />
+          <img className="movieTitle-image" src={SoahLogo} alt="Movie Logo" />
         </div>
       </div>
     )

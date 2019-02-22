@@ -23,7 +23,7 @@
     }
     &-title {
       font-size: 28px;
-      width: 925px;
+      width: 340px;
       color: #be1e2d;
       margin: 0;
       text-transform: uppercase;
@@ -38,6 +38,9 @@
     color: black;
     border-left: 3px solid #be1e2d;
     margin-top: -5px;
+    font-size: 28px;
+    color: #000000;
+    line-height: 34px;
   }
   &-text {
     text-transform: uppercase;
@@ -45,15 +48,30 @@
     padding: 10px;
     padding-left: 20px;
     font-size: 19px;
+    margin-bottom: 0;
 
     &:first-child {
       margin-top: 0;
       padding-top: 20px;
     }
+
+    &-signature {
+      font-family: 'PrestigeSignature';
+      font-size: 54px;
+      color: #000000;
+      line-height: 84px;
+      font-weight: 300;
+      text-transform: none;
+    }
   }
   &-quote {
+    display: flex;
+    align-items: center;
     text-transform: uppercase;
     font-weight: 700;
-    margin: 20px 50px;
+    margin: 0px 50px;
+    font-size: 28px;
+    color: #000000;
+    line-height: 34px;
   }
 }

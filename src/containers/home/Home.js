@@ -1,16 +1,18 @@
-import React, { Component } from 'react'
+import React, { Component, Fragment } from 'react'
 
-import Navigation from 'components/navigation/navigation'
-
-import './home.scss'
+import { homeSections } from '../../data'
+import './section.scss'
 
 class Home extends Component {
   render() {
     return (
-      <div className="homeContainer" id="home">
-        <h1>Home</h1>
-        <Navigation />
-      </div>
+      <Fragment>
+        <div className="homeContainer" id="home">
+          {homeSections.map(({ Container, props }) => (
+            <Container key={props.sectionName} {...props} />
+          ))}
+        </div>
+      </Fragment>
     )
   }
 }
