@@ -21,6 +21,7 @@
 
       @media screen and (max-width: 850px) {
         padding-left: 50px;
+        min-width: 300px;
       }
     }
 
@@ -29,6 +30,10 @@
       flex: 1;
       min-width: 500px;
       min-height: 300px;
+
+      @media screen and (max-width: 650px) {
+        min-width: 300px;
+      }
 
       &-video {
         width: 100%;

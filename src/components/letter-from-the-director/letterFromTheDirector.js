@@ -72,11 +72,12 @@ class LetterFromTheDirector extends Component {
             tell vital, urgent stories, and this story is as urgent as they
             come.
           </h4>
-          {/* TODO: Add signature */}
           <h4 className="letterFromTheDirector-text">
             <span className="letterFromTheDirector-text-signature">
               Toby Wosskow
             </span>
+            <br />
+            Toby Wosskow
             <br />
             Writer and Director
           </h4>

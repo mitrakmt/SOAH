@@ -4,12 +4,14 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 50px;
 
   &-background {
     position: absolute;
     height: 100%;
     width: 100%;
     object-fit: cover;
+    filter: opacity(0.6);
   }
 
   &-header {
@@ -29,6 +31,13 @@
     align-items: center;
     justify-content: space-between;
 
+    @media screen and (max-width: 700px) {
+      flex-wrap: wrap;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
     &-container {
       height: 280px;
       width: 280px;
@@ -39,6 +48,12 @@
       align-items: center;
       justify-content: center;
       transition-duration: 0.15s;
+
+      @media screen and (max-width: 700px) {
+        height: 200px;
+        width: 200px;
+        margin: 10px 0;
+      }
 
       &:first-child {
         margin-left: 0;
@@ -81,6 +96,10 @@
       position: absolute;
       object-fit: contain;
       transition-duration: 0.15s;
+
+      @media screen and (max-width: 700px) {
+        height: 200px;
+      }
 
       &:after {
         position: absolute;
