@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { withRouter } from 'react-router-dom'
 
 import Facebook from 'components/social/facebook'
 import Twitter from 'components/social/twitter'
@@ -8,6 +9,10 @@ import Imdb from 'components/social/imdb'
 import './header.scss'
 
 class Header extends Component {
+  navigateToView = view => {
+    this.props.history.push(`/${view}`)
+  }
+
   render() {
     return (
       <div className="headerContainer" id="header">
@@ -17,7 +22,12 @@ class Header extends Component {
         <h3 className="headerContainer-line">Look Inside</h3>
         <h3 className="headerContainer-line">News</h3>
         <h3 className="headerContainer-line">Screenings</h3>
-        <h3 className="headerContainer-line">Press</h3>
+        <h3
+          className="headerContainer-line"
+          onClick={() => this.navigateToView('press')}
+        >
+          Press
+        </h3>
         <h3 className="headerContainer-line">Contact</h3>
         <div className="headerContainer-social">
           <Instagram
@@ -54,4 +64,4 @@ class Header extends Component {
   }
 }
 
-export default Header
+export default withRouter(Header)
