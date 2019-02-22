@@ -1,17 +1,17 @@
 $flipCardFontSize: 3em;
-$flipCardWidth: 60px;
+$flipCardWidth: 42px;
 
 .flipClock {
   display: flex;
   justify-content: space-between;
-  width: 250px;
+  width: 170px;
 }
 
 .flipUnitContainer {
   display: block;
   position: relative;
   width: $flipCardWidth;
-  height: 60px;
+  height: 50px;
   perspective-origin: 50% 50%;
   perspective: 300px;
   background-color: white;

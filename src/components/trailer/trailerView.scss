@@ -1,16 +1,39 @@
 .trailer-view {
+  .countdown {
+    &-container {
+      display: inline-block;
+      max-width: 65%;
+
+      h3 {
+        // The order of styles and specifity requires important to override a later declaration
+        font-size: 16px !important;
+      }
+    }
+  }
   .cta {
     &-container {
       display: inline-block;
     }
   }
+  .flipClock {
+    &-container {
+      display: inline-block;
+      position: relative;
+      top: -10%;
+      width: 30%;
+    }    
+  }
   .footer {
     color: rgba(255,255,255,0.83);
     font-family: 'BebasNeue';
     font-size: 16px;
-    font-family: BebasNeue;
     line-height: 15px;
     max-height: 91px;
+
+    // Override all user agent stylesheet settings for this
+    h1, h2, h3, h4, h5, h6, p {
+      font-size: 18px;
+    }
 
     & div {
       max-height: 91px;

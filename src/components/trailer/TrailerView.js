@@ -64,8 +64,10 @@ class TrailerView extends Component {
             </div>
           </div>
           <div className="footer-section">
-            <h3>the short film will be released ON world ENVIRONMENT</h3>
-            <h3>DAY on JUNE 5, 2019, let the countdown begin:</h3>
+            <div className="countdown-container">
+              <h3>the short film will be released ON world ENVIRONMENT</h3>
+              <h3>DAY on JUNE 5, 2019, let the countdown begin:</h3>
+            </div>
             <div className="flipClock-container">
               <FlipClock />
             </div>
