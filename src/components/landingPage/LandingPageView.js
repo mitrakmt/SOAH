@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import awfLogo from '../../images/awf.svg'
 import Header from '../header'
+import Navigation from 'components/navigation/navigation'
 import SoahLogo from '../../images/SOAH_logo.png'
 
 import Background from 'images/landingPageBackground2.png'
@@ -12,7 +13,12 @@ class LandingPageView extends Component {
     const { sectionName } = this.props
     return (
       <div className={`${sectionName}-view`}>
-        <img src={Background} className="background" alt="Man hunting in safari" />
+        <Navigation />
+        <img
+          src={Background}
+          className="background"
+          alt="Man hunting in safari"
+        />
         <div className="header-container">
           <Header />
         </div>
