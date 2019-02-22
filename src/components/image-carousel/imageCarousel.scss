@@ -28,15 +28,24 @@
     display: flex;
     position: absolute;
     bottom: 115px;
-    flex-wrap: wrap;
-    justify-content: center;
+    overflow: auto;
+    max-width: 90%;
+    white-space: nowrap;
+    align-items: center;
+    &::-webkit-scrollbar {
+      width: 0 !important;
+    }
 
     &-image {
       height: 80px;
       width: 130px;
-      margin: 10px;
+      margin: 0 10px;
       transition-duration: 0.25s;
       cursor: pointer;
+
+      &-selected {
+        border: 1px solid white;
+      }
     }
 
     @media screen and (max-width: 600px) {

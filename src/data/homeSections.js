@@ -6,7 +6,7 @@ export default [
     Container: HomeSection,
     props: {
       Component: LandingPageView,
-      sectionName: 'landingPage'
-    }
-  }
+      sectionName: 'landingPage',
+    },
+  },
 ]
