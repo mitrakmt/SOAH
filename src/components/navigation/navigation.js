@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { withRouter } from 'react-router-dom'
 
 import Facebook from 'components/social/facebook'
 import Twitter from 'components/social/twitter'
@@ -21,10 +22,19 @@ class Navigation extends Component {
     })
   }
 
+  navigateToView = view => {
+    this.props.history.push(`/${view}`)
+  }
+
   render() {
     return (
       <div className="navigation">
-        <div className="navigation-menu" onClick={this.toggleNavigation}>
+        <div
+          className={`navigation-menu ${
+            this.state.navigationOpen ? 'navigation-menu-hide' : ''
+          }`}
+          onClick={this.toggleNavigation}
+        >
           <span className="navigation-menu-line" />
           <span className="navigation-menu-line" />
           <span className="navigation-menu-line" />
@@ -33,14 +43,26 @@ class Navigation extends Component {
           className={`navigation-backdrop ${
             this.state.navigationOpen ? 'navigation-backdrop-visible' : ''
           }`}
+          onClick={this.toggleNavigation}
         >
+          <h3
+            className="navigation-line"
+            onClick={() => this.navigateToView('')}
+          >
+            Home
+          </h3>
           <h3 className="navigation-line">Trailer</h3>
           <h3 className="navigation-line">The Story</h3>
           <h3 className="navigation-line">Take Action</h3>
           <h3 className="navigation-line">Look Inside</h3>
           <h3 className="navigation-line">News</h3>
           <h3 className="navigation-line">Screenings</h3>
-          <h3 className="navigation-line">Press</h3>
+          <h3
+            className="navigation-line"
+            onClick={() => this.navigateToView('press')}
+          >
+            Press
+          </h3>
           <h3 className="navigation-line">Contact</h3>
           <div
             className={`navigation-social ${
@@ -78,4 +100,4 @@ class Navigation extends Component {
   }
 }
 
-export default Navigation
+export default withRouter(Navigation)

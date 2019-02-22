@@ -6,7 +6,15 @@
   color: #fff;
   background-color: transparent;
 
+  &-line {
+    transition-duration: 0.15s;
+    &:hover {
+      color: #be1e2d;
+    }
+  }
+
   &-menu {
+    position: absolute;
     width: 30px;
     display: flex;
     flex-direction: column;
@@ -20,6 +28,10 @@
       margin-bottom: 6px;
       font-size: 36px;
       color: rgba(255, 255, 255, 0.83);
+    }
+
+    &-hide {
+      display: none;
     }
   }
 
@@ -38,6 +50,7 @@
     align-items: center;
     cursor: none;
     justify-content: center;
+    position: fixed;
 
     &-visible {
       z-index: 10;

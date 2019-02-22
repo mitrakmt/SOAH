@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 
+import Navigation from 'components/navigation/navigation'
+
 import awfLogo from '../../images/awf.svg'
 import backgroundImage from 'images/SOAH_Still18.png'
 import RhinoImage from 'images/SOAH_Still2.png'
@@ -15,6 +17,7 @@ class TakeActionView extends Component {
 
     return (
       <div className={`${sectionName}`}>
+        <Navigation />
         <img
           src={backgroundImage}
           className={`${sectionName}-background`}
