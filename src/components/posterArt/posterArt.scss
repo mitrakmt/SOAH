@@ -2,15 +2,26 @@
   display: flex;
   justify-content: center;
   height: 100%;
+  width: 100%;
 
   &-image {
     height: 100%;
+    max-width: 600px;
+
+    @media screen and (max-width: 850px) {
+      width: 80%;
+      object-fit: contain;
+    }
   }
 
   &-filler {
     height: 100%;
-    background-color: purple;
-    width: 500px;
+    background-color: #70ccd7;
+    width: 600px;
+
+    @media screen and (max-width: 850px) {
+      width: 80%;
+    }
   }
 
   &-left {
