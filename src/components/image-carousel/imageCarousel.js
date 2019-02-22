@@ -1,6 +1,9 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 
+import { LazyLoadImage } from 'react-lazy-load-image-component'
+
+import 'react-lazy-load-image-component/src/effects/blur.css'
 import './imageCarousel.scss'
 
 class ImageCarousel extends Component {
@@ -59,9 +62,11 @@ class ImageCarousel extends Component {
 
     return (
       <div className="imageCarousel">
-        <img
+        <LazyLoadImage
           src={images[this.state.selectedImageId].src}
-          className="imageCarousel-mainImage"
+          className={`imageCarousel-mainImage ${
+            this.props.title ? 'imageCarousel-mainImage-withTitle' : ''
+          }`}
           alt="Carousel"
         />
         <div className="imageCarousel-arrows">
@@ -77,20 +82,24 @@ class ImageCarousel extends Component {
         {this.props.title && (
           <h5 className="imageCarousel-title">{this.props.title}</h5>
         )}
-        <div className="imageCarousel-scroller">
+        <div
+          className={`imageCarousel-scroller ${
+            this.props.title ? 'imageCarousel-scroller-withTitle' : ''
+          }`}
+        >
           {images.map((image, index) => (
-            <img
-              src={image.src}
+            <LazyLoadImage
               key={`imageCarousel-${keyName}-${image.alt}`}
-              className="imageCarousel-scroller-image"
+              src={image.src}
+              className={`imageCarousel-scroller-image ${
+                this.state.selectedImageId === index
+                  ? 'imageCarousel-scroller-image-selected'
+                  : ''
+              }`}
               alt={image.alt}
+              effect="blur"
               id={index}
               onClick={this.selectImage}
-              style={
-                this.state.selectedImageId === index
-                  ? { border: '1px solid #a31f2b' }
-                  : { border: '1px solid transparent' }
-              }
             />
           ))}
         </div>

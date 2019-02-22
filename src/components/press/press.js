@@ -11,8 +11,9 @@ import './press.scss'
 
 class Press extends Component {
   render() {
+    const { sectionName } = this.props
     return (
-      <div className="press">
+      <div className={`${sectionName}`}>
         <h3 className="press-pageTitle">Press</h3>
         <img
           src={HeaderImage}

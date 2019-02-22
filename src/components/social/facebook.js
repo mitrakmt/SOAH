@@ -6,7 +6,7 @@ class Facebook extends Component {
   render() {
     return (
       <a href={this.props.href} target="_blank" rel="noopener noreferrer">
-        <div className="social-iconContainer facebook">
+        <div className="social-iconContainer social-iconContainer-facebook">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width={this.props.width}
