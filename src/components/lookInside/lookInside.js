@@ -141,9 +141,10 @@ class LookInside extends Component {
             <iframe
               className="lookInside-topSection-left-video"
               src="https://www.youtube.com/embed/0el9UwGt_Vk"
-              frameborder="0"
+              frameBorder="0"
               allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
+              allowFullscreen
+              title="Look Inside Video"
             />
           </div>
           <div className="lookInside-topSection-right">

@@ -3,6 +3,7 @@
     &-container {
       display: inline-block;
       max-width: 65%;
+      margin-right: 20px;
 
       h3 {
         // The order of styles and specifity requires important to override a later declaration
@@ -50,7 +51,7 @@
     grid-template-columns: 1fr 2fr 1fr;
 
     &-section {
-      border-right: 3px solid red;
+      border-right: 3px solid #be1e2d;
       padding-left: 25px;
 
       &:last-of-type {
@@ -70,12 +71,22 @@
       height: 45px;
       width: 50%;
       opacity: 0.95;
+      padding: 2px 0 0 10px;
       background: #ffffff;
       box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
       font-size: 20px;
       margin: 0 5px 0 15px;
       line-height: 51px;
       vertical-align: bottom;
+      font-family: 'BebasNeue';
+      color: rgba(155, 155, 155, 1);
+      &::placeholder {
+        color: rgba(155, 155, 155, 0.47);
+        opacity: 0.95;
+      }
+      &:focus {
+        outline: 0;
+      }
     }
     &-inputSubmit {
       border: none;
@@ -85,7 +96,13 @@
       background: #ffffff;
       box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
       vertical-align: bottom;
-      width: 37px;
+      width: 55px;
+      font-family: BebasNeue;
+      font-size: 14px;
+      color: #000000;
+      &:focus {
+        outline: 0;
+      }
     }
     &-text {
       float: left;

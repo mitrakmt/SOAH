@@ -2,7 +2,9 @@ import React, { Component } from 'react'
 import Facebook from 'components/social/facebook'
 import Twitter from 'components/social/twitter'
 import Instagram from 'components/social/instagram'
-import Imdb from 'components/social/imdb'
+import LinkedIn from 'components/social/linkedin'
+import Email from 'components/social/email'
+import Tumblr from 'components/social/tumblr'
 import FlipClock from '../../components/flipClock'
 import './trailerView.scss'
 
@@ -11,7 +13,14 @@ class TrailerView extends Component {
     const { sectionName } = this.props
     return (
       <div className={`${sectionName}-view`}>
-        <iframe className="thumbnail"  src="https://www.youtube.com/embed/0el9UwGt_Vk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen />
+        <iframe
+          className="thumbnail"
+          src="https://www.youtube.com/embed/0el9UwGt_Vk"
+          frameBorder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowFullscreen
+          title="Trailer Video"
+        />
         <div className="footer">
           <div className="footer-section">
             <div className="cta-container">
@@ -25,39 +34,44 @@ class TrailerView extends Component {
                   width="15px"
                   height="15px"
                   fill="white"
+                  margin="3px 5px 3px 5px"
                 />
                 <Twitter
                   href="https://twitter.com/sidesofahorn"
                   width="15px"
                   height="15px"
                   fill="white"
+                  margin="3px 5px 3px 5px"
                 />
                 <Facebook
                   href="https://www.facebook.com/sidesofahorn/"
                   width="15px"
                   height="15px"
                   fill="white"
+                  margin="3px 5px 3px 5px"
                 />
               </div>
               <div className="socialGroup-line">
-
-                <Facebook
-                  href="https://www.facebook.com/sidesofahorn/"
+                <LinkedIn
+                  href="https://linkedin.com/in/sidesofahorn"
                   width="15px"
                   height="15px"
-                  fill="white"
+                  fill="#fff"
+                  margin="3px 5px 3px 5px"
                 />
-                <Imdb
-                  href="https://www.imdb.com/title/tt7434998/"
+                <Email
+                  href="https://linkedin.com/in/sidesofahorn"
                   width="15px"
                   height="15px"
-                  fill="white"
+                  fill="#fff"
+                  margin="3px 5px 3px 5px"
                 />
-                <Instagram
-                  href="https://www.instagram.com/sidesofahorn"
+                <Tumblr
+                  href="https://tumbler.com/in/sidesofahorn"
                   width="15px"
                   height="15px"
-                  fill="white"
+                  fill="#fff"
+                  margin="3px 5px 3px 5px"
                 />
               </div>
             </div>
@@ -77,7 +91,10 @@ class TrailerView extends Component {
               <h3>latest:</h3>
             </div>
             <div className="latest-form">
-              <input className="latest-inputEmail" placeholder="Email address" />
+              <input
+                className="latest-inputEmail"
+                placeholder="Email address"
+              />
               <button className="latest-inputSubmit">Count me in!</button>
             </div>
           </div>

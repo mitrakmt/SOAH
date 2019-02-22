@@ -25,24 +25,28 @@ class Header extends Component {
             width="15px"
             height="15px"
             fill="white"
+            margin="0 10px 0 0"
           />
           <Twitter
             href="https://twitter.com/sidesofahorn"
             width="15px"
             height="15px"
             fill="white"
+            margin="0 10px 0 0"
           />
           <Facebook
             href="https://www.facebook.com/sidesofahorn/"
             width="15px"
             height="15px"
             fill="white"
+            margin="0 10px 0 0"
           />
           <Imdb
             href="https://www.imdb.com/title/tt7434998/"
             width="15px"
             height="15px"
             fill="white"
+            margin="0 10px 0 0"
           />
         </div>
       </div>
