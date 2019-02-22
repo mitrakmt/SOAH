@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import trailerThumbnail from '../../images/trailerThumbnail.jpeg'
 import Facebook from 'components/social/facebook'
 import Twitter from 'components/social/twitter'
 import Instagram from 'components/social/instagram'

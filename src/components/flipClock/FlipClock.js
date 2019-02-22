@@ -29,7 +29,7 @@ class FlipClock extends Component {
   
 	updateTime() {
 		// get new date
-		const time = new Date;
+		const time = new Date();
 		// set time units
 		const hours = time.getHours();
 		const minutes = time.getMinutes();
