@@ -5,6 +5,7 @@ import LookInsidePageView from 'components/lookInside'
 import TakeActionPageView from 'components/takeAction'
 import PosterArtPageView from 'components/posterArt'
 import CreditsPageView from 'components/credits'
+import TrailerView from 'components/trailer'
 
 export default [
   {
@@ -13,6 +14,13 @@ export default [
       Component: LandingPageView,
       sectionName: 'landingPage',
     },
+  },
+  {
+    Container: HomeSection,
+    props: {
+      Component: TrailerView,
+      sectionName: 'trailer'
+    }
   },
   {
     Container: HomeSection,
