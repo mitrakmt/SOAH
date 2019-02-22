@@ -1,7 +1,8 @@
-import { HomeSection } from '../containers/home'
-import LandingPageView from '../components/landingPage'
+import { HomeSection } from 'containers/home'
+import LandingPageView from 'components/landingPage'
 import TheStoryPageView from 'components/theStory'
 import LookInsidePageView from 'components/lookInside'
+import NewsPageView from 'components/news'
 import TakeActionPageView from 'components/takeAction'
 import PosterArtPageView from 'components/posterArt'
 import CreditsPageView from 'components/credits'
@@ -41,6 +42,13 @@ export default [
     props: {
       Component: LookInsidePageView,
       sectionName: 'lookInside',
+    },
+  },
+  {
+    Container: HomeSection,
+    props: {
+      Component: NewsPageView,
+      sectionName: 'news',
     },
   },
   {
