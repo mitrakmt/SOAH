@@ -54,7 +54,8 @@
   }
   .latest {
     &-form {
-      float: right;
+      // float: right;
+      
       line-height: 66px;
     }
     &-inputEmail {
@@ -66,7 +67,8 @@
       opacity: 0.95;
       background: #FFFFFF;
       box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50);
-      margin-right: 15px;
+      font-size: 20px;
+      margin: 0 5px 0 15px;
       line-height: 51px;
       vertical-align: bottom;
     }
@@ -83,6 +85,7 @@
     }
     &-text {
       float: left;
+      font-size: 24px !important;
     }
   }
 
