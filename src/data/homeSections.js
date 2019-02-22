@@ -10,11 +10,4 @@ export default [
       sectionName: 'landingPage',
     },
   },
-  {
-    Container: HomeSection,
-    props: {
-      Component: TakeActionView,
-      sectionName: 'takeAction',
-    },
-  },
 ]
