@@ -12,12 +12,21 @@ import TheTelevisionaries from './components/theTelevisionaries'
 import Whirlow from './components/whirlow'
 import YouKickedMyDog from './components/youKickedMyDog'
 
+// Images
+import Mountains from 'images/mountains.png'
+
 import './credits.scss'
 
 class Credits extends Component {
   render() {
+    const { sectionName } = this.props
     return (
-      <div className="credits" id="credits">
+      <div className={`${sectionName}`} id="credits">
+        <img
+          src={Mountains}
+          className="credits-background"
+          alt="background mountains"
+        />
         <div className="credits-header">
           <h2 className="credits-header-getInTouch">Get in touch</h2>
           <h4 className="credits-header-email">INFO@WHIRLOWPARKPICTURES.COM</h4>
@@ -98,6 +107,7 @@ class Credits extends Component {
               href="https://somethingdesignedinc.com/"
               target="_blank"
               className="credits-footer-SDLink"
+              rel="noopener noreferrer"
             >
               {' '}
               SOMETHING DESIGNED INC.
@@ -107,6 +117,7 @@ class Credits extends Component {
               href="https://doubletap.consulting"
               target="_blank"
               className="credits-footer-DTLink"
+              rel="noopener noreferrer"
             >
               {' '}
               DOUBLETAP CONSULTING

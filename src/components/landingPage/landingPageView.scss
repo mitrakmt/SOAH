@@ -1,22 +1,17 @@
 .landingPage-view {
-  height: 100%;
-  // Provide context for absolutely positioned elements
-  position: relative;
-
-  .backgroundImage {
-    background: center no-repeat;
-    background-image: url('../../images/landingPageBackground2.png');
+  .background {
     height: 100%;
+    width: 100%;
     filter: opacity(80%);
-    position: relative;
+    position: absolute;
     z-index: 1;
+    opacity: 0.48;
+    object-fit: cover;
   }
 
   .association {
     &-container {
-      color: #fff;
-      font-family: 'BebasNeue';
-      font-size: 18px;
+      font-size: 20px;
       text-transform: uppercase;
       // Layout properties
       position: absolute;
@@ -24,22 +19,31 @@
       top: 5vh;
       z-index: 2;
     }
+
+    &-text {
+      color: #fff;
+      font-size: 12px;
+    }
   }
   .credits {
     &-container {
-      bottom: 15vh;
+      bottom: 22vh;
       color: #fff;
       font-family: 'BebasNeue';
       position: absolute;
-      right: 10vw;
+      right: 8vw;
       text-align: right;
       text-transform: uppercase;
       z-index: 2;
 
       // Overriding user agent stylesheet sizes for these
       // Prefer semantic markup for SEO implications
-      h1, h2, h3 {
+      h1,
+      h2,
+      h3 {
         font-size: 28px;
+        margin-top: 0px;
+        margin-bottom: 10px;
       }
     }
     &-text--bottom {
@@ -48,6 +52,9 @@
       // These next two are hacky shiz for the partial border unerline
       width: 52%;
       float: right;
+    }
+    &-text {
+      margin: 0;
     }
   }
   .header {
@@ -66,8 +73,9 @@
       z-index: 2;
       // Layout properties
       position: absolute;
-      bottom: -10vh;
-      right: 10vw;
+      bottom: 5vh;
+      right: 8vw;
+      margin: 0;
     }
   }
 }
