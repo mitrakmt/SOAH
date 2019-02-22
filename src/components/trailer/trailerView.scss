@@ -1,0 +1,114 @@
+.trailer-view {
+  .countdown {
+    &-container {
+      display: inline-block;
+      max-width: 65%;
+
+      h3 {
+        // The order of styles and specifity requires important to override a later declaration
+        font-size: 16px !important;
+      }
+    }
+  }
+  .cta {
+    &-container {
+      display: inline-block;
+    }
+  }
+  .flipClock {
+    &-container {
+      display: inline-block;
+      position: relative;
+      top: -10%;
+      width: 30%;
+    }    
+  }
+  .footer {
+    color: rgba(255,255,255,0.83);
+    font-family: 'BebasNeue';
+    font-size: 16px;
+    line-height: 15px;
+    max-height: 91px;
+
+    // Override all user agent stylesheet settings for this
+    h1, h2, h3, h4, h5, h6, p {
+      font-size: 18px;
+    }
+
+    & div {
+      max-height: 91px;
+    }
+
+    // Layout styles
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+
+    &-section {
+      border-right: 3px solid red;
+      padding-left: 25px;
+
+      &:last-of-type {
+        border-right: none;
+      }
+    }
+  }
+  .latest {
+    &-form {
+      // float: right;
+      
+      line-height: 66px;
+    }
+    &-inputEmail {
+      display: inline-block;
+      font-family: 'BebasNeue';
+      // This height needs to add in total up to the inputSubmit height. This elemenet has border etc so explicit height is lower.
+      height: 45px;
+      width: 50%;
+      opacity: 0.95;
+      background: #FFFFFF;
+      box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50);
+      font-size: 20px;
+      margin: 0 5px 0 15px;
+      line-height: 51px;
+      vertical-align: bottom;
+    }
+    &-inputSubmit {
+      border: none;
+      display: inline-block;
+      font-family: 'BebasNeue';
+      height: 51px;
+      opacity: 0.95;
+      background: #FFFFFF;
+      box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50);
+      vertical-align: bottom;
+      width: 37px;
+    }
+    &-text {
+      float: left;
+      font-size: 24px !important;
+    }
+  }
+
+  .socialGroup {
+    &-container {
+      float: right;
+      margin-right: 15px;
+      position: relative;
+      top: 15%;
+    }
+    &-line {
+      // Layout styles
+      align-items: center;
+      display: flex;
+      justify-content: center;
+
+      & a {
+        display: inline;
+      }
+    }
+  }
+  .thumbnail {
+    height: 90vh;
+    width: 100vw;
+  }
+}
