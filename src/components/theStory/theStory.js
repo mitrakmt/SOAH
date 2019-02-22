@@ -7,8 +7,9 @@ import './theStory.scss'
 
 class TheStory extends Component {
   render() {
+    const { sectionName } = this.props
     return (
-      <div className="theStory">
+      <div className={`${sectionName}`}>
         <img
           src={BackgroundImage}
           alt="background"

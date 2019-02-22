@@ -64,7 +64,9 @@ class ImageCarousel extends Component {
       <div className="imageCarousel">
         <LazyLoadImage
           src={images[this.state.selectedImageId].src}
-          className="imageCarousel-mainImage"
+          className={`imageCarousel-mainImage ${
+            this.props.title ? 'imageCarousel-mainImage-withTitle' : ''
+          }`}
           alt="Carousel"
         />
         <div className="imageCarousel-arrows">
@@ -80,7 +82,11 @@ class ImageCarousel extends Component {
         {this.props.title && (
           <h5 className="imageCarousel-title">{this.props.title}</h5>
         )}
-        <div className="imageCarousel-scroller">
+        <div
+          className={`imageCarousel-scroller ${
+            this.props.title ? 'imageCarousel-scroller-withTitle' : ''
+          }`}
+        >
           {images.map((image, index) => (
             <LazyLoadImage
               key={`imageCarousel-${keyName}-${image.alt}`}

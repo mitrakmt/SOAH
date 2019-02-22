@@ -19,8 +19,9 @@ import './credits.scss'
 
 class Credits extends Component {
   render() {
+    const { sectionName } = this.props
     return (
-      <div className="credits" id="credits">
+      <div className={`${sectionName}`} id="credits">
         <img
           src={Mountains}
           className="credits-background"
@@ -106,6 +107,7 @@ class Credits extends Component {
               href="https://somethingdesignedinc.com/"
               target="_blank"
               className="credits-footer-SDLink"
+              rel="noopener noreferrer"
             >
               {' '}
               SOMETHING DESIGNED INC.
@@ -115,6 +117,7 @@ class Credits extends Component {
               href="https://doubletap.consulting"
               target="_blank"
               className="credits-footer-DTLink"
+              rel="noopener noreferrer"
             >
               {' '}
               DOUBLETAP CONSULTING

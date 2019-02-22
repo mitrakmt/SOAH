@@ -97,7 +97,7 @@ class Screenings extends Component {
 
   render() {
     return (
-      <div className="screenings">
+      <div className={`${sectionName}`}>
         <h3 className="screenings-pageTitle">Screenings</h3>
         <img
           src={HeaderImage}

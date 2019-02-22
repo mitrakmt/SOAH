@@ -133,8 +133,9 @@ class LookInside extends Component {
   }
 
   render() {
+    const { sectionName } = this.props
     return (
-      <div className="lookInside">
+      <div className={`${sectionName}`}>
         <div className="lookInside-topSection">
           <div className="lookInside-topSection-left" />
           <div className="lookInside-topSection-right">
@@ -185,7 +186,9 @@ class LookInside extends Component {
         </div>
         <img src={BransonQuote} alt="background" className="lookInside-quote" />
 
-        <ImageCarousel images={this.images} />
+        <div>
+          <ImageCarousel images={this.images} keyName="LookInsideContainer" />
+        </div>
       </div>
     )
   }

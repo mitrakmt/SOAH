@@ -20,20 +20,28 @@
 
   &-mainImage {
     width: 100%;
-    max-height: 75%;
+    max-height: 80%;
     object-fit: contain;
+
+    &-withTitle {
+      max-height: 75%;
+    }
   }
 
   &-scroller {
     display: flex;
     position: absolute;
-    bottom: 115px;
+    bottom: 65px;
     overflow: auto;
     max-width: 90%;
     white-space: nowrap;
     align-items: center;
     &::-webkit-scrollbar {
       width: 0 !important;
+    }
+
+    &-withTitle {
+      bottom: 105px;
     }
 
     &-image {
