@@ -23,6 +23,7 @@ class ShareTheMessageLanding extends Component {
           <img
             src={HeaderImage}
             className="shareTheMessageLanding-header-image"
+            alt="share the message"
           />
         </div>
         <div className="shareTheMessageLanding-divider">
