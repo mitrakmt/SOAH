@@ -143,7 +143,7 @@ class LookInside extends Component {
               src="https://www.youtube.com/embed/sIWl6msIH0Y"
               frameBorder="0"
               allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-              allowFullscreen
+              allowFullScreen
               title="Look Inside Video"
             />
           </div>

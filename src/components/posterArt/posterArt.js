@@ -7,6 +7,8 @@ import LinkedIn from 'components/social/linkedin'
 import Email from 'components/social/email'
 import Tumblr from 'components/social/tumblr'
 
+import PosterArtImage from 'images/SOAH_FilmPoster.jpg'
+
 // import HeaderImage from 'images/SOAH_Still39.png'
 
 import './posterArt.scss'
@@ -20,12 +22,12 @@ class PosterArt extends Component {
           <h4 className="posterArt-left-text">poster art by annis naeem</h4>
           <span className="posterArt-left-line" />
         </div>
-        {/* <img
-          src={PosterArt}
+        <img
+          src={PosterArtImage}
           className="posterArt-image"
           alt="Poster - Moonlight"
-        /> */}
-        <span className="posterArt-filler" />
+        />
+        {/* <span className="posterArt-filler" /> */}
         <div className="posterArt-right">
           <span className="posterArt-right-line" />
           <div className="posterArt-right-social">

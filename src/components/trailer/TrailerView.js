@@ -18,7 +18,7 @@ class TrailerView extends Component {
           src="https://www.youtube.com/embed/0el9UwGt_Vk"
           frameBorder="0"
           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-          allowFullscreen
+          allowFullScreen
           title="Trailer Video"
         />
         <div className="footer">

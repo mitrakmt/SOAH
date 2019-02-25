@@ -21,7 +21,12 @@ class Header extends Component {
         <h3 className="headerContainer-line">Take Action</h3>
         <h3 className="headerContainer-line">Look Inside</h3>
         <h3 className="headerContainer-line">News</h3>
-        <h3 className="headerContainer-line">Screenings</h3>
+        <h3
+          className="headerContainer-line"
+          onClick={() => this.navigateToView('screenings')}
+        >
+          Screenings
+        </h3>
         <h3
           className="headerContainer-line"
           onClick={() => this.navigateToView('press')}

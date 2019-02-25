@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { withRouter } from 'react-router-dom'
 
 import Navigation from 'components/navigation/navigation'
 
@@ -12,6 +13,10 @@ import BabyImage from 'images/SOAH_Still33.png'
 import './takeAction.scss'
 
 class TakeActionView extends Component {
+  navigateToPage = page => {
+    this.props.history.push(`/${page}`)
+  }
+
   render() {
     const { sectionName } = this.props
 
@@ -26,7 +31,10 @@ class TakeActionView extends Component {
         <div className={`${sectionName}-header`}>
           <h3 className={`${sectionName}-header-text`}>Take Action</h3>
           <div className={`${sectionName}-images`}>
-            <div className={`${sectionName}-images-container`}>
+            <div
+              className={`${sectionName}-images-container`}
+              onClick={() => this.navigateToPage('share')}
+            >
               <img
                 src={ManImage}
                 className={`${sectionName}-images-image`}
@@ -93,4 +101,4 @@ class TakeActionView extends Component {
   }
 }
 
-export default TakeActionView
+export default withRouter(TakeActionView)

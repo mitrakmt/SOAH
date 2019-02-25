@@ -56,7 +56,12 @@ class Navigation extends Component {
           <h3 className="navigation-line">Take Action</h3>
           <h3 className="navigation-line">Look Inside</h3>
           <h3 className="navigation-line">News</h3>
-          <h3 className="navigation-line">Screenings</h3>
+          <h3
+            className="navigation-line"
+            onClick={() => this.navigateToView('screenings')}
+          >
+            Screenings
+          </h3>
           <h3
             className="navigation-line"
             onClick={() => this.navigateToView('press')}

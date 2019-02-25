@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 
 import HeaderImage from 'images/screenings_background.jpg'
-import Quote from 'components/quote/quote'
+import Quote from 'components/quote/grayQuote'
 import ImageCarousel from 'components/image-carousel/imageCarousel'
 
 import Image1 from 'images/world-rhino-day/img_9498.jpg'
@@ -96,6 +96,8 @@ class Screenings extends Component {
   }
 
   render() {
+    const { sectionName } = this.props
+
     return (
       <div className={`${sectionName}`}>
         <h3 className="screenings-pageTitle">Screenings</h3>
