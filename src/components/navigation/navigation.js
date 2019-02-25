@@ -25,6 +25,7 @@ class Navigation extends Component {
 
   navigateToView = view => {
     const isHomeView = homeSections.map(({ props: { sectionName }}) => sectionName).includes(view)
+    // Using view as an ID when it's a home section
     const elementFound = document.getElementById(view)
 
     if (isHomeView && elementFound) {
