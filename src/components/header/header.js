@@ -6,21 +6,63 @@ import Twitter from 'components/social/twitter'
 import Instagram from 'components/social/instagram'
 import Imdb from 'components/social/imdb'
 
+import { homeSections } from 'data'
+
 import './header.scss'
 
 class Header extends Component {
   navigateToView = view => {
-    this.props.history.push(`/${view}`)
+    const isHomeView = homeSections
+      .map(({ props: { sectionName } }) => sectionName)
+      .includes(view)
+    // Using view as an ID when it's a home section
+    const elementFound = document.getElementById(view)
+
+    if (isHomeView && elementFound) {
+      elementFound.scrollIntoView({ behavior: 'smooth' })
+    } else {
+      this.props.history.push(`/${view}`)
+      if (isHomeView) {
+        setTimeout(() => {
+          document.getElementById(view).scrollIntoView({ behavior: 'smooth' })
+        }, 250)
+      }
+    }
   }
 
   render() {
     return (
       <div className="headerContainer" id="header">
-        <h3 className="headerContainer-line">Trailer</h3>
-        <h3 className="headerContainer-line">The Story</h3>
-        <h3 className="headerContainer-line">Take Action</h3>
-        <h3 className="headerContainer-line">Look Inside</h3>
-        <h3 className="headerContainer-line">News</h3>
+        <h3
+          className="headerContainer-line"
+          onClick={() => this.navigateToView('trailer')}
+        >
+          Trailer
+        </h3>
+        <h3
+          className="headerContainer-line"
+          onClick={() => this.navigateToView('theStory')}
+        >
+          The Story
+        </h3>
+        <h3
+          className="headerContainer-line"
+          onClick={() => this.navigateToView('takeAction')}
+        >
+          Take Action
+        </h3>
+        <h3
+          className="headerContainer-line"
+          onClick={() => this.navigateToView('lookInside')}
+        >
+          Look Inside
+        </h3>
+        <h3
+          className="headerContainer-line"
+          onClick={() => this.navigateToView('news')}
+        >
+          News
+        </h3>
         <h3
           className="headerContainer-line"
           onClick={() => this.navigateToView('screenings')}
@@ -33,7 +75,12 @@ class Header extends Component {
         >
           Press
         </h3>
-        <h3 className="headerContainer-line">Contact</h3>
+        <h3
+          className="headerContainer-line"
+          onClick={() => this.navigateToView('credits')}
+        >
+          Contact
+        </h3>
         <div className="headerContainer-social">
           <Instagram
             href="https://www.instagram.com/sidesofahorn"

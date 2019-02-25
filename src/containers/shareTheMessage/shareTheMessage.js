@@ -1,5 +1,7 @@
 import React, { Component, Fragment } from 'react'
 
+import Navigation from 'components/navigation/navigation'
+
 import { shareTheMessageSections } from '../../data'
 import './section.scss'
 
@@ -9,10 +11,10 @@ class ShareTheMessage extends Component {
   }
 
   render() {
-    console.log('shareTheMessageSections, ', shareTheMessageSections)
     return (
       <Fragment>
         <div className="shareTheMessageContainer" id="shareTheMessage">
+          <Navigation />
           {shareTheMessageSections.map(({ Container, props }) => (
             <Container key={props.sectionName} {...props} />
           ))}

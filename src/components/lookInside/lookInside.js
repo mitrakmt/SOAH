@@ -193,7 +193,13 @@ class LookInside extends Component {
             </div>
           </div>
         </div>
-        <img src={BransonQuote} alt="background" className="lookInside-quote" />
+        <div className="lookInside-quote">
+          <img
+            src={BransonQuote}
+            alt="background"
+            className="lookInside-quote-image"
+          />
+        </div>
 
         <div>
           <ImageCarousel images={this.images} keyName="LookInsideContainer" />

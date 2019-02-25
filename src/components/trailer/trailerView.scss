@@ -211,5 +211,9 @@
   .thumbnail {
     height: 90vh;
     width: 100vw;
+
+    @include media('<tablet') {
+      height: 50vh;
+    }
   }
 }

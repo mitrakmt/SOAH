@@ -156,6 +156,11 @@
         flex-direction: column;
       }
 
+      &-email {
+        color: white;
+        text-decoration: none;
+      }
+
       &-text {
         font-size: 18px;
         color: #ffffff;
@@ -172,8 +177,9 @@
         }
 
         @media screen and (max-width: 800px) {
-          width: 70%;
+          width: 80%;
           font-size: 12px;
+          padding: 0;
 
           &:first-child {
             border-bottom: 3px solid #be1e2d;
@@ -234,7 +240,7 @@
 
           @media screen and (max-width: 800px) {
             margin: 0;
-            font-size: 14px;
+            font-size: 18px;
           }
         }
 
