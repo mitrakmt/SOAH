@@ -45,6 +45,10 @@
       position: absolute;
       width: 30%;
       left: -5%;
+
+      @media screen and (max-width: 1000px) {
+        display: none;
+      }
     }
     &-mainNews {
       position: absolute;
@@ -54,12 +58,26 @@
       left: 0;
       right: 0;
       bottom: 200px;
+
+      @media screen and (max-width: 1000px) {
+        width: 80%;
+        top: 150px;
+      }
+
+      @media screen and (max-width: 600px) {
+        display: flex;
+        position: initial;
+      }
     }
     &-rightNews {
       position: absolute;
       width: 30%;
       right: -5%;
       left: auto;
+
+      @media screen and (max-width: 1000px) {
+        display: none;
+      }
     }
   }
 

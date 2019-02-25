@@ -11,9 +11,20 @@
         max-width: 35%;
       }
 
+      @include media('<tablet') {
+        margin-right: 0;
+        max-width: 85%;
+        display: flex;
+      }
+
       h3 {
         // The order of styles and specifity requires important to override a later declaration
         font-size: 16px !important;
+
+        @include media('<tablet') {
+          margin: 15px 5px;
+          text-align: center;
+        }
       }
     }
   }
@@ -28,6 +39,14 @@
       position: relative;
       top: 0%;
       width: 30%;
+
+      @include media('<tablet') {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100px;
+      }
     }
   }
   .footer {
@@ -45,7 +64,9 @@
     }
 
     @include media('<tablet') {
-      grid-template-rows: 1fr 1fr 1fr;
+      // grid-template-columns: 1fr 2fr 1fr;
+      max-height: none;
+      height: auto;
     }
 
     // Override all user agent stylesheet settings for this
@@ -61,6 +82,10 @@
 
     & div {
       max-height: 91px;
+
+      @include media('<tablet') {
+        max-height: none;
+      }
     }
 
     &-section {
@@ -75,6 +100,10 @@
         display: flex;
         align-items: center;
         justify-content: center;
+
+        @include media('<tablet') {
+          flex-direction: column;
+        }
       }
 
       &--mobileCenter {
@@ -83,6 +112,7 @@
           display: flex;
           align-items: center;
           justify-content: center;
+          flex-direction: column;
         }
       }
 
@@ -120,7 +150,7 @@
         outline: 0;
       }
       @include media('<tablet') {
-        width: 45%;
+        width: 60%;
       }
     }
     &-inputSubmit {
@@ -144,7 +174,9 @@
       font-size: 24px !important;
 
       @include media('<tablet') {
-        h3 {display: inline;}
+        h3 {
+          display: inline;
+        }
       }
     }
   }
@@ -159,6 +191,10 @@
         margin-right: 15px;
         position: relative;
         top: 15%;
+      }
+
+      @include media('<tablet') {
+        display: flex;
       }
     }
     &-line {

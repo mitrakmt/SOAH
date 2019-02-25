@@ -1,3 +1,5 @@
+@import 'include-media/dist/_include-media.scss';
+
 $flipCardFontSize: 1.5em;
 $flipCardWidth: 42px;
 
@@ -6,6 +8,10 @@ $flipCardWidth: 42px;
   justify-content: space-between;
   max-height: 200px;
   width: 170px;
+
+  @include media('<tablet') {
+    max-height: 250px;
+  }
 }
 
 .flipUnitContainer {
@@ -20,7 +26,8 @@ $flipCardWidth: 42px;
   box-shadow: 0px 10px 10px -10px grey;
 }
 
-.upperCard, .lowerCard {
+.upperCard,
+.lowerCard {
   display: flex;
   position: relative;
   justify-content: center;
@@ -29,9 +36,10 @@ $flipCardWidth: 42px;
   overflow: hidden;
   border: 1px solid whitesmoke;
 }
-.upperCard span, .lowerCard span {
+.upperCard span,
+.lowerCard span {
   font-size: $flipCardFontSize;
-  font-family: "Droid Sans Mono", monospace;
+  font-family: 'Droid Sans Mono', monospace;
   font-weight: lighter;
   color: #333333;
 }
@@ -67,7 +75,7 @@ $flipCardWidth: 42px;
   backface-visibility: hidden;
 }
 .flipCard span {
-  font-family: "Droid Sans Mono", monospace;
+  font-family: 'Droid Sans Mono', monospace;
   font-size: $flipCardFontSize;
   font-weight: lighter;
   color: #333333;
@@ -102,12 +110,14 @@ $flipCardWidth: 42px;
 }
 
 .fold {
-  animation: fold 0.6s cubic-bezier(0.455, 0.03, 0.515, 0.955) 0s 1 normal forwards;
+  animation: fold 0.6s cubic-bezier(0.455, 0.03, 0.515, 0.955) 0s 1 normal
+    forwards;
   transform-style: preserve-3d;
 }
 
 .unfold {
-  animation: unfold 0.6s cubic-bezier(0.455, 0.03, 0.515, 0.955) 0s 1 normal forwards;
+  animation: unfold 0.6s cubic-bezier(0.455, 0.03, 0.515, 0.955) 0s 1 normal
+    forwards;
   transform-style: preserve-3d;
 }
 
