@@ -33,7 +33,7 @@ class TakeActionView extends Component {
           <div className={`${sectionName}-images`}>
             <div
               className={`${sectionName}-images-container`}
-              onClick={() => this.navigateToPage('share-the-message')}
+              onClick={() => this.navigateToPage('share')}
             >
               <img
                 src={ManImage}

@@ -14,6 +14,7 @@
     padding-top: 15px;
     border-top: 3px solid white;
     z-index: 2;
+    font-size: 48px;
   }
 
   &-headerImage {
@@ -61,7 +62,7 @@
       &-upcomingTitle {
         font-size: 28px;
         color: #be1e2d;
-        min-width: 360px;
+        min-width: 220px;
         margin: 0;
         text-transform: uppercase;
 
@@ -73,7 +74,7 @@
       &-pastTitle {
         font-size: 28px;
         color: #be1e2d;
-        min-width: 270px;
+        min-width: 180px;
         margin: 0;
         text-transform: uppercase;
 
@@ -142,7 +143,7 @@
       }
 
       &-text {
-        font-size: 16px;
+        font-size: 18px;
         color: #ffffff;
         text-align: center;
         line-height: 50px;
