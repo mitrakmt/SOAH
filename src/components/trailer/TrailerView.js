@@ -22,7 +22,7 @@ class TrailerView extends Component {
           title="Trailer Video"
         />
         <div className="footer">
-          <div className="footer-section">
+          <div className="footer-section--mobileCenter">
             <div className="cta-container">
               <h3>spread the word.</h3>
               <h3>share the trailer:</h3>
@@ -76,7 +76,7 @@ class TrailerView extends Component {
               </div>
             </div>
           </div>
-          <div className="footer-section">
+          <div className="footer-section--center">
             <div className="countdown-container">
               <h3>the short film will be released ON world ENVIRONMENT</h3>
               <h3>DAY on JUNE 5, 2019, let the countdown begin:</h3>
@@ -85,9 +85,9 @@ class TrailerView extends Component {
               <FlipClock />
             </div>
           </div>
-          <div className="footer-section">
+          <div className="footer-section--mobileCenter">
             <div className="latest-text">
-              <h3>get the</h3>
+              <h3>get the </h3>
               <h3>latest:</h3>
             </div>
             <div className="latest-form">
