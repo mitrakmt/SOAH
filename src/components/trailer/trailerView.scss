@@ -1,9 +1,15 @@
+@import 'include-media/dist/_include-media.scss';
 .trailer-view {
   .countdown {
     &-container {
       display: inline-block;
       max-width: 65%;
       margin-right: 20px;
+
+      @include media('<=tablet') {
+        margin-right: 0;
+        max-width: 35%;
+      }
 
       h3 {
         // The order of styles and specifity requires important to override a later declaration
@@ -29,7 +35,18 @@
     font-family: 'BebasNeue';
     font-size: 16px;
     line-height: 15px;
-    max-height: 91px;
+
+    // Layout styles
+    display: grid;
+
+    @include media('>=tablet') {
+      grid-template-columns: 1fr 2fr 1fr;
+      max-height: 91px;
+    }
+
+    @include media('<tablet') {
+      grid-template-rows: 1fr 1fr 1fr;
+    }
 
     // Override all user agent stylesheet settings for this
     h1,
@@ -46,13 +63,11 @@
       max-height: 91px;
     }
 
-    // Layout styles
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-
     &-section {
-      border-right: 3px solid #be1e2d;
-      padding-left: 25px;
+      @include media('>=tablet') {
+        border-right: 3px solid #be1e2d;
+        padding-left: 25px;
+      }
 
       &--center {
         @extend .footer-section;
@@ -60,6 +75,15 @@
         display: flex;
         align-items: center;
         justify-content: center;
+      }
+
+      &--mobileCenter {
+        @extend .footer-section;
+        @include media('<tablet') {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
       }
 
       &:last-of-type {
@@ -95,6 +119,9 @@
       &:focus {
         outline: 0;
       }
+      @include media('<tablet') {
+        width: 45%;
+      }
     }
     &-inputSubmit {
       border: none;
@@ -115,15 +142,24 @@
     &-text {
       float: left;
       font-size: 24px !important;
+
+      @include media('<tablet') {
+        h3 {display: inline;}
+      }
     }
   }
 
   .socialGroup {
     &-container {
-      float: right;
-      margin-right: 15px;
-      position: relative;
-      top: 15%;
+      display: inline-block;
+
+      @include media('>=tablet') {
+        display: block;
+        float: right;
+        margin-right: 15px;
+        position: relative;
+        top: 15%;
+      }
     }
     &-line {
       // Layout styles
