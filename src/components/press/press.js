@@ -69,9 +69,16 @@ class Press extends Component {
             <h5 className="press-infoSection-box-subtext">
               Writer / Director / Producer
             </h5>
-            <h5 className="press-infoSection-box-subtext">
-              twosskow@gmail.com
-            </h5>
+            <a
+              href="mailto:twosskow@gmail.com"
+              className="link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <h5 className="press-infoSection-box-subtext">
+                twosskow@gmail.com
+              </h5>
+            </a>
             <h5 className="press-infoSection-box-subtext">407.257.8292</h5>
           </div>
           <div className="press-infoSection-box column">
@@ -81,9 +88,16 @@ class Press extends Component {
             <span className="press-infoSection-box-divider" />
             <h5 className="press-infoSection-box-subtext">Emmanuel Castis</h5>
             <h5 className="press-infoSection-box-subtext">Producer</h5>
-            <h5 className="press-infoSection-box-subtext">
-              emmanuel@ykmd.co.za
-            </h5>
+            <a
+              href="mailto:emmanuel@ykmd.co.za"
+              className="link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <h5 className="press-infoSection-box-subtext">
+                emmanuel@ykmd.co.za
+              </h5>
+            </a>
             <h5 className="press-infoSection-box-subtext">0.83.357.3330</h5>
           </div>
         </div>

@@ -3,7 +3,7 @@ import { withRouter } from 'react-router-dom'
 
 import Navigation from 'components/navigation/navigation'
 
-import awfLogo from '../../images/awf.svg'
+import redLogo from '../../images/redLogo.png'
 import backgroundImage from 'images/SOAH_Still18.png'
 import RhinoImage from 'images/SOAH_Still2.png'
 import ManImage from 'images/SOAH_Still5.png'
@@ -41,7 +41,7 @@ class TakeActionView extends Component {
                 alt="Man starting"
               />
               <img
-                src={awfLogo}
+                src={redLogo}
                 className={`${sectionName}-images-container-logo`}
                 alt="logo"
               />
@@ -56,7 +56,7 @@ class TakeActionView extends Component {
                 alt="Mom holding baby"
               />
               <img
-                src={awfLogo}
+                src={redLogo}
                 className={`${sectionName}-images-container-logo`}
                 alt="logo"
               />
@@ -71,7 +71,7 @@ class TakeActionView extends Component {
                 alt="Rhino in field"
               />
               <img
-                src={awfLogo}
+                src={redLogo}
                 className={`${sectionName}-images-container-logo`}
                 alt="logo"
               />
@@ -86,7 +86,7 @@ class TakeActionView extends Component {
                 alt="Men sitting"
               />
               <img
-                src={awfLogo}
+                src={redLogo}
                 className={`${sectionName}-images-container-logo`}
                 alt="logo"
               />

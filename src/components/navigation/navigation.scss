@@ -6,8 +6,17 @@
   color: #fff;
   background-color: transparent;
 
+  &-logo {
+    height: 50px;
+    opacity: 1 !important;
+    transition-duration: 0.25s;
+
+    &-hide {
+      opacity: 0;
+    }
+  }
+
   &-line {
-    transition-duration: 0.15s;
     &:hover {
       color: #be1e2d;
     }
@@ -23,15 +32,13 @@
     right: 30px;
     top: 30px;
     z-index: 11;
+    position: fixed;
+
     &-line {
       border: 2px solid white;
       margin-bottom: 6px;
       font-size: 36px;
       color: rgba(255, 255, 255, 0.83);
-    }
-
-    &-hide {
-      display: none;
     }
   }
 

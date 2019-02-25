@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import { withRouter } from 'react-router-dom'
 
+import redLogo from 'images/redLogo.png'
+
 import Facebook from 'components/social/facebook'
 import Twitter from 'components/social/twitter'
 import Instagram from 'components/social/instagram'
@@ -45,6 +47,13 @@ class Navigation extends Component {
           }`}
           onClick={this.toggleNavigation}
         >
+          <img
+            src={redLogo}
+            className={`navigation-logo-hide ${
+              this.state.navigationOpen ? 'navigation-logo' : ''
+            }`}
+            alt="logo"
+          />
           <h3
             className="navigation-line"
             onClick={() => this.navigateToView('')}
