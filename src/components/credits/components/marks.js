@@ -9,6 +9,7 @@ class Marks extends Component {
         href="http://www.marksfamilyfoundation.org/"
         target="_blank"
         rel="noopener noreferrer"
+        className="credits-productionLogo"
       >
         <svg
           width="72px"

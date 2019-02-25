@@ -9,6 +9,7 @@ class Whirlow extends Component {
         href="http://www.whirlowparkpictures.com/"
         target="_blank"
         rel="noopener noreferrer"
+        className="credits-productionLogo"
       >
         <svg
           width="138px"

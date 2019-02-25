@@ -9,6 +9,7 @@ class TheTelevisionaries extends Component {
         href="https://www.televisionaries.co.za/"
         target="_blank"
         rel="noopener noreferrer"
+        className="credits-productionLogo"
       >
         <svg
           width="128px"

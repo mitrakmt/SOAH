@@ -9,6 +9,7 @@ class BroadRiverProductions extends Component {
         href="https://www.broadriverproductions.com/"
         target="_blank"
         rel="noopener noreferrer"
+        className="credits-productionLogo"
       >
         <svg
           width="134px"

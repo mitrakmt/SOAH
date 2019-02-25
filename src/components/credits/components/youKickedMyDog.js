@@ -9,6 +9,7 @@ class YouKickedMyDog extends Component {
         href="http://www.ykmd.co.za/"
         target="_blank"
         rel="noopener noreferrer"
+        className="credits-productionLogo"
       >
         <svg
           width="113px"
