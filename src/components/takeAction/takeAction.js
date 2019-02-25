@@ -1,8 +1,6 @@
 import React, { Component } from 'react'
 import { withRouter } from 'react-router-dom'
 
-import Navigation from 'components/navigation/navigation'
-
 import redLogo from '../../images/redLogo.png'
 import backgroundImage from 'images/SOAH_Still18.png'
 import RhinoImage from 'images/SOAH_Still2.png'
@@ -22,7 +20,6 @@ class TakeActionView extends Component {
 
     return (
       <div className={`${sectionName}`}>
-        <Navigation />
         <img
           src={backgroundImage}
           className={`${sectionName}-background`}

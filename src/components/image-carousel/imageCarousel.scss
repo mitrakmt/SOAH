@@ -1,3 +1,5 @@
+@import 'include-media/dist/_include-media.scss';
+
 .imageCarousel {
   height: 100vh;
   display: flex;
@@ -6,6 +8,11 @@
   background: black;
   position: relative;
   padding-top: 10px;
+
+  @media screen and (max-width: 1100px) {
+    max-height: 80vh;
+    height: 80vh;
+  }
 
   @media screen and (max-width: 600px) {
     max-height: 100vh;
@@ -20,7 +27,7 @@
 
   &-mainImage {
     width: 100%;
-    max-height: 80%;
+    max-height: 75%;
     object-fit: contain;
 
     &-withTitle {

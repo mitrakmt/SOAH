@@ -9,12 +9,22 @@
   * {
     padding: 0;
     margin: 10px 0;
+
+    @media screen and (max-width: 450px) {
+      font-size: 14px;
+      margin: 7px 0;
+    }
   }
 
   &-line {
     cursor: pointer;
     transition-duration: 0.15s;
     width: max-content;
+
+    @media screen and (max-width: 450px) {
+      font-size: 14px;
+      margin-bottom: 4px;
+    }
 
     &:hover {
       color: #be1e2d;
