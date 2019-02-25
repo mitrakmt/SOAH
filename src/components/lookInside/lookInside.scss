@@ -1,3 +1,5 @@
+@import 'include-media/dist/_include-media.scss';
+
 .lookInside {
   position: relative;
   background: black;
@@ -19,6 +21,10 @@
       min-width: 500px;
       min-height: 300px;
 
+      @include media('>=desktop') {
+        min-height: 500px;
+      }
+
       @media screen and (max-width: 850px) {
         padding-left: 50px;
         min-width: 300px;
@@ -30,6 +36,10 @@
       flex: 1;
       min-width: 500px;
       min-height: 300px;
+
+      @include media('>=desktop') {
+        min-height: 500px;
+      }
 
       @media screen and (max-width: 650px) {
         min-width: 300px;
@@ -69,6 +79,10 @@
       position: absolute;
       top: 0;
       left: 100px;
+
+      @include media('>=desktop') {
+        height: 180px;
+      }
     }
 
     &-row {
