@@ -19,6 +19,10 @@
       right: 8vw;
       top: 5vh;
       z-index: 2;
+
+      @include media('<tablet') {
+        top: 9vh;
+      }
     }
 
     &-text {
@@ -86,10 +90,6 @@
 
       @include media('<tablet') {
         height: 73px;
-        width: 275px;
-      }
-
-      @include media('<phone') {
         width: 275px;
       }
     }

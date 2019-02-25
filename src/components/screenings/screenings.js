@@ -21,33 +21,41 @@ class Screenings extends Component {
       email: '',
     }
 
+    // ID IS REQUIRED
     this.upcomingScreenings = [
       {
         line1: 'SEDONA INTERNATIONAL FILM FESTIVAL',
         line2: 'WORLD PREMIERE',
         line3: 'FEBRUARY 28 AT 7:20 PM | MARCH 2 AT 10AM',
+        id: 0,
       },
       {
         line1: 'RAPIDLION FILM FESTIVAL',
         line2: 'UK PREMIERE',
         line3: 'MARCH 3 AT 10:30AM',
+        id: 1,
       },
       {
         line1: 'MANCHESTER FILM FESTIVAL',
         line2: 'UK PREMIERE',
         line3: 'MARCH 8 AT 6PM',
+        id: 2,
       },
       {
         line1: 'ENVIRONMENTAL FILM FESTIVAL',
         line2: 'IN THE NATION’S CAPITAL',
         line3: 'MARCH 16 AT 2PM',
+        id: 3,
       },
     ]
+
+    // ID IS REQUIRED
     this.pastScreenings = [
       {
         line1: 'WORLD RHINO DAY',
         line2: 'PRIVATE SCREENING',
         line3: 'SEPTEMBER 22, 2018',
+        id: 0,
       },
     ]
     this.images = [
@@ -115,7 +123,10 @@ class Screenings extends Component {
           </div>
           <div className="screenings-body-body">
             {this.upcomingScreenings.map(screening => (
-              <div className="screenings-body-screening">
+              <div
+                className="screenings-body-screening"
+                key={`upcomingScreenings-${screening.id}`}
+              >
                 <Quote />
                 <h4 className="screenings-body-text">
                   {screening.line1}
@@ -138,7 +149,10 @@ class Screenings extends Component {
           </div>
           <div className="screenings-body-body">
             {this.pastScreenings.map(screening => (
-              <div className="screenings-body-screening">
+              <div
+                className="screenings-body-screening"
+                key={`pastScreenings-${screening.id}`}
+              >
                 <Quote />
                 <h4 className="screenings-body-text">
                   {screening.line1}
@@ -164,7 +178,16 @@ class Screenings extends Component {
             <div className="screenings-infoSection-funding-text">
               <h3>
                 IF YOU WOULD LIKE TO HOST YOUR OWN PRIVATE SCREENING EVENT,
-                PLEASE CONTACT INFO@WHIRLOWPARKPICTURES.COM.
+                PLEASE CONTACT{' '}
+                <a
+                  href="mailto:INFO@WHIRLOWPARKPICTURES.COM"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="screenings-infoSection-funding-email"
+                >
+                  INFO@WHIRLOWPARKPICTURES.COM
+                </a>
+                .
               </h3>
             </div>
           </div>
