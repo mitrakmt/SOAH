@@ -27,24 +27,28 @@ class Screenings extends Component {
         line1: 'SEDONA INTERNATIONAL FILM FESTIVAL',
         line2: 'WORLD PREMIERE',
         line3: 'FEBRUARY 28 AT 7:20 PM | MARCH 2 AT 10AM',
+        link: 'https://prod5.agileticketing.net/websales/pages/info.aspx?evtinfo=86966~d5a11db3-b3ba-440c-a208-47197fa86ccd&',
         id: 0,
       },
       {
         line1: 'RAPIDLION FILM FESTIVAL',
         line2: 'UK PREMIERE',
         line3: 'MARCH 3 AT 10:30AM',
+        link: 'http://rapidlion.co.za/rapidlion-films-2019-schedule/?filmcategory=3%20Mannie%20Manim&filmdate=2019-03-07',
         id: 1,
       },
       {
         line1: 'MANCHESTER FILM FESTIVAL',
         line2: 'UK PREMIERE',
         line3: 'MARCH 8 AT 6PM',
+        link: 'http://www.maniff.com/sides-of-a-horn/',
         id: 2,
       },
       {
         line1: 'ENVIRONMENTAL FILM FESTIVAL',
         line2: 'IN THE NATION’S CAPITAL',
         line3: 'MARCH 16 AT 2PM',
+        link: 'https://dceff.org/film/sides-of-a-horn/',
         id: 3,
       },
     ]
@@ -55,6 +59,7 @@ class Screenings extends Component {
         line1: 'WORLD RHINO DAY',
         line2: 'PRIVATE SCREENING',
         line3: 'SEPTEMBER 22, 2018',
+        link: 'https://twitter.com/tobywosskow/status/1044104807726821377',
         id: 0,
       },
     ]
@@ -129,7 +134,9 @@ class Screenings extends Component {
               >
                 <Quote />
                 <h4 className="screenings-body-text">
-                  {screening.line1}
+                  <a className="screenings-link" href={screening.link} target="_blank" rel="noopener noreferrer">
+                    {screening.line1}
+                  </a>
                   <br />
                   {screening.line2}
                   <br />
@@ -155,7 +162,9 @@ class Screenings extends Component {
               >
                 <Quote />
                 <h4 className="screenings-body-text">
-                  {screening.line1}
+                  <a className="screenings-link" href={screening.link} target="_blank" rel="noopener noreferrer">
+                    {screening.line1}
+                  </a>
                   <br />
                   {screening.line2}
                   <br />
