@@ -159,9 +159,8 @@ class Navigation extends Component {
             />
             <Imdb
               href="https://www.imdb.com/title/tt7434998/"
-              width="15px"
-              height="15px"
               fill="#fff"
+              margin="0"
             />
           </div>
         </div>

@@ -105,10 +105,8 @@ class Header extends Component {
           />
           <Imdb
             href="https://www.imdb.com/title/tt7434998/"
-            width="15px"
-            height="15px"
             fill="white"
-            margin="0 10px 0 0"
+            margin="0"
           />
         </div>
       </div>
