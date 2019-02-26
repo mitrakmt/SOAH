@@ -111,19 +111,6 @@ class News extends Component {
     })
   }
 
-  // newsClick = id => {
-  //   console.log('id', id)
-  //   console.log('this.state.selectedNews', this.state.selectedNews)
-  //   console.log('--------------')
-  //   if (id === this.state.selectedNews) {
-  //     window.open(this.news[this.state.selectedNews].href, '_blank')
-  //   } else if (id === this.state.selectedNews + 1 || id === 0) {
-  //     this.previousNews()
-  //   } else {
-  //     this.nextNews()
-  //   }
-  // }
-
   render() {
     const { sectionName } = this.props
     const { selectedNews } = this.state
