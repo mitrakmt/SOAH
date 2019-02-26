@@ -75,15 +75,15 @@ class ImageCarousel extends Component {
             <g
               id="Welcome"
               stroke="none"
-              stroke-width="1"
+              strokeWidth="1"
               fill="none"
-              fill-rule="evenodd"
+              fillRule="evenodd"
             >
               <g
                 id="Screenings-3"
                 transform="translate(-1352.000000, -53.000000)"
                 fill="#BE1E2D"
-                fill-rule="nonzero"
+                fillRule="nonzero"
               >
                 <g id="60932" transform="translate(1352.000000, 53.000000)">
                   <polygon
