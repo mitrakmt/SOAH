@@ -5,7 +5,7 @@ import './social.scss'
 class LinkedIn extends Component {
   render() {
     return (
-      <a href="mailto:yourfriend@gmail.com?subject=Rhino%Movie&body=Body goes here" target="_blank" rel="noopener noreferrer">
+      <a href="mailto:yourfriend@gmail.com?subject=Rhino Movie&body=Body goes here" target="_blank" rel="noopener noreferrer">
         <div
           className="social-iconContainer social-iconContainer-email"
           style={this.props.margin ? { margin: this.props.margin } : {}}
