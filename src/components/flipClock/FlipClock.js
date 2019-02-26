@@ -28,6 +28,7 @@ class FlipClock extends Component {
 	}
   
 	updateTime() {
+    // Movie release date
     const dateFuture = new Date("Jun 5, 2019 00:00:00").getTime();
 		// get new date
     const time = new Date();
@@ -49,10 +50,6 @@ class FlipClock extends Component {
     // what's left is seconds
     // currently unused
     const seconds = delta % 60;  // in theory the modulus is not required
-		// set time units
-		// const hours = time.getHours();
-		// const minutes = time.getMinutes();
-		// const seconds = time.getSeconds();
 		// on days chanage, update dayss and shuffle state
 		if( days !== this.state.hours) {
       // Note this usage of days in the hours field is a quirk of combining the old clock functionality with the countdown
