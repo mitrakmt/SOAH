@@ -5,10 +5,7 @@ import '../credits.scss'
 class YouKickedMyDog extends Component {
   render() {
     return (
-      <a
-        href="http://www.ykmd.co.za/"
-        target="_blank"
-        rel="noopener noreferrer"
+      <div
         className="credits-productionLogo"
       >
         <svg
@@ -44,7 +41,7 @@ class YouKickedMyDog extends Component {
             </g>
           </g>
         </svg>
-      </a>
+      </div>
     )
   }
 }

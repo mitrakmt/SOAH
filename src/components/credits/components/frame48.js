@@ -5,10 +5,7 @@ import '../credits.scss'
 class Frame48 extends Component {
   render() {
     return (
-      <a
-        href="https://frame48.com/"
-        target="_blank"
-        rel="noopener noreferrer"
+      <div
         className="credits-productionLogo"
       >
         <svg
@@ -44,7 +41,7 @@ class Frame48 extends Component {
             </g>
           </g>
         </svg>
-      </a>
+      </div>
     )
   }
 }

@@ -5,10 +5,7 @@ import '../credits.scss'
 class Marks extends Component {
   render() {
     return (
-      <a
-        href="http://www.marksfamilyfoundation.org/"
-        target="_blank"
-        rel="noopener noreferrer"
+      <div
         className="credits-productionLogo"
       >
         <svg
@@ -44,7 +41,7 @@ class Marks extends Component {
             </g>
           </g>
         </svg>
-      </a>
+      </div>
     )
   }
 }

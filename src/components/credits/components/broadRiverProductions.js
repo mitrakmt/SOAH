@@ -5,10 +5,7 @@ import '../credits.scss'
 class BroadRiverProductions extends Component {
   render() {
     return (
-      <a
-        href="https://www.broadriverproductions.com/"
-        target="_blank"
-        rel="noopener noreferrer"
+      <div
         className="credits-productionLogo"
       >
         <svg
@@ -44,7 +41,7 @@ class BroadRiverProductions extends Component {
             </g>
           </g>
         </svg>
-      </a>
+      </div>
     )
   }
 }

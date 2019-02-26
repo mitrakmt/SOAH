@@ -5,10 +5,7 @@ import '../credits.scss'
 class Whirlow extends Component {
   render() {
     return (
-      <a
-        href="http://www.whirlowparkpictures.com/"
-        target="_blank"
-        rel="noopener noreferrer"
+      <div
         className="credits-productionLogo"
       >
         <svg
@@ -44,7 +41,7 @@ class Whirlow extends Component {
             </g>
           </g>
         </svg>
-      </a>
+      </div>
     )
   }
 }

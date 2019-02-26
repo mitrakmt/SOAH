@@ -5,10 +5,7 @@ import '../credits.scss'
 class AfricanWildlife extends Component {
   render() {
     return (
-      <a
-        href="https://www.awf.org/"
-        target="_blank"
-        rel="noopener noreferrer"
+      <div
         className="credits-productionLogo"
       >
         <svg
@@ -44,7 +41,7 @@ class AfricanWildlife extends Component {
             </g>
           </g>
         </svg>
-      </a>
+      </div>
     )
   }
 }

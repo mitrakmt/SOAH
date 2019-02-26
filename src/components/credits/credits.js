@@ -29,16 +29,9 @@ class Credits extends Component {
         />
         <div className="credits-header">
           <h2 className="credits-header-getInTouch">Get in touch</h2>
-          <a
-            href="mailto:info@whirlowparkpictures.com"
-            className="link"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
             <h4 className="credits-header-email">
               INFO@WHIRLOWPARKPICTURES.COM
             </h4>
-          </a>
           <div className="credits-header-social">
             <Instagram
               href="https://www.instagram.com/sidesofahorn"
