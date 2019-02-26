@@ -46,7 +46,10 @@ class TakeActionView extends Component {
                 Share the Message
               </h3>
             </div>
-            <div className={`${sectionName}-images-container`}>
+            <div
+              className={`${sectionName}-images-container`}
+              onClick={() => this.navigateToPage('useYourVoice')}
+            >
               <img
                 src={BabyImage}
                 className={`${sectionName}-images-image`}
@@ -83,7 +86,10 @@ class TakeActionView extends Component {
                 </h3>
               </div>
             </a>
-            <div className={`${sectionName}-images-container`}>
+            <div
+              className={`${sectionName}-images-container`}
+              onClick={() => this.navigateToPage('learnMore')}
+            >
               <img
                 src={MenImage}
                 className={`${sectionName}-images-image`}
