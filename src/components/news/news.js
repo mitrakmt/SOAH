@@ -1,9 +1,15 @@
 import React, { Component } from 'react'
 
 // Images
-import letterFromTheDirector from 'images/letterFromTheDirector.jpg'
-import AWFNews from 'images/AWFNews.jpg'
-import virginNews from 'images/virginNews.jpg'
+import letterFromTheDirector from 'images/news/letterFromTheDirector.jpg'
+import AWFNews from 'images/news/AWFNews.jpg'
+import virginNews from 'images/news/virginNews.jpg'
+
+import virginVideo from 'images/news/VirginVideo_News.png'
+import romanianNews from 'images/news/Romanian_News.png'
+import wanNews from 'images/news/WAN_News.png'
+import inTheMakingNews from 'images/news/InTheMaking_News.png'
+import screeningsNews from 'images/news/Screenings_News.png'
 
 import './news.scss'
 
@@ -16,23 +22,61 @@ class News extends Component {
 
     this.news = [
       {
-        src: letterFromTheDirector,
-        href: 'http://www.rhinomovie.com/press.html',
-        alt: 'Letter from the director',
+        src: wanNews,
+        href:
+          'https://worldanimalnews.com/wan-exclusive-with-sides-of-a-horn-filmmaker-toby-wosskow-check-out-their-new-trailer/',
+        alt: 'World Animal News Interview Writer-Director Toby Wosskow',
         id: 0,
+        internal: false,
+      },
+      {
+        src: virginVideo,
+        href: 'https://www.virgin.com/richard-branson/sides-horn-0',
+        alt: 'Virgin Release Official Trailer',
+        id: 1,
+        internal: false,
+      },
+      {
+        src: letterFromTheDirector,
+        href: '/press',
+        alt: 'Director’s Statement from Toby Wosskow',
+        id: 2,
+        internal: true,
+      },
+      {
+        src: screeningsNews,
+        href: '/screenings',
+        alt: 'Global Screenings Announced Frequently',
+        id: 3,
+        internal: true,
+      },
+      {
+        src: romanianNews,
+        href: 'https://www.facebook.com/watch/?v=756755554724195',
+        alt: 'Canal 3 Cover Sides of a Horn on Romanian News Broadcast',
+        id: 4,
+        internal: false,
       },
       {
         src: AWFNews,
         href:
           'https://www.awf.org/blog/sides-horn-exploring-horrors-south-africas-poaching-war',
         alt: 'AWS on Sides of a Horn',
-        id: 1,
+        id: 5,
       },
       {
         src: virginNews,
         href: 'https://www.virgin.com/richard-branson/sides-horn',
         alt: 'Richard Branson on Sides of a Horn',
-        id: 2,
+        id: 6,
+      },
+      {
+        src: inTheMakingNews,
+        href:
+          'https://www.peoplemagazine.co.za/entertainment/sides-horn-making/',
+        alt:
+          'People Magazine Announce World Rhino Day 2017 Kickstarter Campaign',
+        id: 7,
       },
     ]
   }
