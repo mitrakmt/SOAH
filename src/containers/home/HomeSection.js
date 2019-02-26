@@ -4,9 +4,9 @@ import './section.scss'
 
 class HomeSection extends Component {
   render() {
-    const { Component, sectionName } = this.props
+    const { Component, sectionName, additionalClasses } = this.props
     return (
-      <div className={`homeSectionContainer`} id={sectionName}>
+      <div className={`homeSectionContainer ${additionalClasses}`} id={sectionName}>
         <Component {...this.props} />
       </div>
     )
