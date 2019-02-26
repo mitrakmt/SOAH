@@ -4,6 +4,8 @@ import Home from 'containers/home/Home'
 import Press from 'containers/press/Press'
 import ShareTheMessage from 'containers/shareTheMessage/shareTheMessage'
 import Screenings from 'containers/screenings/screenings'
+import UseYourVoice from 'containers/useYourVoice/UseYourVoice'
+import LearnMore from 'containers/learnMore/LearnMore'
 
 import './app.scss'
 import '../../styles/fonts.scss'
@@ -16,6 +18,8 @@ class App extends Component {
           <Route path="/press" exact component={Press} />
           <Route path="/share" exact component={ShareTheMessage} />
           <Route path="/screenings" exact component={Screenings} />
+          <Route path="/useYourVoice" exact component={UseYourVoice} />
+          <Route path="/learnMore" exact component={LearnMore} />
           <Route path="/" component={Home} />
         </Switch>
       </Router>
