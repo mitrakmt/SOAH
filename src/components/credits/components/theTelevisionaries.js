@@ -5,10 +5,7 @@ import '../credits.scss'
 class TheTelevisionaries extends Component {
   render() {
     return (
-      <a
-        href="https://www.televisionaries.co.za/"
-        target="_blank"
-        rel="noopener noreferrer"
+      <div
         className="credits-productionLogo"
       >
         <svg
@@ -44,7 +41,7 @@ class TheTelevisionaries extends Component {
             </g>
           </g>
         </svg>
-      </a>
+      </div>
     )
   }
 }
