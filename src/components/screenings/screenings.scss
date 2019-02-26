@@ -6,6 +6,11 @@
   position: relative;
   width: 100%;
 
+  &-link {
+    color: #be1e2d;
+    font-weight: 600;
+  }
+
   &-pageTitle {
     position: absolute;
     top: 25px;
