@@ -7,7 +7,7 @@ import LinkedIn from 'components/social/linkedin'
 import Email from 'components/social/email'
 import Tumblr from 'components/social/tumblr'
 
-import PosterArtImage from 'images/SOAH_FilmPoster.jpg'
+import PosterArtImage from 'images/SOAH_FilmPoster.png'
 
 // import HeaderImage from 'images/SOAH_Still39.png'
 
