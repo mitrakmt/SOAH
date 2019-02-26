@@ -62,6 +62,43 @@ class ImageCarousel extends Component {
 
     return (
       <div className="imageCarousel">
+        <a href={images[this.state.selectedImageId].src} download>
+          <svg
+            className="imageCarousel-downloadIcon"
+            width="29px"
+            height="27px"
+            viewBox="0 0 29 27"
+            version="1.1"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlnsXlink="http://www.w3.org/1999/xlink"
+          >
+            <g
+              id="Welcome"
+              stroke="none"
+              stroke-width="1"
+              fill="none"
+              fill-rule="evenodd"
+            >
+              <g
+                id="Screenings-3"
+                transform="translate(-1352.000000, -53.000000)"
+                fill="#BE1E2D"
+                fill-rule="nonzero"
+              >
+                <g id="60932" transform="translate(1352.000000, 53.000000)">
+                  <polygon
+                    id="Shape"
+                    points="12.7210216 0 12.7210216 11.3751226 8 11.3751226 15.5000163 21 23 11.3751226 18.2790111 11.3751226 18.2790111 0"
+                  />
+                  <polygon
+                    id="Shape"
+                    points="23.8538622 21.3568465 5.14613779 21.3568465 5.14613779 19 0 19 0 27 29 27 29 19 23.8538622 19"
+                  />
+                </g>
+              </g>
+            </g>
+          </svg>
+        </a>
         <LazyLoadImage
           src={images[this.state.selectedImageId].src}
           className={`imageCarousel-mainImage ${

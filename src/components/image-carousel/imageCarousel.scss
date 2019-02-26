@@ -19,10 +19,33 @@
     height: auto;
   }
 
-  &-download {
+  &-downloadIcon {
     position: absolute;
-    right: 50px;
     top: 50px;
+
+    @media screen and (min-width: 2500px) {
+      right: 26vw;
+    }
+
+    @media screen and (max-width: 2500px) {
+      right: 26vw;
+    }
+
+    @media screen and (max-width: 2100px) {
+      right: 24vw;
+    }
+
+    @media screen and (max-width: 1800px) {
+      right: 20vw;
+    }
+
+    @media screen and (max-width: 1500px) {
+      right: 14vw;
+    }
+
+    @media screen and (max-width: 1000px) {
+      right: 8vw;
+    }
   }
 
   &-mainImage {

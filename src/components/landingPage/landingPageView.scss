@@ -88,7 +88,7 @@
       filter: opacity(30%);
       width: 925px;
 
-      @include media('<tablet') {
+      @include media('<=tablet') {
         height: 73px;
         width: 275px;
       }
