@@ -49,6 +49,7 @@ export default [
     props: {
       Component: NewsPageView,
       sectionName: 'news',
+      additionalClasses: 'homeSection--collapseOnMobile'
     },
   },
   {
