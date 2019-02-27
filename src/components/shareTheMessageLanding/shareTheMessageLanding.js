@@ -72,7 +72,7 @@ class ShareTheMessageLanding extends Component {
         </div>
         <iframe
           className="shareTheMessageLanding-movie"
-          src="https://www.youtube.com/embed/sIWl6msIH0Y"
+          src="https://www.youtube.com/embed/0el9UwGt_Vk"
           frameBorder="0"
           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen
