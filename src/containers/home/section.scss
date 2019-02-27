@@ -1,13 +1,12 @@
 @import 'include-media/dist/_include-media.scss';
 
 .homeSectionContainer {
-  min-height: 100%;
+  min-height: 100vh;
   position: relative;
   font-family: 'BebasNeue';
 }
 
 .homeContainer {
-  height: 100%;
   overflow-x: hidden;
 }
 
