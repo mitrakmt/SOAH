@@ -6,15 +6,17 @@
       max-width: 65%;
       margin-right: 20px;
 
-      @include media('<=tablet') {
-        margin-right: 0;
-        max-width: 35%;
-      }
-
       @include media('<tablet') {
         margin-right: 0;
         max-width: 85%;
         display: flex;
+        margin-right: 0;
+        max-width: 35%;
+      }
+
+      @include media('>=tablet', '<desktop') {
+        max-width: 100%;
+        margin-right: 100px;
       }
 
       h3 {
@@ -25,12 +27,19 @@
           margin: 15px 5px;
           text-align: center;
         }
+
+        @include media('>=tablet', '<desktop') {
+          font-size: 14px !important;
+        }
       }
     }
   }
   .cta {
     &-container {
       display: inline-block;
+      @include media('>=tablet', '<desktop') {
+        display: none;
+      }
     }
   }
   .flipClock {
@@ -46,6 +55,10 @@
         align-items: center;
         justify-content: center;
         height: 100px;
+      }
+
+      @include media('>=tablet', '<desktop') {
+        right: 25%;
       }
     }
   }
@@ -123,9 +136,10 @@
   }
   .latest {
     &-form {
-      // float: right;
-
       line-height: 66px;
+      @include media('>=tablet', '<desktop') {
+        line-height: initial;
+      }
     }
     &-inputEmail {
       display: inline-block;
@@ -152,6 +166,13 @@
       @include media('<tablet') {
         width: 60%;
       }
+      @include media('>=tablet', '<desktop') {
+        height: 25px;
+        // Reset margin
+        margin: 0;
+        margin-bottom: 5px;
+        width: 80%;
+      }
     }
     &-inputSubmit {
       border: none;
@@ -168,12 +189,22 @@
       &:focus {
         outline: 0;
       }
+
+      @include media('>=tablet', '<desktop') {
+        height: 35px;
+      }
     }
     &-text {
       float: left;
       font-size: 24px !important;
 
       @include media('<tablet') {
+        h3 {
+          display: inline;
+        }
+      }
+      @include media('>=tablet', '<desktop') {
+        float: none;
         h3 {
           display: inline;
         }
