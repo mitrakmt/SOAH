@@ -77,25 +77,6 @@ class LookInside extends Component {
             </div>
           </div>
         </div>
-        <div className="shareTheStory-bottomSection">
-          <div className="shareTheStory-bottomSection-left">
-            <h3 className="shareTheStory-bottomSection-left-header">
-              Share the Story
-            </h3>
-            <h4 className="shareTheStory-bottomSection-left-text">
-              #SIDESOFAHORN IS THE FIRST FILM TO TELL THE STORY OF AFRICA’S
-              POACHING WAR FROM BOTH SIDES OF THE FENCE. WATCH IT THIS
-              #WORLDRHINODAY ON SEPTEMBER 22, 2019 AT WWW.RHINOMOVIE.COM
-            </h4>
-          </div>
-          <div className="shareTheStory-bottomSection-right">
-            <img
-              src={RhinoImage}
-              className="shareTheStory-bottomSection-right-image"
-              alt="Rhino"
-            />
-          </div>
-        </div>
       </div>
     )
   }

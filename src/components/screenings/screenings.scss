@@ -243,6 +243,10 @@
           color: #ffffff;
           line-height: 30px;
 
+          &-center {
+            text-align: center;
+          }
+
           @media screen and (max-width: 800px) {
             margin: 0;
             font-size: 18px;
