@@ -146,6 +146,7 @@ class News extends Component {
             href={this.news[selectedNews].href}
             target="_blank"
             rel="noopener noreferrer"
+            className="news-images-mainNewsContainer"
           >
             <img
               src={this.news[selectedNews].src}
