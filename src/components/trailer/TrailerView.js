@@ -9,10 +9,37 @@ import FlipClock from '../../components/flipClock'
 import './trailerView.scss'
 
 class TrailerView extends Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      email: '',
+    }
+  }
+
+  submitEmail = () => {
+    setTimeout(() => {
+      this.setState({
+        email: '',
+      })
+    }, 1000)
+  }
+
+  updateEmail = event => {
+    this.setState({
+      email: event.target.value,
+    })
+  }
+
   render() {
     const { sectionName } = this.props
+
     return (
       <div className={`${sectionName}-view`}>
+        <link
+          href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css"
+          rel="stylesheet"
+          type="text/css"
+        />
         <iframe
           className="thumbnail"
           src="https://www.youtube.com/embed/0el9UwGt_Vk"
@@ -85,11 +112,46 @@ class TrailerView extends Component {
               <h3>latest:</h3>
             </div>
             <div className="latest-form">
-              <input
-                className="latest-inputEmail"
-                placeholder="Email address"
-              />
-              <button className="latest-inputSubmit">Count me in!</button>
+              <div id="mc_embed_signup">
+                <form
+                  action="https://whirlowparkpictures.us18.list-manage.com/subscribe/post?u=6ffdb5207ab2707139f3c06b9&amp;id=6aad220de9"
+                  method="post"
+                  id="mc-embedded-subscribe-form"
+                  name="mc-embedded-subscribe-form"
+                  className="validate"
+                  target="_blank"
+                  noValidate
+                >
+                  <div
+                    id="mc_embed_signup_scroll"
+                    style={{
+                      display: 'flex',
+                      alignItems: 'center',
+                      marginTop: '5px',
+                    }}
+                  >
+                    <input
+                      type="email"
+                      className="latest-inputEmail"
+                      placeholder="Email address"
+                      name="EMAIL"
+                      value={this.state.email}
+                      id="mce-EMAIL"
+                      onChange={this.updateEmail}
+                      required
+                    />
+                    <button
+                      type="submit"
+                      name="subscribe"
+                      id="mc-embedded-subscribe"
+                      className="latest-inputSubmit"
+                      onClick={this.submitEmail}
+                    >
+                      Submit
+                    </button>
+                  </div>
+                </form>
+              </div>
             </div>
           </div>
         </div>
