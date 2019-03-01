@@ -63,6 +63,7 @@
         height: 30px;
         display: none;
         z-index: 2;
+        pointer-events: none;
 
         @include media('<desktop') {
           display: block;
@@ -78,6 +79,7 @@
         max-width: 200px;
         text-align: center;
         cursor: pointer;
+        pointer-events: none;
         margin: 5px;
 
         @include media('<desktop') {
