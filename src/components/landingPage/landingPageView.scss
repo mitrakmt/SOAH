@@ -87,13 +87,18 @@
       margin: 0;
     }
     &-image {
-      height: 184px;
+      height: 164px;
       filter: opacity(30%);
       width: 925px;
 
+      @include media('>=27em', '<=72em') {
+        height: 134px;
+        width: 725px;
+      }
+
       @include media('<=tablet') {
         height: 73px;
-        width: 275px;
+        width: 300px;
       }
     }
   }
