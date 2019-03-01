@@ -9,7 +9,7 @@
 
   &-topSection {
     display: flex;
-    height: 40%;
+    height: 100%;
     flex-wrap: wrap;
 
     @media screen and (max-width: 850px) {
@@ -38,11 +38,9 @@
     &-left {
       flex: 1;
       min-width: 400px;
-      min-height: 300px;
 
       @media screen and (max-width: 850px) {
         min-height: auto;
-        height: 300px;
       }
 
       @media screen and (max-width: 650px) {
