@@ -141,7 +141,8 @@
 
       &-hide {
         pointer-events: none;
-        opacity: 0;
+        color: gray;
+        opacity: 0.6;
       }
 
       &:hover {
