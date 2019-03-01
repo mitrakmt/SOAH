@@ -22,29 +22,31 @@
   &-downloadIcon {
     position: absolute;
     top: 50px;
+    right: 50px;
 
-    @media screen and (min-width: 2500px) {
-      right: 26vw;
+    &-icon {
+      height: 40px;
+      width: 40px;
+
+      @media screen and (max-width: 1800px) {
+        height: 30px;
+        width: 30px;
+      }
+
+      @media screen and (max-width: 1300px) {
+        height: 25px;
+        width: 25px;
+      }
+
+      @media screen and (max-width: 400px) {
+        height: 20px;
+        width: 20px;
+      }
     }
 
-    @media screen and (max-width: 2500px) {
-      right: 26vw;
-    }
-
-    @media screen and (max-width: 2100px) {
-      right: 24vw;
-    }
-
-    @media screen and (max-width: 1800px) {
-      right: 24vw;
-    }
-
-    @media screen and (max-width: 1500px) {
-      right: 18vw;
-    }
-
-    @media screen and (max-width: 1000px) {
-      right: 12vw;
+    @media screen and (max-width: 400px) {
+      top: 25px;
+      right: 25px;
     }
   }
 
@@ -106,6 +108,70 @@
     }
   }
 
+  &-sideArrows {
+    position: absolute;
+    top: 35%;
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    max-width: 1900px;
+
+    @media screen and (max-width: 900px) {
+      top: 30%;
+      width: 80%;
+    }
+
+    @media screen and (max-width: 600px) {
+      top: 35%;
+      width: 85%;
+    }
+
+    &-left {
+      cursor: pointer;
+      font-family: NanumPen;
+      font-size: 35px;
+      color: rgba(255, 255, 255, 0.83);
+      letter-spacing: -2.56px;
+      margin: 0;
+      padding: 10px;
+      transition-duration: 0.15s;
+
+      @media screen and (min-width: 1800px) {
+        font-size: 50px;
+      }
+
+      @media screen and (max-width: 600px) {
+        font-size: 20px;
+      }
+
+      &:hover {
+        color: #a31f2b;
+      }
+    }
+    &-right {
+      cursor: pointer;
+      font-family: NanumPen;
+      font-size: 35px;
+      color: rgba(255, 255, 255, 0.83);
+      letter-spacing: -2.56px;
+      margin: 0;
+      padding: 10px;
+      transition-duration: 0.15s;
+
+      @media screen and (min-width: 1800px) {
+        font-size: 50px;
+      }
+
+      @media screen and (max-width: 600px) {
+        font-size: 20px;
+      }
+
+      &:hover {
+        color: #a31f2b;
+      }
+    }
+  }
+
   &-arrows {
     display: flex;
     width: 90px;
@@ -121,12 +187,16 @@
     &-arrow {
       cursor: pointer;
       font-family: NanumPen;
-      font-size: 24px;
+      font-size: 32px;
       color: rgba(255, 255, 255, 0.83);
       letter-spacing: -2.56px;
       margin: 0;
       padding: 10px;
       transition-duration: 0.15s;
+
+      @media screen and (max-width: 600px) {
+        font-size: 26px;
+      }
 
       &:hover {
         color: #a31f2b;

@@ -62,11 +62,13 @@ class ImageCarousel extends Component {
 
     return (
       <div className="imageCarousel">
-        <a href={images[this.state.selectedImageId].src} download>
+        <a
+          href={images[this.state.selectedImageId].src}
+          className="imageCarousel-downloadIcon"
+          download
+        >
           <svg
-            className="imageCarousel-downloadIcon"
-            width="29px"
-            height="27px"
+            className="imageCarousel-downloadIcon-icon"
             viewBox="0 0 29 27"
             version="1.1"
             xmlns="http://www.w3.org/2000/svg"
@@ -106,6 +108,20 @@ class ImageCarousel extends Component {
           }`}
           alt="Carousel"
         />
+        <div className="imageCarousel-sideArrows">
+          <h5
+            className="imageCarousel-sideArrows-left"
+            onClick={this.previousImage}
+          >
+            {`<`}
+          </h5>
+          <h5
+            className="imageCarousel-sideArrows-right"
+            onClick={this.nextImage}
+          >
+            {`>`}
+          </h5>
+        </div>
         <div className="imageCarousel-arrows">
           <h5
             className="imageCarousel-arrows-arrow"
