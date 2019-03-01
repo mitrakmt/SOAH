@@ -7,8 +7,6 @@ import LinkedIn from 'components/social/linkedin'
 import Email from 'components/social/email'
 import Tumblr from 'components/social/tumblr'
 
-import RhinoImage from 'images/SOAH_rhino.png'
-
 import './shareTheStory.scss'
 
 class LookInside extends Component {

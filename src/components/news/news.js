@@ -85,9 +85,6 @@ class News extends Component {
     let currentPage = this.state.selectedNews
 
     if (currentPage === this.news.length - 1) {
-      this.setState({
-        selectedNews: 0,
-      })
       return
     }
 
@@ -100,15 +97,22 @@ class News extends Component {
     let currentPage = this.state.selectedNews
 
     if (currentPage === 0) {
-      this.setState({
-        selectedNews: this.news.length - 1,
-      })
       return
     }
 
     this.setState({
       selectedNews: --currentPage,
     })
+  }
+
+  newsClick = id => {
+    if (id === this.state.selectedNews) {
+      window.open(this.news[this.state.selectedNews].href, '_blank')
+    } else if (id === this.state.selectedNews - 1) {
+      this.previousNews()
+    } else {
+      this.nextNews()
+    }
   }
 
   render() {
@@ -118,9 +122,9 @@ class News extends Component {
     let previousNews = 0
     if (selectedNews === 0) {
       nextNews = selectedNews + 1
-      previousNews = this.news.length - 1
+      previousNews = null
     } else if (selectedNews === this.news.length - 1) {
-      nextNews = 0
+      nextNews = null
       previousNews = selectedNews - 1
     } else {
       nextNews = selectedNews + 1
@@ -135,36 +139,11 @@ class News extends Component {
           <span className="news-header-line" />
         </div>
         <div className="news-images">
-          <a onClick={this.previousNews} className="news-images-navigate">
-            <img
-              src={this.news[previousNews].src}
-              className="news-images-leftNews"
-              alt={this.news[previousNews].alt}
-            />
-          </a>
-          <a
-            href={this.news[selectedNews].href}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="news-images-mainNewsContainer"
-          >
-            <img
-              src={this.news[selectedNews].src}
-              className="news-images-mainNews"
-              alt={this.news[selectedNews].alt}
-            />
-          </a>
-          <a onClick={this.nextNews} className="news-images-navigate">
-            <img
-              src={this.news[nextNews].src}
-              className="news-images-rightNews"
-              alt={this.news[nextNews].alt}
-            />
-          </a>
-          {/* {this.news.map(piece => (
+          {this.news.map(piece => (
             <a
               onClick={() => this.newsClick(piece.id)}
               className="news-images-navigate"
+              key={`news-carousel-${piece.id}`}
             >
               <img
                 src={piece.src}
@@ -173,25 +152,41 @@ class News extends Component {
                     ? 'news-images-mainNews'
                     : ''
                 } ${
-                  this.news[nextNews].id === piece.id
+                  this.news[nextNews] && this.news[nextNews].id === piece.id
                     ? 'news-images-rightNews'
                     : ''
                 } ${
+                  this.news[previousNews] &&
                   this.news[previousNews].id === piece.id
                     ? 'news-images-leftNews'
+                    : ''
+                } ${
+                  piece.id > selectedNews + 1
+                    ? 'news-images-farRight'
+                    : piece.id < selectedNews - 1
+                    ? 'news-images-farLeft'
                     : ''
                 }`}
                 alt={piece.alt}
               />
             </a>
-          ))} */}
+          ))}
         </div>
         <div className="news-arrows">
           <h5
-            className="news-arrows-arrow"
+            className={`news-arrows-arrow ${
+              this.state.selectedNews === 0 ? 'news-arrows-arrow-hide' : ''
+            }`}
             onClick={this.previousNews}
           >{`<`}</h5>
-          <h5 className="news-arrows-arrow" onClick={this.nextNews}>{`>`}</h5>
+          <h5
+            className={`news-arrows-arrow ${
+              this.state.selectedNews === this.news.length - 1
+                ? 'news-arrows-arrow-hide'
+                : ''
+            }`}
+            onClick={this.nextNews}
+          >{`>`}</h5>
         </div>
       </div>
     )
