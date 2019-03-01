@@ -98,10 +98,11 @@ class Screenings extends Component {
   }
 
   submitEmail = () => {
-    // submit this.state.email
-    this.setState({
-      email: '',
-    })
+    setTimeout(() => {
+      this.setState({
+        email: '',
+      })
+    }, 1000)
   }
 
   updateEmail = event => {
@@ -115,6 +116,11 @@ class Screenings extends Component {
 
     return (
       <div className={`${sectionName}`}>
+        <link
+          href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css"
+          rel="stylesheet"
+          type="text/css"
+        />
         <h3 className="screenings-pageTitle">Screenings</h3>
         <img
           src={HeaderImage}
@@ -232,18 +238,48 @@ class Screenings extends Component {
               </h4>
             </div>
             <div className="screenings-infoSection-box-column">
-              <input
-                className="screenings-infoSection-box-column-input"
-                value={this.state.email}
-                onChange={this.updateEmail}
-                placeholder="Email"
-              />
-              <button
-                className="screenings-infoSection-box-column-submit"
-                onClick={this.submitEmail}
-              >
-                Count Me In
-              </button>
+              <div className="latest-form" style={{ width: '100%' }}>
+                <div id="mc_embed_signup">
+                  <form
+                    action="https://whirlowparkpictures.us18.list-manage.com/subscribe/post?u=6ffdb5207ab2707139f3c06b9&amp;id=6aad220de9"
+                    method="post"
+                    id="mc-embedded-subscribe-form"
+                    name="mc-embedded-subscribe-form"
+                    className="validate"
+                    target="_blank"
+                    noValidate
+                  >
+                    <div
+                      id="mc_embed_signup_scroll"
+                      style={{
+                        display: 'flex',
+                        alignItems: 'center',
+                        marginTop: '5px',
+                      }}
+                    >
+                      <input
+                        type="email"
+                        className="screenings-infoSection-box-column-input"
+                        placeholder="Email Address"
+                        name="EMAIL"
+                        value={this.state.email}
+                        id="mce-EMAIL"
+                        onChange={this.updateEmail}
+                        required
+                      />
+                      <button
+                        type="submit"
+                        name="subscribe"
+                        id="mc-embedded-subscribe"
+                        className="screenings-infoSection-box-column-submit"
+                        onClick={this.submitEmail}
+                      >
+                        Submit
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
             </div>
           </div>
         </div>

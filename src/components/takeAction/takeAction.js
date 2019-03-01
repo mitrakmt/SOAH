@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import { withRouter } from 'react-router-dom'
 
 import redLogo from '../../images/redLogo.png'
-import backgroundImage from 'images/SOAH_Still18.png'
 import RhinoImage from 'images/SOAH_Still2.png'
 import ManImage from 'images/SOAH_Still5.png'
 import MenImage from 'images/SOAH_Still29.png'
