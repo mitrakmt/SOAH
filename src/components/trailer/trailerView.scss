@@ -37,6 +37,7 @@
   .cta {
     &-container {
       display: inline-block;
+      margin-right: 20px;
       @include media('>=tablet', '<desktop') {
         display: none;
       }
@@ -221,7 +222,6 @@
         float: right;
         margin-right: 15px;
         position: relative;
-        top: 15%;
       }
 
       @include media('<tablet') {
@@ -232,7 +232,7 @@
       // Layout styles
       align-items: center;
       display: flex;
-      justify-content: center;
+      justify-content: space-between;
 
       & a {
         display: inline;

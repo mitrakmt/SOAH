@@ -54,23 +54,17 @@ class PosterArt extends Component {
             />
             <LinkedIn
               href="https://linkedin.com/in/sidesofahorn"
-              width="15px"
-              height="15px"
-              fill="#fff"
+              fill="white"
               margin="0px 0px 10px 0px"
             />
             <Email
               href="https://linkedin.com/in/sidesofahorn"
-              width="15px"
-              height="15px"
-              fill="#fff"
+              fill="white"
               margin="0px 0px 10px 0px"
             />
             <Tumblr
               href="https://tumbler.com/in/sidesofahorn"
-              width="15px"
-              height="15px"
-              fill="#fff"
+              fill="white"
               margin="0px 0px 10px 0px"
             />
           </div>

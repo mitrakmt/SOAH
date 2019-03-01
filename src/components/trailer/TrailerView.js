@@ -34,44 +34,38 @@ class TrailerView extends Component {
                   width="15px"
                   height="15px"
                   fill="white"
-                  margin="3px 5px 3px 5px"
+                  margin="2px 4px 2px 4px"
                 />
                 <Twitter
                   href="https://twitter.com/sidesofahorn"
                   width="15px"
                   height="15px"
                   fill="white"
-                  margin="3px 5px 3px 5px"
+                  margin="2px 4px 2px 4px"
                 />
                 <Facebook
                   href="https://www.facebook.com/sidesofahorn/"
                   width="15px"
                   height="15px"
                   fill="white"
-                  margin="3px 5px 3px 5px"
+                  margin="2px 4px 2px 4px"
                 />
               </div>
               <div className="socialGroup-line">
                 <LinkedIn
                   href="https://linkedin.com/in/sidesofahorn"
-                  width="15px"
-                  height="15px"
-                  fill="#fff"
-                  margin="3px 5px 3px 5px"
+                  fill="white"
+                  margin="2px 4px 2px 4px"
                 />
                 <Email
                   href="https://linkedin.com/in/sidesofahorn"
-                  width="15px"
-                  height="15px"
-                  fill="#fff"
-                  margin="3px 5px 3px 5px"
+                  fill="white"
+                  margin="2px 4px 2px 4px"
                 />
                 <Tumblr
                   href="https://tumbler.com/in/sidesofahorn"
-                  width="15px"
-                  height="15px"
-                  fill="#fff"
-                  margin="3px 5px 3px 5px"
+                  fill="white"
+                  margin="2px 4px 2px 4px"
                 />
               </div>
             </div>

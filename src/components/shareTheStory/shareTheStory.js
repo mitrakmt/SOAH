@@ -43,36 +43,39 @@ class LookInside extends Component {
                 width="15px"
                 height="15px"
                 fill="#fff"
+                margin="0 5px 0 0"
               />
               <Facebook
                 href="https://www.facebook.com/sidesofahorn/"
                 width="15px"
                 height="15px"
                 fill="#fff"
+                margin="0 5px 0 0"
               />
               <Twitter
                 href="https://twitter.com/sidesofahorn"
                 width="15px"
                 height="15px"
                 fill="#fff"
+                margin="0 5px 0 0"
               />
               <LinkedIn
                 href="https://linkedin.com/in/sidesofahorn"
-                width="15px"
-                height="15px"
-                fill="#fff"
+                fill="white"
+                margin="0"
+                margin="0 5px 0 0"
               />
               <Email
                 href="https://linkedin.com/in/sidesofahorn"
-                width="15px"
-                height="15px"
-                fill="#fff"
+                fill="white"
+                margin="0"
+                margin="0 5px 0 0"
               />
               <Tumblr
                 href="https://tumbler.com/in/sidesofahorn"
-                width="15px"
-                height="15px"
-                fill="#fff"
+                fill="white"
+                margin="0"
+                margin="0 5px 0 0"
               />
             </div>
           </div>
