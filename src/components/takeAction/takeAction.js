@@ -20,11 +20,6 @@ class TakeActionView extends Component {
 
     return (
       <div className={`${sectionName}`}>
-        <img
-          src={backgroundImage}
-          className={`${sectionName}-background`}
-          alt="background"
-        />
         <div className={`${sectionName}-header`}>
           <h3 className={`${sectionName}-header-text`}>Take Action</h3>
           <div className={`${sectionName}-images`}>
