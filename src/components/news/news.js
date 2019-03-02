@@ -1,15 +1,13 @@
 import React, { Component } from 'react'
 
 // Images
-import letterFromTheDirector from 'images/news/letterFromTheDirector.jpg'
-import AWFNews from 'images/news/AWFNews.jpg'
-import virginNews from 'images/news/virginNews.jpg'
-
-import virginVideo from 'images/news/VirginVideo_News.png'
-import romanianNews from 'images/news/Romanian_News.png'
-import wanNews from 'images/news/WAN_News.png'
-import inTheMakingNews from 'images/news/InTheMaking_News.png'
-import screeningsNews from 'images/news/Screenings_News.png'
+import wanNews from 'images/news/WorldAnimalNews.jpg'
+import virginVideo from 'images/news/Virgin_TrailerAnnouncement.png'
+import AWFNews from 'images/news/AfricanWildlifeFoundation.png'
+import romanianNews from 'images/news/Canal3.png'
+import screeningsNews from 'images/news/Screenings.jpg'
+import virginNews from 'images/news/Virgin_RichardBransonAnnoucement.jpeg'
+import inTheMakingNews from 'images/news/PeopleMagazine.jpg'
 
 import './news.scss'
 
@@ -37,38 +35,31 @@ class News extends Component {
         internal: false,
       },
       {
-        src: letterFromTheDirector,
-        href: '/press',
-        alt: 'Director’s Statement from Toby Wosskow',
-        id: 2,
-        internal: true,
-      },
-      {
         src: screeningsNews,
         href: '/screenings',
         alt: 'Global Screenings Announced Frequently',
-        id: 3,
+        id: 2,
         internal: true,
       },
       {
         src: romanianNews,
         href: 'https://www.facebook.com/watch/?v=756755554724195',
-        alt: 'Canal 3 Cover Sides of a Horn on Romanian News Broadcast',
-        id: 4,
+        alt: 'Canal 3 Covers Sides of a Horn',
+        id: 3,
         internal: false,
       },
       {
         src: AWFNews,
         href:
           'https://www.awf.org/blog/sides-horn-exploring-horrors-south-africas-poaching-war',
-        alt: 'AWS on Sides of a Horn',
-        id: 5,
+        alt: 'African WIldlife Foundation on Sides of a Horn',
+        id: 4,
       },
       {
         src: virginNews,
         href: 'https://www.virgin.com/richard-branson/sides-horn',
         alt: 'Richard Branson on Sides of a Horn',
-        id: 6,
+        id: 5,
       },
       {
         src: inTheMakingNews,
@@ -76,7 +67,7 @@ class News extends Component {
           'https://www.peoplemagazine.co.za/entertainment/sides-horn-making/',
         alt:
           'People Magazine Announce World Rhino Day 2017 Kickstarter Campaign',
-        id: 7,
+        id: 6,
       },
     ]
   }
@@ -171,6 +162,7 @@ class News extends Component {
               />
             </a>
           ))}
+          <p className="news-images-title">{this.news[selectedNews].alt}</p>
         </div>
         <div className="news-arrows">
           <h5

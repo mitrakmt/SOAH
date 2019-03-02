@@ -4,13 +4,7 @@ import Twitter from 'components/social/twitter'
 import Facebook from 'components/social/facebook'
 
 // Logos
-import AfricanWildlife from './components/africanWildlife'
-import BroadRiverProductions from './components/broadRiverProductions'
-import Frame48 from './components/frame48'
-import Marks from './components/marks'
-import TheTelevisionaries from './components/theTelevisionaries'
-import Whirlow from './components/whirlow'
-import YouKickedMyDog from './components/youKickedMyDog'
+import CreditsImage from 'images/SOAH_Credits.png'
 
 // Images
 import Mountains from 'images/mountains.png'
@@ -29,9 +23,7 @@ class Credits extends Component {
         />
         <div className="credits-header">
           <h2 className="credits-header-getInTouch">Get in touch</h2>
-            <h4 className="credits-header-email">
-              INFO@WHIRLOWPARKPICTURES.COM
-            </h4>
+          <h4 className="credits-header-email">INFO@WHIRLOWPARKPICTURES.COM</h4>
           <div className="credits-header-social">
             <Instagram
               href="https://www.instagram.com/sidesofahorn"
@@ -53,7 +45,12 @@ class Credits extends Component {
             />
           </div>
         </div>
-        <div className="credits-names">
+        <img
+          src={CreditsImage}
+          className="credits-creditsImage"
+          alt="Credits"
+        />
+        {/* <div className="credits-names">
           <h4>
             executive producer{' '}
             <span className="credits-names-large">sir richard branson</span>{' '}
@@ -107,7 +104,7 @@ class Credits extends Component {
           <BroadRiverProductions />
           <Frame48 />
           <Marks />
-        </div>
+        </div> */}
         <div>
           <h3 className="credits-footer">
             WEB DESIGN BY:{' '}

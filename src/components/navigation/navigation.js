@@ -144,23 +144,26 @@ class Navigation extends Component {
               width="15px"
               height="15px"
               fill="#fff"
+              margin="0 10px 0 0"
             />
             <Facebook
               href="https://www.facebook.com/sidesofahorn/"
               width="15px"
               height="15px"
               fill="#fff"
+              margin="0 10px 0 0"
             />
             <Twitter
               href="https://twitter.com/sidesofahorn"
               width="15px"
               height="15px"
               fill="#fff"
+              margin="0 10px 0 0"
             />
             <Imdb
               href="https://www.imdb.com/title/tt7434998/"
               fill="#fff"
-              margin="0"
+              margin="0 10px 0 0"
             />
           </div>
         </div>

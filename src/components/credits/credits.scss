@@ -7,15 +7,16 @@
   width: 100%;
   position: absolute;
 
+  &-creditsImage {
+    width: 80%;
+    max-width: 1400px;
+    margin: 40px;
+  }
+
   &-productionLogo {
     display: flex;
     align-items: center;
     justify-content: center;
-  }
-
-  @media screen and (max-width: 600px) {
-    height: initial;
-    position: relative;
   }
 
   &-background {

@@ -34,6 +34,25 @@
     display: flex;
     width: 100%;
     height: 80%;
+    flex-direction: column;
+
+    &-title {
+      color: white;
+      position: absolute;
+      bottom: 150px;
+      width: 100%;
+      text-align: center;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      font-size: 26px;
+
+      @media screen and (max-width: 800px) {
+        position: inherit;
+        margin-top: 20px;
+        font-size: 20px;
+      }
+    }
 
     &-navigate {
       cursor: pointer;
@@ -49,10 +68,10 @@
     }
 
     &-mainNews {
-      width: 50%;
+      width: 55%;
       left: 25%;
 
-      top: 10%;
+      top: 20%;
       bottom: auto;
 
       @media screen and (max-width: 1000px) {
@@ -73,12 +92,12 @@
     }
 
     &-leftNews {
-      width: 25%;
-      left: -5%;
+      width: 30%;
+      left: -10%;
       top: 30%;
       bottom: auto;
       right: auto;
-      opacity: 0.7;
+      opacity: 0.8;
 
       @media screen and (max-width: 1000px) {
         display: none;
@@ -88,18 +107,18 @@
     &-farLeft {
       width: 25%;
       left: -50%;
-      opacity: 0.7;
+      opacity: 0.8;
       top: 30%;
       bottom: auto;
       right: auto;
     }
 
     &-rightNews {
-      width: 25%;
-      opacity: 0.7;
+      width: 30%;
+      opacity: 0.8;
       right: auto;
       bottom: auto;
-      left: 80%;
+      left: 85%;
       top: 30%;
 
       @media screen and (max-width: 1000px) {
@@ -110,7 +129,7 @@
     &-farRight {
       width: 25%;
       right: auto;
-      opacity: 0.7;
+      opacity: 0.8;
       top: 30%;
       bottom: auto;
       left: 150%;
