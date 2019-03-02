@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 
 import BackgroundImage from 'images/SOAH_Still99.jpg'
 import Quote from 'components/quote/quote'
+import ScrollAnimation from 'react-animate-on-scroll'
 
 import './theStory.scss'
 

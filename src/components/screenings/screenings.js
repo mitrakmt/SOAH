@@ -3,6 +3,7 @@ import React, { Component } from 'react'
 import HeaderImage from 'images/screenings_background.jpg'
 import Quote from 'components/quote/grayQuote'
 import ImageCarousel from 'components/image-carousel/imageCarousel'
+import ScrollAnimation from 'react-animate-on-scroll'
 
 import Image1 from 'images/world-rhino-day/img_9498.jpg'
 import Image2 from 'images/world-rhino-day/img_9657.jpg'

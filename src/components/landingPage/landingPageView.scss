@@ -57,11 +57,27 @@
       }
     }
     &-text--bottom {
-      border-bottom: 3px solid red;
       padding-bottom: 25px;
       // These next two are hacky shiz for the partial border unerline
+      float: right;
+    }
+    &-text-border {
+      border-bottom: 3px solid red;
       width: 52%;
       float: right;
+
+      animation-name: landingPageAnimatedLine;
+      animation-duration: 2s;
+      animation-delay: 4s;
+
+      @keyframes landingPageAnimatedLine {
+        0% {
+          width: 0%;
+        }
+        100% {
+          width: 52%;
+        }
+      }
     }
     &-text {
       margin: 0;

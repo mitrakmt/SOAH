@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 
 import ImageCarousel from 'components/image-carousel/imageCarousel'
+import ScrollAnimation from 'react-animate-on-scroll'
 
 import Facebook from 'components/social/facebook'
 import Twitter from 'components/social/twitter'

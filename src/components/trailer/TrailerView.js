@@ -6,6 +6,7 @@ import LinkedIn from 'components/social/linkedin'
 import Email from 'components/social/email'
 import Tumblr from 'components/social/tumblr'
 import FlipClock from '../../components/flipClock'
+import ScrollAnimation from 'react-animate-on-scroll'
 import './trailerView.scss'
 
 class TrailerView extends Component {

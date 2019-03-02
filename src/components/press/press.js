@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 
+import ScrollAnimation from 'react-animate-on-scroll'
+
 import LetterFromTheDirector from 'components/letter-from-the-director/letterFromTheDirector'
 import Facebook from 'components/social/facebook'
 import Twitter from 'components/social/twitter'

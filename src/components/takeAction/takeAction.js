@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { withRouter } from 'react-router-dom'
+import ScrollAnimation from 'react-animate-on-scroll'
 
 import redLogo from '../../images/redLogo.png'
 import RhinoImage from 'images/SOAH_Still2.png'

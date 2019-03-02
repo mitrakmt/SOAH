@@ -11,6 +11,7 @@
   &-header {
     display: flex;
     align-items: center;
+    justify-content: center;
     width: 100%;
     margin-bottom: 20px;
 
@@ -27,6 +28,41 @@
       width: 100%;
       margin: 0 40px;
       border-bottom: 3px solid #be1e2d;
+      transition-duration: 2s;
+    }
+
+    &-left {
+      animation-name: newsAnimatedLineLeft;
+      animation-duration: 2s;
+      animation-delay: 0s;
+
+      @keyframes newsAnimatedLineLeft {
+        0% {
+          width: 0%;
+          margin-left: 100%;
+        }
+        100% {
+          width: 100%;
+          margin-left: 40px;
+        }
+      }
+    }
+
+    &-right {
+      animation-name: newsAnimatedLineRight;
+      animation-duration: 2s;
+      animation-delay: 0s;
+
+      @keyframes newsAnimatedLineRight {
+        0% {
+          width: 0%;
+          margin-right: 100%;
+        }
+        100% {
+          width: 100%;
+          margin-right: 40px;
+        }
+      }
     }
   }
 

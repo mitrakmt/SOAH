@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import ScrollAnimation from 'react-animate-on-scroll'
 
 // Images
 import wanNews from 'images/news/WorldAnimalNews.jpg'
@@ -125,9 +126,17 @@ class News extends Component {
     return (
       <div className={`${sectionName}`}>
         <div className="news-header">
-          <span className="news-header-line" />
+          <ScrollAnimation
+            animateIn="fadeIn"
+            duration={2}
+            className="news-header-line news-header-left"
+          />
           <h3 className="news-header-text">In the News</h3>
-          <span className="news-header-line" />
+          <ScrollAnimation
+            animateIn="fadeIn"
+            duration={2}
+            className="news-header-line news-header-right"
+          />
         </div>
         <div className="news-images">
           {this.news.map(piece => (
