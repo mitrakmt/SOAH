@@ -1,3 +1,4 @@
+@import 'include-media/dist/_include-media.scss';
 .shareTheMessageLanding {
   background-color: black;
   display: flex;
@@ -69,17 +70,19 @@
   }
 
   &-movie {
-    width: 80%;
-    min-height: 350px;
+    // Define minimum constraints so we don't cut off the image
+    // These settings are a 16:9 aspect ratio
+    min-width:900px;
+    min-height:506px;
+    // Define maximum constraints so we don't end up with weird ratios
+    max-width:1800px;
+    max-height:1080px;
+    width: auto;
+    height: auto;
 
-    @media screen and (max-width: 850px) {
-      height: auto;
-      min-height: 250px;
-    }
-
-    @media screen and (max-width: 550px) {
-      height: auto;
-      min-height: auto;
+    @include media('<tablet') {
+      // Prevents trailer from being wider than the phone's viewport
+      min-width: 100vw;
     }
   }
 }
