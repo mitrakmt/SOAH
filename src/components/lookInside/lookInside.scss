@@ -81,8 +81,36 @@
       top: 0;
       left: 100px;
 
+      animation-name: lookInsideMobileLineAnimation;
+      animation-duration: 2s;
+      animation-delay: 1s;
+      transition-duration: 2s;
+
+      @keyframes lookInsideMobileLineAnimation {
+        0% {
+          height: 0;
+        }
+        100% {
+          height: 80px;
+        }
+      }
+
       @include media('>=desktop') {
         height: 180px;
+
+        animation-name: lookInsideLineAnimation;
+        animation-duration: 2s;
+        animation-delay: 1s;
+        transition-duration: 2s;
+
+        @keyframes lookInsideLineAnimation {
+          0% {
+            height: 0;
+          }
+          100% {
+            height: 180px;
+          }
+        }
       }
     }
 

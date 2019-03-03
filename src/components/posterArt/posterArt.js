@@ -11,8 +11,6 @@ import Tumblr from 'components/social/tumblr'
 
 import PosterArtImage from 'images/SOAH_FilmPoster.png'
 
-// import HeaderImage from 'images/SOAH_Still39.png'
-
 import './posterArt.scss'
 
 class PosterArt extends Component {
@@ -22,16 +20,23 @@ class PosterArt extends Component {
       <div className={`${sectionName}`}>
         <div className="posterArt-left">
           <h4 className="posterArt-left-text">poster art by annis naeem</h4>
-          <span className="posterArt-left-line" />
+          <ScrollAnimation
+            animateIn="fadeIn"
+            duration={2}
+            className="posterArt-left-line"
+          />
         </div>
         <img
           src={PosterArtImage}
           className="posterArt-image"
           alt="Poster - Moonlight"
         />
-        {/* <span className="posterArt-filler" /> */}
         <div className="posterArt-right">
-          <span className="posterArt-right-line" />
+          <ScrollAnimation
+            animateIn="fadeIn"
+            duration={2}
+            className="posterArt-right-line"
+          />
           <div className="posterArt-right-social">
             <Instagram
               href="https://www.instagram.com/sidesofahorn"

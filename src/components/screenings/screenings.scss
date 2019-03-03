@@ -100,6 +100,20 @@
         height: 1px;
         width: 100%;
         border-bottom: 3px solid #be1e2d;
+
+        animation-name: screeningsAnimationLine;
+        animation-duration: 3s;
+        animation-delay: 0s;
+        transition-duration: 3s;
+
+        @keyframes screeningsAnimationLine {
+          0% {
+            width: 0;
+          }
+          100% {
+            width: 100%;
+          }
+        }
       }
     }
     &-body {

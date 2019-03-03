@@ -10,14 +10,19 @@ class TheStory extends Component {
   render() {
     const { sectionName } = this.props
     return (
-      <div className={`${sectionName}`}>
+      <div className={`${sectionName}`} id="theStory">
         <img
           src={BackgroundImage}
           alt="background"
           className="theStory-background"
         />
         <div className="theStory-header">
-          <span className="theStory-header-line" />
+          <ScrollAnimation
+            animateIn="fadeIn"
+            className="theStory-header-line"
+            duration={2}
+            animationDelay={1}
+          />
           <h3 className="theStory-header-text">The Story</h3>
         </div>
         <div className="theStory-description">

@@ -33,7 +33,11 @@ class LookInside extends Component {
             />
           </div>
           <div className="shareTheStory-topSection-right">
-            <span className="shareTheStory-topSection-line" />
+            <ScrollAnimation
+              animateIn="fadeIn"
+              duration={2}
+              className="shareTheStory-topSection-line"
+            />
             <h3 className="shareTheStory-topSection-header">
               Share the behind the scenes film
             </h3>

@@ -133,7 +133,11 @@ class Screenings extends Component {
             <h3 className="screenings-body-header-upcomingTitle">
               Upcoming Screenings
             </h3>
-            <span className="screenings-body-header-line" />
+            <ScrollAnimation
+              initiallyVisible={true}
+              duration={3}
+              className="screenings-body-header-line"
+            />
           </div>
           <div className="screenings-body-body">
             {this.upcomingScreenings.map(screening => (
@@ -166,7 +170,11 @@ class Screenings extends Component {
             <h3 className="screenings-body-header-pastTitle">
               Past Screenings
             </h3>
-            <span className="screenings-body-header-line" />
+            <ScrollAnimation
+              initiallyVisible={true}
+              duration={3}
+              className="screenings-body-header-line"
+            />
           </div>
           <div className="screenings-body-body">
             {this.pastScreenings.map(screening => (

@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 
+import ScrollAnimation from 'react-animate-on-scroll'
+
 import Facebook from 'components/social/facebook'
 import Twitter from 'components/social/twitter'
 import Instagram from 'components/social/instagram'
@@ -27,7 +29,11 @@ class ShareTheMessageLanding extends Component {
           />
         </div>
         <div className="shareTheMessageLanding-divider">
-          <span className="shareTheMessageLanding-divider-line" />
+          <ScrollAnimation
+            initiallyVisible={true}
+            duration={3}
+            className="shareTheMessageLanding-divider-line"
+          />
           <h3 className="shareTheMessageLanding-divider-text">
             Share the Trailer
           </h3>
