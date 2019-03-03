@@ -53,10 +53,11 @@ class ImageCarousel extends Component {
     const currentPage = this.state.selectedImageId
 
     if (currentPage === 0) {
-      // Disabling for now
-      // this.setState({
-      //   selectedImageId: this.props.images.length - 1,
-      // })
+      // Go to last image in view
+      this.setState({
+        selectedImageId: (this.props.images.length - 1),
+        selectorXTranslation: this.initialSelectorPosition - (150 * (this.props.images.length - 1))
+      })
       return
     } else {
       this.setState({
