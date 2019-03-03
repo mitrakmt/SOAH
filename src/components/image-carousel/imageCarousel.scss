@@ -65,9 +65,10 @@
     position: absolute;
     bottom: 65px;
     overflow: auto;
-    max-width: 90%;
+    // max-width: 90%;
     white-space: nowrap;
     align-items: center;
+  
     &::-webkit-scrollbar {
       width: 0 !important;
     }
@@ -203,4 +204,10 @@
       }
     }
   }
+}
+
+// Set a placeholder image size so that the selector gets correctly positioned no matter what images are loaded
+.lazy-load-image-background {
+  height: 94px;
+  width: 150px;
 }

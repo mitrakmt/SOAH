@@ -16,45 +16,55 @@ class ImageCarousel extends Component {
 
   constructor(props) {
     super(props)
+    const initialSelectorPosition = window.innerWidth * .875
+    // Used for selectImage() calculation
+    this.initialSelectorPosition = initialSelectorPosition
     this.state = {
       selectedImageId: 0,
+      selectorXTranslation: initialSelectorPosition, 
     }
   }
 
   selectImage = event => {
+    const selectedImageId = parseInt(event.target.id)
+    // Setting to a specific image
     this.setState({
-      selectedImageId: parseInt(event.target.id),
+      selectedImageId,
+      selectorXTranslation: this.initialSelectorPosition - (150 * selectedImageId)
     })
   }
 
   nextImage = () => {
-    let currentPage = this.state.selectedImageId
+    const currentPage = this.state.selectedImageId
 
     if (currentPage === this.props.images.length - 1) {
       this.setState({
         selectedImageId: 0,
       })
-      return
+    } else {
+      console.log('setting to currentPage + 1', currentPage + 1)
+      this.setState({
+        selectedImageId: (currentPage + 1),
+        selectorXTranslation: (this.state.selectorXTranslation - 150)
+      })
     }
-
-    this.setState({
-      selectedImageId: ++currentPage,
-    })
   }
 
   previousImage = () => {
-    let currentPage = this.state.selectedImageId
+    const currentPage = this.state.selectedImageId
 
     if (currentPage === 0) {
-      this.setState({
-        selectedImageId: this.props.images.length - 1,
-      })
+      // Disabling for now
+      // this.setState({
+      //   selectedImageId: this.props.images.length - 1,
+      // })
       return
+    } else {
+      this.setState({
+        selectedImageId: (currentPage - 1),
+        selectorXTranslation: (this.state.selectorXTranslation + 150)
+      })
     }
-
-    this.setState({
-      selectedImageId: --currentPage,
-    })
   }
 
   render() {
@@ -105,7 +115,7 @@ class ImageCarousel extends Component {
           src={images[this.state.selectedImageId].src}
           className={`imageCarousel-mainImage ${
             this.props.title ? 'imageCarousel-mainImage-withTitle' : ''
-          }`}
+            }`}
           alt="Carousel"
         />
         <div className="imageCarousel-sideArrows">
@@ -138,7 +148,10 @@ class ImageCarousel extends Component {
         <div
           className={`imageCarousel-scroller ${
             this.props.title ? 'imageCarousel-scroller-withTitle' : ''
-          }`}
+            }`}
+          style={{
+            transform: `translateX(${this.state.selectorXTranslation}px)`
+          }}
         >
           {images.map((image, index) => (
             <LazyLoadImage
@@ -148,7 +161,7 @@ class ImageCarousel extends Component {
                 this.state.selectedImageId === index
                   ? 'imageCarousel-scroller-image-selected'
                   : ''
-              }`}
+                }`}
               alt={image.alt}
               effect="blur"
               id={index}
