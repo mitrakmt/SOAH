@@ -42,7 +42,6 @@ class ImageCarousel extends Component {
         selectedImageId: 0,
       })
     } else {
-      console.log('setting to currentPage + 1', currentPage + 1)
       this.setState({
         selectedImageId: (currentPage + 1),
         selectorXTranslation: (this.state.selectorXTranslation - 150)
