@@ -11,8 +11,8 @@ class UseYourVoice extends Component {
   render() {
     return (
       <Fragment>
-        <Navigation />
         <div className="useYourVoiceContainer" id="useYourVoice">
+          <Navigation />
           {useYourVoiceSections.map(({ Container, props }) => (
             <Container key={props.sectionName} {...props} />
           ))}
