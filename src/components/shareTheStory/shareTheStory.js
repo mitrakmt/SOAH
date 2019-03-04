@@ -36,6 +36,7 @@ class LookInside extends Component {
             <ScrollAnimation
               animateIn="fadeIn"
               duration={2}
+              delay={1}
               className="shareTheStory-topSection-line"
             />
             <h3 className="shareTheStory-topSection-header">

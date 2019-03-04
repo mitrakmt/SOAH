@@ -17,6 +17,7 @@ class LetterFromTheDirector extends Component {
           <ScrollAnimation
             animateIn="fadeIn"
             duration={2}
+            delay={1}
             className="letterFromTheDirector-header-line"
           />
         </div>

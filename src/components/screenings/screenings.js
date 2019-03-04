@@ -134,8 +134,9 @@ class Screenings extends Component {
               Upcoming Screenings
             </h3>
             <ScrollAnimation
-              initiallyVisible={true}
-              duration={3}
+              animateIn="fadeIn"
+              duration={2}
+              delay={1}
               className="screenings-body-header-line"
             />
           </div>
@@ -171,8 +172,9 @@ class Screenings extends Component {
               Past Screenings
             </h3>
             <ScrollAnimation
-              initiallyVisible={true}
-              duration={3}
+              animateIn="fadeIn"
+              duration={2}
+              delay={1}
               className="screenings-body-header-line"
             />
           </div>

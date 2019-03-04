@@ -23,6 +23,7 @@ class PosterArt extends Component {
           <ScrollAnimation
             animateIn="fadeIn"
             duration={2}
+            delay={1}
             className="posterArt-left-line"
           />
         </div>
@@ -35,6 +36,7 @@ class PosterArt extends Component {
           <ScrollAnimation
             animateIn="fadeIn"
             duration={2}
+            delay={1}
             className="posterArt-right-line"
           />
           <div className="posterArt-right-social">

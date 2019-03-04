@@ -30,8 +30,9 @@ class ShareTheMessageLanding extends Component {
         </div>
         <div className="shareTheMessageLanding-divider">
           <ScrollAnimation
-            initiallyVisible={true}
-            duration={3}
+            animateIn="fadeIn"
+            delay={1}
+            duration={2}
             className="shareTheMessageLanding-divider-line"
           />
           <h3 className="shareTheMessageLanding-divider-text">

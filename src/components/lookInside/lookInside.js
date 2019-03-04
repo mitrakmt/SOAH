@@ -152,6 +152,7 @@ class LookInside extends Component {
             <ScrollAnimation
               animateIn="fadeIn"
               duration={2}
+              delay={1}
               className="lookInside-topSection-line"
             />
             <h3 className="lookInside-topSection-header">Behind the Scenes</h3>

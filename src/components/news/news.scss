@@ -34,7 +34,7 @@
     &-left {
       animation-name: newsAnimatedLineLeft;
       animation-duration: 2s;
-      animation-delay: 0s;
+      animation-delay: 1s;
 
       @keyframes newsAnimatedLineLeft {
         0% {
@@ -51,7 +51,7 @@
     &-right {
       animation-name: newsAnimatedLineRight;
       animation-duration: 2s;
-      animation-delay: 0s;
+      animation-delay: 1s;
 
       @keyframes newsAnimatedLineRight {
         0% {

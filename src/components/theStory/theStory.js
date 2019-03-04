@@ -21,7 +21,7 @@ class TheStory extends Component {
             animateIn="fadeIn"
             className="theStory-header-line"
             duration={2}
-            animationDelay={1}
+            delay={1}
           />
           <h3 className="theStory-header-text">The Story</h3>
         </div>

@@ -46,9 +46,9 @@ class LandingPageView extends Component {
             from executive producer sir richard branson
           </h1>
           <ScrollAnimation
-            animateIn="fadeIn"
+            initiallyVisible={true}
             duration={2}
-            delay={5}
+            delay={5.3}
             className="credits-text-border"
           >
             <h2 className="credits-text--bottom">a film by toby wosskow</h2>

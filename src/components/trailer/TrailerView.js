@@ -49,14 +49,15 @@ class TrailerView extends Component {
           allowFullScreen
           title="Trailer Video"
         />
-        <ScrollAnimation duration={2} animateIn="fadeIn" animationDelay={1}>
-          <div className="footer">
-            <div className="footer-section--mobileCenter">
-              <div className="cta-container">
-                <h3>spread the word.</h3>
-                <h3>share the trailer:</h3>
-              </div>
-              <div className="socialGroup-container">
+
+        <div className="footer">
+          <div className="footer-section--mobileCenter">
+            <div className="cta-container">
+              <h3>spread the word.</h3>
+              <h3>share the trailer:</h3>
+            </div>
+            <div className="socialGroup-container">
+              <ScrollAnimation duration={2} animateIn="fadeIn" delay={1}>
                 <div className="socialGroup-line">
                   <Instagram
                     href="https://www.dropbox.com/sh/gxanxv1jjq4dgaa/AACTNOqeKWQN0lNROb9ytEeua?dl=0"
@@ -82,6 +83,8 @@ class TrailerView extends Component {
                     margin="2px 4px 2px 4px"
                   />
                 </div>
+              </ScrollAnimation>
+              <ScrollAnimation duration={2} animateIn="fadeIn" delay={1}>
                 <div className="socialGroup-line">
                   <LinkedIn
                     href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.linkedin.com/feed/update/activity:6437938994725548032/&source=LinkedIn"
@@ -101,70 +104,70 @@ class TrailerView extends Component {
                     margin="2px 4px 2px 4px"
                   />
                 </div>
-              </div>
-              <div className="footer-section-line" />
+              </ScrollAnimation>
             </div>
-            <div className="footer-section--center">
-              <div className="countdown-container">
-                <h3 className="countdown-container-text">
-                  The short film will be released on June 3, 2019, in
-                </h3>
-              </div>
-              <div className="flipClock-container">
-                <FlipClock />
-              </div>
-              <div className="footer-section-line" />
+            <div className="footer-section-line" />
+          </div>
+          <div className="footer-section--center">
+            <div className="countdown-container">
+              <h3 className="countdown-container-text">
+                The short film will be released on June 3, 2019, in
+              </h3>
             </div>
-            <div className="footer-section--mobileCenter">
-              <div className="latest-text">
-                <h3>get the </h3>
-                <h3>latest:</h3>
-              </div>
-              <div className="latest-form">
-                <div id="mc_embed_signup">
-                  <form
-                    action="https://whirlowparkpictures.us18.list-manage.com/subscribe/post?u=6ffdb5207ab2707139f3c06b9&amp;id=6aad220de9"
-                    method="post"
-                    id="mc-embedded-subscribe-form"
-                    name="mc-embedded-subscribe-form"
-                    className="validate"
-                    target="_blank"
-                    noValidate
+            <div className="flipClock-container">
+              <FlipClock />
+            </div>
+            <div className="footer-section-line" />
+          </div>
+          <div className="footer-section--mobileCenter">
+            <div className="latest-text">
+              <h3>get the </h3>
+              <h3>latest:</h3>
+            </div>
+            <div className="latest-form">
+              <div id="mc_embed_signup">
+                <form
+                  action="https://whirlowparkpictures.us18.list-manage.com/subscribe/post?u=6ffdb5207ab2707139f3c06b9&amp;id=6aad220de9"
+                  method="post"
+                  id="mc-embedded-subscribe-form"
+                  name="mc-embedded-subscribe-form"
+                  className="validate"
+                  target="_blank"
+                  noValidate
+                >
+                  <div
+                    id="mc_embed_signup_scroll"
+                    style={{
+                      display: 'flex',
+                      alignItems: 'center',
+                      marginTop: '5px',
+                    }}
                   >
-                    <div
-                      id="mc_embed_signup_scroll"
-                      style={{
-                        display: 'flex',
-                        alignItems: 'center',
-                        marginTop: '5px',
-                      }}
+                    <input
+                      type="email"
+                      className="latest-inputEmail"
+                      placeholder="Email address"
+                      name="EMAIL"
+                      value={this.state.email}
+                      id="mce-EMAIL"
+                      onChange={this.updateEmail}
+                      required
+                    />
+                    <button
+                      type="submit"
+                      name="subscribe"
+                      id="mc-embedded-subscribe"
+                      className="latest-inputSubmit"
+                      onClick={this.submitEmail}
                     >
-                      <input
-                        type="email"
-                        className="latest-inputEmail"
-                        placeholder="Email address"
-                        name="EMAIL"
-                        value={this.state.email}
-                        id="mce-EMAIL"
-                        onChange={this.updateEmail}
-                        required
-                      />
-                      <button
-                        type="submit"
-                        name="subscribe"
-                        id="mc-embedded-subscribe"
-                        className="latest-inputSubmit"
-                        onClick={this.submitEmail}
-                      >
-                        Submit
-                      </button>
-                    </div>
-                  </form>
-                </div>
+                      Submit
+                    </button>
+                  </div>
+                </form>
               </div>
             </div>
           </div>
-        </ScrollAnimation>
+        </div>
       </div>
     )
   }

@@ -129,12 +129,14 @@ class News extends Component {
           <ScrollAnimation
             animateIn="fadeIn"
             duration={2}
+            delay={1}
             className="news-header-line news-header-left"
           />
           <h3 className="news-header-text">In the News</h3>
           <ScrollAnimation
             animateIn="fadeIn"
             duration={2}
+            delay={1}
             className="news-header-line news-header-right"
           />
         </div>
