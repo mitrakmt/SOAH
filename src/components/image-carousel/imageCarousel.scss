@@ -61,13 +61,14 @@
   }
 
   &-scroller {
-    display: flex;
+    // display: flex;
     position: absolute;
     bottom: 65px;
-    overflow: auto;
-    // max-width: 90%;
-    white-space: nowrap;
-    align-items: center;
+    // overflow: auto;
+    // white-space: nowrap;
+    // align-items: center;
+    width: 3379px;
+    left: 0;
   
     &::-webkit-scrollbar {
       width: 0 !important;

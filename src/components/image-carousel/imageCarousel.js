@@ -16,7 +16,7 @@ class ImageCarousel extends Component {
 
   constructor(props) {
     super(props)
-    const initialSelectorPosition = window.innerWidth * .875
+    const initialSelectorPosition = (window.innerWidth / 2) - 70
     // Used for selectImage() calculation
     this.initialSelectorPosition = initialSelectorPosition
     this.state = {
