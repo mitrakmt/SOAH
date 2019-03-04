@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { withRouter } from 'react-router-dom'
+import ScrollAnimation from 'react-animate-on-scroll'
 
 import redLogo from '../../images/redLogo.png'
 import RhinoImage from 'images/SOAH_Still2.png'
@@ -21,6 +22,12 @@ class TakeActionView extends Component {
       <div className={`${sectionName}`}>
         <div className={`${sectionName}-header`}>
           <h3 className={`${sectionName}-header-text`}>Take Action</h3>
+          <ScrollAnimation
+            animateIn="fadeIn"
+            className={`${sectionName}-header-line`}
+            duration={2}
+            delay={1}
+          />
           <div className={`${sectionName}-images`}>
             <div
               className={`${sectionName}-images-container`}

@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 
+import ScrollAnimation from 'react-animate-on-scroll'
+
 import Facebook from 'components/social/facebook'
 import Twitter from 'components/social/twitter'
 import Instagram from 'components/social/instagram'
@@ -31,7 +33,12 @@ class LookInside extends Component {
             />
           </div>
           <div className="shareTheStory-topSection-right">
-            <span className="shareTheStory-topSection-line" />
+            <ScrollAnimation
+              animateIn="fadeIn"
+              duration={2}
+              delay={1}
+              className="shareTheStory-topSection-line"
+            />
             <h3 className="shareTheStory-topSection-header">
               Share the behind the scenes film
             </h3>

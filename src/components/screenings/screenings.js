@@ -3,6 +3,7 @@ import React, { Component } from 'react'
 import HeaderImage from 'images/screenings_background.jpg'
 import Quote from 'components/quote/grayQuote'
 import ImageCarousel from 'components/image-carousel/imageCarousel'
+import ScrollAnimation from 'react-animate-on-scroll'
 
 import Image1 from 'images/world-rhino-day/img_9498.jpg'
 import Image2 from 'images/world-rhino-day/img_9657.jpg'
@@ -132,7 +133,12 @@ class Screenings extends Component {
             <h3 className="screenings-body-header-upcomingTitle">
               Upcoming Screenings
             </h3>
-            <span className="screenings-body-header-line" />
+            <ScrollAnimation
+              animateIn="fadeIn"
+              duration={2}
+              delay={1}
+              className="screenings-body-header-line"
+            />
           </div>
           <div className="screenings-body-body">
             {this.upcomingScreenings.map(screening => (
@@ -165,7 +171,12 @@ class Screenings extends Component {
             <h3 className="screenings-body-header-pastTitle">
               Past Screenings
             </h3>
-            <span className="screenings-body-header-line" />
+            <ScrollAnimation
+              animateIn="fadeIn"
+              duration={2}
+              delay={1}
+              className="screenings-body-header-line"
+            />
           </div>
           <div className="screenings-body-body">
             {this.pastScreenings.map(screening => (

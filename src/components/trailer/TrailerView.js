@@ -6,6 +6,7 @@ import LinkedIn from 'components/social/linkedin'
 import Email from 'components/social/email'
 import Tumblr from 'components/social/tumblr'
 import FlipClock from '../../components/flipClock'
+import ScrollAnimation from 'react-animate-on-scroll'
 import './trailerView.scss'
 
 class TrailerView extends Component {
@@ -48,6 +49,7 @@ class TrailerView extends Component {
           allowFullScreen
           title="Trailer Video"
         />
+
         <div className="footer">
           <div className="footer-section--mobileCenter">
             <div className="cta-container">
@@ -55,51 +57,56 @@ class TrailerView extends Component {
               <h3>share the trailer:</h3>
             </div>
             <div className="socialGroup-container">
-              <div className="socialGroup-line">
-                <Instagram
-                  href="https://www.dropbox.com/sh/gxanxv1jjq4dgaa/AACTNOqeKWQN0lNROb9ytEeua?dl=0"
-                  width="15px"
-                  height="15px"
-                  fill="white"
-                  margin="2px 4px 2px 4px"
-                />
-                <Twitter
-                  href="https://twitter.com/intent/tweet?text=Sides of a Horn will be released online around the globe on June 3, 2019 at
+              <ScrollAnimation duration={2} animateIn="fadeIn" delay={1}>
+                <div className="socialGroup-line">
+                  <Instagram
+                    href="https://www.dropbox.com/sh/gxanxv1jjq4dgaa/AACTNOqeKWQN0lNROb9ytEeua?dl=0"
+                    width="15px"
+                    height="15px"
+                    fill="white"
+                    margin="2px 4px 2px 4px"
+                  />
+                  <Twitter
+                    href="https://twitter.com/intent/tweet?text=Sides of a Horn will be released online around the globe on June 3, 2019 at
                   www.rhinomovie.com in honor of %23WorldEnvironmentDay! Please watch and share the official
                   trailer. https://youtu.be/0el9UwGt_Vk"
-                  width="15px"
-                  height="15px"
-                  fill="white"
-                  margin="2px 4px 2px 4px"
-                />
-                <Facebook
-                  href="https://www.facebook.com/sharer/sharer.php?u=https://www.facebook.com/sidesofahorn/videos/361030087963483/."
-                  width="15px"
-                  height="15px"
-                  fill="white"
-                  margin="2px 4px 2px 4px"
-                />
-              </div>
-              <div className="socialGroup-line">
-                <LinkedIn
-                  href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.linkedin.com/feed/update/activity:6437938994725548032/&source=LinkedIn"
-                  fill="white"
-                  margin="2px 4px 2px 4px"
-                />
-                <Email
-                  href="mailto:?subject=Sides of a Horn - Trailer&body=Sides of a Horn will be released online around the globe on June 3, 2019 at
+                    width="15px"
+                    height="15px"
+                    fill="white"
+                    margin="2px 4px 2px 4px"
+                  />
+                  <Facebook
+                    href="https://www.facebook.com/sharer/sharer.php?u=https://www.facebook.com/sidesofahorn/videos/361030087963483/."
+                    width="15px"
+                    height="15px"
+                    fill="white"
+                    margin="2px 4px 2px 4px"
+                  />
+                </div>
+              </ScrollAnimation>
+              <ScrollAnimation duration={2} animateIn="fadeIn" delay={1}>
+                <div className="socialGroup-line">
+                  <LinkedIn
+                    href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.linkedin.com/feed/update/activity:6437938994725548032/&source=LinkedIn"
+                    fill="white"
+                    margin="2px 4px 2px 4px"
+                  />
+                  <Email
+                    href="mailto:?subject=Sides of a Horn - Trailer&body=Sides of a Horn will be released online around the globe on June 3, 2019 at
                   www.rhinomovie.com in honor of #WorldEnvironmentDay! Please watch and share the official
                   trailer here: https://youtu.be/0el9UwGt_Vk"
-                  fill="white"
-                  margin="2px 4px 2px 4px"
-                />
-                <Tumblr
-                  href="http://www.tumblr.com/share/link?text=test&url=https://www.youtube.com/watch?v=0el9UwGt_Vk"
-                  fill="white"
-                  margin="2px 4px 2px 4px"
-                />
-              </div>
+                    fill="white"
+                    margin="2px 4px 2px 4px"
+                  />
+                  <Tumblr
+                    href="http://www.tumblr.com/share/link?text=test&url=https://www.youtube.com/watch?v=0el9UwGt_Vk"
+                    fill="white"
+                    margin="2px 4px 2px 4px"
+                  />
+                </div>
+              </ScrollAnimation>
             </div>
+            <div className="footer-section-line" />
           </div>
           <div className="footer-section--center">
             <div className="countdown-container">
@@ -110,6 +117,7 @@ class TrailerView extends Component {
             <div className="flipClock-container">
               <FlipClock />
             </div>
+            <div className="footer-section-line" />
           </div>
           <div className="footer-section--mobileCenter">
             <div className="latest-text">

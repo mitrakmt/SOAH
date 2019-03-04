@@ -15,6 +15,7 @@
     display: flex;
     align-items: center;
     font-size: 21px;
+    justify-content: space-between;
 
     &-text {
       text-transform: uppercase;
@@ -36,6 +37,20 @@
       height: 1px;
       width: 100%;
       border-bottom: 3px solid #be1e2d;
+
+      animation-name: lookInsideMobileLineAnimation;
+      animation-duration: 2s;
+      transition-duration: 2s;
+      animation-delay: 1s;
+
+      @keyframes lookInsideMobileLineAnimation {
+        0% {
+          width: 0;
+        }
+        100% {
+          width: 100%;
+        }
+      }
     }
   }
   &-body {

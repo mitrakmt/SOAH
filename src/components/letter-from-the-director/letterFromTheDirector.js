@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 
+import ScrollAnimation from 'react-animate-on-scroll'
+
 import GrayQuote from 'components/quote/grayQuote'
 
 import './letterFromTheDirector.scss'
@@ -12,7 +14,12 @@ class LetterFromTheDirector extends Component {
           <h3 className="letterFromTheDirector-header-title">
             A Letter from the Director
           </h3>
-          <span className="letterFromTheDirector-header-line" />
+          <ScrollAnimation
+            animateIn="fadeIn"
+            duration={2}
+            delay={1}
+            className="letterFromTheDirector-header-line"
+          />
         </div>
         <div className="letterFromTheDirector-body">
           <h4 className="letterFromTheDirector-text">

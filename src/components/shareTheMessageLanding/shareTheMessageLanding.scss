@@ -39,6 +39,7 @@
     display: flex;
     width: 100%;
     align-items: center;
+    justify-content: flex-end;
     margin-top: 15px;
     margin-bottom: 15px;
 
@@ -52,6 +53,7 @@
       font-size: 48px;
       color: rgba(255, 255, 255, 0.83);
       margin: 10px 60px 0 40px;
+      white-space: nowrap;
 
       @media screen and (max-width: 850px) {
         text-align: center;
@@ -60,23 +62,37 @@
       }
     }
     &-line {
-      width: 50%;
+      width: 60%;
       height: 1px;
       border-bottom: 3px solid red;
+
+      animation-name: shareTheMessageLineAnimation;
+      animation-duration: 2s;
+      animation-delay: 1s;
+
+      @keyframes shareTheMessageLineAnimation {
+        0% {
+          width: 0;
+        }
+        100% {
+          width: 60%;
+        }
+      }
     }
     &-social {
       display: flex;
+      padding-right: 30px;
     }
   }
 
   &-movie {
     // Define minimum constraints so we don't cut off the image
     // These settings are a 16:9 aspect ratio
-    min-width:900px;
-    min-height:506px;
+    min-width: 900px;
+    min-height: 506px;
     // Define maximum constraints so we don't end up with weird ratios
-    max-width:1920px;
-    max-height:1080px;
+    max-width: 1920px;
+    max-height: 1080px;
     width: auto;
     height: auto;
 
