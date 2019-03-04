@@ -1,5 +1,53 @@
 @import 'include-media/dist/_include-media.scss';
 .landingPage-view {
+  .animation {
+    z-index: -5;
+    opacity: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+
+    animation-duration: 4s;
+    animation-delay: 0s;
+    animation-timing-function: ease-out;
+    animation-name: containerAnimation;
+    animation-iteration-count: 1;
+
+    &-withLogo {
+      background-color: black;
+      z-index: -5;
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+
+      animation-duration: 4s;
+      animation-delay: 1.5s;
+      animation-timing-function: ease-out;
+      animation-name: blackScreenAnimation;
+      animation-iteration-count: 1;
+
+      &-logo {
+        width: 120px;
+      }
+    }
+    &-background {
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      z-index: 1;
+      opacity: 1;
+      object-fit: cover;
+
+      animation-duration: 4s;
+      animation-delay: 0s;
+      animation-timing-function: ease-out;
+      animation-name: backgroundImageAnimation;
+      animation-iteration-count: 1;
+    }
+  }
   .background {
     height: 100%;
     width: 100%;
@@ -8,6 +56,12 @@
     z-index: 1;
     opacity: 0.48;
     object-fit: cover;
+
+    animation-duration: 4s;
+    animation-delay: 0s;
+    animation-timing-function: ease-out;
+    animation-name: finalLandingScreen;
+    animation-iteration-count: 1;
   }
 
   .association {
@@ -22,6 +76,13 @@
       right: 8vw;
       top: 5vh;
       z-index: 2;
+
+      animation-duration: 6s;
+      animation-delay: 0s;
+      animation-timing-function: ease-out;
+      animation-name: hideOnAnimation;
+      animation-iteration-count: 1;
+      opacity: 1;
 
       @include media('<tablet') {
         top: 9vh;
@@ -38,6 +99,13 @@
     &-container {
       bottom: 25vh;
       color: #fff;
+
+      animation-duration: 6s;
+      animation-delay: 0s;
+      animation-timing-function: ease-out;
+      animation-name: hideOnAnimation;
+      animation-iteration-count: 1;
+      opacity: 1;
 
       position: absolute;
       right: 8vw;
@@ -68,11 +136,23 @@
     }
   }
   .header {
+    animation-duration: 6s;
+    animation-delay: 0s;
+    animation-timing-function: ease-out;
+    animation-name: hideOnAnimation;
+    animation-iteration-count: 1;
     &-container {
       padding: 10vh 0 0 5vw;
       position: absolute;
       top: 0;
       z-index: 2;
+
+      animation-duration: 6s;
+      animation-delay: 0s;
+      animation-timing-function: ease-out;
+      animation-name: hideOnAnimation;
+      animation-iteration-count: 1;
+      opacity: 1;
     }
   }
   .movieTitle {
@@ -90,6 +170,13 @@
       height: 164px;
       filter: opacity(30%);
       width: 925px;
+      opacity: 1;
+
+      animation-duration: 4.5s;
+      animation-delay: 0s;
+      animation-timing-function: ease-out;
+      animation-name: textLogoAnimation;
+      animation-iteration-count: 1;
 
       @include media('>=27em', '<=72em') {
         height: 134px;
@@ -101,5 +188,111 @@
         width: 300px;
       }
     }
+  }
+}
+
+@keyframes containerAnimation {
+  0% {
+    opacity: 0;
+    z-index: -5;
+  }
+  20% {
+    opacity: 1;
+    z-index: 999;
+  }
+  80% {
+    opacity: 1;
+    z-index: 999;
+  }
+  100% {
+    opacity: 0;
+    z-index: -5;
+  }
+}
+
+@keyframes backgroundImageAnimation {
+  0% {
+    opacity: 1;
+    z-index: 9999;
+  }
+  15% {
+    opacity: 1;
+    z-index: 9999;
+  }
+  70% {
+    opacity: 1;
+    z-index: 9999;
+  }
+  90% {
+    opacity: 0;
+    z-index: -5;
+  }
+  100% {
+    z-index: 0;
+    opacity: -5;
+  }
+}
+
+@keyframes blackScreenAnimation {
+  0% {
+    z-index: -5;
+    opacity: 0;
+  }
+  15% {
+    z-index: 9999999;
+    opacity: 1;
+  }
+  75% {
+    z-index: 9999999;
+    opacity: 1;
+  }
+  100% {
+    z-index: -5;
+    opacity: 0;
+  }
+}
+
+@keyframes finalLandingScreen {
+  0% {
+    opacity: 0;
+  }
+  15% {
+    opacity: 0;
+  }
+  85% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.48;
+  }
+}
+
+@keyframes hideOnAnimation {
+  0% {
+    opacity: 0;
+    pointer-events: none;
+  }
+  90% {
+    opacity: 0;
+    pointer-events: none;
+  }
+  100% {
+    opacity: 1;
+    pointer-events: all;
+  }
+}
+
+@keyframes textLogoAnimation {
+  0% {
+    opacity: 0;
+  }
+  85% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
   }
 }

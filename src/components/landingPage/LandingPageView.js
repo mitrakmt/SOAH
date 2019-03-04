@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 import awfLogo from '../../images/awf.svg'
 import Header from '../header'
 import SoahLogo from '../../images/SOAH_logo.png'
+import AnimationLogo from 'images/redLogo.png'
+import AnimationBackground from 'images/SOAH_Still46.png'
 
 import Background from 'images/landingPageBackground2.png'
 
@@ -12,6 +14,20 @@ class LandingPageView extends Component {
     const { sectionName } = this.props
     return (
       <div className={`${sectionName}-view`}>
+        <div className="animation">
+          <img
+            src={AnimationBackground}
+            className="animation-background"
+            alt="animation background"
+          />
+          <div className="animation-withLogo">
+            <img
+              src={AnimationLogo}
+              className="animation-withLogo-logo"
+              alt="logo"
+            />
+          </div>
+        </div>
         <img
           src={Background}
           className="background"
