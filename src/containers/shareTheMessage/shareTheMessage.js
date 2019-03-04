@@ -13,8 +13,8 @@ class ShareTheMessage extends Component {
   render() {
     return (
       <Fragment>
-        <Navigation />
         <div className="shareTheMessageContainer" id="shareTheMessage">
+          <Navigation />
           {shareTheMessageSections.map(({ Container, props }) => (
             <Container key={props.sectionName} {...props} />
           ))}

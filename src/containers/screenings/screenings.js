@@ -13,8 +13,8 @@ class Screenings extends Component {
   render() {
     return (
       <Fragment>
-        <Navigation />
         <div className="screeningsContainer" id="screenings">
+          <Navigation />
           {screeningsSections.map(({ Container, props }) => (
             <Container key={props.sectionName} {...props} />
           ))}

@@ -11,8 +11,8 @@ class LearnMore extends Component {
   render() {
     return (
       <Fragment>
-        <Navigation />
         <div className="learnMoreContainer" id="learnMore">
+          <Navigation />
           {learnMoreSections.map(({ Container, props }) => (
             <Container key={props.sectionName} {...props} />
           ))}
