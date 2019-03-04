@@ -11,8 +11,8 @@ class Press extends Component {
   render() {
     return (
       <Fragment>
+        <Navigation />
         <div className="pressContainer" id="press">
-          <Navigation />
           {pressSections.map(({ Container, props }) => (
             <Container key={props.sectionName} {...props} />
           ))}

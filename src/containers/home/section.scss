@@ -8,6 +8,10 @@
 
 .homeContainer {
   overflow-x: hidden;
+  perspective: 1px;
+  transform-style: preserve-3d;
+  height: 100vh;
+  overflow-y: scroll;
 }
 
 .homeSection--collapseOnMobile {
