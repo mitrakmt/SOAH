@@ -160,38 +160,41 @@ class LookInside extends Component {
             </h4>
             <div className="lookInside-topSection-row">
               <Instagram
-                href="https://www.instagram.com/sidesofahorn"
+                href="https://www.dropbox.com/sh/k9v3uy8jc9pawb0/AADNK3ilnU0FUMEELzcTzme_a?dl=0"
                 width="15px"
                 height="15px"
                 fill="#fff"
                 margin="0 5px 0 0"
               />
               <Facebook
-                href="https://www.facebook.com/sidesofahorn/"
+                href="https://www.facebook.com/sharer/sharer.php?u=https://www.facebook.com/sidesofahorn/videos/209543396420784/"
                 width="15px"
                 height="15px"
                 fill="#fff"
                 margin="0 5px 0 0"
               />
               <Twitter
-                href="https://twitter.com/sidesofahorn"
+                href="https://twitter.com/intent/tweet?text=Sides of a Horn will be released online around the globe on June 3, 2019 at
+                www.rhinomovie.com in honor of %23WorldEnvironmentDay! Please watch and share the official trailer. https://youtu.be/sIWl6msIH0Y"
                 width="15px"
                 height="15px"
                 fill="#fff"
                 margin="0 5px 0 0"
               />
               <LinkedIn
-                href="https://linkedin.com/in/sidesofahorn"
+                href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.linkedin.com/feed/update/urn:li:ugcPost:6445915668696170496&source=LinkedIn"
                 fill="white"
                 margin="0 5px 0 0"
               />
               <Email
-                href="https://linkedin.com/in/sidesofahorn"
+                href="mailto:?subject=Sides of a Horn - Behind the Scenes Film&body=Sides of a Horn will be released online around the globe on June 3, 2019 at
+                www.rhinomovie.com in honor of #WorldEnvironmentDay! Please watch and share the official
+                behind the scenes film here: https://youtu.be/sIWl6msIH0Y"
                 fill="white"
                 margin="0 5px 0 0"
               />
               <Tumblr
-                href="https://tumbler.com/in/sidesofahorn"
+                href="http://www.tumblr.com/share/link?url=https://www.youtube.com/watch?v=sIWl6msIH0Y"
                 fill="white"
                 margin="0"
               />
