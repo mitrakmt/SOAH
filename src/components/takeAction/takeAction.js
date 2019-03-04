@@ -23,10 +23,10 @@ class TakeActionView extends Component {
         <div className={`${sectionName}-header`}>
           <h3 className={`${sectionName}-header-text`}>Take Action</h3>
           <ScrollAnimation
-            animateIn="fadeIn"
+            initiallyVisible={true}
             className={`${sectionName}-header-line`}
             duration={2}
-            animationDelay={1}
+            animationDelay={0}
           />
           <div className={`${sectionName}-images`}>
             <div

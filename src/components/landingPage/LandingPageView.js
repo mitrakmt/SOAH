@@ -32,6 +32,7 @@ class LandingPageView extends Component {
           <ScrollAnimation
             animateIn="fadeIn"
             duration={2}
+            delay={5}
             className="credits-text-border"
           >
             <h2 className="credits-text--bottom">a film by toby wosskow</h2>
