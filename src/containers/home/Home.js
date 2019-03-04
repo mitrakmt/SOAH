@@ -13,8 +13,8 @@ class Home extends Component {
   render() {
     return (
       <Fragment>
-        <Navigation />
         <div className="homeContainer" id="home">
+          <Navigation />
           {homeSections.map(({ Container, props }) => (
             <Container key={props.sectionName} {...props} />
           ))}
