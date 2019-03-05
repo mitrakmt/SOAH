@@ -82,6 +82,13 @@ class News extends Component {
 
     this.setState({
       selectedNews: ++currentPage,
+      transitioning: true,
+    }, () => {
+      setTimeout(() => {
+        this.setState({
+          transitioning: false,
+        })
+      }, 500);
     })
   }
 
@@ -94,6 +101,13 @@ class News extends Component {
 
     this.setState({
       selectedNews: --currentPage,
+      transitioning: true,
+    }, () => {
+      setTimeout(() => {
+        this.setState({
+          transitioning: false,
+        })
+      }, 500);
     })
   }
 
@@ -171,7 +185,7 @@ class News extends Component {
                 }`}
                 alt={piece.alt}
               />
-              <span className="news-images-title">{this.news[selectedNews].alt}</span>
+              <span className={`news-images-title ${this.state.transitioning ? 'news-images-titleTransitionStart' : 'news-images-titleTransitionEnd'}`}>{this.news[selectedNews].alt}</span>
             </a>
           ))}
         </div>

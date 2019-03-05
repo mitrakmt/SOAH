@@ -87,6 +87,16 @@
       }
     }
 
+    &-titleTransitionStart {
+      opacity: 0;
+    }
+
+    &-titleTransitionEnd {
+      opacity: 1;
+      animation-duration: 0.5s;
+      transition-duration: 0.5s;
+    }
+
     &-navigate {
       cursor: pointer;
     }
