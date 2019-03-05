@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import ScrollAnimation from 'react-animate-on-scroll'
 
 // Images
 import wanNews from 'images/news/WorldAnimalNews.jpg'
@@ -66,7 +67,7 @@ class News extends Component {
         href:
           'https://www.peoplemagazine.co.za/entertainment/sides-horn-making/',
         alt:
-          'People Magazine Announce World Rhino Day 2017 Kickstarter Campaign',
+          'People Magazine Announces World Rhino Day 2017 Kickstarter Campaign',
         id: 6,
       },
     ]
@@ -81,6 +82,13 @@ class News extends Component {
 
     this.setState({
       selectedNews: ++currentPage,
+      transitioning: true,
+    }, () => {
+      setTimeout(() => {
+        this.setState({
+          transitioning: false,
+        })
+      }, 500);
     })
   }
 
@@ -93,6 +101,13 @@ class News extends Component {
 
     this.setState({
       selectedNews: --currentPage,
+      transitioning: true,
+    }, () => {
+      setTimeout(() => {
+        this.setState({
+          transitioning: false,
+        })
+      }, 500);
     })
   }
 
@@ -125,9 +140,19 @@ class News extends Component {
     return (
       <div className={`${sectionName}`}>
         <div className="news-header">
-          <span className="news-header-line" />
+          <ScrollAnimation
+            animateIn="fadeIn"
+            duration={2}
+            delay={1}
+            className="news-header-line news-header-left"
+          />
           <h3 className="news-header-text">In the News</h3>
-          <span className="news-header-line" />
+          <ScrollAnimation
+            animateIn="fadeIn"
+            duration={2}
+            delay={1}
+            className="news-header-line news-header-right"
+          />
         </div>
         <div className="news-images">
           {this.news.map(piece => (
@@ -160,9 +185,9 @@ class News extends Component {
                 }`}
                 alt={piece.alt}
               />
+              <span className={`news-images-title ${this.state.transitioning ? 'news-images-titleTransitionStart' : 'news-images-titleTransitionEnd'}`}>{this.news[selectedNews].alt}</span>
             </a>
           ))}
-          <p className="news-images-title">{this.news[selectedNews].alt}</p>
         </div>
         <div className="news-arrows">
           <h5

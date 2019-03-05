@@ -31,7 +31,7 @@ class Press extends Component {
               download
             >
               <h4 className="press-infoSection-box-header">
-                DOWNLOAD THE ELECTRONC PRESS KIT HERE
+                DOWNLOAD THE ELECTRONIC PRESS KIT HERE
               </h4>
             </a>
           </div>

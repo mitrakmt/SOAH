@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 
 import BackgroundImage from 'images/SOAH_Still99.jpg'
 import Quote from 'components/quote/quote'
+import ScrollAnimation from 'react-animate-on-scroll'
 
 import './theStory.scss'
 
@@ -9,14 +10,19 @@ class TheStory extends Component {
   render() {
     const { sectionName } = this.props
     return (
-      <div className={`${sectionName}`}>
+      <div className={`${sectionName}`} id="theStory">
         <img
           src={BackgroundImage}
           alt="background"
           className="theStory-background"
         />
         <div className="theStory-header">
-          <span className="theStory-header-line" />
+          <ScrollAnimation
+            animateIn="fadeIn"
+            className="theStory-header-line"
+            duration={2}
+            delay={1}
+          />
           <h3 className="theStory-header-text">The Story</h3>
         </div>
         <div className="theStory-description">

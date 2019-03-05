@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 
+import ScrollAnimation from 'react-animate-on-scroll'
+
 import Facebook from 'components/social/facebook'
 import Twitter from 'components/social/twitter'
 import Instagram from 'components/social/instagram'
@@ -8,8 +10,6 @@ import Email from 'components/social/email'
 import Tumblr from 'components/social/tumblr'
 
 import PosterArtImage from 'images/SOAH_FilmPoster.png'
-
-// import HeaderImage from 'images/SOAH_Still39.png'
 
 import './posterArt.scss'
 
@@ -20,16 +20,25 @@ class PosterArt extends Component {
       <div className={`${sectionName}`}>
         <div className="posterArt-left">
           <h4 className="posterArt-left-text">poster art by annis naeem</h4>
-          <span className="posterArt-left-line" />
+          <ScrollAnimation
+            animateIn="fadeIn"
+            duration={2}
+            delay={1}
+            className="posterArt-left-line"
+          />
         </div>
         <img
           src={PosterArtImage}
           className="posterArt-image"
           alt="Poster - Moonlight"
         />
-        {/* <span className="posterArt-filler" /> */}
         <div className="posterArt-right">
-          <span className="posterArt-right-line" />
+          <ScrollAnimation
+            animateIn="fadeIn"
+            duration={2}
+            delay={1}
+            className="posterArt-right-line"
+          />
           <div className="posterArt-right-social">
             <Instagram
               href="https://www.dropbox.com/sh/3pxgvtp3elikouf/AADmWPlqXBo5YxWZl1BI9pY_a?dl=0"

@@ -3,6 +3,7 @@ import React, { Component } from 'react'
 import HeaderImage from 'images/screenings_background.jpg'
 import Quote from 'components/quote/grayQuote'
 import ImageCarousel from 'components/image-carousel/imageCarousel'
+import ScrollAnimation from 'react-animate-on-scroll'
 
 import Image1 from 'images/world-rhino-day/img_9498.jpg'
 import Image2 from 'images/world-rhino-day/img_9657.jpg'
@@ -24,22 +25,6 @@ class Screenings extends Component {
     // ID IS REQUIRED
     this.upcomingScreenings = [
       {
-        line1: 'SEDONA INTERNATIONAL FILM FESTIVAL',
-        line2: 'WORLD PREMIERE',
-        line3: 'FEBRUARY 28 AT 7:20 PM | MARCH 2 AT 10AM',
-        link:
-          'https://prod5.agileticketing.net/websales/pages/info.aspx?evtinfo=86966~d5a11db3-b3ba-440c-a208-47197fa86ccd&',
-        id: 0,
-      },
-      {
-        line1: 'RAPIDLION FILM FESTIVAL',
-        line2: 'UK PREMIERE',
-        line3: 'MARCH 3 AT 10:30AM',
-        link:
-          'http://rapidlion.co.za/rapidlion-films-2019-schedule/?filmcategory=3%20Mannie%20Manim&filmdate=2019-03-07',
-        id: 1,
-      },
-      {
         line1: 'MANCHESTER FILM FESTIVAL',
         line2: 'UK PREMIERE',
         line3: 'MARCH 8 AT 6PM',
@@ -58,11 +43,27 @@ class Screenings extends Component {
     // ID IS REQUIRED
     this.pastScreenings = [
       {
+        line1: 'SEDONA INTERNATIONAL FILM FESTIVAL',
+        line2: 'WORLD PREMIERE',
+        line3: 'FEBRUARY 28 AT 7:20 PM | MARCH 2 AT 10AM',
+        link:
+          'https://prod5.agileticketing.net/websales/pages/info.aspx?evtinfo=86966~d5a11db3-b3ba-440c-a208-47197fa86ccd&',
+        id: 0,
+      },
+      {
+        line1: 'RAPIDLION FILM FESTIVAL',
+        line2: 'UK PREMIERE',
+        line3: 'MARCH 3 AT 10:30AM',
+        link:
+          'http://rapidlion.co.za/rapidlion-films-2019-schedule/?filmcategory=3%20Mannie%20Manim&filmdate=2019-03-07',
+        id: 1,
+      },
+      {
         line1: 'WORLD RHINO DAY',
         line2: 'PRIVATE SCREENING',
         line3: 'SEPTEMBER 22, 2018',
         link: 'https://twitter.com/tobywosskow/status/1044104807726821377',
-        id: 0,
+        id: 2,
       },
     ]
     this.images = [
@@ -132,7 +133,12 @@ class Screenings extends Component {
             <h3 className="screenings-body-header-upcomingTitle">
               Upcoming Screenings
             </h3>
-            <span className="screenings-body-header-line" />
+            <ScrollAnimation
+              animateIn="fadeIn"
+              duration={2}
+              delay={1}
+              className="screenings-body-header-line"
+            />
           </div>
           <div className="screenings-body-body">
             {this.upcomingScreenings.map(screening => (
@@ -165,7 +171,12 @@ class Screenings extends Component {
             <h3 className="screenings-body-header-pastTitle">
               Past Screenings
             </h3>
-            <span className="screenings-body-header-line" />
+            <ScrollAnimation
+              animateIn="fadeIn"
+              duration={2}
+              delay={1}
+              className="screenings-body-header-line"
+            />
           </div>
           <div className="screenings-body-body">
             {this.pastScreenings.map(screening => (

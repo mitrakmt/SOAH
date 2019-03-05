@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import awfLogo from '../../images/awf.svg'
 import Header from '../header'
 import SoahLogo from '../../images/SOAH_logo.png'
+import ScrollAnimation from 'react-animate-on-scroll'
 import AnimationLogo from 'images/redLogo.png'
 import AnimationBackground from 'images/SOAH_Still46.png'
 
@@ -44,7 +45,14 @@ class LandingPageView extends Component {
           <h1 className="credits-text">
             from executive producer sir richard branson
           </h1>
-          <h2 className="credits-text--bottom">a film by toby wosskow</h2>
+          <ScrollAnimation
+            initiallyVisible={true}
+            duration={2}
+            delay={5.3}
+            className="credits-text-border"
+          >
+            <h2 className="credits-text--bottom">a film by toby wosskow</h2>
+          </ScrollAnimation>
         </div>
         <div className="movieTitle-container">
           <img className="movieTitle-image" src={SoahLogo} alt="Movie Logo" />

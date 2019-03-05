@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 
 import ImageCarousel from 'components/image-carousel/imageCarousel'
+import ScrollAnimation from 'react-animate-on-scroll'
 
 import Facebook from 'components/social/facebook'
 import Twitter from 'components/social/twitter'
@@ -148,7 +149,12 @@ class LookInside extends Component {
             />
           </div>
           <div className="lookInside-topSection-right">
-            <span className="lookInside-topSection-line" />
+            <ScrollAnimation
+              animateIn="fadeIn"
+              duration={2}
+              delay={1}
+              className="lookInside-topSection-line"
+            />
             <h3 className="lookInside-topSection-header">Behind the Scenes</h3>
             <h4 className="lookInside-topSection-subheader">
               Spread the word. Share the BTS Film:
