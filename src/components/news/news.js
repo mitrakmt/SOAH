@@ -67,7 +67,7 @@ class News extends Component {
         href:
           'https://www.peoplemagazine.co.za/entertainment/sides-horn-making/',
         alt:
-          'People Magazine Announce World Rhino Day 2017 Kickstarter Campaign',
+          'People Magazine Announces World Rhino Day 2017 Kickstarter Campaign',
         id: 6,
       },
     ]
