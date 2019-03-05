@@ -74,20 +74,27 @@
 
     &-title {
       color: white;
-      position: absolute;
-      bottom: 150px;
-      width: 100%;
-      text-align: center;
-      left: 0;
-      right: 0;
-      margin: 0 auto;
       font-size: 26px;
+      // Layout properties
+      position: absolute;
+      top: 50%;
+      // This slight offset compared to the transform is necessary
+      left: 52%;
+      transform: translate(-50%, -50%);
 
       @media screen and (max-width: 800px) {
-        position: inherit;
-        margin-top: 20px;
         font-size: 20px;
       }
+    }
+
+    &-titleTransitionStart {
+      opacity: 0;
+    }
+
+    &-titleTransitionEnd {
+      opacity: 1;
+      animation-duration: 0.5s;
+      transition-duration: 0.5s;
     }
 
     &-navigate {
@@ -104,11 +111,14 @@
     }
 
     &-mainNews {
+      // Style properties
+      // Make the image red (wild but this works?)
+      filter: grayscale(100%) brightness(40%) sepia(100%) hue-rotate(-50deg) saturate(600%) contrast(0.8);
       width: 53%;
-      left: 25%;
-
-      top: 20%;
+      // Layout properties
       bottom: auto;
+      left: 25%;
+      top: 20%;
 
       @media screen and (max-width: 1000px) {
         width: 80%;
