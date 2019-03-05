@@ -51,10 +51,6 @@
         min-height: 250px;
       }
 
-      // @include media('>=tablet') {
-      //   min-height: 400px;
-      // }
-
       @include media('>=desktop') {
         min-height: 500px;
       }
