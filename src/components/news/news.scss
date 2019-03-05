@@ -75,9 +75,10 @@
     &-title {
       color: white;
       font-size: 26px;
+      // Layout properties
       position: absolute;
       top: 50%;
-      // This slight offset is necessary
+      // This slight offset compared to the transform is necessary
       left: 52%;
       transform: translate(-50%, -50%);
 
