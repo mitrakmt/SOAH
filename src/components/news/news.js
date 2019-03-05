@@ -171,9 +171,9 @@ class News extends Component {
                 }`}
                 alt={piece.alt}
               />
+              <span className="news-images-title">{this.news[selectedNews].alt}</span>
             </a>
           ))}
-          <p className="news-images-title">{this.news[selectedNews].alt}</p>
         </div>
         <div className="news-arrows">
           <h5
