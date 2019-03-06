@@ -3,8 +3,7 @@
 .landingPage-view {
   display: flex;
   flex: 1 0 auto;
-  position: relative;
-  height: 100vh;
+  min-height: 100vh;
   transform: translateZ(-1px) scale(2);
   z-index: 0;
 
