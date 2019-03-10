@@ -12,6 +12,10 @@ $flipCardWidth: 42px;
   @include media('<tablet') {
     max-height: 250px;
   }
+
+  &-cardContainer {
+    margin-right: 10px;
+  }
 }
 
 .flipClockLabel {

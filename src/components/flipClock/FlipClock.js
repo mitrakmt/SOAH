@@ -29,12 +29,19 @@ class FlipClock extends Component {
   updateTime() {
     // Movie release date
     const { days, hours, minutes, seconds } = countdown('06/03/2019 00:00:00')
-    let { daysShuffle, hoursShuffle, minutesShuffle, secondsShuffle } = this.state
+    let {
+      daysShuffle,
+      hoursShuffle,
+      minutesShuffle,
+      secondsShuffle,
+    } = this.state
     daysShuffle = days !== this.state.days ? !daysShuffle : daysShuffle
     hoursShuffle = hours !== this.state.hours ? !hoursShuffle : hoursShuffle
-    minutesShuffle = minutes !== this.state.minutes ? !minutesShuffle : minutesShuffle
-    secondsShuffle = seconds !== this.state.seconds ? !secondsShuffle : secondsShuffle
-    
+    minutesShuffle =
+      minutes !== this.state.minutes ? !minutesShuffle : minutesShuffle
+    secondsShuffle =
+      seconds !== this.state.seconds ? !secondsShuffle : secondsShuffle
+
     this.setState({
       days,
       daysShuffle,
@@ -43,7 +50,7 @@ class FlipClock extends Component {
       minutes,
       minutesShuffle,
       seconds,
-      secondsShuffle
+      secondsShuffle,
     })
   }
 
@@ -62,15 +69,11 @@ class FlipClock extends Component {
 
     return (
       <div className={'flipClock'}>
-        <div>
+        <div className="flipClock-cardContainer">
           <p className="flipClockLabel">DAYS</p>
-          <FlipUnitContainer
-            unit={'days'}
-            digit={days}
-            shuffle={daysShuffle}
-          />
+          <FlipUnitContainer unit={'days'} digit={days} shuffle={daysShuffle} />
         </div>
-        <div>
+        <div className="flipClock-cardContainer">
           <p className="flipClockLabel">HOURS</p>
           <FlipUnitContainer
             unit={'hours'}
@@ -78,7 +81,7 @@ class FlipClock extends Component {
             shuffle={hoursShuffle}
           />
         </div>
-        <div>
+        <div className="flipClock-cardContainer">
           <p className="flipClockLabel">MINUTES</p>
           <FlipUnitContainer
             unit={'minutes'}
@@ -86,7 +89,7 @@ class FlipClock extends Component {
             shuffle={minutesShuffle}
           />
         </div>
-        <div>
+        <div className="flipClock-cardContainer">
           <p className="flipClockLabel">SECONDS</p>
           <FlipUnitContainer
             unit={'seconds'}
