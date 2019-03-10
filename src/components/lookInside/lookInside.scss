@@ -135,6 +135,7 @@
   &-quote {
     height: 45%;
     width: 100%;
+    transform: translateZ(-1px) scale(0.5);
 
     &-image {
       object-fit: cover;
