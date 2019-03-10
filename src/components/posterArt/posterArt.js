@@ -19,7 +19,7 @@ class PosterArt extends Component {
     return (
       <div className={`${sectionName}`}>
         <div className="posterArt-left">
-          <h4 className="posterArt-left-text">poster art by annis naeem</h4>
+          <h4 className="posterArt-left-text">Share The Poster</h4>
           <ScrollAnimation
             animateIn="fadeIn"
             duration={2}

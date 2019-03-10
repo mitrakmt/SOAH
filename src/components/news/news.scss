@@ -1,6 +1,7 @@
 @import 'include-media/dist/_include-media.scss';
 
 .news {
+  margin-top: 50px;
   height: 100%;
   width: 100%;
   overflow: hidden;
@@ -77,7 +78,7 @@
       font-size: 26px;
       // Layout properties
       position: absolute;
-      top: 60%;
+      top: 50%;
       // This slight offset compared to the transform is necessary
       left: 52%;
       transform: translate(-50%, -50%);

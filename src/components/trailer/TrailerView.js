@@ -111,7 +111,8 @@ class TrailerView extends Component {
           <div className="footer-section--center">
             <div className="countdown-container">
               <h3 className="countdown-container-text">
-                The short film will be released on June 3, 2019, in
+                The short film will be released on June 3, 2019, in celebration
+                of #WorldEnvironmentDay:
               </h3>
             </div>
             <div className="flipClock-container">

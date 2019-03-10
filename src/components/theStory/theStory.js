@@ -26,7 +26,6 @@ class TheStory extends Component {
           <h3 className="theStory-header-text">The Story</h3>
         </div>
         <div className="theStory-description">
-          <Quote />
           <p className="theStory-description-text">
             Sides of a Horn is the first film to tell the story of Africa&#39;s
             poaching war from both sides of the fence. Based on actual events,
