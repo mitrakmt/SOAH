@@ -30,10 +30,10 @@ class FlipClock extends Component {
     // Movie release date
     const { days, hours, minutes, seconds } = countdown('06/03/2019 00:00:00')
     let { daysShuffle, hoursShuffle, minutesShuffle, secondsShuffle } = this.state
-    daysShuffle = !daysShuffle
-    hoursShuffle = !hoursShuffle
-    minutesShuffle = !minutesShuffle
-    secondsShuffle = !secondsShuffle
+    daysShuffle = days !== this.state.days ? !daysShuffle : daysShuffle
+    hoursShuffle = hours !== this.state.hours ? !hoursShuffle : hoursShuffle
+    minutesShuffle = minutes !== this.state.minutes ? !minutesShuffle : minutesShuffle
+    secondsShuffle = seconds !== this.state.seconds ? !secondsShuffle : secondsShuffle
     
     this.setState({
       days,
