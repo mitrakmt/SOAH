@@ -77,7 +77,7 @@
       font-size: 26px;
       // Layout properties
       position: absolute;
-      top: 50%;
+      top: 60%;
       // This slight offset compared to the transform is necessary
       left: 52%;
       transform: translate(-50%, -50%);
@@ -113,7 +113,8 @@
     &-mainNews {
       // Style properties
       // Make the image red (wild but this works?)
-      filter: grayscale(100%) brightness(40%) sepia(100%) hue-rotate(-50deg) saturate(600%) contrast(0.8);
+      filter: grayscale(100%) brightness(30%) sepia(100%) hue-rotate(-50deg)
+        saturate(600%) contrast(0.8);
       width: 53%;
       // Layout properties
       bottom: auto;
