@@ -5,7 +5,7 @@ import AnimatedCard from './AnimatedCard'
 const FlipUnitContainer = ({ digit, shuffle, unit }) => {
   // assign digit values
   let currentDigit = digit
-  let previousDigit = digit - 1
+  let previousDigit = digit + 1
 
   // to prevent a negative value
   if (unit !== 'hours') {
@@ -34,8 +34,8 @@ const FlipUnitContainer = ({ digit, shuffle, unit }) => {
     <div className={'flipUnitContainer'}>
       <StaticCard position={'upperCard'} digit={currentDigit} />
       <StaticCard position={'lowerCard'} digit={previousDigit} />
-      <AnimatedCard position={'first'} digit={digit1} animation={animation1} />
-      <AnimatedCard position={'second'} digit={digit2} animation={animation2} />
+      <AnimatedCard position={'first'} digit={digit2} animation={animation2} />
+      <AnimatedCard position={'second'} digit={digit1} animation={animation1} />
     </div>
   )
 }
