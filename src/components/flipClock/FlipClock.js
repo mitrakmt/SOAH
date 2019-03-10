@@ -86,6 +86,14 @@ class FlipClock extends Component {
             shuffle={minutesShuffle}
           />
         </div>
+        <div>
+          <p className="flipClockLabel">SECONDS</p>
+          <FlipUnitContainer
+            unit={'seconds'}
+            digit={seconds}
+            shuffle={secondsShuffle}
+          />
+        </div>
       </div>
     )
   }
