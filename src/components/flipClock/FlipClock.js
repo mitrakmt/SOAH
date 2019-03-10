@@ -1,11 +1,14 @@
 import React, { Component } from 'react'
 import FlipUnitContainer from './FlipUnitContainer'
+import countdown from './countdown'
 import './flipClock.scss'
 
 class FlipClock extends Component {
   constructor(props) {
     super(props)
     this.state = {
+      days: 0,
+      daysShuffle: true,
       hours: 0,
       hoursShuffle: true,
       minutes: 0,
@@ -25,64 +28,33 @@ class FlipClock extends Component {
 
   updateTime() {
     // Movie release date
-    const dateFuture = new Date('Jun 5, 2019 00:00:00').getTime()
-    // get new date
-    const time = new Date()
-    // get total seconds between the times
-    let delta = Math.abs(dateFuture - time) / 1000
-
-    // calculate (and subtract) whole days
-    let days = Math.floor(delta / 86400)
-    const months = Math.floor(days / 31)
-    delta -= days * 86400
-    days = days -= Math.floor(months * 31)
-
-    // calculate (and subtract) whole hours
-    const hours = Math.floor(delta / 3600) % 24
-    delta -= hours * 3600
-
-    // calculate (and subtract) whole minutes
-    const minutes = Math.floor(delta / 60) % 60
-    delta -= minutes * 60
-
-    // what's left is seconds
-    // currently unused
-    const seconds = delta % 60 // in theory the modulus is not required
-    // on days chanage, update dayss and shuffle state
-    if (months !== this.state.hours) {
-      // Note this usage of mismatched field names is a quirk of combining the old clock functionality with the countdown
-      const hoursShuffle = !this.state.hoursShuffle
-      this.setState({
-        hours: months,
-        hoursShuffle,
-      })
-    }
-    // on hours chanage, update hours and shuffle state
-    if (days !== this.state.minutes) {
-      const minutesShuffle = !this.state.minutesShuffle
-      // Note this usage of mismatched field names is a quirk of combining the old clock functionality with the countdown
-      this.setState({
-        minutes: days,
-        minutesShuffle,
-      })
-    }
-    // on minute chanage, update minutes and shuffle state
-    if (hours !== this.state.seconds) {
-      const secondsShuffle = !this.state.secondsShuffle
-      // Note this usage of mismatched field names is a quirk of combining the old clock functionality with the countdown
-      this.setState({
-        seconds: hours,
-        secondsShuffle,
-      })
-    }
+    const { days, hours, minutes, seconds } = countdown('06/03/2019 00:00:00')
+    let { daysShuffle, hoursShuffle, minutesShuffle, secondsShuffle } = this.state
+    daysShuffle = days !== this.state.days ? !daysShuffle : daysShuffle
+    hoursShuffle = hours !== this.state.hours ? !hoursShuffle : hoursShuffle
+    minutesShuffle = minutes !== this.state.minutes ? !minutesShuffle : minutesShuffle
+    secondsShuffle = seconds !== this.state.seconds ? !secondsShuffle : secondsShuffle
+    
+    this.setState({
+      days,
+      daysShuffle,
+      hours,
+      hoursShuffle,
+      minutes,
+      minutesShuffle,
+      seconds,
+      secondsShuffle
+    })
   }
 
   render() {
     // state object destructuring
     const {
+      days,
       hours,
       minutes,
       seconds,
+      daysShuffle,
       hoursShuffle,
       minutesShuffle,
       secondsShuffle,
@@ -91,7 +63,15 @@ class FlipClock extends Component {
     return (
       <div className={'flipClock'}>
         <div>
-          <p className="flipClockLabel">MONTHS</p>
+          <p className="flipClockLabel">DAYS</p>
+          <FlipUnitContainer
+            unit={'days'}
+            digit={days}
+            shuffle={daysShuffle}
+          />
+        </div>
+        <div>
+          <p className="flipClockLabel">HOURS</p>
           <FlipUnitContainer
             unit={'hours'}
             digit={hours}
@@ -99,7 +79,7 @@ class FlipClock extends Component {
           />
         </div>
         <div>
-          <p className="flipClockLabel">DAYS</p>
+          <p className="flipClockLabel">MINUTES</p>
           <FlipUnitContainer
             unit={'minutes'}
             digit={minutes}
@@ -107,7 +87,7 @@ class FlipClock extends Component {
           />
         </div>
         <div>
-          <p className="flipClockLabel">HOURS</p>
+          <p className="flipClockLabel">SECONDS</p>
           <FlipUnitContainer
             unit={'seconds'}
             digit={seconds}
