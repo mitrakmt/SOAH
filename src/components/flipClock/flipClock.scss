@@ -7,7 +7,7 @@ $flipCardWidth: 42px;
   display: flex;
   justify-content: space-between;
   max-height: 200px;
-  width: 170px;
+  width: 200px;
 
   @include media('<tablet') {
     max-height: 250px;

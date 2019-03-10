@@ -1,11 +1,13 @@
 @import 'include-media/dist/_include-media.scss';
 
 .landingPage-view {
-  display: flex;
-  flex: 1 0 auto;
-  min-height: 100vh;
-  transform: translateZ(-1px) scale(2);
-  z-index: 0;
+  @include media('>tablet') {
+    display: flex;
+    flex: 1 0 auto;
+    min-height: 100vh;
+    transform: translateZ(-1px) scale(2);
+    z-index: 0;
+  }
 
   .animation {
     z-index: -5;
