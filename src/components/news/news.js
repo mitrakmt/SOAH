@@ -3,7 +3,7 @@ import ScrollAnimation from 'react-animate-on-scroll'
 
 // Images
 import wanNews from 'images/news/WorldAnimalNews.jpg'
-import virginVideo from 'images/news/Virgin_TrailerAnnouncement.png'
+import virginVideo from 'images/News_VirginReleaseOfficialTrailer.png'
 import AWFNews from 'images/news/AfricanWildlifeFoundation.png'
 import romanianNews from 'images/news/Canal3.png'
 import screeningsNews from 'images/news/Screenings.jpg'
@@ -80,16 +80,19 @@ class News extends Component {
       return
     }
 
-    this.setState({
-      selectedNews: ++currentPage,
-      transitioning: true,
-    }, () => {
-      setTimeout(() => {
-        this.setState({
-          transitioning: false,
-        })
-      }, 500);
-    })
+    this.setState(
+      {
+        selectedNews: ++currentPage,
+        transitioning: true,
+      },
+      () => {
+        setTimeout(() => {
+          this.setState({
+            transitioning: false,
+          })
+        }, 500)
+      }
+    )
   }
 
   previousNews = () => {
@@ -99,16 +102,19 @@ class News extends Component {
       return
     }
 
-    this.setState({
-      selectedNews: --currentPage,
-      transitioning: true,
-    }, () => {
-      setTimeout(() => {
-        this.setState({
-          transitioning: false,
-        })
-      }, 500);
-    })
+    this.setState(
+      {
+        selectedNews: --currentPage,
+        transitioning: true,
+      },
+      () => {
+        setTimeout(() => {
+          this.setState({
+            transitioning: false,
+          })
+        }, 500)
+      }
+    )
   }
 
   newsClick = id => {
@@ -185,7 +191,15 @@ class News extends Component {
                 }`}
                 alt={piece.alt}
               />
-              <span className={`news-images-title ${this.state.transitioning ? 'news-images-titleTransitionStart' : 'news-images-titleTransitionEnd'}`}>{this.news[selectedNews].alt}</span>
+              <span
+                className={`news-images-title ${
+                  this.state.transitioning
+                    ? 'news-images-titleTransitionStart'
+                    : 'news-images-titleTransitionEnd'
+                }`}
+              >
+                {this.news[selectedNews].alt}
+              </span>
             </a>
           ))}
         </div>
