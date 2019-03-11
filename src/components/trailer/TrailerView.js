@@ -6,7 +6,6 @@ import LinkedIn from 'components/social/linkedin'
 import Email from 'components/social/email'
 import Tumblr from 'components/social/tumblr'
 import FlipClock from '../../components/flipClock'
-import ScrollAnimation from 'react-animate-on-scroll'
 import './trailerView.scss'
 
 class TrailerView extends Component {
@@ -57,7 +56,7 @@ class TrailerView extends Component {
               <h3>share the trailer:</h3>
             </div>
             <div className="socialGroup-container">
-              <ScrollAnimation duration={2} animateIn="fadeIn" delay={1}>
+              <div style={{ display: 'flex' }}>
                 <div className="socialGroup-line">
                   <Instagram
                     href="https://www.dropbox.com/sh/gxanxv1jjq4dgaa/AACTNOqeKWQN0lNROb9ytEeua?dl=0"
@@ -83,8 +82,8 @@ class TrailerView extends Component {
                     margin="2px 4px 2px 4px"
                   />
                 </div>
-              </ScrollAnimation>
-              <ScrollAnimation duration={2} animateIn="fadeIn" delay={1}>
+              </div>
+              <div style={{ display: 'flex' }}>
                 <div className="socialGroup-line">
                   <LinkedIn
                     href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.linkedin.com/feed/update/activity:6437938994725548032/&source=LinkedIn"
@@ -104,7 +103,7 @@ class TrailerView extends Component {
                     margin="2px 4px 2px 4px"
                   />
                 </div>
-              </ScrollAnimation>
+              </div>
             </div>
             <div className="footer-section-line" />
           </div>

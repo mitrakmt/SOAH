@@ -244,6 +244,7 @@
   .socialGroup {
     &-container {
       display: inline-block;
+      z-index: 5;
 
       @include media('>=tablet') {
         display: block;
