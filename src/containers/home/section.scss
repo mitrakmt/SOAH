@@ -8,13 +8,6 @@
 
 .homeContainer {
   overflow-x: hidden;
-
-  @include media('>tablet') {
-    perspective: 1px;
-    transform-style: preserve-3d;
-    height: 100vh;
-    overflow-y: scroll;
-  }
 }
 
 .homeSection--collapseOnMobile {
