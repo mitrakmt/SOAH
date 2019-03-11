@@ -7,8 +7,9 @@
 }
 
 .homeContainer {
+  overflow-x: hidden;
+
   @include media('>tablet') {
-    overflow-x: hidden;
     perspective: 1px;
     transform-style: preserve-3d;
     height: 100vh;
