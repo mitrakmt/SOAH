@@ -3,9 +3,9 @@ import awfLogo from '../../images/awf.svg'
 import Header from '../header'
 import SoahLogo from '../../images/SOAH_logo.png'
 import ScrollAnimation from 'react-animate-on-scroll'
+
 import AnimationLogo from 'images/redLogo.png'
 import AnimationBackground from 'images/SOAH_Still46.png'
-
 import Background from 'images/landingPageBackground2.png'
 
 import './landingPageView.scss'
@@ -29,11 +29,11 @@ class LandingPageView extends Component {
             />
           </div>
         </div>
-        <img
+        {/* <img
           src={Background}
           className="background"
           alt="Man hunting in safari"
-        />
+        /> */}
         <div className="header-container">
           <Header />
         </div>
