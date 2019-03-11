@@ -1,13 +1,18 @@
 @import 'include-media/dist/_include-media.scss';
 
 .landingPage-view {
-  @include media('>tablet') {
-    display: flex;
-    flex: 1 0 auto;
-    min-height: 100vh;
-    transform: translateZ(-1px) scale(2);
-    z-index: 0;
-  }
+  opacity: 0.8;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url('../../images/landingPageBackground2.png');
+
+  /* Set a specific height */
+  min-height: 100vh;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 
   .animation {
     z-index: -5;
