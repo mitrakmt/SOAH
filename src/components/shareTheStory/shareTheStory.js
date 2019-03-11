@@ -11,7 +11,7 @@ import Tumblr from 'components/social/tumblr'
 
 import './shareTheStory.scss'
 
-class LookInside extends Component {
+class ShareTheStory extends Component {
   constructor(props) {
     super(props)
     this.state = {}
@@ -90,4 +90,4 @@ class LookInside extends Component {
   }
 }
 
-export default LookInside
+export default ShareTheStory
