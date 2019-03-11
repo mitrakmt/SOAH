@@ -1,5 +1,8 @@
 @import 'include-media/dist/_include-media.scss';
 .trailer-view {
+  display: block;
+  position: relative;
+  z-index: 1;
   .countdown {
     &-container {
       display: inline-block;
@@ -74,6 +77,8 @@
     font-family: 'BebasNeue';
     font-size: 16px;
     line-height: 15px;
+    z-index: 2;
+    background-color: black;
 
     // Layout styles
     display: grid;

@@ -19,7 +19,7 @@
       padding-left: 100px;
       text-transform: uppercase;
       position: relative;
-      min-width: 500px;
+      min-width: 300px;
       min-height: 300px;
 
       @include media('>=desktop') {
@@ -37,8 +37,8 @@
       flex: 1;
       // Define minimum constraints so we don't cut off the image
       // These settings are a 16:9 aspect ratio
-      min-width: 900px;
-      min-height: 506px;
+      min-width: 700px;
+      min-height: 556px;
       // Define maximum constraints so we don't end up with weird ratios
       max-width: 1920px;
       max-height: 1080px;
@@ -48,7 +48,7 @@
       @include media('<tablet') {
         // Prevents trailer from being wider than the phone's viewport
         min-width: 100vw;
-        min-height: 250px;
+        min-height: 350px;
       }
 
       @include media('>=desktop') {
@@ -57,6 +57,11 @@
 
       @media screen and (max-width: 650px) {
         min-width: 300px;
+        min-height: 300px;
+      }
+
+      @media screen and (max-width: 450px) {
+        min-height: 250px;
       }
 
       &-video {
@@ -140,7 +145,7 @@
       object-fit: cover;
       width: 100%;
       height: 100%;
-      max-height: 500px;
+      max-height: 600px;
 
       @media screen and (max-width: 700px) {
         object-fit: contain;
