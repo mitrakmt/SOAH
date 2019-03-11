@@ -89,67 +89,69 @@ class ImageCarousel extends Component {
 
     return (
       <div className="imageCarousel">
-        <a
-          href={images[this.state.selectedImageId].src}
-          className="imageCarousel-downloadIcon"
-          download
-        >
-          <svg
-            className="imageCarousel-downloadIcon-icon"
-            viewBox="0 0 29 27"
-            version="1.1"
-            xmlns="http://www.w3.org/2000/svg"
-            xmlnsXlink="http://www.w3.org/1999/xlink"
+        <div className="imageCarousel-mainImage-container">
+          <a
+            href={images[this.state.selectedImageId].src}
+            className="imageCarousel-downloadIcon"
+            download
           >
-            <g
-              id="Welcome"
-              stroke="none"
-              strokeWidth="1"
-              fill="none"
-              fillRule="evenodd"
+            <svg
+              className="imageCarousel-downloadIcon-icon"
+              viewBox="0 0 29 27"
+              version="1.1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlnsXlink="http://www.w3.org/1999/xlink"
             >
               <g
-                id="Screenings-3"
-                transform="translate(-1352.000000, -53.000000)"
-                fill="#BE1E2D"
-                fillRule="nonzero"
+                id="Welcome"
+                stroke="none"
+                strokeWidth="1"
+                fill="none"
+                fillRule="evenodd"
               >
-                <g id="60932" transform="translate(1352.000000, 53.000000)">
-                  <polygon
-                    id="Shape"
-                    points="12.7210216 0 12.7210216 11.3751226 8 11.3751226 15.5000163 21 23 11.3751226 18.2790111 11.3751226 18.2790111 0"
-                  />
-                  <polygon
-                    id="Shape"
-                    points="23.8538622 21.3568465 5.14613779 21.3568465 5.14613779 19 0 19 0 27 29 27 29 19 23.8538622 19"
-                  />
+                <g
+                  id="Screenings-3"
+                  transform="translate(-1352.000000, -53.000000)"
+                  fill="#BE1E2D"
+                  fillRule="nonzero"
+                >
+                  <g id="60932" transform="translate(1352.000000, 53.000000)">
+                    <polygon
+                      id="Shape"
+                      points="12.7210216 0 12.7210216 11.3751226 8 11.3751226 15.5000163 21 23 11.3751226 18.2790111 11.3751226 18.2790111 0"
+                    />
+                    <polygon
+                      id="Shape"
+                      points="23.8538622 21.3568465 5.14613779 21.3568465 5.14613779 19 0 19 0 27 29 27 29 19 23.8538622 19"
+                    />
+                  </g>
                 </g>
               </g>
-            </g>
-          </svg>
-        </a>
-        <LazyLoadImage
-          src={images[this.state.selectedImageId].src}
-          className={`imageCarousel-mainImage ${
-            this.props.title ? 'imageCarousel-mainImage-withTitle' : ''
-          }`}
-          style={this.state.transitioning ? { opacity: 0 } : { opacity: 1 }}
-          alt="Carousel"
-          id="ImageCarouselSelectedImage"
-        />
-        <div className="imageCarousel-sideArrows">
-          <h5
-            className="imageCarousel-sideArrows-left"
-            onClick={this.previousImage}
-          >
-            {`<`}
-          </h5>
-          <h5
-            className="imageCarousel-sideArrows-right"
-            onClick={this.nextImage}
-          >
-            {`>`}
-          </h5>
+            </svg>
+          </a>
+          <LazyLoadImage
+            src={images[this.state.selectedImageId].src}
+            className={`imageCarousel-mainImage ${
+              this.props.title ? 'imageCarousel-mainImage-withTitle' : ''
+            }`}
+            style={this.state.transitioning ? { opacity: 0 } : { opacity: 1 }}
+            alt="Carousel"
+            id="ImageCarouselSelectedImage"
+          />
+          <div className="imageCarousel-sideArrows">
+            <h5
+              className="imageCarousel-sideArrows-left"
+              onClick={this.previousImage}
+            >
+              {`<`}
+            </h5>
+            <h5
+              className="imageCarousel-sideArrows-right"
+              onClick={this.nextImage}
+            >
+              {`>`}
+            </h5>
+          </div>
         </div>
         <div className="imageCarousel-arrows">
           <h5
