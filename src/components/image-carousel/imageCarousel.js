@@ -22,32 +22,47 @@ class ImageCarousel extends Component {
     this.state = {
       selectedImageId: 0,
       selectorXTranslation: initialSelectorPosition,
+      transitioning: false,
     }
   }
 
   selectImage = event => {
     const selectedImageId = parseInt(event.target.id)
-    // Setting to a specific image
     this.setState({
-      selectedImageId,
-      selectorXTranslation:
-        this.initialSelectorPosition - 150 * selectedImageId,
+      transitioning: true,
     })
+
+    // Setting to a specific image
+    setTimeout(() => {
+      this.setState({
+        selectedImageId,
+        transitioning: false,
+        selectorXTranslation:
+          this.initialSelectorPosition - 150 * selectedImageId,
+      })
+    }, 250)
   }
 
   nextImage = () => {
     const currentPage = this.state.selectedImageId
+    this.setState({
+      transitioning: true,
+    })
 
-    if (currentPage === this.props.images.length - 1) {
-      this.setState({
-        selectedImageId: 0,
-      })
-    } else {
-      this.setState({
-        selectedImageId: currentPage + 1,
-        selectorXTranslation: this.state.selectorXTranslation - 150,
-      })
-    }
+    setTimeout(() => {
+      if (currentPage === this.props.images.length - 1) {
+        this.setState({
+          selectedImageId: 0,
+          transitioning: false,
+        })
+      } else {
+        this.setState({
+          selectedImageId: currentPage + 1,
+          selectorXTranslation: this.state.selectorXTranslation - 150,
+          transitioning: false,
+        })
+      }
+    }, 250)
   }
 
   previousImage = () => {
@@ -118,6 +133,7 @@ class ImageCarousel extends Component {
           className={`imageCarousel-mainImage ${
             this.props.title ? 'imageCarousel-mainImage-withTitle' : ''
           }`}
+          style={this.state.transitioning ? { opacity: 0 } : { opacity: 1 }}
           alt="Carousel"
           id="ImageCarouselSelectedImage"
         />

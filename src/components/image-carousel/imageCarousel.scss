@@ -88,6 +88,11 @@
     max-height: 75%;
     max-width: 1500px;
     object-fit: contain;
+    transition-duration: 0.25s;
+    -webkit-transition: opacity 0.25s ease-in-out;
+    -moz-transition: opacity 0.25s ease-in-out;
+    -o-transition: opacity 0.25s ease-in-out;
+    transition: opacity 0.25s ease-in-out;
 
     &-withTitle {
       max-height: 67%;
