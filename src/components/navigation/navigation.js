@@ -31,12 +31,12 @@ class Navigation extends Component {
     const elementFound = document.getElementById(view)
 
     if (isHomeView && elementFound) {
-      elementFound.scrollIntoView()
+      elementFound.scrollIntoView({ behavior: 'smooth' })
     } else {
       this.props.history.push(`/${view}`)
       if (isHomeView) {
         setTimeout(() => {
-          document.getElementById(view).scrollIntoView()
+          document.getElementById(view).scrollIntoView({ behavior: 'smooth' })
         }, 250)
       }
     }
