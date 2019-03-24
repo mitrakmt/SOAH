@@ -15,10 +15,9 @@
 
       @include media('<tablet') {
         margin-right: 0;
-        max-width: 85%;
+        max-width: 60%;
         display: flex;
         margin-right: 0;
-        max-width: 35%;
       }
 
       @include media('>=tablet', '<desktop') {

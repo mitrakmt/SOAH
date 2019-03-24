@@ -112,6 +112,10 @@
 
       @include media('<tablet') {
         top: 9vh;
+
+        img {
+          width: 60px;
+        }
       }
     }
 
@@ -119,6 +123,9 @@
       color: #fff;
       font-family: 'BebasNeue';
       font-size: 12px;
+      @include media('<tablet') {
+        font-size: 8px;
+      }
     }
   }
   .credits {
