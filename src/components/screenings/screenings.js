@@ -25,13 +25,6 @@ class Screenings extends Component {
     // ID IS REQUIRED
     this.upcomingScreenings = [
       {
-        line1: 'MANCHESTER FILM FESTIVAL',
-        line2: 'UK PREMIERE',
-        line3: 'MARCH 8 AT 6PM',
-        link: 'http://www.maniff.com/sides-of-a-horn/',
-        id: 1,
-      },
-      {
         line1: 'ENVIRONMENTAL FILM FESTIVAL',
         line2: 'IN THE NATION’S CAPITAL',
         line3: 'MARCH 16 AT 2PM',
@@ -41,37 +34,65 @@ class Screenings extends Component {
       {
         link: 'https://wildlifefilms.org/films/2019-official-selections/',
         line1: 'INTERNATIONAL WILDLIFE FILM FESTIVAL',
-        line2: 'April 13 at 7pm | April 19 at 3:45pm',
+        line2: 'APRIL 13 at 7pm | APRIL 19 at 3:45pm',
         line3: '',
         id: 3,
+      },
+      {
+        link: 'http://www.conservation-lab.com/',
+        line1: 'CONSERVATION LAB',
+        line2: 'MAY 11, 2019',
+        line3: '',
+        id: 4,
+      },
+      {
+        link: 'https://www.wcff.org/nyc-festival-2019/',
+        line1: 'WILDLIFE CONSERVATION FILM FESTIVAL',
+        line2: 'OCTOBER 17-27, 2019',
+        line3: '',
+        id: 5,
       },
     ]
 
     // ID IS REQUIRED
     this.pastScreenings = [
       {
+        line1: 'Lake Highland Preparatory School ',
+        line2: 'MARCH 14, 2019',
+        link: 'https://www.facebook.com/sidesofahorn/videos/468460417023472/',
+        id: 0,
+      },
+      {
+        line1: 'MANCHESTER FILM FESTIVAL',
+        line2: 'UK PREMIERE',
+        line3: 'MARCH 8, 2019',
+        line4: 'Winner: Best International Film',
+        link: 'http://www.maniff.com/sides-of-a-horn/',
+        id: 1,
+      },
+      {
         line1: 'SEDONA INTERNATIONAL FILM FESTIVAL',
         line2: 'WORLD PREMIERE',
-        line3: 'FEBRUARY 28 AT 7:20 PM | MARCH 2 AT 10AM',
+        line3: 'FEBRUARY 28, 2019 | MARCH 2, 2019',
         line4: 'Winner: Best Short Film (Audience Choice)',
         link:
           'https://prod5.agileticketing.net/websales/pages/info.aspx?evtinfo=86966~d5a11db3-b3ba-440c-a208-47197fa86ccd&',
-        id: 0,
+        id: 2,
       },
       {
         line1: 'RAPIDLION FILM FESTIVAL',
         line2: 'SOUTH AFRICAN PREMIERE',
-        line3: 'MARCH 3 AT 10:30AM',
+        line3: 'MARCH 3, 2019',
         link:
           'http://rapidlion.co.za/rapidlion-films-2019-schedule/?filmcategory=3%20Mannie%20Manim&filmdate=2019-03-07',
-        id: 1,
+        id: 3,
       },
       {
         line1: 'WORLD RHINO DAY',
         line2: 'PRIVATE SCREENING',
         line3: 'SEPTEMBER 22, 2018',
         link: 'https://twitter.com/tobywosskow/status/1044104807726821377',
-        id: 2,
+        id: 4,
       },
     ]
     this.images = [

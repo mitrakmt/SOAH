@@ -162,7 +162,7 @@ class News extends Component {
         </div>
         <div className="news-images">
           {this.news.map(piece => (
-            <a
+            <span
               onClick={() => this.newsClick(piece.id)}
               className="news-images-navigate"
               key={`news-carousel-${piece.id}`}
@@ -197,10 +197,11 @@ class News extends Component {
                     ? 'news-images-titleTransitionStart'
                     : 'news-images-titleTransitionEnd'
                 }`}
+                onClick={() => this.newsClick(selectedNews)}
               >
                 {this.news[selectedNews].alt}
               </span>
-            </a>
+            </span>
           ))}
         </div>
         <div className="news-arrows">

@@ -83,8 +83,21 @@
       left: 52%;
       transform: translate(-50%, -50%);
 
+      @media screen and (max-width: 1600px) {
+        top: 45%;
+      }
+
+      @media screen and (max-width: 1400px) {
+        top: 40%;
+      }
+
+      @media screen and (max-width: 1100px) {
+        top: 45%;
+      }
+
       @media screen and (max-width: 800px) {
         font-size: 20px;
+        text-align: center;
       }
     }
 
@@ -114,7 +127,7 @@
     &-mainNews {
       // Style properties
       // Make the image red (wild but this works?)
-      filter: grayscale(100%) brightness(30%) sepia(100%) hue-rotate(-50deg)
+      filter: grayscale(100%) brightness(10%) sepia(100%) hue-rotate(-50deg)
         saturate(600%) contrast(0.8);
       width: 53%;
       // Layout properties
