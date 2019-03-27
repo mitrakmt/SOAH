@@ -1,0 +1,92 @@
+.educateYourself {
+  padding: 25px;
+  background-color: #ededed;
+  width: 80%;
+  margin: 15px;
+  margin-top: 400px;
+  max-width: 1500px;
+  z-index: 1;
+
+  @media screen and (max-width: 600px) {
+    margin-top: 200px;
+  }
+
+  &-header {
+    display: flex;
+    align-items: center;
+    font-size: 21px;
+    justify-content: space-between;
+
+    &-text {
+      text-transform: uppercase;
+      font-weight: 700;
+      color: #be1e2d;
+      margin: 0;
+      font-size: 28px;
+      color: #000000;
+      line-height: 34px;
+    }
+    &-title {
+      font-size: 28px;
+      width: 450px;
+      color: #be1e2d;
+      margin: 0;
+      text-transform: uppercase;
+
+      @media screen and (max-width: 1100px) {
+        width: 600px;
+      }
+
+      @media screen and (max-width: 800px) {
+        width: 800px;
+      }
+
+      @media screen and (max-width: 600px) {
+        border-bottom: 3px solid #be1e2d;
+      }
+    }
+    &-line {
+      height: 1px;
+      width: 100%;
+      border-bottom: 3px solid #be1e2d;
+
+      animation-name: lookInsideMobileLineAnimation;
+      animation-duration: 2s;
+      transition-duration: 2s;
+      animation-delay: 1s;
+
+      @keyframes lookInsideMobileLineAnimation {
+        0% {
+          width: 0;
+        }
+        100% {
+          width: 100%;
+        }
+      }
+
+      @media screen and (max-width: 600px) {
+        display: none;
+      }
+    }
+  }
+  &-body {
+    color: black;
+    margin-top: -5px;
+    font-size: 28px;
+    color: #000000;
+    line-height: 34px;
+  }
+  &-text {
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 10px;
+    padding-left: 20px;
+    font-size: 22px;
+    margin-bottom: 0;
+
+    &:first-child {
+      margin-top: 0;
+      padding-top: 20px;
+    }
+  }
+}
