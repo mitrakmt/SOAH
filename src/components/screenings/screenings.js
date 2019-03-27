@@ -25,32 +25,43 @@ class Screenings extends Component {
     // ID IS REQUIRED
     this.upcomingScreenings = [
       {
-        line1: 'ENVIRONMENTAL FILM FESTIVAL',
-        line2: 'IN THE NATION’S CAPITAL',
-        line3: 'MARCH 16 AT 2PM',
+        line1: 'ENVIRONMENTAL FILM FESTIVAL IN THE NATION’S CAPITAL',
+        line2: 'MARCH 16 AT 2PM',
         link: 'https://dceff.org/film/sides-of-a-horn/',
         id: 2,
       },
       {
         link: 'https://wildlifefilms.org/films/2019-official-selections/',
         line1: 'INTERNATIONAL WILDLIFE FILM FESTIVAL',
-        line2: 'APRIL 13 at 7pm | APRIL 19 at 3:45pm',
+        line2: 'APRIL 17 at 7pm | APRIL 18 at 3:00pm',
         line3: '',
         id: 3,
+      },
+      {
+        link: 'https://wildlifefilms.org/films/2019-official-selections/ ',
+        line1: 'African Wildlife Foundation & Documentary Events',
+        line2: 'APRIL 24 at 7pm',
+        id: 4,
       },
       {
         link: 'http://www.conservation-lab.com/',
         line1: 'CONSERVATION LAB',
         line2: 'MAY 11, 2019',
         line3: '',
-        id: 4,
+        id: 5,
+      },
+      {
+        link: '',
+        line1: 'Philadelphia Independent Film Festival',
+        line2: 'MAY 8-11 (specific screening times TBD)',
+        id: 6,
       },
       {
         link: 'https://www.wcff.org/nyc-festival-2019/',
         line1: 'WILDLIFE CONSERVATION FILM FESTIVAL',
         line2: 'OCTOBER 17-27, 2019',
         line3: '',
-        id: 5,
+        id: 7,
       },
     ]
 
