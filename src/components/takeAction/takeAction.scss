@@ -111,11 +111,11 @@
         }
       }
 
-      &:hover &-text {
+      &-text {
         display: block;
       }
 
-      &:hover &-logo {
+      &-logo {
         display: block;
       }
     }
@@ -126,6 +126,8 @@
       position: absolute;
       object-fit: contain;
       transition-duration: 0.15s;
+      cursor: pointer;
+      filter: brightness(35%);
 
       @media screen and (max-width: 1200px) {
         height: 225px;
@@ -147,12 +149,7 @@
       }
 
       &:hover {
-        cursor: pointer;
-        filter: brightness(30%);
-      }
-
-      @include media('<desktop') {
-        filter: brightness(30%);
+        filter: brightness(20%);
       }
     }
   }
