@@ -295,7 +295,7 @@ class Screenings extends Component {
               <div className="latest-form" style={{ width: '100%' }}>
                 <div id="mc_embed_signup">
                   <form
-                    action="https://whirlowparkpictures.us18.list-manage.com/subscribe/post?u=6ffdb5207ab2707139f3c06b9&amp;id=6aad220de9"
+                    action="https://rhinomovie.us20.list-manage.com/subscribe/post?u=a75342157d8da7f50765bef40&amp;id=2ba1416af8"
                     method="post"
                     id="mc-embedded-subscribe-form"
                     name="mc-embedded-subscribe-form"
