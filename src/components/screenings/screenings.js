@@ -209,6 +209,8 @@ class Screenings extends Component {
                     {screening.line1}
                   </a>
                   <br />
+                  {screening.location}
+                  <br />
                   {screening.line2}
                   <br />
                   {screening.line3}
@@ -248,6 +250,7 @@ class Screenings extends Component {
                   </a>
                   <br />
                   {screening.location}
+                  <br />
                   {screening.line2}
                   <br />
                   {screening.line3}
