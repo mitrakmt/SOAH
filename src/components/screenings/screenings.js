@@ -29,6 +29,7 @@ class Screenings extends Component {
         line1: 'INTERNATIONAL WILDLIFE FILM FESTIVAL',
         line2: 'APRIL 17 at 3:00pm | APRIL 18 at 3:00pm',
         line3: '',
+        location: 'Missoula',
         id: 3,
       },
       {
@@ -36,6 +37,7 @@ class Screenings extends Component {
           'https://www.eventbrite.com/e/documentary-sides-of-a-horn-tickets-59279408306?aff=utm_source%3Deb_email%26utm_medium%3Demail%26utm_campaign%3Dnew_event_email&utm_term=eventurl_text&fbclid=IwAR34Qvkwk2fvb77omcBSJ_JbKaIOb7tTwptPDa_eWlYwz8lTO-mIDj8Ej6Q',
         line1: 'African Wildlife Foundation & Documentary Events',
         line2: 'APRIL 24 at 7pm',
+        location: 'Dallas',
         id: 4,
       },
       {
@@ -43,18 +45,21 @@ class Screenings extends Component {
         line1: 'CONSERVATION LAB',
         line2: 'MAY 11, 2019',
         line3: '',
+        location: 'Cape Town',
         id: 5,
       },
       {
         link: 'http://www.philadelphiaindependentfilmfestival.com/ticket/',
         line1: 'Philadelphia Independent Film Festival',
         line2: 'MAY 8-11 (specific screening times TBD)',
+        location: 'Philadelphia',
         id: 6,
       },
       {
         link: 'https://www.wcff.org/nyc-festival-2019/',
         line1: 'WILDLIFE CONSERVATION FILM FESTIVAL',
         line2: 'OCTOBER 17-27, 2019',
+        location: 'New York',
         line3: '',
         id: 7,
       },
@@ -66,12 +71,14 @@ class Screenings extends Component {
         line1: 'ENVIRONMENTAL FILM FESTIVAL IN THE NATION’S CAPITAL',
         line2: 'MARCH 16 AT 2PM',
         link: 'https://dceff.org/film/sides-of-a-horn/',
+        location: 'Washington, D.C.',
         id: 0,
       },
       {
         line1: 'Lake Highland Preparatory School ',
         line2: 'MARCH 14, 2019',
         link: 'https://www.facebook.com/sidesofahorn/videos/468460417023472/',
+        location: 'Orlando',
         id: 1,
       },
       {
@@ -80,6 +87,7 @@ class Screenings extends Component {
         line3: 'MARCH 8, 2019',
         line4: 'Winner: Best International Film',
         link: 'http://www.maniff.com/sides-of-a-horn/',
+        location: 'Manchester',
         id: 2,
       },
       {
@@ -89,6 +97,7 @@ class Screenings extends Component {
         line4: 'Winner: Best Short Film (Audience Choice)',
         link:
           'https://prod5.agileticketing.net/websales/pages/info.aspx?evtinfo=86966~d5a11db3-b3ba-440c-a208-47197fa86ccd&',
+        location: 'Sedona',
         id: 3,
       },
       {
@@ -97,6 +106,7 @@ class Screenings extends Component {
         line3: 'MARCH 3, 2019',
         link:
           'http://rapidlion.co.za/rapidlion-films-2019-schedule/?filmcategory=3%20Mannie%20Manim&filmdate=2019-03-07',
+        location: 'Johannesburg',
         id: 4,
       },
       {
@@ -104,6 +114,7 @@ class Screenings extends Component {
         line2: 'PRIVATE SCREENING',
         line3: 'SEPTEMBER 22, 2018',
         link: 'https://twitter.com/tobywosskow/status/1044104807726821377',
+        location: 'Los Angeles & Johannesburg',
         id: 5,
       },
     ]
@@ -236,6 +247,7 @@ class Screenings extends Component {
                     {screening.line1}
                   </a>
                   <br />
+                  {screening.location}
                   {screening.line2}
                   <br />
                   {screening.line3}

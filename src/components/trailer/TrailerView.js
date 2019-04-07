@@ -86,7 +86,7 @@ class TrailerView extends Component {
               <div style={{ display: 'flex' }}>
                 <div className="socialGroup-line">
                   <LinkedIn
-                    href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.linkedin.com/feed/update/activity:6437938994725548032/&source=LinkedIn"
+                    href="https://www.linkedin.com/feed/update/urn:li:activity:6490510564752662528/"
                     fill="white"
                     margin="2px 4px 2px 4px"
                   />
