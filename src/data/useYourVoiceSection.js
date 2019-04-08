@@ -1,12 +1,11 @@
-import { UseYourVoiceSection } from 'containers/useYourVoice'
-import ComingSoonPageView from 'components/comingSoon'
+// import UseYourVoiceSection from 'containers/useYourVoice'
 
-export default [
-  {
-    Container: UseYourVoiceSection,
-    props: {
-      Component: ComingSoonPageView,
-      sectionName: 'comingSoon',
-    },
-  },
-]
+// export default [
+//   {
+//     Container: UseYourVoiceSection,
+//     props: {
+//       Component: YourVoiceView,
+//       sectionName: 'comingSoon',
+//     },
+//   },
+// ]

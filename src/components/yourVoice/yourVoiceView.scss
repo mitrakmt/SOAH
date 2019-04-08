@@ -1,0 +1,311 @@
+@import 'include-media/dist/_include-media.scss';
+
+.yourVoiceView {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  width: 100%;
+
+  &-pageTitle {
+    position: absolute;
+    top: 15px;
+    left: 45px;
+    text-transform: uppercase;
+    padding-top: 15px;
+    border-top: 3px solid white;
+    z-index: 1;
+    font-size: 48px;
+    color: rgba(255, 255, 255, 0.83);
+  }
+
+  &-headerImage {
+    width: 100%;
+    max-height: 600px;
+    position: absolute;
+    z-index: 0;
+    object-fit: cover;
+    filter: opacity(0.8);
+  }
+
+  &-infoSection {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 85%;
+    max-width: 1500px;
+    flex-wrap: wrap;
+
+    &:last-child {
+      margin-bottom: 40px;
+    }
+
+    @media screen and (max-width: 1000px) {
+      width: 90%;
+    }
+
+    .column {
+      flex-direction: column;
+    }
+
+    &-box {
+      background-color: #a31f2b;
+      justify-content: center;
+      align-items: center;
+      padding: 10px 25px;
+      width: 43%;
+      min-width: 230px;
+      display: flex;
+      color: #ffffff;
+      margin: 10px;
+
+      @media screen and (max-width: 1200px) {
+        width: 100%;
+      }
+
+      @media screen and (max-width: 600px) {
+        flex-direction: column;
+      }
+
+      &-row {
+        display: flex;
+      }
+
+      &-link {
+        text-decoration: none;
+      }
+
+      &-header {
+        text-transform: uppercase;
+        margin-right: 10px;
+        line-height: 34px;
+        font-size: 32px;
+        color: #ffffff;
+        text-align: center;
+        margin: 33px 10px 30px 10px;
+      }
+
+      &-subtext {
+        margin: 10px;
+        text-transform: uppercase;
+        font-size: 22px;
+        color: #ffffff;
+        text-align: center;
+        line-height: 30px;
+      }
+
+      &-divider {
+        border-bottom: 3px solid #ffffff;
+        width: 80px;
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  &-images {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin: 15px;
+
+    @media screen and (max-width: 1000px) {
+      flex-wrap: wrap;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &-container {
+      height: 320px;
+      width: 100%;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      transition-duration: 0.15s;
+
+      &-logo {
+        height: 45px;
+        display: none;
+        z-index: 2;
+        pointer-events: none;
+
+        @include media('<desktop') {
+          display: block;
+        }
+      }
+
+      &-text {
+        display: none;
+        z-index: 10;
+        color: white;
+        text-transform: uppercase;
+        font-size: 26px;
+        max-width: 300px;
+        text-align: center;
+        cursor: pointer;
+        pointer-events: none;
+        margin: 5px;
+
+        @include media('<desktop') {
+          display: block;
+        }
+      }
+
+      &-text {
+        display: block;
+      }
+
+      &-logo {
+        display: block;
+      }
+    }
+
+    &-image {
+      z-index: 1;
+      height: 280px;
+      width: 100%;
+      position: absolute;
+      object-fit: contain;
+      transition-duration: 0.15s;
+      cursor: pointer;
+      filter: brightness(30%);
+
+      &:after {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.6);
+        opacity: 0;
+        transition: all 1s;
+      }
+
+      &:hover {
+        filter: brightness(20%);
+      }
+    }
+  }
+}
+
+.yourVoiceView-body {
+  padding: 25px;
+  background-color: #ededed;
+  width: 80%;
+  margin: 15px;
+  margin-top: 400px;
+  max-width: 1500px;
+  z-index: 1;
+
+  @media screen and (max-width: 600px) {
+    margin-top: 200px;
+  }
+
+  .change {
+    &-header {
+      font-size: 26px;
+      margin: 0;
+    }
+    &-image {
+      float: left;
+      height: 100px;
+      padding: 0 50px;
+      width: 100px;
+    }
+    &-row {
+      clear: both;
+    }
+    &-right {
+      display: inline;
+    }
+    &-text {
+      font-size: 16px;
+      font-weight: 300;
+      margin: 0;
+      text-transform: uppercase;
+    }
+  }
+
+  &-header {
+    display: flex;
+    align-items: center;
+    font-size: 21px;
+    justify-content: space-between;
+
+    &-text {
+      text-transform: uppercase;
+      font-weight: 700;
+      color: #be1e2d;
+      margin: 0;
+      font-size: 28px;
+      color: #000000;
+      line-height: 34px;
+    }
+    &-title {
+      font-size: 28px;
+      width: 450px;
+      color: #be1e2d;
+      margin: 0;
+      text-transform: uppercase;
+
+      @media screen and (max-width: 1100px) {
+        width: 600px;
+      }
+
+      @media screen and (max-width: 800px) {
+        width: 800px;
+      }
+
+      @media screen and (max-width: 600px) {
+        border-bottom: 3px solid #be1e2d;
+      }
+    }
+    &-line {
+      height: 1px;
+      width: 100%;
+      border-bottom: 3px solid #be1e2d;
+
+      animation-name: lookInsideMobileLineAnimation;
+      animation-duration: 2s;
+      transition-duration: 2s;
+      animation-delay: 1s;
+
+      @keyframes lookInsideMobileLineAnimation {
+        0% {
+          width: 0;
+        }
+        100% {
+          width: 100%;
+        }
+      }
+
+      @media screen and (max-width: 600px) {
+        display: none;
+      }
+    }
+  }
+  &-body {
+    color: black;
+    margin-top: -5px;
+    font-size: 28px;
+    color: #000000;
+    line-height: 34px;
+  }
+  &-text {
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 10px;
+    padding-left: 20px;
+    font-size: 22px;
+    margin-bottom: 0;
+
+    &:first-child {
+      margin-top: 0;
+      padding-top: 20px;
+    }
+  }
+}

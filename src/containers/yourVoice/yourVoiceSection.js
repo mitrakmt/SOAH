@@ -2,12 +2,12 @@ import React, { Component } from 'react'
 
 import './section.scss'
 
-class UseYourVoiceSection extends Component {
+class YourVoice extends Component {
   render() {
     const { Component, sectionName } = this.props
     return (
       <div
-        className={`${sectionName} useYourVoiceSectionContainer`}
+        className={`${sectionName} yourVoiceContainer`}
         id={sectionName}
       >
         <Component {...this.props} />
@@ -16,4 +16,4 @@ class UseYourVoiceSection extends Component {
   }
 }
 
-export default UseYourVoiceSection
+export default YourVoice
