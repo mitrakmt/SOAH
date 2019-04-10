@@ -73,7 +73,7 @@ class LearnMore extends Component {
     const { sectionName } = this.props
     return (
       <div className={`${sectionName}`}>
-        <h3 className="learnMore-pageTitle">learnMore</h3>
+        <h3 className="learnMore-pageTitle">learn more</h3>
         <img
           src={HeaderImage}
           className="learnMore-headerImage"
