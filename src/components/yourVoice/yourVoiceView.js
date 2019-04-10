@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import HeaderImage from 'images/SOAH_Still33.png'
+import Navigation from 'components/navigation/navigation'
 import USGImage from 'images/eop_seal.png'
 import NewZealandImage from 'images/newzealand.png'
 import FacebookLogo from 'images/facebooklogo.png'
@@ -11,6 +12,8 @@ import './yourVoiceView.scss'
 class YourVoiceView extends Component {
   render() {
     return (
+      <>
+      <Navigation />
       <div className="yourVoiceView">
         <h1 className="yourVoiceView-pageTitle">Use Your Voice</h1>
         <img
@@ -71,6 +74,7 @@ class YourVoiceView extends Component {
           </div>
         </div>
       </div>
+      </>
     )
   }
 }
