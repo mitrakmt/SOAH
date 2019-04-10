@@ -1,6 +1,9 @@
 import React, { Component } from 'react'
 import HeaderImage from 'images/SOAH_Still33.png'
 import USGImage from 'images/eop_seal.png'
+import NewZealandImage from 'images/newzealand.png'
+import FacebookLogo from 'images/facebooklogo.png'
+import SouthAfricaImage from 'images/southafrica.jpg'
 import ScrollAnimation from 'react-animate-on-scroll'
 
 import './yourVoiceView.scss'
@@ -30,7 +33,7 @@ class YourVoiceView extends Component {
               Write to key policymakers, international organizations, and corporations to voice your concerns about the rhino horn trade. Encourage them to impose sanctions, create wildlife-friendly policies, and prosecute wildlife traffickers to the fullest extent of the law.
             </h4>
             <div className="change-row">
-              <img className="change-image" src={USGImage} />
+              <img className="change-image" src={SouthAfricaImage} />
               <div className="change-right">
                 <h3 className="change-header">
                   The South African Government
@@ -48,7 +51,7 @@ class YourVoiceView extends Component {
               </div>
             </div>
             <div className="change-row">
-              <img className="change-image" src={USGImage} />
+              <img className="change-image" src={NewZealandImage} />
               <div className="change-right">
                 <h3 className="change-header">
                   The New Zealand Government
@@ -57,7 +60,7 @@ class YourVoiceView extends Component {
               </div>
             </div>
             <div className="change-row">
-              <img className="change-image" src={USGImage} />
+              <img className="change-image" src={FacebookLogo} />
               <div className="change-right">
                 <h3 className="change-header">
                   Facebook Japan
