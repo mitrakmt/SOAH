@@ -55,7 +55,7 @@ class TakeActionView extends Component {
             </div>
             <div
               className={`${sectionName}-images-container`}
-              onClick={() => this.navigateToPage('useYourVoice')}
+              onClick={() => this.navigateToPage('yourVoice')}
             >
               <img
                 src={BabyImage}
