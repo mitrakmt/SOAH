@@ -41,6 +41,31 @@ class Screenings extends Component {
         id: 4,
       },
       {
+        link:
+          'https://www.eventbrite.com/e/film-screening-sides-of-a-horn-tickets-60214478125',
+        line1: 'African Wildlife Foundation & Modern Art Museum',
+        line2: 'APRIL 25 at 7pm, 2019',
+        location: 'Fort Worth',
+        line3: 'Email RSVP@awf.org for complimentary tickets',
+        id: 8,
+      },
+      {
+        link: 'https://twitter.com/sidesofahorn/status/1115671645845196800',
+        line1: 'frican Wildlife Foundation Private Screening',
+        line2: 'APRIL 26 at 6:30pm',
+        location: 'Houston',
+        line3: 'Email RSVP@awf.org for complimentary tickets',
+        id: 9,
+      },
+      {
+        link: 'https://explorers.org/about/about_the_club',
+        line1: 'The Explorers Club',
+        line2: 'MAY 6th at 6:00pm, 2019',
+        location: 'New York',
+        line3: 'Tickets available soon',
+        id: 10,
+      },
+      {
         link: 'http://www.conservation-lab.com/',
         line1: 'CONSERVATION LAB',
         line2: 'MAY 11, 2019',
@@ -51,7 +76,7 @@ class Screenings extends Component {
       {
         link: 'http://www.philadelphiaindependentfilmfestival.com/ticket/',
         line1: 'Philadelphia Independent Film Festival',
-        line2: 'MAY 8-11 (specific screening times TBD)',
+        line2: 'MAY 11 at 4:45pm',
         location: 'Philadelphia',
         id: 6,
       },
