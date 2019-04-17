@@ -115,7 +115,7 @@
       @include media('>=tablet') {
         display: flex;
         padding-left: 15px;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
 
         &-line {

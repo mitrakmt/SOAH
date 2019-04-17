@@ -43,6 +43,7 @@ class TakeActionView extends Component {
                 src={ManImage}
                 className={`${sectionName}-images-image`}
                 alt="Man starting"
+                key={`takeAction-image-manStaring`}
               />
               <img
                 src={redLogo}
@@ -61,6 +62,7 @@ class TakeActionView extends Component {
                 src={BabyImage}
                 className={`${sectionName}-images-image`}
                 alt="Mom holding baby"
+                key={`takeAction-image-babyImage`}
               />
               <img
                 src={redLogo}
@@ -82,6 +84,7 @@ class TakeActionView extends Component {
                   src={RhinoImage}
                   className={`${sectionName}-images-image`}
                   alt="Rhino in field"
+                  key={`takeAction-image-rhinoImage`}
                 />
                 <img
                   src={redLogo}
@@ -101,6 +104,7 @@ class TakeActionView extends Component {
                 src={MenImage}
                 className={`${sectionName}-images-image`}
                 alt="Men sitting"
+                key={`takeAction-image-menSitting`}
               />
               <img
                 src={redLogo}
