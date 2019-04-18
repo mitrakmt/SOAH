@@ -5,7 +5,7 @@ import Press from 'containers/press/Press'
 import ShareTheMessage from 'containers/shareTheMessage/shareTheMessage'
 import Screenings from 'containers/screenings/screenings'
 import LearnMore from 'containers/learnMore/LearnMore'
-import YourVoice from 'containers/yourVoice'
+import YourVoice from 'containers/yourVoice/yourVoice'
 
 import './app.scss'
 import '../../styles/fonts.scss'

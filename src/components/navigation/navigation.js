@@ -31,12 +31,22 @@ class Navigation extends Component {
     const elementFound = document.getElementById(view)
 
     if (isHomeView && elementFound) {
-      elementFound.scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'start' })
+      elementFound.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+        inline: 'start',
+      })
     } else {
       this.props.history.push(`/${view}`)
       if (isHomeView) {
         setTimeout(() => {
-          document.getElementById(view).scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'start' })
+          document
+            .getElementById(view)
+            .scrollIntoView({
+              behavior: 'smooth',
+              block: 'start',
+              inline: 'start',
+            })
         }, 250)
       }
     }
@@ -144,26 +154,26 @@ class Navigation extends Component {
               width="15px"
               height="15px"
               fill="#fff"
-              margin="0 10px 0 0"
+              margin="0 5px 0 5px"
             />
             <Facebook
               href="https://www.facebook.com/sidesofahorn/"
               width="15px"
               height="15px"
               fill="#fff"
-              margin="0 10px 0 0"
+              margin="0 5px 0 5px"
             />
             <Twitter
               href="https://twitter.com/sidesofahorn"
               width="15px"
               height="15px"
               fill="#fff"
-              margin="0 10px 0 0"
+              margin="0 5px 0 5px"
             />
             <Imdb
               href="https://www.imdb.com/title/tt7434998/"
               fill="#fff"
-              margin="0 10px 0 0"
+              margin="0 5px 0 5px"
             />
           </div>
         </div>

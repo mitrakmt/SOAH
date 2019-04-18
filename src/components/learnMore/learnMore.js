@@ -14,6 +14,8 @@ import LearnMore5 from 'images/learnMore/learnMore5.jpg'
 import LearnMore6 from 'images/learnMore/learnMore4.jpg'
 import LearnMore7 from 'images/learnMore/learnMore8.jpg'
 import LearnMore8 from 'images/learnMore/learnMore7.jpg'
+import UndercoverChina from 'images/undercoverChina.jpg'
+import UndercoverThailand from 'images/undercoverThailand.jpg'
 
 import './learnMore.scss'
 
@@ -24,17 +26,17 @@ class LearnMore extends Component {
     this.boxes = [
       {
         image: LearnMore1,
-        link: 'https://campaign.awf.org/poaching-infographic/  ',
+        link: 'https://campaign.awf.org/poaching-infographic/',
         text: "Africa's Poaching Crisis",
       },
       {
         image: LearnMore2,
-        link: 'https://campaign.awf.org/modern-poaching/  ',
+        link: 'https://campaign.awf.org/modern-poaching/',
         text: 'Modern Poaching',
       },
       {
         image: LearnMore3,
-        link: 'https://campaign.awf.org/countingelephants/  ',
+        link: 'https://campaign.awf.org/countingelephants/',
         text: 'Counting Elephants',
       },
       {
@@ -52,20 +54,31 @@ class LearnMore extends Component {
       {
         image: LearnMore6,
         link:
-          'https://www.awf.org/blog/how-win-fight-save-africas-elephants-and-rhinos  ',
+          'https://www.awf.org/blog/how-win-fight-save-africas-elephants-and-rhinos',
         text: 'HOW TO WIN THE FIGHT TO SAVE AFRICA’S ELEPHANTS & RHINOS',
       },
       {
         image: LearnMore7,
-        link:
-          'https://www.awf.org/blog/strengthening-africas-criminal-justice-systems-fight-illegal-wildlife-trade ',
+        link: 'https://www.awf.org/blog/what-lies-ahead-africas-rhinos',
         text: "What lies ahead for Africa's Rhinos",
       },
       {
         image: LearnMore8,
-        link: 'https://www.awf.org/blog/what-lies-ahead-africas-rhinos  ',
+        link:
+          'https://www.awf.org/blog/strengthening-africas-criminal-justice-systems-fight-illegal-wildlife-trade',
         text:
           'STRENGTHENING AFRICA’S CRIMINAL JUSTICE SYSTEMS TO FIGHT ILLEGAL WILDLIFE TRADE',
+      },
+      {
+        image: UndercoverChina,
+        link: 'https://elephantleague.org/grinding-rhino-report/',
+        text: 'Undercover Rhino Horn Trafficking Investigation in China',
+      },
+      {
+        image: UndercoverThailand,
+        link:
+          'https://elephantleague.org/wildlife-crime-kingpins-arrested-thailand/',
+        text: 'Undercover Rhino Horn Trafficking Investigation in Thailand',
       },
     ]
   }
@@ -96,6 +109,10 @@ class LearnMore extends Component {
         <div className={`${sectionName}-images`}>
           <ImageBox data={this.boxes[6]} />
           <ImageBox data={this.boxes[7]} />
+        </div>
+        <div className={`${sectionName}-images`}>
+          <ImageBox data={this.boxes[8]} />
+          <ImageBox data={this.boxes[9]} />
         </div>
       </div>
     )

@@ -101,7 +101,7 @@ class Press extends Component {
                 emmanuel@ykmd.co.za
               </h5>
             </a>
-            <h5 className="press-infoSection-box-subtext">0.83.357.3330</h5>
+            <h5 className="press-infoSection-box-subtext">083.357.3330</h5>
           </div>
         </div>
       </div>

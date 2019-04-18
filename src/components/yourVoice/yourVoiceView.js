@@ -4,7 +4,7 @@ import Navigation from 'components/navigation/navigation'
 import USGImage from 'images/eop_seal.png'
 import NewZealandImage from 'images/newzealand.png'
 import FacebookLogo from 'images/facebooklogo.png'
-import SouthAfricaImage from 'images/southafrica.jpg'
+import SouthAfricaImage from 'images/southafrica.png'
 import ScrollAnimation from 'react-animate-on-scroll'
 
 import './yourVoiceView.scss'
@@ -40,11 +40,17 @@ class YourVoiceView extends Component {
                 extent of the law.
               </h4>
               <div className="change-row">
-                <img
-                  className="change-image"
-                  src={SouthAfricaImage}
-                  alt="south africa"
-                />
+                <a
+                  href="https://www.pa.org.za/write/draft/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    className="change-image change-image-southafrica"
+                    src={SouthAfricaImage}
+                    alt="south africa"
+                  />
+                </a>
                 <div className="change-right">
                   <h3 className="change-header">
                     The South African Government
@@ -56,7 +62,13 @@ class YourVoiceView extends Component {
                 </div>
               </div>
               <div className="change-row">
-                <img className="change-image" src={USGImage} alt="USG" />
+                <a
+                  href="https://www.whitehouse.gov/contact/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img className="change-image" src={USGImage} alt="USG" />
+                </a>
                 <div className="change-right">
                   <h3 className="change-header">
                     The United states Government
@@ -68,11 +80,18 @@ class YourVoiceView extends Component {
                 </div>
               </div>
               <div className="change-row">
-                <img
-                  className="change-image"
-                  src={NewZealandImage}
-                  alt="New Zealand"
-                />
+                <a
+                  href="mailto:David.parker@parliament.govt.nz"
+                  className="link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    className="change-image"
+                    src={NewZealandImage}
+                    alt="New Zealand"
+                  />
+                </a>
                 <div className="change-right">
                   <h3 className="change-header">The New Zealand Government</h3>
                   <p className="change-text">
@@ -83,11 +102,17 @@ class YourVoiceView extends Component {
                 </div>
               </div>
               <div className="change-row">
-                <img
-                  className="change-image"
-                  src={FacebookLogo}
-                  alt="Facebook"
-                />
+                <a
+                  href="https://www.facebook.com/help/contact/268228883256323"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    className="change-image"
+                    src={FacebookLogo}
+                    alt="Facebook"
+                  />
+                </a>
                 <div className="change-right">
                   <h3 className="change-header">Facebook Japan</h3>
                   <p className="change-text">

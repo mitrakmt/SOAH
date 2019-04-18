@@ -27,7 +27,7 @@ class Screenings extends Component {
       {
         link: 'https://wildlifefilms.org/films/2019-official-selections/',
         line1: 'INTERNATIONAL WILDLIFE FILM FESTIVAL',
-        line2: 'APRIL 17 at 3:00pm | APRIL 18 at 3:00pm',
+        line2: 'APRIL 17, 2019 at 3pm | APRIL 18, 2019 at 3pm',
         line3: '',
         location: 'Missoula',
         id: 3,
@@ -36,7 +36,7 @@ class Screenings extends Component {
         link:
           'https://www.eventbrite.com/e/documentary-sides-of-a-horn-tickets-59279408306?aff=utm_source%3Deb_email%26utm_medium%3Demail%26utm_campaign%3Dnew_event_email&utm_term=eventurl_text&fbclid=IwAR34Qvkwk2fvb77omcBSJ_JbKaIOb7tTwptPDa_eWlYwz8lTO-mIDj8Ej6Q',
         line1: 'African Wildlife Foundation & Documentary Events',
-        line2: 'APRIL 24 at 7pm',
+        line2: 'APRIL 24, 2019 at 7pm',
         location: 'Dallas',
         id: 4,
       },
@@ -44,15 +44,15 @@ class Screenings extends Component {
         link:
           'https://www.eventbrite.com/e/film-screening-sides-of-a-horn-tickets-60214478125',
         line1: 'African Wildlife Foundation & Modern Art Museum',
-        line2: 'APRIL 25 at 7pm, 2019',
+        line2: 'APRIL 25, 2019 at 7pm',
         location: 'Fort Worth',
         line3: 'Email RSVP@awf.org for complimentary tickets',
         id: 8,
       },
       {
         link: 'https://twitter.com/sidesofahorn/status/1115671645845196800',
-        line1: 'frican Wildlife Foundation Private Screening',
-        line2: 'APRIL 26 at 6:30pm',
+        line1: 'African Wildlife Foundation Private Screening',
+        line2: 'APRIL 26, 2019 at 6:30pm',
         location: 'Houston',
         line3: 'Email RSVP@awf.org for complimentary tickets',
         id: 9,
@@ -60,7 +60,7 @@ class Screenings extends Component {
       {
         link: 'https://explorers.org/about/about_the_club',
         line1: 'The Explorers Club',
-        line2: 'MAY 6th at 6:00pm, 2019',
+        line2: 'MAY 6th, 2019 at 6pm',
         location: 'New York',
         line3: 'Tickets available soon',
         id: 10,
@@ -76,7 +76,7 @@ class Screenings extends Component {
       {
         link: 'http://www.philadelphiaindependentfilmfestival.com/ticket/',
         line1: 'Philadelphia Independent Film Festival',
-        line2: 'MAY 11 at 4:45pm',
+        line2: 'MAY 11, 2019 at 4:45pm',
         location: 'Philadelphia',
         id: 6,
       },
@@ -94,7 +94,7 @@ class Screenings extends Component {
     this.pastScreenings = [
       {
         line1: 'ENVIRONMENTAL FILM FESTIVAL IN THE NATION’S CAPITAL',
-        line2: 'MARCH 16 AT 2PM',
+        line2: 'MARCH 16, 2019 AT 2PM',
         link: 'https://dceff.org/film/sides-of-a-horn/',
         location: 'Washington, D.C.',
         id: 0,

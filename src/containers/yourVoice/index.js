@@ -1,3 +1,3 @@
-import yourVoice from './yourVoice'
+import UseYourVoiceSection from './yourVoiceSection'
 
-export default yourVoice
+export { UseYourVoiceSection }

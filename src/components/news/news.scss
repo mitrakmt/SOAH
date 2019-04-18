@@ -92,12 +92,17 @@
       }
 
       @media screen and (max-width: 1100px) {
-        top: 45%;
+        top: 43%;
+      }
+
+      @media screen and (max-width: 900px) {
+        top: 43%;
       }
 
       @media screen and (max-width: 800px) {
         font-size: 20px;
         text-align: center;
+        top: 55%;
       }
     }
 
