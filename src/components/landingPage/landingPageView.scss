@@ -15,8 +15,14 @@
   background-attachment: fixed;
 
   @include media('<tablet') {
-    background-position: center;
-    background-size: auto 100%;
+    background-attachment: initial;
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+      url('../../images/landingPageBackground2.png') no-repeat center center
+        fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
   }
 
   .animation {
