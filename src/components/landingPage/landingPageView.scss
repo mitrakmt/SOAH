@@ -61,12 +61,12 @@
       }
     }
     &-background {
-      // height: 100%;
-      // width: 100%;
-      // position: absolute;
-      // z-index: 100;
-      // opacity: 0;
-      // object-fit: cover;
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      z-index: 100;
+      opacity: 0;
+      object-fit: cover;
 
       animation-duration: 4s;
       animation-delay: 0s;
@@ -77,12 +77,12 @@
     }
   }
   .background {
-    // height: 100%;
-    // width: 100%;
-    // position: absolute;
+    height: 100%;
+    width: 100%;
+    position: absolute;
     z-index: 1;
     opacity: 0.48;
-    // object-fit: cover;
+    object-fit: cover;
 
     animation-duration: 4s;
     animation-delay: 0s;
