@@ -10,7 +10,6 @@ import LinkedIn from 'components/social/linkedin'
 import Email from 'components/social/email'
 import Tumblr from 'components/social/tumblr'
 
-import BransonQuote from 'images/bransonQuote.png'
 import Image1 from 'images/look-inside/_mg_0047.jpg'
 import Image2 from 'images/look-inside/_mg_0048.jpg'
 import Image3 from 'images/look-inside/_mg_0049.jpg'
@@ -202,7 +201,6 @@ class LookInside extends Component {
             </div>
           </div>
         </div>
-
         <div>
           <ImageCarousel images={this.images} keyName="LookInsideContainer" />
         </div>
