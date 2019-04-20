@@ -98,7 +98,7 @@ class TrailerView extends Component {
                     margin="2px 4px 2px 4px"
                   />
                   <Tumblr
-                    href="http://www.tumblr.com/share/link?text=test&url=https://www.youtube.com/watch?v=0el9UwGt_Vk"
+                    href="http://www.tumblr.com/share/link?&url=https://www.youtube.com/watch?v=0el9UwGt_Vk"
                     fill="white"
                     margin="2px 4px 2px 4px"
                   />
