@@ -51,8 +51,10 @@
         min-height: 350px;
       }
 
-      @include media('>=desktop') {
-        min-height: 500px;
+      @media screen and (min-width: 2150px) {
+        @include media('>=desktop') {
+          min-height: 700px;
+        }
       }
 
       @media screen and (max-width: 650px) {
