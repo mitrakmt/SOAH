@@ -21,32 +21,38 @@ class News extends Component {
 
     this.news = [
       {
+        src: virginNews,
+        href: 'https://www.virgin.com/richard-branson/sides-horn',
+        alt: 'Richard Branson on Sides of a Horn',
+        id: 0,
+      },
+      {
         src: wanNews,
         href:
           'https://worldanimalnews.com/wan-exclusive-with-sides-of-a-horn-filmmaker-toby-wosskow-check-out-their-new-trailer/',
         alt: 'World Animal News Interview Writer-Director Toby Wosskow',
-        id: 0,
+        id: 1,
         internal: false,
       },
       {
         src: virginVideo,
         href: 'https://www.virgin.com/richard-branson/sides-horn-0',
         alt: 'Virgin Release Official Trailer',
-        id: 1,
+        id: 2,
         internal: false,
       },
       {
         src: screeningsNews,
         href: '/screenings',
         alt: 'Global Screenings Announced Frequently',
-        id: 2,
+        id: 3,
         internal: true,
       },
       {
         src: romanianNews,
         href: 'https://www.facebook.com/watch/?v=756755554724195',
         alt: 'Canal 3 Covers Sides of a Horn',
-        id: 3,
+        id: 4,
         internal: false,
       },
       {
@@ -54,12 +60,6 @@ class News extends Component {
         href:
           'https://www.awf.org/blog/sides-horn-exploring-horrors-south-africas-poaching-war',
         alt: 'African WIldlife Foundation on Sides of a Horn',
-        id: 4,
-      },
-      {
-        src: virginNews,
-        href: 'https://www.virgin.com/richard-branson/sides-horn',
-        alt: 'Richard Branson on Sides of a Horn',
         id: 5,
       },
       {

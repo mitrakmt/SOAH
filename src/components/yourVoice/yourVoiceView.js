@@ -52,9 +52,16 @@ class YourVoiceView extends Component {
                   />
                 </a>
                 <div className="change-right">
-                  <h3 className="change-header">
-                    The South African Government
-                  </h3>
+                  <a
+                    href="https://www.pa.org.za/write/draft/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="link"
+                  >
+                    <h3 className="change-header yourVoiceView-link">
+                      South African Government
+                    </h3>
+                  </a>
                   <p className="change-text">
                     write to the south african minister of environmental
                     affairs, nomvula mokonyane.
@@ -70,11 +77,18 @@ class YourVoiceView extends Component {
                   <img className="change-image" src={USGImage} alt="USG" />
                 </a>
                 <div className="change-right">
-                  <h3 className="change-header">
-                    The United states Government
-                  </h3>
+                  <a
+                    href="https://www.whitehouse.gov/contact/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="link"
+                  >
+                    <h3 className="change-header yourVoiceView-link">
+                      United states Government
+                    </h3>
+                  </a>
                   <p className="change-text">
-                    Write to the White House to ask what they are doing to stop
+                    Contact the White House to ask what they are doing to stop
                     illegal trade and smuggling.
                   </p>
                 </div>
@@ -93,7 +107,16 @@ class YourVoiceView extends Component {
                   />
                 </a>
                 <div className="change-right">
-                  <h3 className="change-header">The New Zealand Government</h3>
+                  <a
+                    href="mailto:David.parker@parliament.govt.nz"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="link"
+                  >
+                    <h3 className="change-header yourVoiceView-link">
+                      New Zealand Government
+                    </h3>
+                  </a>
                   <p className="change-text">
                     Urge David Parker, New Zealand’s Minister for the
                     Environment, to end the country’s domestic trade in rhino
@@ -114,7 +137,16 @@ class YourVoiceView extends Component {
                   />
                 </a>
                 <div className="change-right">
-                  <h3 className="change-header">Facebook Japan</h3>
+                  <a
+                    href="https://www.facebook.com/help/contact/268228883256323"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="link"
+                  >
+                    <h3 className="change-header yourVoiceView-link">
+                      Facebook Japan
+                    </h3>
+                  </a>
                   <p className="change-text">
                     Ask Facebook Japan to take measures against the sale of
                     wildlife products on their platform.
