@@ -28,7 +28,7 @@ class FlipClock extends Component {
 
   updateTime() {
     // Movie release date
-    const { days, hours, minutes, seconds } = countdown('06/03/2019 00:00:00')
+    const { days, hours, minutes, seconds } = countdown('06/25/2019 00:00:00')
     let {
       daysShuffle,
       hoursShuffle,

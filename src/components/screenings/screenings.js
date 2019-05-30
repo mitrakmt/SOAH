@@ -26,11 +26,72 @@ class Screenings extends Component {
     // Note: ID IS REQUIRED AND MUST BE UNIQUE
     this.upcomingScreenings = [
       {
+        link: 'https://www.inyfilmfest.com/',
+        line1: 'International New York Film Festival',
+        line2: 'JUNE 14-15, 2019',
+        location: 'New York',
+        id: 503,
+      },
+      {
+        link: 'https://theatrebox.com/',
+        line1: 'TCL TheatreBox',
+        line2: 'JULY 10, 2019',
+        location: 'San Diego',
+        id: 504,
+      },
+      {
+        link: 'https://www.hiltonfestival.co.za/2019/',
+        line1: 'Hilton Arts Festival',
+        line2: 'SEPTEMBER 13-15, 2019',
+        location: 'Hilton, South Africa',
+        id: 505,
+      },
+      {
+        link: 'https://www.hiltonfestival.co.za/2019/jongosi-youth-day/',
+        line1: 'Jongosi Youth Day',
+        line2: 'SEPTEMBER 13, 2019',
+        location: 'Hilton, South Africa',
+        id: 506,
+      },
+      {
+        link: 'http://www.greeninitiatives.cn/',
+        line1: 'Green Initiatives ',
+        line2: 'Dates TBD',
+        location: 'Shanghai',
+        id: 507,
+      },
+      {
+        link: 'https://www.wscsummit.com/',
+        line1: 'Wildlife, Safari, and Conservation Summit',
+        line2: 'OCTOBER 11, 2019',
+        location: 'Harrogate',
+        id: 508,
+      },
+      {
+        link: 'https://wildlifesafarishow.com/',
+        line1: 'Wildlife & Safari Travel Show',
+        line2: 'OCTOBER 12-13, 2019',
+        location: 'Harrogate',
+        id: 509,
+      },
+      {
+        link: 'https://www.wcff.org/nyc-festival-2019/',
+        line1: 'WILDLIFE CONSERVATION FILM FESTIVAL',
+        line2: 'OCTOBER 17-27, 2019',
+        location: 'New York',
+        line3: '',
+        id: 515,
+      },
+    ]
+
+    // PAST SCREENINGS
+    // Note: ID IS REQUIRED AND MUST BE UNIQUE
+    this.pastScreenings = [
+      {
         link: 'https://explorers.org/about/about_the_club',
         line1: 'The Explorers Club',
         line2: 'MAY 6th, 2019 at 6pm',
         location: 'New York',
-        line3: 'Tickets available soon',
         id: 500,
       },
       {
@@ -49,25 +110,12 @@ class Screenings extends Component {
         id: 502,
       },
       {
-        link: 'https://www.inyfilmfest.com/',
-        line1: 'International New York Film Festival',
-        line2: 'JUNR 14-15, 2019',
-        location: 'New York',
-        id: 503,
+        link: 'https://www.vegaschool.com/',
+        line1: 'Vega',
+        line2: 'APRIL 29, 2019 at 4:45pm',
+        location: 'Durban',
+        id: 499,
       },
-      {
-        link: 'https://www.wcff.org/nyc-festival-2019/',
-        line1: 'WILDLIFE CONSERVATION FILM FESTIVAL',
-        line2: 'OCTOBER 17-27, 2019',
-        location: 'New York',
-        line3: '',
-        id: 504,
-      },
-    ]
-
-    // PAST SCREENINGS
-    // Note: ID IS REQUIRED AND MUST BE UNIQUE
-    this.pastScreenings = [
       {
         link: 'https://twitter.com/sidesofahorn/status/1115671645845196800',
         line1: 'African Wildlife Foundation Private Screening',
