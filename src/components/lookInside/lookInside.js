@@ -182,7 +182,7 @@ class LookInside extends Component {
                 margin="0 5px 0 0"
               />
               <LinkedIn
-                href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.linkedin.com/feed/update/urn:li:ugcPost:6445915668696170496&source=LinkedIn"
+                href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.linkedin.com/feed/update/activity:6437938994725548032/"
                 fill="white"
                 margin="0 5px 0 0"
               />
