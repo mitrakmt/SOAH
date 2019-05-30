@@ -66,7 +66,7 @@ class TrailerView extends Component {
                     margin="2px 4px 2px 4px"
                   />
                   <Twitter
-                    href="https://twitter.com/intent/tweet?text=Sides of a Horn will be released online around the globe on June 3, 2019 at
+                    href="https://twitter.com/intent/tweet?text=Sides of a Horn will be released online around the globe on June 25, 2019 at
                   www.rhinomovie.com in honor of %23WorldEnvironmentDay! Please watch and share the official
                   trailer. https://youtu.be/0el9UwGt_Vk"
                     width="15px"
@@ -91,7 +91,7 @@ class TrailerView extends Component {
                     margin="2px 4px 2px 4px"
                   />
                   <Email
-                    href="mailto:?subject=Sides of a Horn - Trailer&body=Sides of a Horn will be released online around the globe on June 3, 2019 at
+                    href="mailto:?subject=Sides of a Horn - Trailer&body=Sides of a Horn will be released online around the globe on June 25, 2019 at
                   www.rhinomovie.com in honor of #WorldEnvironmentDay! Please watch and share the official
                   trailer here: https://youtu.be/0el9UwGt_Vk"
                     fill="white"
@@ -110,7 +110,7 @@ class TrailerView extends Component {
           <div className="footer-section--center">
             <div className="countdown-container">
               <h3 className="countdown-container-text">
-                The short film will be released on June 3, 2019, in celebration
+                The short film will be released on June 25, 2019, in celebration
                 of #WorldEnvironmentDay:
               </h3>
             </div>

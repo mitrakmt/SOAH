@@ -174,7 +174,7 @@ class LookInside extends Component {
                 margin="0 5px 0 0"
               />
               <Twitter
-                href="https://twitter.com/intent/tweet?text=Sides of a Horn will be released online around the globe on June 3, 2019 at
+                href="https://twitter.com/intent/tweet?text=Sides of a Horn will be released online around the globe on June 25, 2019 at
                 www.rhinomovie.com in honor of %23WorldEnvironmentDay! Please watch and share the behind the official behind the scenes film. https://youtu.be/sIWl6msIH0Y"
                 width="15px"
                 height="15px"
@@ -187,7 +187,7 @@ class LookInside extends Component {
                 margin="0 5px 0 0"
               />
               <Email
-                href="mailto:?subject=Sides of a Horn - Behind the Scenes Film&body=Sides of a Horn will be released online around the globe on June 3, 2019 at
+                href="mailto:?subject=Sides of a Horn - Behind the Scenes Film&body=Sides of a Horn will be released online around the globe on June 25, 2019 at
                 www.rhinomovie.com in honor of #WorldEnvironmentDay! Please watch and share the official
                 behind the scenes film here: https://youtu.be/sIWl6msIH0Y"
                 fill="white"
