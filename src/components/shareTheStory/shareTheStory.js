@@ -72,7 +72,7 @@ class ShareTheStory extends Component {
               />
               <Email
                 href="mailto:?subject=Sides of a Horn - Trailer&body=Sides of a Horn will be released online around the globe on June 25, 2019 at
-                www.rhinomovie.com in honor of #WorldEnvironmentDay! Please watch and share the official
+                www.rhinomovie.com! Please watch and share the official
                 trailer here: https://youtu.be/0el9UwGt_Vk"
                 fill="white"
                 margin="0 5px 0 0"

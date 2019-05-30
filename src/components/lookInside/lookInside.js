@@ -188,7 +188,7 @@ class LookInside extends Component {
               />
               <Email
                 href="mailto:?subject=Sides of a Horn - Behind the Scenes Film&body=Sides of a Horn will be released online around the globe on June 25, 2019 at
-                www.rhinomovie.com in honor of #WorldEnvironmentDay! Please watch and share the official
+                www.rhinomovie.com! Please watch and share the official
                 behind the scenes film here: https://youtu.be/sIWl6msIH0Y"
                 fill="white"
                 margin="0 5px 0 0"
