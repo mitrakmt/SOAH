@@ -160,7 +160,7 @@ class Screenings extends Component {
         line1: 'African Wildlife Foundation Private Screening',
         line2: 'APRIL 26, 2019 at 6:30pm',
         location: 'Houston',
-        id: 989,
+        id: 994,
       },
       {
         link:
@@ -168,7 +168,7 @@ class Screenings extends Component {
         line1: 'African Wildlife Foundation & Modern Art Museum',
         line2: 'APRIL 25, 2019 at 7pm',
         location: 'Fort Worth',
-        id: 990,
+        id: 995,
       },
       {
         link:
@@ -176,15 +176,7 @@ class Screenings extends Component {
         line1: 'African Wildlife Foundation & Documentary Events',
         line2: 'APRIL 24, 2019 at 7pm',
         location: 'Dallas',
-        id: 991,
-      },
-      {
-        link: 'https://wildlifefilms.org/films/2019-official-selections/',
-        line1: 'INTERNATIONAL WILDLIFE FILM FESTIVAL',
-        line2: 'APRIL 17, 2019 at 3pm | APRIL 18, 2019 at 3pm',
-        line3: 'Winner: Best Short Film',
-        location: 'Missoula',
-        id: 992,
+        id: 996,
       },
       {
         link:
@@ -192,21 +184,21 @@ class Screenings extends Component {
         line1: "Durban Girls' College",
         line2: 'APRIL 24, 2019',
         location: 'Durban',
-        id: 993,
+        id: 997,
       },
       {
         line1: 'ENVIRONMENTAL FILM FESTIVAL IN THE NATION’S CAPITAL',
         line2: 'MARCH 16, 2019 AT 2PM',
         link: 'https://dceff.org/film/sides-of-a-horn/',
         location: 'Washington, D.C.',
-        id: 994,
+        id: 998,
       },
       {
         line1: 'Lake Highland Preparatory School ',
         line2: 'MARCH 14, 2019',
         link: 'https://www.facebook.com/sidesofahorn/videos/468460417023472/',
         location: 'Orlando',
-        id: 995,
+        id: 999,
       },
       {
         line1: 'MANCHESTER FILM FESTIVAL',
@@ -215,7 +207,7 @@ class Screenings extends Component {
         line4: 'Winner: Best International Film',
         link: 'http://www.maniff.com/sides-of-a-horn/',
         location: 'Manchester',
-        id: 996,
+        id: 1000,
       },
       {
         line1: 'SEDONA INTERNATIONAL FILM FESTIVAL',
@@ -225,7 +217,7 @@ class Screenings extends Component {
         link:
           'https://prod5.agileticketing.net/websales/pages/info.aspx?evtinfo=86966~d5a11db3-b3ba-440c-a208-47197fa86ccd&',
         location: 'Sedona',
-        id: 997,
+        id: 1001,
       },
       {
         line1: 'RAPIDLION FILM FESTIVAL',
@@ -234,7 +226,7 @@ class Screenings extends Component {
         link:
           'http://rapidlion.co.za/rapidlion-films-2019-schedule/?filmcategory=3%20Mannie%20Manim&filmdate=2019-03-07',
         location: 'Johannesburg',
-        id: 998,
+        id: 1002,
       },
       {
         line1: 'WORLD RHINO DAY',
@@ -242,7 +234,7 @@ class Screenings extends Component {
         line3: 'SEPTEMBER 22, 2018',
         link: 'https://twitter.com/tobywosskow/status/1044104807726821377',
         location: 'Los Angeles & Johannesburg',
-        id: 999,
+        id: 1003,
       },
     ]
     this.images = [
