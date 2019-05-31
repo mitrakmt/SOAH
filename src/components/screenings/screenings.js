@@ -132,43 +132,12 @@ class Screenings extends Component {
         id: 990,
       },
       {
-        link:
-          'https://www.eventbrite.com/e/documentary-sides-of-a-horn-tickets-59279408306?aff=utm_source%3Deb_email%26utm_medium%3Demail%26utm_campaign%3Dnew_event_email&utm_term=eventurl_text&fbclid=IwAR34Qvkwk2fvb77omcBSJ_JbKaIOb7tTwptPDa_eWlYwz8lTO-mIDj8Ej6Q',
-        line1: 'African Wildlife Foundation & Documentary Events',
-        line2: 'APRIL 24, 2019 at 7pm',
-        location: 'Dallas',
-        id: 991,
-      },
-      {
         link: 'https://wildlifefilms.org/films/2019-official-selections/',
         line1: 'INTERNATIONAL WILDLIFE FILM FESTIVAL',
         line2: 'APRIL 17, 2019 at 3pm | APRIL 18, 2019 at 3pm',
         line3: 'Winner: Best Short Film',
         location: 'Missoula',
         id: 992,
-      },
-      {
-        link:
-          'https://www.facebook.com/DGCOGG/photos/a.710896752398727/1241088706046193/?type=3&theater',
-        line1: "Durban Girls' College",
-        line2: 'APRIL 24, 2019',
-        location: 'Durban',
-        id: 993,
-      },
-      {
-        link: 'https://twitter.com/sidesofahorn/status/1115671645845196800',
-        line1: 'African Wildlife Foundation Private Screening',
-        line2: 'APRIL 26, 2019 at 6:30pm',
-        location: 'Houston',
-        id: 994,
-      },
-      {
-        link:
-          'https://www.eventbrite.com/e/film-screening-sides-of-a-horn-tickets-60214478125',
-        line1: 'African Wildlife Foundation & Modern Art Museum',
-        line2: 'APRIL 25, 2019 at 7pm',
-        location: 'Fort Worth',
-        id: 995,
       },
       {
         link:
