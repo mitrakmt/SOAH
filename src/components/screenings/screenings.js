@@ -97,7 +97,7 @@ class Screenings extends Component {
       {
         link: 'https://stonybrookfilmfestival.com/',
         line1: 'Stony Brook Film Festival',
-        line2: 'JULY 18 - 27, 2019',
+        line2: 'JULY 21, 2019 at 4pm',
         location: 'Stony Brook, NY'
       },
       {
