@@ -82,6 +82,30 @@ class Screenings extends Component {
         line3: '',
         id: 510,
       },
+      {
+        link: 'https://cinemambiente.it/movie/sides-of-a-horn/',
+        line1: 'CinemAmbiente',
+        line2: 'JUNE 3, 2019 at 7pm',
+        location: 'Turin',
+      },
+      {
+        link: 'http://ccadiff.ukzn.ac.za/',
+        line1: 'Durban International Film Festival',
+        line2: 'JULY 18 - 28, 2019',
+        location: 'Durbin'
+      },
+      {
+        link: 'https://stonybrookfilmfestival.com/',
+        line1: 'Stony Brook Film Festival',
+        line2: 'JULY 18 - 27, 2019',
+        location: 'Stony Brook, NY'
+      },
+      {
+        link: 'https://www.cifft.com/cifft-festival/arttur-international-tourism-film-festival/',
+        line1: 'ART&TUR - International Tourism Film Festival',
+        line2: 'OCTOBER 22 - 25, 2019',
+        location: 'Torres Vedras'
+      }
     ]
 
     // PAST SCREENINGS
@@ -205,6 +229,12 @@ class Screenings extends Component {
         location: 'Los Angeles & Johannesburg',
         id: 1003,
       },
+      {
+        link: 'http://saindiefilmfest.co.za/',
+        line1: 'SA Indie Film Fest',
+        line2: 'MAY 18, 2019 |  MAY 26, 2019',
+        location: 'Johannesburg & Cape Town'
+      }
     ]
     this.images = [
       {
