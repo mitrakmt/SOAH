@@ -26,6 +26,12 @@ class Screenings extends Component {
     // Note: ID IS REQUIRED AND MUST BE UNIQUE
     this.upcomingScreenings = [
       {
+        link: 'https://cinemambiente.it/movie/sides-of-a-horn/',
+        line1: 'CinemAmbiente',
+        line2: 'JUNE 3, 2019 at 7pm',
+        location: 'Turin',
+      },
+      {
         link: 'https://www.inyfilmfest.com/',
         line1: 'International New York Film Festival',
         line2: 'JUNE 14-15, 2019',
@@ -40,6 +46,18 @@ class Screenings extends Component {
         id: 504,
       },
       {
+        link: 'http://ccadiff.ukzn.ac.za/',
+        line1: 'Durban International Film Festival',
+        line2: 'JULY 18 - 28, 2019',
+        location: 'Durbin'
+      },
+      {
+        link: 'https://stonybrookfilmfestival.com/',
+        line1: 'Stony Brook Film Festival',
+        line2: 'JULY 21, 2019 at 4pm',
+        location: 'Stony Brook, NY'
+      },
+      {
         link: 'https://www.hiltonfestival.co.za/2019/',
         line1: 'Hilton Arts Festival',
         line2: 'SEPTEMBER 13-15, 2019',
@@ -52,13 +70,6 @@ class Screenings extends Component {
         line2: 'SEPTEMBER 13, 2019',
         location: 'Hilton, South Africa',
         id: 506,
-      },
-      {
-        link: 'http://www.greeninitiatives.cn/',
-        line1: 'Green Initiatives ',
-        line2: 'Dates TBD',
-        location: 'Shanghai',
-        id: 507,
       },
       {
         link: 'https://www.wscsummit.com/',
@@ -83,29 +94,18 @@ class Screenings extends Component {
         id: 510,
       },
       {
-        link: 'https://cinemambiente.it/movie/sides-of-a-horn/',
-        line1: 'CinemAmbiente',
-        line2: 'JUNE 3, 2019 at 7pm',
-        location: 'Turin',
-      },
-      {
-        link: 'http://ccadiff.ukzn.ac.za/',
-        line1: 'Durban International Film Festival',
-        line2: 'JULY 18 - 28, 2019',
-        location: 'Durbin'
-      },
-      {
-        link: 'https://stonybrookfilmfestival.com/',
-        line1: 'Stony Brook Film Festival',
-        line2: 'JULY 21, 2019 at 4pm',
-        location: 'Stony Brook, NY'
-      },
-      {
         link: 'https://www.cifft.com/cifft-festival/arttur-international-tourism-film-festival/',
         line1: 'ART&TUR - International Tourism Film Festival',
         line2: 'OCTOBER 22 - 25, 2019',
         location: 'Torres Vedras'
-      }
+      },
+      {
+        link: 'http://www.greeninitiatives.cn/',
+        line1: 'Green Initiatives ',
+        line2: 'Dates TBD',
+        location: 'Shanghai',
+        id: 507,
+      },
     ]
 
     // PAST SCREENINGS
