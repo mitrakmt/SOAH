@@ -26,16 +26,23 @@ class Screenings extends Component {
     // Note: ID IS REQUIRED AND MUST BE UNIQUE
     this.upcomingScreenings = [
       {
+        link:
+          'http://web.quotidianopiemontese.it/cabiria/2019/06/07/il-corto-sides-of-a-horn-di-toby-wosskow-a-zoom-per-parlare-di-lotta-al-bracconaggio/#.XQVwJ29Kjyi',
+        line1: 'Dierenrijk and Stichting Wildlife',
+        line2: 'JUNE 12, 2019',
+        location: 'Turin',
+      },
+      {
+        link: 'http://www.hillcrest.ac.ke/',
+        line1: 'Hillcrest Secondary School',
+        line2: 'JUNE 20, 2019',
+        location: 'Karen, Kenya',
+      },
+      {
         link: 'https://www.inyfilmfest.com/',
         line1: 'International New York Film Festival',
         line2: 'JUNE 14-15, 2019',
         location: 'New York',
-      },
-      {
-        link: 'https://theatrebox.com/',
-        line1: 'TCL TheatreBox',
-        line2: 'JULY 10, 2019',
-        location: 'San Diego',
       },
       {
         link: 'http://ccadiff.ukzn.ac.za/',
@@ -48,6 +55,12 @@ class Screenings extends Component {
         line1: 'Stony Brook Film Festival',
         line2: 'JULY 21, 2019 at 4pm',
         location: 'Stony Brook, NY',
+      },
+      {
+        link: 'https://www.burbankfilmfest.org/',
+        line1: 'Burbank International Film Festival',
+        line2: 'SEPTEMBER 4-8, 2019',
+        location: 'Burbank',
       },
       {
         link: 'https://www.hiltonfestival.co.za/2019/',
