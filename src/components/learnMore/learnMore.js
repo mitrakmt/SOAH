@@ -8,7 +8,7 @@ import ImageBox from './components/imageBox'
 
 import LearnMore1 from 'images/learnMore/learnMore1.png'
 import LearnMore2 from 'images/learnMore/learnMore6.png'
-import LearnMore3 from 'images/learnMore/learnMore3.jpg'
+import LearnMore3 from 'images/learnMore/learnMore3.png'
 import LearnMore4 from 'images/learnMore/learnMore2.png'
 import LearnMore5 from 'images/learnMore/learnMore5.jpg'
 import LearnMore6 from 'images/learnMore/learnMore4.jpg'
@@ -36,8 +36,9 @@ class LearnMore extends Component {
       },
       {
         image: LearnMore3,
-        link: 'https://campaign.awf.org/countingelephants/',
-        text: 'Counting Elephants',
+        link:
+          'https://wildaid.org/wp-content/uploads/2018/09/25-Years-After-Chinas-Ban.pdf',
+        text: 'WildAid Rhino Report',
       },
       {
         image: LearnMore4,

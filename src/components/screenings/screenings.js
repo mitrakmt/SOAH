@@ -26,64 +26,52 @@ class Screenings extends Component {
     // Note: ID IS REQUIRED AND MUST BE UNIQUE
     this.upcomingScreenings = [
       {
-        link: 'https://cinemambiente.it/movie/sides-of-a-horn/',
-        line1: 'CinemAmbiente',
-        line2: 'JUNE 3, 2019 at 7pm',
-        location: 'Turin',
-      },
-      {
         link: 'https://www.inyfilmfest.com/',
         line1: 'International New York Film Festival',
         line2: 'JUNE 14-15, 2019',
         location: 'New York',
-        id: 503,
       },
       {
         link: 'https://theatrebox.com/',
         line1: 'TCL TheatreBox',
         line2: 'JULY 10, 2019',
         location: 'San Diego',
-        id: 504,
       },
       {
         link: 'http://ccadiff.ukzn.ac.za/',
         line1: 'Durban International Film Festival',
         line2: 'JULY 18 - 28, 2019',
-        location: 'Durbin'
+        location: 'Durban',
       },
       {
         link: 'https://stonybrookfilmfestival.com/',
         line1: 'Stony Brook Film Festival',
         line2: 'JULY 21, 2019 at 4pm',
-        location: 'Stony Brook, NY'
+        location: 'Stony Brook, NY',
       },
       {
         link: 'https://www.hiltonfestival.co.za/2019/',
         line1: 'Hilton Arts Festival',
         line2: 'SEPTEMBER 13-15, 2019',
         location: 'Hilton, South Africa',
-        id: 505,
       },
       {
         link: 'https://www.hiltonfestival.co.za/2019/jongosi-youth-day/',
         line1: 'Jongosi Youth Day',
         line2: 'SEPTEMBER 13, 2019',
         location: 'Hilton, South Africa',
-        id: 506,
       },
       {
         link: 'https://www.wscsummit.com/',
         line1: 'Wildlife, Safari, and Conservation Summit',
         line2: 'OCTOBER 11, 2019',
         location: 'Harrogate',
-        id: 508,
       },
       {
         link: 'https://wildlifesafarishow.com/',
         line1: 'Wildlife & Safari Travel Show',
         line2: 'OCTOBER 12-13, 2019',
         location: 'Harrogate',
-        id: 509,
       },
       {
         link: 'https://www.wcff.org/nyc-festival-2019/',
@@ -91,61 +79,67 @@ class Screenings extends Component {
         line2: 'OCTOBER 17-27, 2019',
         location: 'New York',
         line3: '',
-        id: 510,
       },
       {
-        link: 'https://www.cifft.com/cifft-festival/arttur-international-tourism-film-festival/',
+        link:
+          'https://www.cifft.com/cifft-festival/arttur-international-tourism-film-festival/',
         line1: 'ART&TUR - International Tourism Film Festival',
         line2: 'OCTOBER 22 - 25, 2019',
-        location: 'Torres Vedras'
+        location: 'Torres Vedras',
       },
       {
         link: 'http://www.greeninitiatives.cn/',
         line1: 'Green Initiatives ',
         line2: 'Dates TBD',
         location: 'Shanghai',
-        id: 507,
       },
     ]
 
     // PAST SCREENINGS
-    // Note: ID IS REQUIRED AND MUST BE UNIQUE
     this.pastScreenings = [
+      {
+        link: 'https://cinemambiente.it/movie/sides-of-a-horn/',
+        line1: 'CinemAmbiente',
+        line2: 'JUNE 3, 2019 at 7pm',
+        location: 'Turin',
+      },
+      {
+        link: 'http://saindiefilmfest.co.za/',
+        line1: 'SA Indie Film Fest',
+        line2: 'MAY 18, 2019 |  MAY 26, 2019',
+        line3: 'Winner: Best Short Film & Best Supporting Actress',
+        location: 'Johannesburg & Cape Town',
+      },
       {
         link: 'http://www.conservation-lab.com/',
         line1: 'CONSERVATION LAB',
         line2: 'MAY 11, 2019',
         line3: '',
         location: 'Cape Town',
-        id: 502,
       },
       {
         link: 'http://www.philadelphiaindependentfilmfestival.com/ticket/',
         line1: 'Philadelphia Independent Film Festival',
         line2: 'MAY 11, 2019 at 4:45pm',
         location: 'Philadelphia',
-        id: 501,
       },
       {
         link: 'https://explorers.org/about/about_the_club',
         line1: 'The Explorers Club',
         line2: 'MAY 6th, 2019 at 6pm',
         location: 'New York',
-        id: 500,
       },
       {
         link: 'https://www.vegaschool.com/',
         line1: 'Vega',
         line2: 'APRIL 29, 2019 at 4:45pm',
         location: 'Durban',
-        id: 499,
       },
       {
         link: 'https://twitter.com/sidesofahorn/status/1115671645845196800',
         line1: 'African Wildlife Foundation Private Screening',
         line2: 'APRIL 26, 2019 at 6:30pm',
         location: 'Houston',
-        id: 989,
       },
       {
         link:
@@ -153,15 +147,6 @@ class Screenings extends Component {
         line1: 'African Wildlife Foundation & Modern Art Museum',
         line2: 'APRIL 25, 2019 at 7pm',
         location: 'Fort Worth',
-        id: 990,
-      },
-      {
-        link: 'https://wildlifefilms.org/films/2019-official-selections/',
-        line1: 'INTERNATIONAL WILDLIFE FILM FESTIVAL',
-        line2: 'APRIL 17, 2019 at 3pm | APRIL 18, 2019 at 3pm',
-        line3: 'Winner: Best Short Film',
-        location: 'Missoula',
-        id: 992,
       },
       {
         link:
@@ -169,7 +154,6 @@ class Screenings extends Component {
         line1: 'African Wildlife Foundation & Documentary Events',
         line2: 'APRIL 24, 2019 at 7pm',
         location: 'Dallas',
-        id: 996,
       },
       {
         link:
@@ -177,21 +161,25 @@ class Screenings extends Component {
         line1: "Durban Girls' College",
         line2: 'APRIL 24, 2019',
         location: 'Durban',
-        id: 997,
+      },
+      {
+        link: 'https://wildlifefilms.org/films/2019-official-selections/',
+        line1: 'INTERNATIONAL WILDLIFE FILM FESTIVAL',
+        line2: 'APRIL 17, 2019 at 3pm | APRIL 18, 2019 at 3pm',
+        line3: 'Winner: Best Short Film',
+        location: 'Missoula',
       },
       {
         line1: 'ENVIRONMENTAL FILM FESTIVAL IN THE NATION’S CAPITAL',
         line2: 'MARCH 16, 2019 AT 2PM',
         link: 'https://dceff.org/film/sides-of-a-horn/',
         location: 'Washington, D.C.',
-        id: 998,
       },
       {
         line1: 'Lake Highland Preparatory School ',
         line2: 'MARCH 14, 2019',
         link: 'https://www.facebook.com/sidesofahorn/videos/468460417023472/',
         location: 'Orlando',
-        id: 999,
       },
       {
         line1: 'MANCHESTER FILM FESTIVAL',
@@ -200,7 +188,14 @@ class Screenings extends Component {
         line4: 'Winner: Best International Film',
         link: 'http://www.maniff.com/sides-of-a-horn/',
         location: 'Manchester',
-        id: 1000,
+      },
+      {
+        line1: 'RAPIDLION FILM FESTIVAL',
+        line2: 'SOUTH AFRICAN PREMIERE',
+        line3: 'MARCH 3, 2019',
+        link:
+          'http://rapidlion.co.za/rapidlion-films-2019-schedule/?filmcategory=3%20Mannie%20Manim&filmdate=2019-03-07',
+        location: 'Johannesburg',
       },
       {
         line1: 'SEDONA INTERNATIONAL FILM FESTIVAL',
@@ -210,16 +205,6 @@ class Screenings extends Component {
         link:
           'https://prod5.agileticketing.net/websales/pages/info.aspx?evtinfo=86966~d5a11db3-b3ba-440c-a208-47197fa86ccd&',
         location: 'Sedona',
-        id: 1001,
-      },
-      {
-        line1: 'RAPIDLION FILM FESTIVAL',
-        line2: 'SOUTH AFRICAN PREMIERE',
-        line3: 'MARCH 3, 2019',
-        link:
-          'http://rapidlion.co.za/rapidlion-films-2019-schedule/?filmcategory=3%20Mannie%20Manim&filmdate=2019-03-07',
-        location: 'Johannesburg',
-        id: 1002,
       },
       {
         line1: 'WORLD RHINO DAY',
@@ -227,14 +212,7 @@ class Screenings extends Component {
         line3: 'SEPTEMBER 22, 2018',
         link: 'https://twitter.com/tobywosskow/status/1044104807726821377',
         location: 'Los Angeles & Johannesburg',
-        id: 1003,
       },
-      {
-        link: 'http://saindiefilmfest.co.za/',
-        line1: 'SA Indie Film Fest',
-        line2: 'MAY 18, 2019 |  MAY 26, 2019',
-        location: 'Johannesburg & Cape Town'
-      }
     ]
     this.images = [
       {
@@ -314,7 +292,7 @@ class Screenings extends Component {
             {this.upcomingScreenings.map(screening => (
               <div
                 className="screenings-body-screening"
-                key={`upcomingScreenings-${screening.id}`}
+                key={`upcomingScreenings-${screening.link}-${screening.line1}`}
               >
                 <Quote />
                 <h4 className="screenings-body-text">
