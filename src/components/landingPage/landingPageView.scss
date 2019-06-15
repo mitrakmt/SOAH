@@ -3,7 +3,7 @@
 .landingPage-view {
   opacity: 0.8;
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-    url('../../images/landingPageBackground2.png');
+    url('../../images/landingPageBackground2.png?size=1536');
 
   /* Set a specific height */
   min-height: 100vh;
@@ -16,6 +16,8 @@
 
   @include media('<tablet') {
     background-attachment: initial;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url('../../images/landingPageBackground2.png?size=1024');
     height: 100%;
     width: 100%;
     position: absolute;
