@@ -128,7 +128,7 @@
     }
 
     &-container {
-      height: 350px;
+      height: 400px;
       position: relative;
       display: flex;
       flex-direction: column;
@@ -154,7 +154,15 @@
 
         @include media('<desktop') {
           display: block;
+          font-size: 20px;
         }
+      }
+
+      &-title {
+        font-size: 48px;
+        color: #be1e2d;
+        text-align: center;
+        margin: 15px;
       }
 
       &-button {
@@ -164,9 +172,11 @@
         width: 80%;
         max-width: 425px;
         text-align: center;
+        transition-duration: 0.2s;
 
         &:hover {
           cursor: pointer;
+          background-color: #d0021b;
         }
       }
 
@@ -182,7 +192,7 @@
     }
 
     &-largeContainer {
-      height: 350px;
+      height: 400px;
       width: 80%;
       position: relative;
       display: flex;
@@ -209,6 +219,7 @@
 
         @include media('<desktop') {
           display: block;
+          font-size: 20px;
         }
       }
 
@@ -219,9 +230,11 @@
         width: 80%;
         max-width: 425px;
         text-align: center;
+        transition-duration: 0.2s;
 
         &:hover {
           cursor: pointer;
+          background-color: #d0021b;
         }
       }
 
