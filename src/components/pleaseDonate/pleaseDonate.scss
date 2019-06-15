@@ -1,0 +1,100 @@
+.pleaseDonate {
+  padding: 25px;
+  background-color: #ededed;
+  width: 80%;
+  margin: 15px;
+  margin-top: 400px;
+  max-width: 1500px;
+  z-index: 1;
+
+  @media screen and (max-width: 600px) {
+    margin-top: 200px;
+  }
+
+  &-row {
+    display: flex;
+    justify-content: center;
+  }
+
+  &-quote {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #be1e2d;
+    color: #000000;
+    line-height: 34px;
+    font-family: 'BebasNeue';
+    padding: 10px;
+    font-size: 22px;
+  }
+
+  &-header {
+    font-size: 21px;
+
+    &-text {
+      text-transform: uppercase;
+      font-weight: 700;
+      color: #be1e2d;
+      margin: 0;
+      font-size: 28px;
+      color: #000000;
+      line-height: 34px;
+      font-family: 'BebasNeue';
+    }
+    &-title {
+      font-size: 28px;
+      color: black;
+      margin: 0;
+      margin-left: 20px;
+      text-transform: uppercase;
+
+      @media screen and (max-width: 600px) {
+        border-bottom: 3px solid #be1e2d;
+      }
+    }
+    &-line {
+      height: 1px;
+      width: 135px;
+      border-bottom: 3px solid #be1e2d;
+      margin-left: 20px;
+
+      animation-name: lookInsideMobileLineAnimation;
+      animation-duration: 2s;
+      transition-duration: 2s;
+      animation-delay: 1s;
+
+      @keyframes lookInsideMobileLineAnimation {
+        0% {
+          width: 0;
+        }
+        100% {
+          width: 135px;
+        }
+      }
+
+      @media screen and (max-width: 600px) {
+        display: none;
+      }
+    }
+  }
+  &-body {
+    color: black;
+    margin-top: -5px;
+    font-size: 28px;
+    color: #000000;
+    line-height: 34px;
+  }
+  &-text {
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 10px;
+    padding-left: 20px;
+    font-size: 22px;
+    margin-bottom: 0;
+
+    &:first-child {
+      margin-top: 0;
+      padding-top: 20px;
+    }
+  }
+}

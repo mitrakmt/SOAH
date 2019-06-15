@@ -40,13 +40,11 @@ class Navigation extends Component {
       this.props.history.push(`/${view}`)
       if (isHomeView) {
         setTimeout(() => {
-          document
-            .getElementById(view)
-            .scrollIntoView({
-              behavior: 'smooth',
-              block: 'start',
-              inline: 'start',
-            })
+          document.getElementById(view).scrollIntoView({
+            behavior: 'smooth',
+            block: 'start',
+            inline: 'start',
+          })
         }, 250)
       }
     }
@@ -115,6 +113,14 @@ class Navigation extends Component {
             }}
           >
             Look Inside
+          </h3>
+          <h3
+            className="navigation-line"
+            onClick={() => {
+              this.navigateToView('fundTheCause')
+            }}
+          >
+            Fund the Cause
           </h3>
           <h3
             className="navigation-line"

@@ -4,6 +4,7 @@ import shareTheMessageSections from './shareTheMessageSection'
 import screeningsSections from './screeningsSections'
 import useYourVoiceSections from './useYourVoiceSection'
 import learnMoreSections from './learnMoreSection'
+import fundTheCauseSections from './fundTheCauseSection'
 
 export {
   homeSections,
@@ -12,4 +13,5 @@ export {
   screeningsSections,
   useYourVoiceSections,
   learnMoreSections,
+  fundTheCauseSections,
 }

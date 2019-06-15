@@ -6,6 +6,7 @@ import ShareTheMessage from 'containers/shareTheMessage/shareTheMessage'
 import Screenings from 'containers/screenings/screenings'
 import LearnMore from 'containers/learnMore/LearnMore'
 import YourVoice from 'containers/yourVoice/yourVoice'
+import FundTheCause from 'containers/fundTheCause/FundTheCause'
 
 import './app.scss'
 import '../../styles/fonts.scss'
@@ -20,6 +21,7 @@ class App extends Component {
           <Route path="/screenings" exact component={Screenings} />
           <Route path="/learnMore" exact component={LearnMore} />
           <Route path="/yourVoice" exact component={YourVoice} />
+          <Route path="/fundTheCause" exact component={FundTheCause} />
           <Route path="/" component={Home} />
         </Switch>
       </Router>
