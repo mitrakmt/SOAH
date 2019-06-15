@@ -3,12 +3,12 @@ import ScrollAnimation from 'react-animate-on-scroll'
 
 // Images
 import wanNews from 'images/news/WorldAnimalNews.jpg'
-import virginVideo from 'images/News_VirginReleaseOfficialTrailer.png'
-import AWFNews from 'images/news/AfricanWildlifeFoundation.png'
+import virginVideo from 'images/News_VirginReleaseOfficialTrailer.png?sizes[]=100,sizes[]=200,sizes[]=300'
+import AWFNews from 'images/news/AfricanWildlifeFoundation.png?sizes[]=100,sizes[]=200,sizes[]=300'
 import romanianNews from 'images/news/Canal3.png?sizes[]=100,sizes[]=200,sizes[]=300'
-import screeningsNews from 'images/news/Screenings.jpg'
-import virginNews from 'images/news/Virgin_RichardBransonAnnoucement.jpeg'
-import inTheMakingNews from 'images/news/PeopleMagazine.jpg'
+import screeningsNews from 'images/news/Screenings.jpg?sizes[]=100,sizes[]=200,sizes[]=300'
+import virginNews from 'images/news/Virgin_RichardBransonAnnoucement.jpeg?sizes[]=100,sizes[]=200,sizes[]=300'
+import inTheMakingNews from 'images/news/PeopleMagazine.jpg?sizes[]=100,sizes[]=200,sizes[]=300'
 
 import './news.scss'
 
@@ -21,13 +21,15 @@ class News extends Component {
 
     this.news = [
       {
-        src: virginNews,
+        src: virginNews.src,
+        srcSet: virginNews.srcSet,
         href: 'https://www.virgin.com/richard-branson/sides-horn',
         alt: 'Richard Branson on Sides of a Horn',
         id: 0,
       },
       {
-        src: wanNews,
+        src: wanNews.src,
+        srcSet: wanNews.srcSet,
         href:
           'https://worldanimalnews.com/wan-exclusive-with-sides-of-a-horn-filmmaker-toby-wosskow-check-out-their-new-trailer/',
         alt: 'World Animal News Interview Writer-Director Toby Wosskow',
@@ -35,35 +37,40 @@ class News extends Component {
         internal: false,
       },
       {
-        src: virginVideo,
+        src: virginVideo.src,
+        srcSet: virginVideo.srcSet,
         href: 'https://www.virgin.com/richard-branson/sides-horn-0',
         alt: 'Virgin Release Official Trailer',
         id: 2,
         internal: false,
       },
       {
-        src: screeningsNews,
+        src: screeningsNews.src,
+        srcSet: screeningsNews.srcSet,
         href: '/screenings',
         alt: 'Global Screenings Announced Frequently',
         id: 3,
         internal: true,
       },
       {
-        src: romanianNews,
+        src: romanianNews.src,
+        srcSet: romanianNews.srcSet,
         href: 'https://www.facebook.com/watch/?v=756755554724195',
         alt: 'Canal 3 Covers Sides of a Horn',
         id: 4,
         internal: false,
       },
       {
-        src: AWFNews,
+        src: AWFNews.src,
+        srcSet: AWFNews.srcSet,
         href:
           'https://www.awf.org/blog/sides-horn-exploring-horrors-south-africas-poaching-war',
         alt: 'African WIldlife Foundation on Sides of a Horn',
         id: 5,
       },
       {
-        src: inTheMakingNews,
+        src: inTheMakingNews.src,
+        srcSet: inTheMakingNews.srcSet,
         href:
           'https://www.peoplemagazine.co.za/entertainment/sides-horn-making/',
         alt:
@@ -168,6 +175,7 @@ class News extends Component {
               key={`news-carousel-${piece.id}`}
             >
               <img
+                srcSet={piece.srcSet}
                 src={piece.src}
                 className={`news-images-piece ${
                   this.news[selectedNews].id === piece.id
