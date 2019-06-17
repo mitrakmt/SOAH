@@ -9,7 +9,7 @@ import LinkedIn from 'components/social/linkedin'
 import Email from 'components/social/email'
 import Tumblr from 'components/social/tumblr'
 
-import PosterArtImage from 'images/SOAH_FilmPoster.png'
+import PosterArtImage from 'images/SOAH_FilmPoster.png?sizes[]=100,sizes[]=200,sizes[]=300'
 
 import './posterArt.scss'
 
@@ -28,7 +28,8 @@ class PosterArt extends Component {
           />
         </div>
         <img
-          src={PosterArtImage}
+          srcSet={PosterArtImage.srcSet}
+          src={PosterArtImage.src}
           className="posterArt-image"
           alt="Poster - Moonlight"
         />
