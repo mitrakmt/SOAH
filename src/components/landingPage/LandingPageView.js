@@ -5,7 +5,7 @@ import SoahLogo from '../../images/SOAH_logo.png'
 import ScrollAnimation from 'react-animate-on-scroll'
 
 import AnimationLogo from 'images/redLogo.png'
-import AnimationBackground from 'images/SOAH_Still46.png?sizes[]=100,sizes[]=200,sizes[]=300'
+import AnimationBackground from 'images/SOAH_Still46.png?sizes[]=300,sizes[]=400,sizes[]=500'
 
 import './landingPageView.scss'
 

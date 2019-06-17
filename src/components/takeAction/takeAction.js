@@ -7,7 +7,7 @@ import RhinoImage from 'images/SOAH_Still2.png'
 import ManImage from 'images/SOAH_Still5.png'
 import MenImage from 'images/SOAH_Still29.png'
 import BabyImage from 'images/SOAH_Still33.png'
-import BackgroundImage from 'images/SOAH_Still46.png?sizes[]=100,sizes[]=200,sizes[]=300'
+import BackgroundImage from 'images/SOAH_Still46.png?sizes[]=300,sizes[]=400,sizes[]=500'
 
 import './takeAction.scss'
 
