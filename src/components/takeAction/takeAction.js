@@ -74,29 +74,25 @@ class TakeActionView extends Component {
                 Use Your Voice
               </h3>
             </div>
-            <a
-              href="https://secure.awf.org/rhino-movie?utm_source=1901kickstarter&utm_medium=referral&utm_campaign=fy19soah"
-              target="_blank"
-              className="link"
-              rel="noopener noreferrer"
+            <div
+              className={`${sectionName}-images-container`}
+              onClick={() => this.navigateToPage('fundTheCause')}
             >
-              <div className={`${sectionName}-images-container`}>
-                <img
-                  src={RhinoImage}
-                  className={`${sectionName}-images-image`}
-                  alt="Rhino in field"
-                  key={`takeAction-image-rhinoImage`}
-                />
-                <img
-                  src={redLogo}
-                  className={`${sectionName}-images-container-logo`}
-                  alt="logo"
-                />
-                <h3 className={`${sectionName}-images-container-text`}>
-                  Fund the Cause
-                </h3>
-              </div>
-            </a>
+              <img
+                src={RhinoImage}
+                className={`${sectionName}-images-image`}
+                alt="Rhino in field"
+                key={`takeAction-image-rhinoImage`}
+              />
+              <img
+                src={redLogo}
+                className={`${sectionName}-images-container-logo`}
+                alt="logo"
+              />
+              <h3 className={`${sectionName}-images-container-text`}>
+                Fund the Cause
+              </h3>
+            </div>
             <div
               className={`${sectionName}-images-container`}
               onClick={() => this.navigateToPage('learnMore')}

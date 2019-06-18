@@ -1,13 +1,13 @@
-import React, { Component, Fragment } from "react";
-import Navigation from "components/navigation/navigation";
+import React, { Component, Fragment } from 'react'
+import Navigation from 'components/navigation/navigation'
 
-import { fundTheCauseSections } from "../../data";
+import { fundTheCauseSections } from '../../data'
 
-import "./section.scss";
+import './section.scss'
 
 class FundTheCause extends Component {
   componentDidMount() {
-    window.scrollTo(0, 0);
+    window.scrollTo(0, 0)
   }
   render() {
     return (
@@ -19,8 +19,8 @@ class FundTheCause extends Component {
           ))}
         </div>
       </Fragment>
-    );
+    )
   }
 }
 
-export default FundTheCause;
+export default FundTheCause
