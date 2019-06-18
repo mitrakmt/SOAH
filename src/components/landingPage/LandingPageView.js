@@ -5,7 +5,7 @@ import SoahLogo from '../../images/SOAH_logo.png'
 import ScrollAnimation from 'react-animate-on-scroll'
 
 import AnimationLogo from 'images/redLogo.png'
-import AnimationBackground from 'images/SOAH_Still46.png'
+import AnimationBackground from 'images/SOAH_Still46.png?sizes[]=300,sizes[]=400,sizes[]=500'
 
 import './landingPageView.scss'
 
@@ -16,7 +16,8 @@ class LandingPageView extends Component {
       <div className={`${sectionName}-view`}>
         <div className="animation">
           <img
-            src={AnimationBackground}
+            srcSet={AnimationBackground.srcSet}
+            src={AnimationBackground.src}
             className="animation-background"
             alt="animation background"
           />
