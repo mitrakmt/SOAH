@@ -1,19 +1,18 @@
 import React, { Component } from 'react'
 
-import HeaderImage from 'images/SOAH_Still29_full.png'
-
 import PleaseDonate from 'components/pleaseDonate/pleaseDonate'
 
 import ImageBox from './components/imageBox'
 import LargeBox from './components/largeBox'
 
-import LearnMore1 from 'images/learnMore/learnMore1.png?sizes[]=300,sizes[]=400,sizes[]=500'
-import LearnMore2 from 'images/learnMore/learnMore6.png?sizes[]=300,sizes[]=400,sizes[]=500'
-import LearnMore3 from 'images/learnMore/learnMore3.png?sizes[]=300,sizes[]=400,sizes[]=500'
-import LearnMore4 from 'images/learnMore/learnMore2.png?sizes[]=300,sizes[]=400,sizes[]=500'
-import LearnMore5 from 'images/learnMore/learnMore5.jpg?sizes[]=300,sizes[]=400,sizes[]=500'
-import LearnMore6 from 'images/learnMore/learnMore4.jpg?sizes[]=300,sizes[]=400,sizes[]=500'
-import LearnMore7 from 'images/learnMore/learnMore8.jpg?sizes[]=300,sizes[]=400,sizes[]=500'
+import AWF from 'images/fundTheCause/awf.png?sizes[]=300,sizes[]=400,sizes[]=500'
+import Wilderness from 'images/fundTheCause/wilderness.png?sizes[]=300,sizes[]=400,sizes[]=500'
+import EliLogo from 'images/fundTheCause/eliLogo.png?sizes[]=300,sizes[]=400,sizes[]=500'
+import AntiPoaching from 'images/fundTheCause/antiPoaching.png?sizes[]=300,sizes[]=400,sizes[]=500'
+import FundTheCauseBackground from 'images/fundTheCause/fundTheCauseBackground.jpg'
+import RhinoConservation from 'images/fundTheCause/rhinoConservation.jpg?sizes[]=300,sizes[]=400,sizes[]=500'
+import Sheldrick from 'images/fundTheCause/sheldrick.png?sizes[]=300,sizes[]=400,sizes[]=500'
+import Wildaid from 'images/fundTheCause/wildaid.png'
 
 import './fundTheCause.scss'
 
@@ -23,7 +22,7 @@ class FundTheCause extends Component {
 
     this.boxes = [
       {
-        image: LearnMore1,
+        image: AWF,
         link: 'https://www.awf.org/',
         donateLink: 'https://secure.awf.org/rhino-movie',
         text:
@@ -31,7 +30,7 @@ class FundTheCause extends Component {
         buttonText: 'Donate to THE AFRICAN WILDLIFE FOUNDATION',
       },
       {
-        image: LearnMore2,
+        image: Sheldrick,
         link: 'https://www.sheldrickwildlifetrust.org/',
         donateLink: 'https://www.sheldrickwildlifetrust.org/html/help.html',
         text:
@@ -39,7 +38,7 @@ class FundTheCause extends Component {
         buttonText: 'donate to THE SHELDRICK WILDLIFE TRUST',
       },
       {
-        image: LearnMore3,
+        image: EliLogo,
         link: 'https://elephantleague.org/',
         donateLink: 'https://www.elephantleague.org/donate/',
         text:
@@ -47,7 +46,7 @@ class FundTheCause extends Component {
         buttonText: 'donate to THE ELEPHANT ACTION LEAGUE',
       },
       {
-        image: LearnMore4,
+        image: RhinoConservation,
         link: 'https://www.rhinoconservationbotswana.com/',
         donateLink: 'https://www.rhinoconservationbotswana.com/donate',
         text:
@@ -55,7 +54,7 @@ class FundTheCause extends Component {
         buttonText: 'donate to rhino conservation botswana',
       },
       {
-        image: LearnMore5,
+        image: AntiPoaching,
         link: 'https://www.iapf.org/',
         donateLink: 'https://www.iapf.org/donate/ ',
         text:
@@ -63,7 +62,7 @@ class FundTheCause extends Component {
         buttonText: 'donate to THE international anti-poaching foundation',
       },
       {
-        image: LearnMore6,
+        image: Wilderness,
         link: 'https://www.childreninthewilderness.com/',
         donateLink:
           'https://www.childreninthewilderness.com/donate-now/how-can-you-make-a-difference/ ',
@@ -77,7 +76,7 @@ class FundTheCause extends Component {
           'The Sides of a Horn team has vetted all organizations listed on this page. However, we encourage you to do your own research before donating to any non-profits to ensure that your donation goes to a legitimate and trustworthy recipient.',
       },
       {
-        image: LearnMore7,
+        image: Wildaid,
         link: 'https://wildaid.org/',
         donateLink: 'https://donate.wildaid.org/sidesofahorn',
         text:
@@ -93,7 +92,7 @@ class FundTheCause extends Component {
       <div className={`${sectionName}`}>
         <h3 className="fundTheCause-pageTitle">Fund the Cause</h3>
         <img
-          src={HeaderImage}
+          src={FundTheCauseBackground}
           className="fundTheCause-headerImage"
           alt="Two men staring at a screen"
         />

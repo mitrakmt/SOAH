@@ -186,8 +186,17 @@
 
       &-logo {
         display: block;
-        width: 30%;
-        max-width: 200px;
+        max-width: 250px;
+        max-height: 155px;
+        width: auto;
+        height: auto;
+        margin-top: auto;
+        margin-bottom: auto;
+
+        @media screen and (max-width: 800px) {
+          max-width: 230px;
+          max-height: 115px;
+        }
       }
     }
 
@@ -244,6 +253,17 @@
 
       &-logo {
         display: block;
+        max-width: 230px;
+        max-height: 155px;
+        width: auto;
+        height: auto;
+        margin-top: auto;
+        margin-bottom: auto;
+
+        @media screen and (max-width: 800px) {
+          max-width: 230px;
+          max-height: 115px;
+        }
       }
     }
 
