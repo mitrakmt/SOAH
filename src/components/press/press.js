@@ -7,7 +7,7 @@ import Instagram from 'components/social/instagram'
 
 import SOAH_PressKit from './SOAH_PressKit.pdf'
 
-import HeaderImage from 'images/SOAH_Still39.png'
+import HeaderImage from 'images/SOAH_Still39.png?sizes[]=300,sizes[]=400,sizes[]=500'
 
 import './press.scss'
 

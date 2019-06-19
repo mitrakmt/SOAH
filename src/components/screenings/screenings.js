@@ -1,17 +1,17 @@
 import React, { Component } from 'react'
 
-import HeaderImage from 'images/screenings_background.jpg'
+import HeaderImage from 'images/screenings_background.jpg?sizes[]=300,sizes[]=400,sizes[]=500'
 import Quote from 'components/quote/grayQuote'
 import ImageCarousel from 'components/image-carousel/imageCarousel'
 import ScrollAnimation from 'react-animate-on-scroll'
 
-import Image1 from 'images/world-rhino-day/img_9498.jpg'
-import Image2 from 'images/world-rhino-day/img_9657.jpg'
-import Image3 from 'images/world-rhino-day/img_9711.jpg'
-import Image4 from 'images/world-rhino-day/img_9740.jpg'
-import Image5 from 'images/world-rhino-day/img_9747.jpg'
-import Image6 from 'images/world-rhino-day/img_9770.jpg'
-import Image7 from 'images/world-rhino-day/img_9789.jpg'
+import Image1 from 'images/world-rhino-day/img_9498.jpg?sizes[]=300,sizes[]=400,sizes[]=500'
+import Image2 from 'images/world-rhino-day/img_9657.jpg?sizes[]=300,sizes[]=400,sizes[]=500'
+import Image3 from 'images/world-rhino-day/img_9711.jpg?sizes[]=300,sizes[]=400,sizes[]=500'
+import Image4 from 'images/world-rhino-day/img_9740.jpg?sizes[]=300,sizes[]=400,sizes[]=500'
+import Image5 from 'images/world-rhino-day/img_9747.jpg?sizes[]=300,sizes[]=400,sizes[]=500'
+import Image6 from 'images/world-rhino-day/img_9770.jpg?sizes[]=300,sizes[]=400,sizes[]=500'
+import Image7 from 'images/world-rhino-day/img_9789.jpg?sizes[]=300,sizes[]=400,sizes[]=500'
 
 import './screenings.scss'
 

@@ -3,12 +3,12 @@ import ScrollAnimation from 'react-animate-on-scroll'
 
 // Images
 import wanNews from 'images/news/WorldAnimalNews.jpg'
-import virginVideo from 'images/News_VirginReleaseOfficialTrailer.png?sizes[]=100,sizes[]=200,sizes[]=300'
-import AWFNews from 'images/news/AfricanWildlifeFoundation.png?sizes[]=100,sizes[]=200,sizes[]=300'
-import romanianNews from 'images/news/Canal3.png?sizes[]=100,sizes[]=200,sizes[]=300'
-import screeningsNews from 'images/news/Screenings.jpg?sizes[]=100,sizes[]=200,sizes[]=300'
-import virginNews from 'images/news/Virgin_RichardBransonAnnoucement.jpeg?sizes[]=100,sizes[]=200,sizes[]=300'
-import inTheMakingNews from 'images/news/PeopleMagazine.jpg?sizes[]=100,sizes[]=200,sizes[]=300'
+import virginVideo from 'images/News_VirginReleaseOfficialTrailer.png?sizes[]=100,sizes[]=400,sizes[]=600'
+import AWFNews from 'images/news/AfricanWildlifeFoundation.png?sizes[]=100,sizes[]=400,sizes[]=600'
+import romanianNews from 'images/news/Canal3.png?sizes[]=100,sizes[]=400,sizes[]=600'
+import screeningsNews from 'images/news/Screenings.jpg?sizes[]=100,sizes[]=400,sizes[]=600'
+import virginNews from 'images/news/Virgin_RichardBransonAnnoucement.jpeg?sizes[]=100,sizes[]=400,sizes[]=600'
+import inTheMakingNews from 'images/news/PeopleMagazine.jpg?sizes[]=100,sizes[]=400,sizes[]=600'
 
 import './news.scss'
 
