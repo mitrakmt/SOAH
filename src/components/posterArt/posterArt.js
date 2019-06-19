@@ -9,7 +9,7 @@ import LinkedIn from 'components/social/linkedin'
 import Email from 'components/social/email'
 import Tumblr from 'components/social/tumblr'
 
-import PosterArtImage from 'images/SOAH_FilmPoster.png?sizes[]=100,sizes[]=200,sizes[]=300'
+import PosterArtImage from 'images/SOAH_FilmPoster.png?sizes[]=512,sizes[]=1024'
 
 import './posterArt.scss'
 
