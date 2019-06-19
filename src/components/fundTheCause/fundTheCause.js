@@ -39,11 +39,11 @@ class FundTheCause extends Component {
       },
       {
         image: EliLogo,
-        link: 'https://elephantleague.org/',
+        link: 'https://www.earthleagueinternational.org/donate/',
         donateLink: 'https://www.elephantleague.org/donate/',
         text:
-          'Elephant Action League conducts investigations with an intelligence-led approach to combat wildlife crime.',
-        buttonText: 'donate to THE ELEPHANT ACTION LEAGUE',
+          'Earth League International conducts investigations with an intelligence-led approach to combat wildlife crime.',
+        buttonText: 'donate to EARTH LEAGUE INTERNATIONAL',
       },
       {
         image: RhinoConservation,
