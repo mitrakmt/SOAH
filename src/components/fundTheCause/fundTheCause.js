@@ -11,7 +11,7 @@ import EliLogo from 'images/fundTheCause/eliLogo.png'
 import AntiPoaching from 'images/fundTheCause/antiPoaching.png'
 import FundTheCauseBackground from 'images/fundTheCause/fundTheCauseBackground.jpg?sizes[]=600,sizes[]=1000,sizes[]=1400'
 import RhinoConservation from 'images/fundTheCause/rhinoConservation.jpg'
-import Sheldrick from 'images/fundTheCause/sheldrick.jpg'
+import Sheldrick from 'images/fundTheCause/sheldrick.png'
 import Wildaid from 'images/fundTheCause/wildaid.png'
 
 import './fundTheCause.scss'
