@@ -42,18 +42,18 @@ class TrailerView extends Component {
         />
         <iframe
           className="thumbnail"
-          src="https://www.youtube.com/embed/0el9UwGt_Vk"
+          src="https://www.youtube.com/embed/6pWVg-ZpTQk"
           frameBorder="0"
           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen
-          title="Trailer Video"
+          title="Watch the film"
         />
 
         <div className="footer">
           <div className="footer-section--mobileCenter">
             <div className="cta-container">
               <h3>spread the word.</h3>
-              <h3>share the trailer:</h3>
+              <h3>share the film:</h3>
             </div>
             <div className="socialGroup-container">
               <div style={{ display: 'flex' }}>
@@ -105,18 +105,8 @@ class TrailerView extends Component {
                 </div>
               </div>
             </div>
-            <div className="footer-section-line" />
           </div>
           <div className="footer-section--center">
-            <div className="countdown-container">
-              <h3 className="countdown-container-text">
-                The short film will be released on June 25, 2019:
-              </h3>
-            </div>
-            <div className="flipClock-container">
-              <FlipClock />
-            </div>
-            <div className="footer-section-line" />
           </div>
           <div className="footer-section--mobileCenter">
             <div className="latest-text">

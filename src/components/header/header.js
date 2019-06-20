@@ -37,7 +37,7 @@ class Header extends Component {
           className="headerContainer-line"
           onClick={() => this.navigateToView('trailer')}
         >
-          Trailer
+          Watch Film
         </h3>
         <h3
           className="headerContainer-line"
