@@ -9,7 +9,7 @@ import LinkedIn from 'components/social/linkedin'
 import Email from 'components/social/email'
 import Tumblr from 'components/social/tumblr'
 
-import HeaderImage from 'images/SOAH_Still5_long.png?sizes[]=512,sizes[]=1024'
+import HeaderImage from 'images/SOAH_Still5_long.png'
 
 import './shareTheMessageLanding.scss'
 
