@@ -88,7 +88,7 @@ class Navigation extends Component {
               this.navigateToView('trailer')
             }}
           >
-            Trailer
+            Watch Film
           </h3>
           <h3
             className="navigation-line"
