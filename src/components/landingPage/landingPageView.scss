@@ -257,9 +257,16 @@
     font-size: 48px;
     border-bottom: 3px solid #be1e2d;
 
+    animation-duration: 6s;
+    animation-delay: 0s;
+    animation-timing-function: ease-out;
+    animation-name: hideOnAnimation;
+    animation-iteration-count: 1;
+
     &:hover {
       cursor: pointer;
     }
+    
   }
 }
 
