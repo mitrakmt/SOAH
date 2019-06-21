@@ -243,6 +243,24 @@
       }
     }
   }
+  .watchFilmCTA {
+    // Stick it in the middle of the view
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    // These properties help keep it centered
+    height: 50px;
+    margin-left: -50px; /* margin is -0.5 * dimension */
+    margin-top: -25px; 
+
+    color: #be1e2d;
+    font-size: 48px;
+    border-bottom: 3px solid #be1e2d;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
 }
 
 @keyframes containerAnimation {
