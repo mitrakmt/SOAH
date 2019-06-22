@@ -10,11 +10,14 @@
 
   &-pageTitle {
     position: absolute;
+    top: 15px;
+    left: 45px;
     text-transform: uppercase;
+    padding-top: 15px;
+    border-top: 3px solid white;
     z-index: 1;
-    font-size: 78px;
-    color: #be1e2d;
-    text-align: center;
+    font-size: 48px;
+    color: rgba(255, 255, 255, 0.83);
   }
 
   &-headerImage {
@@ -186,17 +189,9 @@
 
       &-logo {
         display: block;
-        max-width: 250px;
-        max-height: 155px;
+        max-height: 100%;
         width: auto;
         height: auto;
-        margin-top: auto;
-        margin-bottom: auto;
-
-        @media screen and (max-width: 800px) {
-          max-width: 230px;
-          max-height: 115px;
-        }
       }
     }
 
@@ -223,7 +218,7 @@
         text-align: center;
         cursor: pointer;
         pointer-events: none;
-        margin: 25px;
+        margin: 5px auto 40px auto;
         line-height: 34px;
 
         @include media('<desktop') {
@@ -253,8 +248,8 @@
 
       &-logo {
         display: block;
-        max-width: 230px;
-        max-height: 155px;
+        max-height: 70%;
+        max-width: 300px;
         width: auto;
         height: auto;
         margin-top: auto;
@@ -262,7 +257,6 @@
 
         @media screen and (max-width: 800px) {
           max-width: 230px;
-          max-height: 115px;
         }
       }
     }
