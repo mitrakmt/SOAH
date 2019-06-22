@@ -7,7 +7,7 @@ import Facebook from 'components/social/facebook'
 import CreditsImage from 'images/SOAH_Credits.png'
 
 // Images
-import Mountains from 'images/mountains.png?sizes[]=600,sizes[]=1200,sizes[]=1500'
+import Mountains from 'images/mountains.png'
 
 import './credits.scss'
 

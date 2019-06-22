@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-import HeaderImage from 'images/screenings_background.jpg?sizes[]=300,sizes[]=400,sizes[]=500'
+import HeaderImage from 'images/screenings_background.jpg'
 import Quote from 'components/quote/grayQuote'
 import ImageCarousel from 'components/image-carousel/imageCarousel'
 import ScrollAnimation from 'react-animate-on-scroll'
