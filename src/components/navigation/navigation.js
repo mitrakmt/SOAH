@@ -93,14 +93,6 @@ class Navigation extends Component {
           <h3
             className="navigation-line"
             onClick={() => {
-              this.navigateToView('theStory')
-            }}
-          >
-            The Story
-          </h3>
-          <h3
-            className="navigation-line"
-            onClick={() => {
               this.navigateToView('takeAction')
             }}
           >
