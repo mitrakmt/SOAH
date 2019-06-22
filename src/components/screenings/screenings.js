@@ -23,7 +23,6 @@ class Screenings extends Component {
     }
 
     // UPCOMING SCREENINGS
-    // Note: ID IS REQUIRED AND MUST BE UNIQUE
     this.upcomingScreenings = [
       {
         link: 'http://www.hillcrest.ac.ke/',
