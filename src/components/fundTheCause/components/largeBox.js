@@ -21,7 +21,7 @@ class LargeBox extends Component {
           <img
             src={image}
             alt="logo"
-            className="fundTheCause-images-container-logo"
+            className="fundTheCause-images-largeContainer-logo"
           />
         </a>
         <h3 className={`fundTheCause-images-largeContainer-text`}>{text}</h3>
