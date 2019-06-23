@@ -19,12 +19,14 @@ class News extends Component {
       selectedNews: 0,
     }
 
+    // NOTE -- VERY IMPORTANT, PLEASE READ: each object in the news list must have a unique ID. They must also be in order, so if you add an article to the beginning, update all the articles to be in order (starting from 0)
     this.news = [
       {
         src: virginNews.src,
         srcSet: virginNews.srcSet,
         href: 'https://www.virgin.com/richard-branson/sides-horn',
         alt: 'Richard Branson on Sides of a Horn',
+        id: 0,
       },
       {
         src: wanNews.src,
@@ -32,6 +34,7 @@ class News extends Component {
         href:
           'https://worldanimalnews.com/wan-exclusive-with-sides-of-a-horn-filmmaker-toby-wosskow-check-out-their-new-trailer/',
         alt: 'World Animal News Interview Writer-Director Toby Wosskow',
+        id: 1,
         internal: false,
       },
       {
@@ -39,6 +42,7 @@ class News extends Component {
         srcSet: virginVideo.srcSet,
         href: 'https://www.virgin.com/richard-branson/sides-horn-0',
         alt: 'Virgin Release Official Trailer',
+        id: 2,
         internal: false,
       },
       {
@@ -46,6 +50,7 @@ class News extends Component {
         srcSet: screeningsNews.srcSet,
         href: '/screenings',
         alt: 'Global Screenings Announced Frequently',
+        id: 3,
         internal: true,
       },
       {
@@ -53,6 +58,7 @@ class News extends Component {
         srcSet: romanianNews.srcSet,
         href: 'https://www.facebook.com/watch/?v=756755554724195',
         alt: 'Canal 3 Covers Sides of a Horn',
+        id: 4,
         internal: false,
       },
       {
@@ -61,6 +67,7 @@ class News extends Component {
         href:
           'https://www.awf.org/blog/sides-horn-exploring-horrors-south-africas-poaching-war',
         alt: 'African WIldlife Foundation on Sides of a Horn',
+        id: 5,
       },
       {
         src: inTheMakingNews.src,
@@ -69,6 +76,7 @@ class News extends Component {
           'https://www.peoplemagazine.co.za/entertainment/sides-horn-making/',
         alt:
           'People Magazine Announces World Rhino Day 2017 Kickstarter Campaign',
+        id: 6,
       },
     ]
   }
@@ -165,7 +173,7 @@ class News extends Component {
             <span
               onClick={() => this.newsClick(piece.id)}
               className="news-images-navigate"
-              key={`news-carousel-${piece.href}`}
+              key={`news-carousel-${piece.id}`}
             >
               <img
                 srcSet={piece.srcSet}
