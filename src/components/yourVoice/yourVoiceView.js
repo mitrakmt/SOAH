@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import HeaderImage from 'images/SOAH_Still33.png'
+import HeaderImage from 'images/SOAH_Still33_full.png'
 import Navigation from 'components/navigation/navigation'
 import USGImage from 'images/eop_seal.png?sizes[]=300,sizes[]=400,sizes[]=500'
 import NewZealandImage from 'images/newzealand.png?sizes[]=300,sizes[]=400,sizes[]=500'
