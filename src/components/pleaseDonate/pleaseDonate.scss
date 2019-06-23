@@ -43,13 +43,14 @@
     }
     &-title {
       font-size: 28px;
-      color: black;
+      color: #be1e2d;
       margin: 0;
       margin-left: 20px;
       text-transform: uppercase;
 
       @media screen and (max-width: 600px) {
         border-bottom: 3px solid #be1e2d;
+        color: black;
       }
     }
     &-line {

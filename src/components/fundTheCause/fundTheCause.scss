@@ -155,9 +155,9 @@
         margin: 25px;
         line-height: 34px;
 
-        @include media('<desktop') {
+        @include media('<tablet') {
           display: block;
-          font-size: 20px;
+          font-size: 16px;
         }
       }
 
@@ -223,9 +223,9 @@
         margin: auto;
         line-height: 34px;
 
-        @include media('<desktop') {
+        @include media('<tablet') {
           display: block;
-          font-size: 20px;
+          font-size: 16px;
         }
       }
 

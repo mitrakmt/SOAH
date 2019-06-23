@@ -231,10 +231,19 @@
       padding: 0 50px;
       width: 100px;
 
+      @media screen and (max-width: 800px) {
+        padding: 0 30px;
+      }
+
       &-southafrica {
         width: 60px;
         margin-left: 20px;
         margin-right: 20px;
+
+        @media screen and (max-width: 600px) {
+          margin-left: 10px;
+          margin-right: 10px;
+        }
       }
     }
     &-row {
@@ -257,6 +266,12 @@
     align-items: center;
     font-size: 21px;
     justify-content: space-between;
+
+    @media screen and (max-width: 600px) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
 
     &-text {
       text-transform: uppercase;
@@ -281,6 +296,9 @@
 
       @media screen and (max-width: 600px) {
         border-bottom: 3px solid #be1e2d;
+        text-align: left;
+        color: black;
+        width: 90%;
       }
     }
     &-line {
