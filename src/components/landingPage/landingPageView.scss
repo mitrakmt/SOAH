@@ -244,21 +244,22 @@
     }
   }
   .watchFilmCTA {
-    // Stick it in the middle of the view
     position: absolute;
     top: 50%;
     left: 50%;
-    // These properties help keep it centered
-    margin-left: -50px; /* margin is -0.5 * dimension */
-    margin-top: -25px;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    // Vertical centering hack
+    margin-top: 0px;
 
     color: black;
     font-size: 38px;
+    font-weight: normal;
     padding: 10px 15px 5px 15px;
     background-color: transparent;
-    border: 6px solid black;
+    border: 4px solid black;
+    
     transition-duration: 0.3s;
-
     animation-duration: 6s;
     animation-delay: 0s;
     animation-timing-function: ease-out;
@@ -268,7 +269,7 @@
     &:hover {
       cursor: pointer;
       background: rgba(0, 0, 0, 0.8);
-      border: 6px solid #262626;
+      border: 4px solid #262626;
       color: white;
     }
   }
