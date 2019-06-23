@@ -252,13 +252,17 @@
     // Offset from center vertically up
     margin-top: -50px;
 
+    @include media('<tablet') {
+      margin-top: 0;
+    }
+
     color: black;
     font-size: 24px;
     font-weight: normal;
     padding: 10px 15px 5px 15px;
     background-color: transparent;
     border: 4px solid black;
-    
+
     transition-duration: 0.3s;
     animation-duration: 6s;
     animation-delay: 0s;

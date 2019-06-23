@@ -41,12 +41,6 @@ class Header extends Component {
         </h3>
         <h3
           className="headerContainer-line"
-          onClick={() => this.navigateToView('theStory')}
-        >
-          The Story
-        </h3>
-        <h3
-          className="headerContainer-line"
           onClick={() => this.navigateToView('takeAction')}
         >
           Take Action
