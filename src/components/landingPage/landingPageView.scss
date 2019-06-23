@@ -249,8 +249,8 @@
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
-    // Vertical centering hack
-    margin-top: 0px;
+    // Offset from center vertically up
+    margin-top: -50px;
 
     color: black;
     font-size: 38px;
