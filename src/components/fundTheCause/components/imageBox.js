@@ -16,8 +16,6 @@ class ImageBox extends Component {
             target="_blank"
             rel="noopener noreferrer"
             style={{
-              width: 'inherit',
-              height: 'inherit',
               display: 'flex',
               justifyContent: 'center',
             }}

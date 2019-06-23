@@ -193,6 +193,7 @@
         width: auto;
         height: auto;
         object-fit: contain;
+        max-width: 230px;
       }
     }
 
@@ -219,7 +220,7 @@
         text-align: center;
         cursor: pointer;
         pointer-events: none;
-        margin: 5px auto 40px auto;
+        margin: auto;
         line-height: 34px;
 
         @include media('<desktop') {
@@ -249,16 +250,11 @@
 
       &-logo {
         display: block;
-        max-height: 70%;
-        max-width: 300px;
+        max-height: 100%;
         width: auto;
         height: auto;
-        margin-top: auto;
-        margin-bottom: auto;
-
-        @media screen and (max-width: 800px) {
-          max-width: 230px;
-        }
+        object-fit: contain;
+        max-width: 230px;
       }
     }
 
