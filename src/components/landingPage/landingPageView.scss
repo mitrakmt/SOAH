@@ -254,9 +254,10 @@
 
     color: black;
     font-size: 38px;
+    font-weight: normal;
     padding: 10px 15px 5px 15px;
     background-color: transparent;
-    border: 6px solid black;
+    border: 4px solid black;
     
     transition-duration: 0.3s;
     animation-duration: 6s;
@@ -268,7 +269,7 @@
     &:hover {
       cursor: pointer;
       background: rgba(0, 0, 0, 0.8);
-      border: 6px solid #262626;
+      border: 4px solid #262626;
       color: white;
     }
   }
