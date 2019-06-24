@@ -89,17 +89,11 @@ class ShareTheMessageLanding extends Component {
           allowFullScreen
           title="Look Inside Video"
         />
-        <div className="shareTheMessageLanding-divider">
-          <ScrollAnimation
-            animateIn="fadeIn"
-            delay={1}
-            duration={2}
-            className="shareTheMessageLanding-divider-line"
-          />
-          <h3 className="shareTheMessageLanding-divider-text">
+        <div className="shareTheMessageLanding-dividerLeft">
+          <h3 className="shareTheMessageLanding-dividerLeft-text">
             Share the Trailer
           </h3>
-          <div className="shareTheMessageLanding-divider-social">
+          <div className="shareTheMessageLanding-dividerLeft-social">
             <Instagram
               href="https://www.dropbox.com/sh/gxanxv1jjq4dgaa/AACTNOqeKWQN0lNROb9ytEeua?dl=0"
               width="15px"
@@ -141,6 +135,12 @@ class ShareTheMessageLanding extends Component {
               margin="0 5px 0 0"
             />
           </div>
+          <ScrollAnimation
+            animateIn="fadeIn"
+            delay={1}
+            duration={2}
+            className="shareTheMessageLanding-dividerLeft-line"
+          />
         </div>
         <iframe
           className="shareTheMessageLanding-movie"

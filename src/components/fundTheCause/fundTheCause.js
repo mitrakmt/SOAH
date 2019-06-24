@@ -32,7 +32,7 @@ class FundTheCause extends Component {
       {
         image: Sheldrick,
         link: 'https://www.sheldrickwildlifetrust.org/',
-        donateLink: 'https://www.sheldrickwildlifetrust.org/html/help.html',
+        donateLink: 'https://www.sheldrickwildlifetrust.org/donate',
         text:
           'The Sheldrick Wildlife Trust rescues and hand-rears orphaned baby elephants and rhinos in Kenya.',
         buttonText: 'donate to THE SHELDRICK WILDLIFE TRUST',
