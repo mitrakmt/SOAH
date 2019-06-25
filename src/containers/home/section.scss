@@ -4,6 +4,13 @@
   min-height: 100vh;
   position: relative;
   font-family: 'BebasNeue';
+
+  &.trailerView {
+    @include media('<tablet') {
+      min-height: initial;
+    }
+  }
+
 }
 
 .homeContainer {
