@@ -56,7 +56,6 @@ class TrailerView extends Component {
             </div>
           </div>
         </div>
-
         <div className="footer">
           <div className="footer-section--mobileCenter">
             <div className="cta-container">

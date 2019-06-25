@@ -309,12 +309,13 @@
       border-bottom: 3px solid #be1e2d;
       display: flex;
       justify-content: flex-start;
-      animation-name: lookInsideMobileLineAnimation;
+
+      animation-name: yourVoiceMobileLineAnimation;
       animation-duration: 2s;
       transition-duration: 2s;
       animation-delay: 1s;
 
-      @keyframes lookInsideMobileLineAnimation {
+      @keyframes yourVoiceMobileLineAnimation {
         0% {
           width: 0;
         }

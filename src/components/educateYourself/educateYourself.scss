@@ -62,13 +62,13 @@
       border-bottom: 3px solid #be1e2d;
       width: 0;
 
-      animation-name: lookInsideMobileLineAnimation;
+      animation-name: educateMobileLineAnimation;
       animation-duration: 2s;
       transition-duration: 2s;
       animation-delay: 1s;
       animation-fill-mode: forwards;
 
-      @keyframes lookInsideMobileLineAnimation {
+      @keyframes educateMobileLineAnimation {
         0% {
           width: 0;
         }
