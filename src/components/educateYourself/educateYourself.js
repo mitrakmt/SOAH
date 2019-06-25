@@ -10,12 +10,7 @@ class EducateYourself extends Component {
       <div className="educateYourself">
         <div className="educateYourself-header">
           <h3 className="educateYourself-header-title">Educate Yourself</h3>
-          <ScrollAnimation
-            animateIn="fadeIn"
-            duration={2}
-            delay={1}
-            className="educateYourself-header-line"
-          />
+          <div className="educateYourself-header-line" />
         </div>
         <div className="educateYourself-body">
           <h4 className="educateYourself-text">

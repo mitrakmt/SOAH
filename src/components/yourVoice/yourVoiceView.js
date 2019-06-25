@@ -24,12 +24,7 @@ class YourVoiceView extends Component {
           <div className="yourVoiceView-body">
             <div className="yourVoiceView-body-header">
               <h3 className="yourVoiceView-body-header-title">make change</h3>
-              <ScrollAnimation
-                animateIn="fadeIn"
-                duration={2}
-                delay={1}
-                className="yourVoiceView-body-header-line"
-              />
+              <div className="yourVoiceView-body-header-line" />
             </div>
             <div className="yourVoiceView-body-body">
               <h4 className="yourVoiceView-body-text">

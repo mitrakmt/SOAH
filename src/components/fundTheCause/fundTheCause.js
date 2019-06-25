@@ -93,12 +93,7 @@ class FundTheCause extends Component {
       <div className={`${sectionName}`}>
         <div className="fundTheCause-body-header">
           <h3 className="fundTheCause-body-header-title">Fund the Cause</h3>
-          <ScrollAnimation
-            animateIn="fadeIn"
-            duration={2}
-            delay={1}
-            className="fundTheCause-body-header-line"
-          />
+          <div className="fundTheCause-body-header-line" />
         </div>
         <img
           src={FundTheCauseBackground}
