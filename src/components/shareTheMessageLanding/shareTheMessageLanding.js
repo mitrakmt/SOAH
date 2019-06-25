@@ -40,7 +40,7 @@ class ShareTheMessageLanding extends Component {
           </h3>
           <div className="shareTheMessageLanding-divider-social">
             <Facebook
-              href="https://www.facebook.com/sharer/sharer.php?u=https://www.facebook.com/sidesofahorn/videos/361030087963483/."
+              href="https://www.facebook.com/sidesofahorn/videos/2314945311932404/"
               width="15px"
               height="15px"
               fill="#fff"
@@ -54,7 +54,7 @@ class ShareTheMessageLanding extends Component {
               margin="0 5px 0 0"
             />
             <LinkedIn
-              href="https://www.linkedin.com/feed/update/urn:li:activity:6490510564752662528/"
+              href="https://www.linkedin.com/feed/update/urn:li:activity:6549210598977093632/"
               fill="white"
               margin="0 5px 0 0"
             />

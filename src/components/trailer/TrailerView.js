@@ -73,7 +73,7 @@ class TrailerView extends Component {
                     margin="2px 4px 2px 4px"
                   />
                   <Facebook
-                    href="https://www.facebook.com/sharer/sharer.php?u=https://www.facebook.com/sidesofahorn/videos/361030087963483/."
+                    href="https://www.facebook.com/sidesofahorn/videos/2314945311932404/"
                     width="15px"
                     height="15px"
                     fill="white"
@@ -84,7 +84,7 @@ class TrailerView extends Component {
               <div style={{ display: 'flex' }}>
                 <div className="socialGroup-line">
                   <LinkedIn
-                    href="https://www.linkedin.com/feed/update/urn:li:activity:6490510564752662528/"
+                    href="https://www.linkedin.com/feed/update/urn:li:activity:6549210598977093632/"
                     fill="white"
                     margin="2px 4px 2px 4px"
                   />
