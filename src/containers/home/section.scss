@@ -6,9 +6,7 @@
   font-family: 'BebasNeue';
 
   &.trailerView {
-    @include media('<tablet') {
-      min-height: initial;
-    }
+    min-height: 0;
   }
 
 }
