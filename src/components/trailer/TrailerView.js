@@ -58,17 +58,8 @@ class TrailerView extends Component {
             <div className="socialGroup-container">
               <div style={{ display: 'flex' }}>
                 <div className="socialGroup-line">
-                  <Instagram
-                    href="https://www.dropbox.com/sh/gxanxv1jjq4dgaa/AACTNOqeKWQN0lNROb9ytEeua?dl=0"
-                    width="15px"
-                    height="15px"
-                    fill="white"
-                    margin="2px 4px 2px 4px"
-                  />
                   <Twitter
-                    href="https://twitter.com/intent/tweet?text=Sides of a Horn will be released online around the globe on June 25, 2019 at
-                  www.rhinomovie.com in honor of %23WorldEnvironmentDay! Please watch and share the official
-                  trailer. https://youtu.be/0el9UwGt_Vk"
+                    href="https://twitter.com/intent/tweet?text=Watch @SidesofaHorn now at www.rhinomovie.com and join the conversation about Africa’s poaching crisis"
                     width="15px"
                     height="15px"
                     fill="white"
@@ -91,9 +82,7 @@ class TrailerView extends Component {
                     margin="2px 4px 2px 4px"
                   />
                   <Email
-                    href="mailto:?subject=Sides of a Horn - Trailer&body=Sides of a Horn will be released online around the globe on June 25, 2019 at
-                  www.rhinomovie.com! Please watch and share the official
-                  trailer here: https://youtu.be/0el9UwGt_Vk"
+                    href="mailto:?subject=Sides of a Horn - Global Release&body=Watch Sides of a Horn now at www.rhinomovie.com and join the conversation about Africa’s poaching crisis"
                     fill="white"
                     margin="2px 4px 2px 4px"
                   />
