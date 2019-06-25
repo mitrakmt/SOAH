@@ -49,7 +49,7 @@ class PosterArt extends Component {
               margin="0px 0px 10px 0px"
             />
             <Twitter
-              href="Watch @SidesofaHorn at www.rhinomovie.com and spread the word by sharing the
+              href="https://twitter.com/intent/tweet?text=Watch @SidesofaHorn at www.rhinomovie.com and spread the word by sharing the
               official poster: https://www.dropbox.com/sh/3pxgvtp3elikouf/AADmWPlqXBo5YxWZl1BI9pY_a?dl=0"
               width="15px"
               height="15px"
@@ -64,7 +64,7 @@ class PosterArt extends Component {
               margin="0px 0px 10px 0px"
             />
             <Email
-              href="mailto:?subject=Sides of a Horn - Poster&body=SWatch Sides of a Horn at www.rhinomovie.com and spread the word by sharing the
+              href="mailto:?subject=Sides of a Horn - Poster&body=Watch Sides of a Horn at www.rhinomovie.com and spread the word by sharing the
               official poster: https://www.dropbox.com/sh/3pxgvtp3elikouf/AADmWPlqXBo5YxWZl1BI9pY_a?dl=0"
               fill="white"
               margin="0px 0px 10px 0px"
