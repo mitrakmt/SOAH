@@ -39,13 +39,6 @@ class ShareTheMessageLanding extends Component {
             Share the Film
           </h3>
           <div className="shareTheMessageLanding-divider-social">
-            <Instagram
-              href="https://www.dropbox.com/sh/gxanxv1jjq4dgaa/AACTNOqeKWQN0lNROb9ytEeua?dl=0"
-              width="15px"
-              height="15px"
-              fill="#fff"
-              margin="0 5px 0 0"
-            />
             <Facebook
               href="https://www.facebook.com/sharer/sharer.php?u=https://www.facebook.com/sidesofahorn/videos/361030087963483/."
               width="15px"
@@ -54,9 +47,7 @@ class ShareTheMessageLanding extends Component {
               margin="0 5px 0 0"
             />
             <Twitter
-              href="https://twitter.com/intent/tweet?text=Sides of a Horn will be released online around the globe on June 3, 2019 at
-              www.rhinomovie.com in honor of %23WorldEnvironmentDay! Please watch and share the official
-              trailer. https://youtu.be/0el9UwGt_Vk"
+              href="https://twitter.com/intent/tweet?text=Watch @SidesofaHorn now at www.rhinomovie.com and join the conversation about Africa’s poaching crisis"
               width="15px"
               height="15px"
               fill="#fff"
@@ -68,9 +59,7 @@ class ShareTheMessageLanding extends Component {
               margin="0 5px 0 0"
             />
             <Email
-              href="mailto:?subject=Sides of a Horn - Trailer&body=Sides of a Horn will be released online around the globe on June 3, 2019 at
-              www.rhinomovie.com! Please watch and share the official
-              trailer here: https://youtu.be/0el9UwGt_Vk"
+              href="mailto:?subject=Sides of a Horn - Global Release&body=Watch Sides of a Horn now at www.rhinomovie.com and join the conversation about Africa’s poaching crisis"
               fill="white"
               margin="0 5px 0 0"
             />
@@ -109,9 +98,8 @@ class ShareTheMessageLanding extends Component {
               margin="0 5px 0 0"
             />
             <Twitter
-              href="https://twitter.com/intent/tweet?text=Sides of a Horn will be released online around the globe on June 3, 2019 at
-              www.rhinomovie.com in honor of %23WorldEnvironmentDay! Please watch and share the official
-              trailer. https://youtu.be/0el9UwGt_Vk"
+              href="https://twitter.com/intent/tweet?text=Watch @SidesofaHorn at www.rhinomovie.com and spread the word by sharing the
+              official trailer: https://youtu.be/0el9UwGt_Vk"
               width="15px"
               height="15px"
               fill="#fff"
@@ -123,9 +111,8 @@ class ShareTheMessageLanding extends Component {
               margin="0 5px 0 0"
             />
             <Email
-              href="mailto:?subject=Sides of a Horn - Trailer&body=Sides of a Horn will be released online around the globe on June 3, 2019 at
-              www.rhinomovie.com! Please watch and share the official
-              trailer here: https://youtu.be/0el9UwGt_Vk"
+              href="mailto:?subject=Sides of a Horn - Trailer&body=Watch Sides of a Horn at www.rhinomovie.com and spread the word by sharing the
+              official trailer: https://youtu.be/0el9UwGt_Vk"
               fill="white"
               margin="0 5px 0 0"
             />

@@ -49,7 +49,8 @@ class PosterArt extends Component {
               margin="0px 0px 10px 0px"
             />
             <Twitter
-              href="https://twitter.com/intent/tweet?text=Sides of a Horn will be released online around the globe on June 25, 2019 at www.rhinomovie.com in honor of %23WorldEnvironmentDay! Please share the official poster and help spread the word: https://www.dropbox.com/sh/3pxgvtp3elikouf/AADmWPlqXBo5YxWZl1BI9pY_a?dl=0"
+              href="Watch @SidesofaHorn at www.rhinomovie.com and spread the word by sharing the
+              official poster: https://www.dropbox.com/sh/3pxgvtp3elikouf/AADmWPlqXBo5YxWZl1BI9pY_a?dl=0"
               width="15px"
               height="15px"
               fill="#fff"
@@ -62,18 +63,9 @@ class PosterArt extends Component {
               fill="#fff"
               margin="0px 0px 10px 0px"
             />
-            <LinkedIn
-              href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.linkedin.com/feed/update/urn:li:ugcPost:6445915668696170496&source=LinkedIn"
-              fill="white"
-              margin="0px 0px 10px 0px"
-            />
             <Email
-              href="mailto:?subject=Sides of a Horn - Poster&body=Sides of a Horn will be released online around the globe on June 25, 2019 at www.rhinomovie.com in honor of %23WorldEnvironmentDay! Please share the official poster and help spread the word: https://www.dropbox.com/sh/3pxgvtp3elikouf/AADmWPlqXBo5YxWZl1BI9pY_a?dl=0"
-              fill="white"
-              margin="0px 0px 10px 0px"
-            />
-            <Tumblr
-              href="http://www.tumblr.com/widgets/share/tool?shareSource=legacy&canonicalUrl=http://www.rhinomovie.com/static/media/SOAH_FilmPoster.123c2514.png&posttype=photo&caption=Sides of a Horn will be released online around the globe on June 25, 2019 at www.rhinomovie.com in honor of %23WorldEnvironmentDay! Please share the official poster and help spread the word: https://www.dropbox.com/sh/3pxgvtp3elikouf/AADmWPlqXBo5YxWZl1BI9pY_a?dl=0&title=Sides of a Horn will be released online around the globe on June 25, 2019 at www.rhinomovie.com in honor of %23WorldEnvironmentDay! Please share the official poster and help spread the word: https://www.dropbox.com/sh/3pxgvtp3elikouf/AADmWPlqXBo5YxWZl1BI9pY_a?dl=0"
+              href="mailto:?subject=Sides of a Horn - Poster&body=SWatch Sides of a Horn at www.rhinomovie.com and spread the word by sharing the
+              official poster: https://www.dropbox.com/sh/3pxgvtp3elikouf/AADmWPlqXBo5YxWZl1BI9pY_a?dl=0"
               fill="white"
               margin="0px 0px 10px 0px"
             />
