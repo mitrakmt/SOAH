@@ -20,7 +20,8 @@ export default [
     Container: HomeSection,
     props: {
       Component: TrailerView,
-      sectionName: 'trailer'
+      sectionName: 'trailer',
+      additionalClasses: 'trailerView'
     }
   },
   {
