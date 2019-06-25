@@ -58,8 +58,7 @@ class ShareTheStory extends Component {
                 margin="0 5px 0 0"
               />
               <Twitter
-                href="https://twitter.com/intent/tweet?text=Sides of a Horn will be released online around the globe on June 25, 2019 at
-                www.rhinomovie.com in honor of %23WorldEnvironmentDay! Please watch and share the behind the official behind the scenes film. https://youtu.be/sIWl6msIH0Y"
+                href="https://twitter.com/intent/tweet?text=Watch @SidesofaHorn at www.rhinomovie.com and spread the word by sharing the official behind the scenes film: https://youtu.be/sIWl6msIH0Y"
                 width="15px"
                 height="15px"
                 fill="#fff"
