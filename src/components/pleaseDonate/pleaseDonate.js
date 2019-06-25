@@ -11,12 +11,7 @@ class PleaseDonate extends Component {
       <div className="pleaseDonate">
         <div className="pleaseDonate-header">
           <h3 className="pleaseDonate-header-title">Please Donate</h3>
-          <ScrollAnimation
-            animateIn="fadeIn"
-            duration={2}
-            delay={1}
-            className="pleaseDonate-header-line"
-          />
+          <div className="pleaseDonate-header-line" />
         </div>
         <div className="pleaseDonate-body">
           <h4 className="pleaseDonate-text">

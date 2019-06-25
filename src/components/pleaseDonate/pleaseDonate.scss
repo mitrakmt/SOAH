@@ -30,6 +30,9 @@
 
   &-header {
     font-size: 21px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
     &-text {
       text-transform: uppercase;
@@ -45,31 +48,34 @@
       font-size: 28px;
       color: #be1e2d;
       margin: 0;
+      width: 200px;
       margin-left: 20px;
       text-transform: uppercase;
 
       @media screen and (max-width: 600px) {
         border-bottom: 3px solid #be1e2d;
         color: black;
+        width: 90%;
       }
     }
     &-line {
       height: 1px;
-      width: 135px;
+      width: 0;
       border-bottom: 3px solid #be1e2d;
       margin-left: 20px;
 
-      animation-name: lookInsideMobileLineAnimation;
+      animation-name: pleaseDonateMobileLineAnimation;
       animation-duration: 2s;
       transition-duration: 2s;
       animation-delay: 1s;
+      animation-fill-mode: forwards;
 
-      @keyframes lookInsideMobileLineAnimation {
+      @keyframes pleaseDonateMobileLineAnimation {
         0% {
           width: 0;
         }
         100% {
-          width: 135px;
+          width: 100%;
         }
       }
 

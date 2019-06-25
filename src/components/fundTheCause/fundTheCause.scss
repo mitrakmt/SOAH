@@ -8,16 +8,47 @@
   position: relative;
   width: 100%;
 
-  &-pageTitle {
-    position: absolute;
-    top: 15px;
-    left: 45px;
-    text-transform: uppercase;
-    padding-top: 15px;
-    border-top: 3px solid white;
-    z-index: 1;
-    font-size: 48px;
-    color: rgba(255, 255, 255, 0.83);
+  &-header {
+    display: flex;
+    align-items: center;
+    font-size: 21px;
+    justify-content: space-between;
+
+    &-pageTitle {
+      position: absolute;
+      top: 15px;
+      left: 45px;
+      text-transform: uppercase;
+      padding-top: 15px;
+      border-top: 3px solid white;
+      z-index: 1;
+      font-size: 48px;
+      color: rgba(255, 255, 255, 0.83);
+    }
+
+    &-line {
+      height: 1px;
+      width: 100%;
+      border-bottom: 3px solid #be1e2d;
+
+      animation-name: fundMobileLineAnimation;
+      animation-duration: 2s;
+      transition-duration: 2s;
+      animation-delay: 1s;
+
+      @keyframes fundMobileLineAnimation {
+        0% {
+          width: 0;
+        }
+        100% {
+          width: 100%;
+        }
+      }
+
+      @media screen and (max-width: 600px) {
+        display: none;
+      }
+    }
   }
 
   &-headerImage {
@@ -27,30 +58,6 @@
     z-index: 0;
     object-fit: cover;
     filter: opacity(0.8);
-  }
-
-  &-line {
-    height: 1px;
-    width: 100%;
-    border-bottom: 3px solid #be1e2d;
-
-    animation-name: fundMobileLineAnimation;
-    animation-duration: 2s;
-    transition-duration: 2s;
-    animation-delay: 1s;
-
-    @keyframes fundMobileLineAnimation {
-      0% {
-        width: 0;
-      }
-      100% {
-        width: 100%;
-      }
-    }
-
-    @media screen and (max-width: 600px) {
-      display: none;
-    }
   }
 
   &-infoSection {
