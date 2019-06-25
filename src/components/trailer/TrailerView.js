@@ -40,14 +40,22 @@ class TrailerView extends Component {
           rel="stylesheet"
           type="text/css"
         />
-        <iframe
-          className="thumbnail"
-          src="https://www.youtube.com/embed/6pWVg-ZpTQk"
-          frameBorder="0"
-          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen
-          title="Watch the film"
-        />
+        <div className="footer-video-body">
+          <div className="footer-video-container">
+            <div className="footer-video-wrapper">
+              <div className="footer-video-youtube">
+                <iframe
+                  className="thumbnail"
+                  src="https://www.youtube.com/embed/6pWVg-ZpTQk"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  title="Watch the film"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
 
         <div className="footer">
           <div className="footer-section--mobileCenter">
@@ -95,8 +103,7 @@ class TrailerView extends Component {
               </div>
             </div>
           </div>
-          <div className="footer-section--center">
-          </div>
+          <div className="footer-section--center" />
           <div className="footer-section--mobileCenter">
             <div className="latest-text">
               <h3>get the </h3>

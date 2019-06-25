@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 
 import PleaseDonate from 'components/pleaseDonate/pleaseDonate'
+import ScrollAnimation from 'react-animate-on-scroll'
 
 import ImageBox from './components/imageBox'
 import LargeBox from './components/largeBox'
@@ -90,7 +91,15 @@ class FundTheCause extends Component {
 
     return (
       <div className={`${sectionName}`}>
-        <h3 className="fundTheCause-pageTitle">Fund the Cause</h3>
+        <div className="fundTheCause-body-header">
+          <h3 className="fundTheCause-body-header-title">Fund the Cause</h3>
+          <ScrollAnimation
+            animateIn="fadeIn"
+            duration={2}
+            delay={1}
+            className="fundTheCause-body-header-line"
+          />
+        </div>
         <img
           src={FundTheCauseBackground}
           className="fundTheCause-headerImage"

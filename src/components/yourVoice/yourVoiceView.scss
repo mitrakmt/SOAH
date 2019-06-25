@@ -286,8 +286,9 @@
       font-size: 28px;
       width: 190px;
       color: #be1e2d;
-      text-align: center;
+      text-align: left;
       margin: 0;
+      margin-left: 20px;
       text-transform: uppercase;
 
       @media screen and (max-width: 1100px) {
@@ -305,7 +306,8 @@
       height: 1px;
       width: 100%;
       border-bottom: 3px solid #be1e2d;
-
+      display: flex;
+      justify-content: flex-start;
       animation-name: lookInsideMobileLineAnimation;
       animation-duration: 2s;
       transition-duration: 2s;
