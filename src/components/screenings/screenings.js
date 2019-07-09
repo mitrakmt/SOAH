@@ -25,28 +25,16 @@ class Screenings extends Component {
     // UPCOMING SCREENINGS
     this.upcomingScreenings = [
       {
-        link: 'http://www.hillcrest.ac.ke/',
-        line1: 'Hillcrest Secondary School',
-        line2: 'JUNE 20, 2019',
-        location: 'Karen, Kenya',
-      },
-      {
-        link: 'https://www.inyfilmfest.com/',
-        line1: 'International New York Film Festival',
-        line2: 'JUNE 14-15, 2019',
-        location: 'New York',
-      },
-      {
-        link: 'http://ccadiff.ukzn.ac.za/',
-        line1: 'Durban International Film Festival',
-        line2: 'JULY 18 - 28, 2019',
-        location: 'Durban',
-      },
-      {
         link: 'https://stonybrookfilmfestival.com/',
         line1: 'Stony Brook Film Festival',
         line2: 'JULY 21, 2019 at 4pm',
         location: 'Stony Brook, NY',
+      },
+      {
+        link: 'http://ccadiff.ukzn.ac.za/',
+        line1: 'Durban International Film Festival',
+        line2: 'JULY 23, 2019 at 5:30pm |  July 27, 2019 at 3:30pm',
+        location: 'Durban',
       },
       {
         link: 'https://www.burbankfilmfest.org/',
@@ -65,6 +53,18 @@ class Screenings extends Component {
         line1: 'Jongosi Youth Day',
         line2: 'SEPTEMBER 13, 2019',
         location: 'Hilton, South Africa',
+      },
+      {
+        link: 'http://www.edmontonfilmfest.com/',
+        line1: 'Edmonton International Film Festival',
+        line2: 'SEPTEMBER 26 - OCTOBER 5, 2019',
+        location: 'Edmonton, Canada',
+      },
+      {
+        link: 'https://woodstockfilmfestival.org/',
+        line1: 'Woodstock Film Festival',
+        line2: 'OCTOBER 2-6, 2019',
+        location: 'The Hudson Valley, NY',
       },
       {
         link: 'https://www.wscsummit.com/',
@@ -93,6 +93,12 @@ class Screenings extends Component {
         location: 'Torres Vedras',
       },
       {
+        link: 'https://www.sciencefilm.ch/',
+        line1: 'Global Science Film Festival',
+        line2: 'November 15-17, 2019',
+        location: 'Bern & Zurich',
+      },
+      {
         link: 'http://www.greeninitiatives.cn/',
         line1: 'Green Initiatives ',
         line2: 'Dates TBD',
@@ -102,6 +108,36 @@ class Screenings extends Component {
 
     // PAST SCREENINGS
     this.pastScreenings = [
+      {
+        link: 'http://www.abcg.org/event_details?event_id=144',
+        line1: 'African Wildlife Foundation & the Africa Biodiversity Collaborative Group',
+        line2: 'JULY 3, 2019',
+        location: 'Nairobi, Kenya',
+      },
+      {
+        link: 'https://allafrica.com/stories/201907030120.html',
+        line1: 'African Wildlife Foundation & the University of Zimbabwe',
+        line2: 'JUNE 27, 2019',
+        location: 'Harare',
+      },
+      {
+        link: 'https://www.brooklynshortfilmfestival.com/',
+        line1: 'Brooklyn Short Film Festival',
+        line2: 'JUNE 26, 2019',
+        location: 'Brooklyn, NY',
+      },
+      {
+        link: 'http://www.hillcrest.ac.ke/',
+        line1: 'Hillcrest Secondary School',
+        line2: 'JUNE 20, 2019',
+        location: 'Karen, Kenya',
+      },
+      {
+        link: 'https://www.inyfilmfest.com/',
+        line1: 'International New York Film Festival',
+        line2: 'JUNE 14-15, 2019',
+        location: 'New York',
+      },
       {
         link:
           'http://web.quotidianopiemontese.it/cabiria/2019/06/07/il-corto-sides-of-a-horn-di-toby-wosskow-a-zoom-per-parlare-di-lotta-al-bracconaggio/#.XQVwJ29Kjyi',
