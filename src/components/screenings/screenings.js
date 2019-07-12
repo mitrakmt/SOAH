@@ -5,13 +5,13 @@ import Quote from 'components/quote/grayQuote'
 import ImageCarousel from 'components/image-carousel/imageCarousel'
 import ScrollAnimation from 'react-animate-on-scroll'
 
-import Image1 from 'images/world-rhino-day/img_9498.jpg?sizes[]=300,sizes[]=400,sizes[]=500'
-import Image2 from 'images/world-rhino-day/img_9657.jpg?sizes[]=300,sizes[]=400,sizes[]=500'
-import Image3 from 'images/world-rhino-day/img_9711.jpg?sizes[]=300,sizes[]=400,sizes[]=500'
-import Image4 from 'images/world-rhino-day/img_9740.jpg?sizes[]=300,sizes[]=400,sizes[]=500'
-import Image5 from 'images/world-rhino-day/img_9747.jpg?sizes[]=300,sizes[]=400,sizes[]=500'
-import Image6 from 'images/world-rhino-day/img_9770.jpg?sizes[]=300,sizes[]=400,sizes[]=500'
-import Image7 from 'images/world-rhino-day/img_9789.jpg?sizes[]=300,sizes[]=400,sizes[]=500'
+// import Image1 from 'images/world-rhino-day/img_9498.jpg?sizes[]=300,sizes[]=400,sizes[]=500'
+// import Image2 from 'images/world-rhino-day/img_9657.jpg?sizes[]=300,sizes[]=400,sizes[]=500'
+// import Image3 from 'images/world-rhino-day/img_9711.jpg?sizes[]=300,sizes[]=400,sizes[]=500'
+// import Image4 from 'images/world-rhino-day/img_9740.jpg?sizes[]=300,sizes[]=400,sizes[]=500'
+// import Image5 from 'images/world-rhino-day/img_9747.jpg?sizes[]=300,sizes[]=400,sizes[]=500'
+// import Image6 from 'images/world-rhino-day/img_9770.jpg?sizes[]=300,sizes[]=400,sizes[]=500'
+// import Image7 from 'images/world-rhino-day/img_9789.jpg?sizes[]=300,sizes[]=400,sizes[]=500'
 
 import './screenings.scss'
 
@@ -262,36 +262,36 @@ class Screenings extends Component {
         location: 'Los Angeles & Johannesburg',
       },
     ]
-    this.images = [
-      {
-        src: Image1,
-        alt: 'Viewing',
-      },
-      {
-        src: Image2,
-        alt: 'OnStage',
-      },
-      {
-        src: Image3,
-        alt: 'Panel',
-      },
-      {
-        src: Image4,
-        alt: 'Panel2',
-      },
-      {
-        src: Image5,
-        alt: 'Panel3',
-      },
-      {
-        src: Image6,
-        alt: 'Panel4',
-      },
-      {
-        src: Image7,
-        alt: 'Cast',
-      },
-    ]
+    // this.images = [
+    //   {
+    //     src: Image1,
+    //     alt: 'Viewing',
+    //   },
+    //   {
+    //     src: Image2,
+    //     alt: 'OnStage',
+    //   },
+    //   {
+    //     src: Image3,
+    //     alt: 'Panel',
+    //   },
+    //   {
+    //     src: Image4,
+    //     alt: 'Panel2',
+    //   },
+    //   {
+    //     src: Image5,
+    //     alt: 'Panel3',
+    //   },
+    //   {
+    //     src: Image6,
+    //     alt: 'Panel4',
+    //   },
+    //   {
+    //     src: Image7,
+    //     alt: 'Cast',
+    //   },
+    // ]
   }
 
   submitEmail = () => {
@@ -496,11 +496,11 @@ class Screenings extends Component {
             </div>
           </div>
         </div>
-        <ImageCarousel
+        {/* <ImageCarousel
           images={this.images}
           keyName="screeningsImageCarousel"
           title="LOS ANGELES PRIVATE SCREENING - WORLD RHINO DAY 2018"
-        />
+        /> */}
       </div>
     )
   }
