@@ -27,7 +27,7 @@ class News extends Component {
         src: NYTimes.src,
         srcSet: NYTimes.srcSet,
         href:
-          'https://www.forbes.com/sites/risasarachan/2019/06/17/sir-richard-branson-and-director-toby-wosskow-on-the-urgent-message-behind-sides-of-a-horn/#467ccf953522',
+          'https://www.nytimes.com/2019/06/30/arts/television/whats-on-tv-sunday-the-loudest-voice-and-sides-of-a-horn.html',
         alt: 'THE NEW YORK TIMES RECOMMENDS SIDES OF A HORN',
         id: 0,
       },
