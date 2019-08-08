@@ -86,8 +86,7 @@ class Screenings extends Component {
         line3: '',
       },
       {
-        link:
-          'https://www.cifft.com/cifft-festival/arttur-international-tourism-film-festival/',
+        link:'https://www.cifft.com/cifft-festival/arttur-international-tourism-film-festival/',
         line1: 'ART&TUR - International Tourism Film Festival',
         line2: 'OCTOBER 22 - 25, 2019',
         location: 'Torres Vedras',
