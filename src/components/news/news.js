@@ -2,13 +2,15 @@ import React, { Component } from 'react'
 import ScrollAnimation from 'react-animate-on-scroll'
 
 // Images
-import wanNews from 'images/news/WorldAnimalNews.jpg'
-import virginVideo from 'images/News_VirginReleaseOfficialTrailer.png?sizes[]=100,sizes[]=400,sizes[]=600'
 import AWFNews from 'images/news/AfricanWildlifeFoundation.png?sizes[]=100,sizes[]=400,sizes[]=600'
-import romanianNews from 'images/news/Canal3.png?sizes[]=100,sizes[]=400,sizes[]=600'
 import screeningsNews from 'images/news/Screenings.jpg?sizes[]=100,sizes[]=400,sizes[]=600'
 import virginNews from 'images/news/Virgin_RichardBransonAnnoucement.jpeg?sizes[]=100,sizes[]=400,sizes[]=600'
-import inTheMakingNews from 'images/news/PeopleMagazine.jpg?sizes[]=100,sizes[]=400,sizes[]=600'
+import NYTimes from 'images/news/NYTimes.png?sizes[]=100,sizes[]=400,sizes[]=600'
+import Forbes from 'images/news/Forbes.png?sizes[]=100,sizes[]=400,sizes[]=600'
+import WildAid from 'images/news/WildAid.jpg?sizes[]=100,sizes[]=400,sizes[]=600'
+import LassIsMore from 'images/news/LassIsMore.jpg?sizes[]=100,sizes[]=400,sizes[]=600'
+import UKFilmReview from 'images/news/UKFilmReview.png?sizes[]=100,sizes[]=400,sizes[]=600'
+import FilmThreat from 'images/news/FilmThreat.png?sizes[]=100,sizes[]=400,sizes[]=600'
 
 import './news.scss'
 
@@ -22,44 +24,21 @@ class News extends Component {
     // NOTE -- VERY IMPORTANT, PLEASE READ: each object in the news list must have a unique ID. They must also be in order, so if you add an article to the beginning, update all the articles to be in order (starting from 0)
     this.news = [
       {
-        src: virginNews.src,
-        srcSet: virginNews.srcSet,
-        href: 'https://www.virgin.com/richard-branson/sides-horn',
-        alt: 'Richard Branson on Sides of a Horn',
+        src: NYTimes.src,
+        srcSet: NYTimes.srcSet,
+        href:
+          'https://www.forbes.com/sites/risasarachan/2019/06/17/sir-richard-branson-and-director-toby-wosskow-on-the-urgent-message-behind-sides-of-a-horn/#467ccf953522',
+        alt: 'THE NEW YORK TIMES RECOMMENDS SIDES OF A HORN',
         id: 0,
       },
       {
-        src: wanNews.src,
-        srcSet: wanNews.srcSet,
+        src: Forbes.src,
+        srcSet: Forbes.srcSet,
         href:
-          'https://worldanimalnews.com/wan-exclusive-with-sides-of-a-horn-filmmaker-toby-wosskow-check-out-their-new-trailer/',
-        alt: 'World Animal News Interview Writer-Director Toby Wosskow',
+          'https://www.forbes.com/sites/risasarachan/2019/06/17/sir-richard-branson-and-director-toby-wosskow-on-the-urgent-message-behind-sides-of-a-horn/#8a5ccf3522e3',
+        alt:
+          'FORBES INTERVIEWS EXECUTIVE PRODUCER SIR RICHARD BRANSON AND WRITER-DIRECTOR TOBY WOSSKOW',
         id: 1,
-        internal: false,
-      },
-      {
-        src: virginVideo.src,
-        srcSet: virginVideo.srcSet,
-        href: 'https://www.virgin.com/richard-branson/sides-horn-0',
-        alt: 'Virgin Release Official Trailer',
-        id: 2,
-        internal: false,
-      },
-      {
-        src: screeningsNews.src,
-        srcSet: screeningsNews.srcSet,
-        href: '/screenings',
-        alt: 'Global Screenings Announced Frequently',
-        id: 3,
-        internal: true,
-      },
-      {
-        src: romanianNews.src,
-        srcSet: romanianNews.srcSet,
-        href: 'https://www.facebook.com/watch/?v=756755554724195',
-        alt: 'Canal 3 Covers Sides of a Horn',
-        id: 4,
-        internal: false,
       },
       {
         src: AWFNews.src,
@@ -67,16 +46,52 @@ class News extends Component {
         href:
           'https://www.awf.org/blog/sides-horn-exploring-horrors-south-africas-poaching-war',
         alt: 'African WIldlife Foundation on Sides of a Horn',
-        id: 5,
+        id: 2,
       },
       {
-        src: inTheMakingNews.src,
-        srcSet: inTheMakingNews.srcSet,
+        src: WildAid.src,
+        srcSet: WildAid.srcSet,
+        href: 'https://www.virgin.com/virgin-unite/poaching-steals-us-all',
+        alt: 'WILDAID CEO PETER KNIGHTS TALKS SIDES OF A HORN',
+        id: 3,
+      },
+      {
+        src: virginNews.src,
+        srcSet: virginNews.srcSet,
+        href: 'https://www.virgin.com/richard-branson/sides-horn',
+        alt: 'Richard Branson on Sides of a Horn',
+        id: 4,
+      },
+      {
+        src: screeningsNews.src,
+        srcSet: screeningsNews.srcSet,
+        href: '/screenings',
+        alt: 'Global Screenings Announced Frequently',
+        id: 5,
+        internal: true,
+      },
+      {
+        src: LassIsMore.src,
+        srcSet: LassIsMore.srcSet,
         href:
-          'https://www.peoplemagazine.co.za/entertainment/sides-horn-making/',
-        alt:
-          'People Magazine Announces World Rhino Day 2017 Kickstarter Campaign',
+          'https://tvandfilmguy.com/2019/06/25/sides-of-a-horn-and-a-nuanced-look-at-rhino-poaching/',
+        alt: 'LASS IS MORE PODCAST INTERVIEW WITH WRITER-DIRECTOR TOBY WOSSKOW',
         id: 6,
+      },
+      {
+        src: UKFilmReview.src,
+        srcSet: UKFilmReview.srcSet,
+        href:
+          'https://www.ukfilmreview.co.uk/post/sides-of-a-horn-short-film-review',
+        alt: 'UK FILM REVIEW GIVES SIDES OF A HORN 5 STARS',
+        id: 7,
+      },
+      {
+        src: FilmThreat.src,
+        srcSet: FilmThreat.srcSet,
+        href: 'http://filmthreat.com/reviews/sides-of-the-horn/',
+        alt: 'FILM THREAT DECLARES WOSSKOW A "TALENT TO WATCH"',
+        id: 8,
       },
     ]
   }
