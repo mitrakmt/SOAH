@@ -25,16 +25,10 @@ class Screenings extends Component {
     // UPCOMING SCREENINGS
     this.upcomingScreenings = [
       {
-        link: 'https://stonybrookfilmfestival.com/',
-        line1: 'Stony Brook Film Festival',
-        line2: 'JULY 21, 2019 at 4pm',
-        location: 'Stony Brook, NY',
-      },
-      {
-        link: 'http://ccadiff.ukzn.ac.za/',
-        line1: 'Durban International Film Festival',
-        line2: 'JULY 23, 2019 at 5:30pm |  July 27, 2019 at 3:30pm',
-        location: 'Durban',
+        link: 'https://www.vailfilmfestival.com/passes',
+        line1: 'Vail Film Festival',
+        line2: 'August 16, 2019 AT 1pm',
+        location: 'Vail',
       },
       {
         link: 'https://www.burbankfilmfest.org/',
@@ -53,6 +47,24 @@ class Screenings extends Component {
         line1: 'Jongosi Youth Day',
         line2: 'SEPTEMBER 13, 2019',
         location: 'Hilton, South Africa',
+      },
+      {
+        link: 'https://www.teamusa.org/about-the-usopc',
+        line1: 'US Olympic & Paralympic Committee & African Wildlife Foundation',
+        line2: 'September 13, 2019 at 6:30pm',
+        location: 'Colorado Springs',
+      },
+      {
+        link: 'http://goldendoorfilmfestival.org/',
+        line1: 'Golden Door International Film Festival',
+        line2: 'SEPTEMBER 19–22, 2019',
+        location: 'Jersey City',
+      },
+      {
+        link: 'https://www.jacksonwild.org/2019-finalists.html',
+        line1: 'Jackson Wild Media Awards',
+        line2: 'SEPTEMBER 21-26, 2019',
+        location: 'Jackson Hole',
       },
       {
         link: 'http://www.edmontonfilmfest.com/',
@@ -88,8 +100,26 @@ class Screenings extends Component {
       {
         link:'https://www.cifft.com/cifft-festival/arttur-international-tourism-film-festival/',
         line1: 'ART&TUR - International Tourism Film Festival',
-        line2: 'OCTOBER 22 - 25, 2019',
+        line2: 'OCTOBER 22-25, 2019',
         location: 'Torres Vedras',
+      },
+      {
+        link:'http://www.effa.org.au/',
+        line1: 'Environmental Film Festival Australia',
+        line2: 'OCTOBER 24 - NOVEMBER 1, 2019',
+        location: 'Melbourne',
+      },
+      {
+        link:'http://www.fliff.com/',
+        line1: 'Fort Lauderdale International Film Festival',
+        line2: 'NOVEMBER 1-17, 2019',
+        location: 'Fort Lauderdale',
+      },
+      {
+        link:'https://www.asff.co.uk/',
+        line1: 'Aesthetica Short Film Festival',
+        line2: 'NOVEMBER 6-10, 2019',
+        location: 'York, UK',
       },
       {
         link: 'https://www.sciencefilm.ch/',
@@ -107,6 +137,18 @@ class Screenings extends Component {
 
     // PAST SCREENINGS
     this.pastScreenings = [
+      {
+        link: 'http://ccadiff.ukzn.ac.za/',
+        line1: 'Durban International Film Festival',
+        line2: 'JULY 23, 2019 at 5:30pm |  July 27, 2019 at 3:30pm',
+        location: 'Durban',
+      },
+      {
+        link: 'https://stonybrookfilmfestival.com/',
+        line1: 'Stony Brook Film Festival',
+        line2: 'JULY 21, 2019 at 4pm',
+        location: 'Stony Brook, NY',
+      },
       {
         link: 'http://www.abcg.org/event_details?event_id=144',
         line1: 'African Wildlife Foundation & the Africa Biodiversity Collaborative Group',
