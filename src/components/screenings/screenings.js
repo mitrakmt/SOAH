@@ -25,83 +25,28 @@ class Screenings extends Component {
     // UPCOMING SCREENINGS
     this.upcomingScreenings = [
       {
-        link: 'https://www.vailfilmfestival.com/passes',
-        line1: 'Vail Film Festival',
-        line2: 'August 16, 2019 AT 1pm',
-        location: 'Vail',
-      },
-      {
-        link: 'https://www.burbankfilmfest.org/',
-        line1: 'Burbank International Film Festival',
-        line2: 'SEPTEMBER 4-8, 2019',
-        location: 'Burbank',
-      },
-      {
-        link: 'https://www.hiltonfestival.co.za/2019/',
-        line1: 'Hilton Arts Festival',
-        line2: 'SEPTEMBER 13-15, 2019',
-        location: 'Hilton, South Africa',
-      },
-      {
-        link: 'https://www.hiltonfestival.co.za/2019/jongosi-youth-day/',
-        line1: 'Jongosi Youth Day',
-        line2: 'SEPTEMBER 13, 2019',
-        location: 'Hilton, South Africa',
-      },
-      {
-        link: 'https://www.teamusa.org/about-the-usopc',
-        line1: 'US Olympic & Paralympic Committee & African Wildlife Foundation',
-        line2: 'September 13, 2019 at 6:30pm',
-        location: 'Colorado Springs',
-      },
-      {
-        link: 'http://goldendoorfilmfestival.org/',
-        line1: 'Golden Door International Film Festival',
-        line2: 'SEPTEMBER 19–22, 2019',
-        location: 'Jersey City',
-      },
-      {
-        link: 'https://www.jacksonwild.org/2019-finalists.html',
-        line1: 'Jackson Wild Media Awards',
-        line2: 'SEPTEMBER 21-26, 2019',
-        location: 'Jackson Hole',
-      },
-      {
-        link: 'http://www.edmontonfilmfest.com/',
-        line1: 'Edmonton International Film Festival',
-        line2: 'SEPTEMBER 26 - OCTOBER 5, 2019',
-        location: 'Edmonton, Canada',
-      },
-      {
-        link: 'https://woodstockfilmfestival.org/',
-        line1: 'Woodstock Film Festival',
-        line2: 'OCTOBER 2-6, 2019',
-        location: 'The Hudson Valley, NY',
-      },
-      {
-        link: 'https://www.wscsummit.com/',
-        line1: 'Wildlife, Safari, and Conservation Summit',
-        line2: 'OCTOBER 11, 2019',
-        location: 'Harrogate',
-      },
-      {
-        link: 'https://wildlifesafarishow.com/',
-        line1: 'Wildlife & Safari Travel Show',
-        line2: 'OCTOBER 12-13, 2019',
-        location: 'Harrogate',
-      },
-      {
         link: 'https://www.wcff.org/nyc-festival-2019/',
         line1: 'WILDLIFE CONSERVATION FILM FESTIVAL',
         line2: 'OCTOBER 17-27, 2019',
         location: 'New York',
-        line3: '',
+      },
+      {
+        link: 'https://sdfilmfest.com/',
+        line1: 'SAN DIEGO FILM FESTIVAL',
+        line2: 'October 18, 2019 AT 2:30pm | October 20, 2019 AT 1:30pm',
+        location: 'San Diego',
       },
       {
         link:'https://www.cifft.com/cifft-festival/arttur-international-tourism-film-festival/',
         line1: 'ART&TUR - International Tourism Film Festival',
         line2: 'OCTOBER 22-25, 2019',
         location: 'Torres Vedras',
+      },
+      {
+        link:'https://www.sjsff.com/',
+        line1: 'SAN JOSE INTERNATIONAL SHORT FILM FESTIVAL',
+        line2: 'OCTOBER 24-27, 2019',
+        location: 'San Jose',
       },
       {
         link:'http://www.effa.org.au/',
@@ -112,8 +57,20 @@ class Screenings extends Component {
       {
         link:'http://www.fliff.com/',
         line1: 'Fort Lauderdale International Film Festival',
-        line2: 'NOVEMBER 1-17, 2019',
+        line2: 'NOVEMBER 4, 2019 at 3pm | NOVEMBER 7, 2019 at 4pm',
         location: 'Fort Lauderdale',
+      },
+      {
+        link:'https://www.facebook.com/Greenscreentt/',
+        line1: 'GREEN SCREEN - THE ENVIRONMENTAL FILM FESTIVAL',
+        line2: 'November 5 - 9, 2019',
+        location: 'Trinidad and Tobago',
+      },
+      {
+        link:'https://www.interfilm.de/en/',
+        line1: 'Interfilm Berlin',
+        line2: 'November 5 - 10, 2019',
+        location: 'Berlin',
       },
       {
         link:'https://www.asff.co.uk/',
@@ -122,14 +79,32 @@ class Screenings extends Component {
         location: 'York, UK',
       },
       {
+        link:'https://www.belizefilmfestival.com/',
+        line1: 'BELIZE INTERNATIONAL FILM FESTIVAL',
+        line2: 'NOVEMBER 6-10, 2019',
+        location: 'Belize',
+      },
+      {
         link: 'https://www.sciencefilm.ch/',
         line1: 'Global Science Film Festival',
         line2: 'November 15-17, 2019',
         location: 'Bern & Zurich',
       },
       {
+        link: 'http://www.woodpeckerfilmfestival.in/',
+        line1: 'WOODPECKER INTERNATIONAL FILM FESTIVAL',
+        line2: 'November 29 - December 1, 2019',
+        location: 'New Delhi',
+      },
+      {
+        link: 'http://filmfestival.capetown/',
+        line1: 'CAPE TOWN INTERNATIONAL FILM MARKET AND FESTIVAL',
+        line2: 'October 9-19, 2020',
+        location: 'Cape Town',
+      },
+      {
         link: 'http://www.greeninitiatives.cn/',
-        line1: 'Green Initiatives ',
+        line1: 'Green Initiatives',
         line2: 'Dates TBD',
         location: 'Shanghai',
       },
@@ -137,6 +112,84 @@ class Screenings extends Component {
 
     // PAST SCREENINGS
     this.pastScreenings = [
+      {
+        link: 'https://wildlifesafarishow.com/',
+        line1: 'Wildlife & Safari Travel Show',
+        line2: 'OCTOBER 12-13, 2019 at 10:50am',
+        location: 'Harrogate',
+      },
+      {
+        link: 'https://woodstockfilmfestival.org/',
+        line1: 'Woodstock Film Festival',
+        line2: 'October 4, 2019 AT 2:30pm | October 5, 2019 at 9pm',
+        location: 'The Hudson Valley, NY',
+      },
+      {
+        link: 'http://www.edmontonfilmfest.com/',
+        line1: 'Edmonton International Film Festival',
+        line2: 'SEPTEMBER 26 - OCTOBER 5, 2019',
+        location: 'Edmonton, Canada',
+      },
+      {
+        link: 'https://www.jacksonwild.org/2019-finalists.html',
+        line1: 'Jackson Wild Media Awards',
+        line2: 'SEPTEMBER 25, 2019 at 3pm',
+        location: 'Jackson Hole',
+      },
+      {
+        link: 'https://www.instagram.com/p/B2zZRMrg0SI/',
+        line1: 'Ubuntu Travel Speaker Series',
+        line2: 'SEPTEMBER 22, 2019 at 4pm',
+        location: 'Orange County',
+      },
+      {
+        link: 'http://musmed.provincia.livorno.it/2/',
+        line1: 'VILLA HENDERSON, MUSEUM OF NATURAL AND MEDITERRANEAN HISTORY',
+        line2: '21 September, 2019 AT 3:30pm',
+        location: 'Livorno, Italy',
+      },
+      {
+        link: 'http://goldendoorfilmfestival.org/',
+        line1: 'Golden Door International Film Festival',
+        line2: 'SEPTEMBER 19–22, 2019',
+        location: 'Jersey City',
+      },
+      {
+        link: 'https://www.teamusa.org/about-the-usopc',
+        line1: 'US Olympic & Paralympic Committee & African Wildlife Foundation',
+        line2: 'September 13, 2019 at 6:30pm',
+        location: 'Colorado Springs',
+      },
+      {
+        link: 'https://www.hiltonfestival.co.za/2019/jongosi-youth-day/',
+        line1: 'Jongosi Youth Day',
+        line2: 'SEPTEMBER 13, 2019',
+        location: 'Hilton, South Africa',
+      },
+      {
+        link: 'https://www.hiltonfestival.co.za/2019/',
+        line1: 'Hilton Arts Festival',
+        line2: 'SEPTEMBER 13-15, 2019',
+        location: 'Hilton, South Africa',
+      },
+      {
+        link: 'https://www.burbankfilmfest.org/',
+        line1: 'Burbank International Film Festival',
+        line2: 'SEPTEMBER 4-8, 2019',
+        location: 'Burbank',
+      },
+      {
+        link: 'https://www.facebook.com/permalink.php?id=174798842582763&story_fbid=2510993555629935',
+        line1: 'SUN CITY CAREER AWARENESS CAMPAIGN',
+        line2: 'September 2-6, 2019',
+        location: 'Rustenburg, South Africa',
+      },
+      {
+        link: 'https://www.vailfilmfestival.com/passes',
+        line1: 'Vail Film Festival',
+        line2: 'August 16, 2019 AT 1pm',
+        location: 'Vail',
+      },
       {
         link: 'http://ccadiff.ukzn.ac.za/',
         line1: 'Durban International Film Festival',
