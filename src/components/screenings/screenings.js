@@ -97,6 +97,12 @@ class Screenings extends Component {
         location: 'New Delhi',
       },
       {
+        link: 'https://barbadosfilmfest.org/',
+        line1: 'BARBADOS INDEPENDENT FILM FESTIVAL',
+        line2: 'JANUARY 14-19, 2020',
+        location: 'Barbados',
+      },
+      {
         link: 'http://filmfestival.capetown/',
         line1: 'CAPE TOWN INTERNATIONAL FILM MARKET AND FESTIVAL',
         line2: 'October 9-19, 2020',
@@ -128,12 +134,14 @@ class Screenings extends Component {
         link: 'http://www.edmontonfilmfest.com/',
         line1: 'Edmonton International Film Festival',
         line2: 'SEPTEMBER 26 - OCTOBER 5, 2019',
+        line3: 'Winner: OSCAR®-qualifying Grand Jury Award for Best Short Film (Live Action)',
         location: 'Edmonton, Canada',
       },
       {
         link: 'https://www.jacksonwild.org/2019-finalists.html',
         line1: 'Jackson Wild Media Awards',
         line2: 'SEPTEMBER 25, 2019 at 3pm',
+        line3: 'Finalist',
         location: 'Jackson Hole',
       },
       {
