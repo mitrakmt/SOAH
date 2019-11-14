@@ -25,76 +25,16 @@ class Screenings extends Component {
     // UPCOMING SCREENINGS
     this.upcomingScreenings = [
       {
-        link: 'https://www.wcff.org/nyc-festival-2019/',
-        line1: 'WILDLIFE CONSERVATION FILM FESTIVAL',
-        line2: 'OCTOBER 17-27, 2019',
-        location: 'New York',
-      },
-      {
-        link: 'https://sdfilmfest.com/',
-        line1: 'SAN DIEGO FILM FESTIVAL',
-        line2: 'October 18, 2019 AT 2:30pm | October 20, 2019 AT 1:30pm',
-        location: 'San Diego',
-      },
-      {
-        link:'https://www.cifft.com/cifft-festival/arttur-international-tourism-film-festival/',
-        line1: 'ART&TUR - International Tourism Film Festival',
-        line2: 'OCTOBER 22-25, 2019',
-        location: 'Torres Vedras',
-      },
-      {
-        link:'https://www.sjsff.com/',
-        line1: 'SAN JOSE INTERNATIONAL SHORT FILM FESTIVAL',
-        line2: 'OCTOBER 24-27, 2019',
-        location: 'San Jose',
-      },
-      {
-        link:'http://www.effa.org.au/',
-        line1: 'Environmental Film Festival Australia',
-        line2: 'OCTOBER 24 - NOVEMBER 1, 2019',
-        location: 'Melbourne',
-      },
-      {
-        link:'http://www.fliff.com/',
-        line1: 'Fort Lauderdale International Film Festival',
-        line2: 'NOVEMBER 4, 2019 at 3pm | NOVEMBER 7, 2019 at 4pm',
-        location: 'Fort Lauderdale',
-      },
-      {
-        link:'https://www.facebook.com/Greenscreentt/',
-        line1: 'GREEN SCREEN - THE ENVIRONMENTAL FILM FESTIVAL',
-        line2: 'November 5 - 9, 2019',
-        location: 'Trinidad and Tobago',
-      },
-      {
-        link:'https://www.interfilm.de/en/',
-        line1: 'Interfilm Berlin',
-        line2: 'November 5 - 10, 2019',
-        location: 'Berlin',
-      },
-      {
-        link:'https://www.asff.co.uk/',
-        line1: 'Aesthetica Short Film Festival',
-        line2: 'NOVEMBER 6-10, 2019',
-        location: 'York, UK',
-      },
-      {
-        link:'https://www.belizefilmfestival.com/',
-        line1: 'BELIZE INTERNATIONAL FILM FESTIVAL',
-        line2: 'NOVEMBER 6-10, 2019',
-        location: 'Belize',
-      },
-      {
-        link: 'https://www.sciencefilm.ch/',
-        line1: 'Global Science Film Festival',
-        line2: 'November 15-17, 2019',
-        location: 'Bern & Zurich',
-      },
-      {
         link: 'http://www.woodpeckerfilmfestival.in/',
         line1: 'WOODPECKER INTERNATIONAL FILM FESTIVAL',
-        line2: 'November 29 - December 1, 2019',
+        line2: 'November 30, 2019 at 7:30pm',
         location: 'New Delhi',
+      },
+      {
+        link: 'https://tfsff.com/',
+        line1: 'TRIFORCE SHORT FILM FESTIVAL',
+        line2: 'November 30, 2019 at 5:20pm',
+        location: 'London',
       },
       {
         link: 'https://barbadosfilmfest.org/',
@@ -118,6 +58,73 @@ class Screenings extends Component {
 
     // PAST SCREENINGS
     this.pastScreenings = [
+      {
+        link: 'https://www.sciencefilm.ch/',
+        line1: 'Global Science Film Festival',
+        line2: 'November 15-17, 2019',
+        location: 'Bern & Zurich',
+      },
+      {
+        link:'https://www.belizefilmfestival.com/',
+        line1: 'BELIZE INTERNATIONAL FILM FESTIVAL',
+        line2: 'NOVEMBER 6-10, 2019',
+        location: 'Belize',
+      },
+      {
+        link:'https://www.asff.co.uk/',
+        line1: 'Aesthetica Short Film Festival',
+        line2: 'NOVEMBER 6-10, 2019',
+        location: 'York, UK',
+      },
+      {
+        link:'https://www.interfilm.de/en/',
+        line1: 'Interfilm Berlin',
+        line2: 'November 5 - 10, 2019',
+        location: 'Berlin',
+      },
+      {
+        link:'https://www.facebook.com/Greenscreentt/',
+        line1: 'GREEN SCREEN - THE ENVIRONMENTAL FILM FESTIVAL',
+        line2: 'November 5 - 9, 2019',
+        location: 'Trinidad and Tobago',
+      },
+      {
+        link:'http://www.fliff.com/',
+        line1: 'Fort Lauderdale International Film Festival',
+        line2: 'NOVEMBER 4, 2019 at 3pm | NOVEMBER 7, 2019 at 4pm',
+        location: 'Fort Lauderdale',
+      },
+      {
+        link:'http://www.effa.org.au/',
+        line1: 'Environmental Film Festival Australia',
+        line2: 'OCTOBER 24 - NOVEMBER 1, 2019',
+        location: 'Melbourne',
+      },
+      {
+        link:'https://www.sjsff.com/',
+        line1: 'SAN JOSE INTERNATIONAL SHORT FILM FESTIVAL',
+        line2: 'OCTOBER 24-27, 2019',
+        location: 'San Jose',
+      },
+      {
+        link:'https://www.cifft.com/cifft-festival/arttur-international-tourism-film-festival/',
+        line1: 'ART&TUR - International Tourism Film Festival',
+        line2: 'OCTOBER 22-25, 2019',
+        line3: 'Winner: First Prize in the Sustainable Development Category',
+        location: 'Torres Vedras',
+      },
+      {
+        link: 'https://sdfilmfest.com/',
+        line1: 'SAN DIEGO FILM FESTIVAL',
+        line2: 'October 18, 2019 AT 2:30pm | October 20, 2019 AT 1:30pm',
+        location: 'San Diego',
+      },
+      {
+        link: 'https://www.wcff.org/nyc-festival-2019/',
+        line1: 'WILDLIFE CONSERVATION FILM FESTIVAL',
+        line2: 'OCTOBER 17-27, 2019',
+        location: 'New York',
+      },
       {
         link: 'https://wildlifesafarishow.com/',
         line1: 'Wildlife & Safari Travel Show',
