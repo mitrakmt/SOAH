@@ -36,12 +36,6 @@ class Screenings extends Component {
         line2: 'October 9-19, 2020',
         location: 'Cape Town',
       },
-      {
-        link: 'http://www.greeninitiatives.cn/',
-        line1: 'Green Initiatives',
-        line2: 'Dates TBD',
-        location: 'Shanghai',
-      },
     ]
 
     // PAST SCREENINGS
@@ -57,6 +51,12 @@ class Screenings extends Component {
         line1: 'TRIFORCE SHORT FILM FESTIVAL',
         line2: 'November 30, 2019 at 5:20pm',
         location: 'London',
+      },
+      {
+        link: 'https://www.youtube.com/watch?v=ANrDx4CmQOQ',
+        line1: 'Uganda Mandela-Washington Premiere',
+        line2: 'November 21',
+        location: 'Kampala, Uganda',
       },
       {
         link: 'https://www.sciencefilm.ch/',
