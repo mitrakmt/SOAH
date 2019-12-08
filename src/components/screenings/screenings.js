@@ -25,18 +25,6 @@ class Screenings extends Component {
     // UPCOMING SCREENINGS
     this.upcomingScreenings = [
       {
-        link: 'http://www.woodpeckerfilmfestival.in/',
-        line1: 'WOODPECKER INTERNATIONAL FILM FESTIVAL',
-        line2: 'November 30, 2019 at 7:30pm',
-        location: 'New Delhi',
-      },
-      {
-        link: 'https://tfsff.com/',
-        line1: 'TRIFORCE SHORT FILM FESTIVAL',
-        line2: 'November 30, 2019 at 5:20pm',
-        location: 'London',
-      },
-      {
         link: 'https://barbadosfilmfest.org/',
         line1: 'BARBADOS INDEPENDENT FILM FESTIVAL',
         line2: 'JANUARY 14-19, 2020',
@@ -58,6 +46,18 @@ class Screenings extends Component {
 
     // PAST SCREENINGS
     this.pastScreenings = [
+      {
+        link: 'http://www.woodpeckerfilmfestival.in/',
+        line1: 'WOODPECKER INTERNATIONAL FILM FESTIVAL',
+        line2: 'November 30, 2019 at 7:30pm',
+        location: 'New Delhi',
+      },
+      {
+        link: 'https://tfsff.com/',
+        line1: 'TRIFORCE SHORT FILM FESTIVAL',
+        line2: 'November 30, 2019 at 5:20pm',
+        location: 'London',
+      },
       {
         link: 'https://www.sciencefilm.ch/',
         line1: 'Global Science Film Festival',
