@@ -44,6 +44,7 @@ class Screenings extends Component {
         link: 'http://www.woodpeckerfilmfestival.in/',
         line1: 'WOODPECKER INTERNATIONAL FILM FESTIVAL',
         line2: 'November 30, 2019 at 7:30pm',
+        line3: 'Winner: Best Film in the Forest and Wildlife Category',
         location: 'New Delhi',
       },
       {
