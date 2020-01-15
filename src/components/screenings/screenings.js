@@ -25,10 +25,22 @@ class Screenings extends Component {
     // UPCOMING SCREENINGS
     this.upcomingScreenings = [
       {
-        link: 'https://barbadosfilmfest.org/',
-        line1: 'BARBADOS INDEPENDENT FILM FESTIVAL',
-        line2: 'JANUARY 14-19, 2020',
-        location: 'Barbados',
+        link: 'http://www.yisff.com/',
+        line1: 'YOUNTVILLE INTERNATIONAL SHORT FILM FESTIVAL',
+        line2: 'February 6-9, 2020',
+        location: 'Napa Valley',
+      },
+      {
+        link: 'https://lascrucesfilmfest.com/',
+        line1: 'LAS CRUCES INTERNATIONAL FILM FESTIVAL',
+        line2: 'March 4-8, 2020',
+        location: 'New Mexico',
+      },
+      {
+        link: 'http://www.vsaff.org/',
+        line1: 'VANCOUVER SOUTH AFRICAN FILM FESTIVAL',
+        line2: 'March 27-29, 2020',
+        location: 'Vancouver',
       },
       {
         link: 'http://filmfestival.capetown/',
@@ -40,6 +52,12 @@ class Screenings extends Component {
 
     // PAST SCREENINGS
     this.pastScreenings = [
+      {
+        link: 'https://barbadosfilmfest.org/',
+        line1: 'BARBADOS INDEPENDENT FILM FESTIVAL',
+        line2: 'JANUARY 14-19, 2020',
+        location: 'Barbados',
+      },
       {
         link: 'http://www.woodpeckerfilmfestival.in/',
         line1: 'WOODPECKER INTERNATIONAL FILM FESTIVAL',
